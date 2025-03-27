@@ -1,0 +1,685 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German B1 Lesen Prüfung Model 5{% endblock title %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/exam1.css' %}">
+
+<body>
+    <div class="timer-container">
+        <div class="timer-toggle">
+            <div class="toggle-wrapper">
+                <span class="toggle-icon" data-state="open">👁️</span>
+                <span class="green-dot"></span>
+            </div>
+            <div class="separator"></div>
+            <span id="timer" class="timer">65:00</span>
+        </div>
+        <div class="timer-controls">
+            <button id="pauseBtn" class="timer-control">⏸️</button>
+            <button id="restartBtn" class="timer-control">🔄</button>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="header-section">
+                <div class="nav-buttons">
+                    <a href="german.html" class="nav-button">🏠</a>
+                    <a href="practice_Exam.html" class="nav-button">⬅️</a>
+                </div>
+                <header>
+                    <h1>Lesen Prüfung</h1>
+                </header>
+                <div class="exam-title">Deutsch B1 Lesen Prüfung Model 5</div>
+                <button id="startBtn" class="start-button">Begin Exam</button>
+                <div id="timeTaken" class="time-taken" style="display: none;"></div>
+            </div>
+
+            <div id="examContent">
+                <!-- Teil 1 -->
+                <div class="section">
+                    <h2><strong>Teil 1:</strong></h2>
+                    <p><strong>Lesen Sie den Text und die Aufgaben 1 bis 6 dazu.</strong></p>
+                    <p><strong>Wählen Sie: Sind die Aussagen richtig oder falsch?</strong></p>
+                    <p><strong>Arbeitszeit: 10 Minuten</strong></p>
+                    <div class="reading-text">
+                        <h3>Zasim’s Vlog – Meine Fahrt mit dem Fahrrad nach Illam, Nepal</h3>
+                        <p>Zasim Neupane</p>
+                        <p>22. März 2025</p>
+                        <p>Hallo Leute,</p>
+                        <p>ich bin Zasim, und heute erzähle ich euch von meiner Fahrradtour nach Illam in Nepal! Ich wollte schon lange die grünen Teeplantagen dort sehen, und am 18. März habe ich mich auf den Weg gemacht. Ich bin früh um 6 Uhr in Kathmandu losgefahren, mit meinem Fahrrad und einem kleinen Rucksack.</p>
+                        <p>Die Reise war fantastisch! Die Straßen waren manchmal holprig, aber die Aussicht auf die Berge war unglaublich. Am ersten Tag habe ich in einem kleinen Dorf übernachtet und leckeren Dal Bhat gegessen. Am zweiten Tag, dem 19. März, bin ich durch einen dichten Wald gefahren. Dort habe ich viele Vögel gehört, und es war so ruhig – einfach perfekt!</p>
+                        <p>Als ich am 20. März in Illam ankam, war ich müde, aber glücklich. Die Teeplantagen waren wunderschön, und ich habe viel über nachhaltigen Teeanbau gelernt. Leider hatte ich am letzten Tag einen platten Reifen, aber ein netter Bauer hat mir geholfen, ihn zu reparieren. Ich habe auch eine kleine Teefabrik besucht und fünf Packungen grünen Tee gekauft.</p>
+                        <p>Die Fahrt war ein Abenteuer! Es war anstrengend, besonders die steilen Hügel, aber ich liebe solche Reisen. Ich plane schon meine nächste Tour. Was denkt ihr, soll ich wieder mit dem Fahrrad fahren? Schreibt es mir in die Kommentare!</p>
+                        <p>Namaste,</p>
+                        <p>Zasim</p>
+                    </div>
+
+                    <!-- Randomized Questions -->
+                    <div class="question" data-question="q1">
+                        <p>1. Zasim ist am 18. März von Kathmandu losgefahren.</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="richtig">Richtig</div>
+                            <div class="option enabled" data-value="falsch">Falsch</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q2">
+                        <p>2. Am zweiten Tag hat er durch einen Wald gefahren.</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="richtig">Richtig</div>
+                            <div class="option enabled" data-value="falsch">Falsch</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q3">
+                        <p>3. Zasim hat in Illam keinen Tee gekauft.</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="richtig">Richtig</div>
+                            <div class="option enabled" data-value="falsch">Falsch</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q4">
+                        <p>4. Die Fahrt war für Zasim sehr langweilig.</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="richtig">Richtig</div>
+                            <div class="option enabled" data-value="falsch">Falsch</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q5">
+                        <p>5. Er hatte am ersten Tag einen platten Reifen.</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="richtig">Richtig</div>
+                            <div class="option enabled" data-value="falsch">Falsch</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q6">
+                        <p>6. Zasim hat die Teeplantagen in Illam besucht.</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="richtig">Richtig</div>
+                            <div class="option enabled" data-value="falsch">Falsch</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teil 2 -->
+                <div class="section">
+                    <h2><strong>Teil 2:</strong></h2>
+                    <p><strong>Lesen Sie den Text aus der Presse und die Aufgaben 7 bis 9 dazu.</strong></p>
+                    <p><strong>Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.</strong></p>
+                    <p><strong>Arbeitszeit: 20 Minuten</strong></p>
+                    <div class="reading-text">
+                        <h3>E-Scooter in der Stadt</h3>
+                        <p>Lena ist 24 Jahre alt und lebt in Hamburg. Seit einem Jahr nutzt sie E-Scooter, um zur Arbeit zu fahren. Es ist schnell und macht Spaß, aber manchmal gibt es Probleme. Oft sind die Scooter kaputt oder stehen im Weg. Lena fährt jeden Morgen 20 Minuten, aber danach ist sie gestresst, weil sie Autos und Fußgängern ausweichen muss. Ihre Freundin Mia sagt: „Lena, du solltest lieber mit dem Fahrrad fahren. Das ist sicherer und besser für die Umwelt.“ Lena denkt nach und probiert es eine Woche lang mit dem Fahrrad. Sie merkt schnell: Sie fühlt sich entspannter, hat mehr Energie und spart sogar Geld. Jetzt fährt sie nur noch selten mit dem E-Scooter und ist froh über Mias Tipp.</p>
+                    </div>
+
+                    <div class="question-header">Wähle die richtige Antwort:</div>
+
+                    <!-- Randomized Questions -->
+                    <div class="question" data-question="q7">
+                        <p>7. Was macht Lena jetzt seltener?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q7-a">a) Mit dem E-Scooter fahren.</div>
+                            <div class="option enabled" data-value="b" id="q7-b">b) Mit dem Fahrrad fahren.</div>
+                            <div class="option enabled" data-value="c" id="q7-c">c) Zur Arbeit gehen.</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q8">
+                        <p>8. Warum ist Lena morgens gestresst?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q8-a">a) Weil sie zu spät aufsteht.</div>
+                            <div class="option enabled" data-value="b" id="q8-b">b) Weil sie keinen Spaß hat. </div>
+                            <div class="option enabled" data-value="c" id="q8-c">c) Weil sie Autos und Fußgängern ausweichen muss. </div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q9">
+                        <p>9. Was rät Mia Lena?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q9-a">a) Sie soll mit dem Fahrrad fahren. </div>
+                            <div class="option enabled" data-value="b" id="q9-b">b) Sie soll zu Fuß gehen.</div>
+                            <div class="option enabled" data-value="c" id="q9-c">c) Sie soll den Bus nehmen.</div>
+                        </div>
+                    </div>
+
+                    <p><strong>Lesen Sie den Text aus der Presse und die Aufgaben 10 bis 12 dazu.</strong></p>
+                    <p><strong>Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.</strong></p>
+                    <div class="reading-text">
+                        <h3>Virtual Reality im Unterricht</h3>
+                        <p>Tom ist 17 und geht in die 11. Klasse in München. Seine Schule nutzt seit kurzem Virtual Reality (VR), um Geschichte zu unterrichten. Tom findet es spannend, historische Orte wie Rom oder Ägypten in VR zu sehen. Aber er verbringt danach oft Stunden mit VR-Spielen zu Hause und macht keine Hausaufgaben. Seine Lehrerin Frau Becker sagt: „Tom, VR ist toll, aber du musst auch Zeit für andere Dinge haben.“ Tom beschließt, nur noch eine Stunde am Tag VR zu nutzen. Danach hat er mehr Zeit für Schule und Freunde und fühlt sich besser.</p>
+                    </div>
+
+                    <!-- Randomized Questions -->
+                    <div class="question" data-question="q10">
+                        <p>10. Was findet Tom spannend?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q10-a">a) Computerspiele spielen.</div>
+                            <div class="option enabled" data-value="b" id="q10-b">b) Historische Orte in VR sehen.</div>
+                            <div class="option enabled" data-value="c" id="q10-c">c) Hausaufgaben machen.</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q11">
+                        <p>11. Was passiert, wenn Tom weniger VR nutzt?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q11-a">a) Er hat weniger Freunde.</div>
+                            <div class="option enabled" data-value="b" id="q11-b">b) Er hat mehr Zeit für Schule und Freunde.</div>
+                            <div class="option enabled" data-value="c" id="q11-c">c) Er langweilt sich.</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q12">
+                        <p>12. Was sagt Frau Becker zu Tom?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q12-a">a) Er soll auch Zeit für andere Dinge haben.</div>
+                            <div class="option enabled" data-value="b" id="q12-b">b) Er soll keine VR mehr nutzen.</div>
+                            <div class="option enabled" data-value="c" id="q12-c">c) Er soll mehr spielen.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teil 3 -->
+                <div class="section" id="teil3">
+                    <h2><strong>Teil 3: Werbeanzeigen für Musik-Apps aus einem Magazin</strong></h2>
+                    <div class="reading-text">
+                        <p><strong>Arbeitszeit: 10 Minuten</strong></p>
+                        <p>Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j.</p>
+                        <p>Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Für eine Situation gibt es KEINE passende Anzeige. In diesem Fall wählen Sie 0.</p>
+                    </div>
+
+                    <!-- Randomized Questions -->
+                    <div class="question" data-question="q13">
+                        <p>13. Biraj möchte eine App, um Gitarre zu lernen.</p>
+                        <div class="options">
+                            <select class="option-select enabled" data-value="">
+                                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                                <option value="0">0</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                <option value="c">c</option>
+                                <option value="d">d</option>
+                                <option value="e">e</option>
+                                <option value="f">f</option>
+                                <option value="g">g</option>
+                                <option value="h">h</option>
+                                <option value="i">i</option>
+                                <option value="j">j</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q14">
+                        <p>14. Tika sucht eine App mit Meditation und Musik.</p>
+                        <div class="options">
+                            <select class="option-select enabled" data-value="">
+                                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                                <option value="0">0</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                <option value="c">c</option>
+                                <option value="d">d</option>
+                                <option value="e">e</option>
+                                <option value="f">f</option>
+                                <option value="g">g</option>
+                                <option value="h">h</option>
+                                <option value="i">i</option>
+                                <option value="j">j</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q15">
+                        <p>15. Awash möchte eine App mit nepalesischer Musik.</p>
+                        <div class="options">
+                            <select class="option-select enabled" data-value="">
+                                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                                <option value="0">0</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                <option value="c">c</option>
+                                <option value="d">d</option>
+                                <option value="e">e</option>
+                                <option value="f">f</option>
+                                <option value="g">g</option>
+                                <option value="h">h</option>
+                                <option value="i">i</option>
+                                <option value="j">j</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q16">
+                        <p>16. Susan sucht eine App mit nachhaltigen Liedern.</p>
+                        <div class="options">
+                            <select class="option-select enabled" data-value="">
+                                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                                <option value="0">0</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                <option value="c">c</option>
+                                <option value="d">d</option>
+                                <option value="e">e</option>
+                                <option value="f">f</option>
+                                <option value="g">g</option>
+                                <option value="h">h</option>
+                                <option value="i">i</option>
+                                <option value="j">j</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q17">
+                        <p>17. Raveena möchte eine App, um Klavier zu üben.</p>
+                        <div class="options">
+                            <select class="option-select enabled" data-value="">
+                                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                                <option value="0">0</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                <option value="c">c</option>
+                                <option value="d">d</option>
+                                <option value="e">e</option>
+                                <option value="f">f</option>
+                                <option value="g">g</option>
+                                <option value="h">h</option>
+                                <option value="i">i</option>
+                                <option value="j">j</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q18">
+                        <p>18. Bishnu sucht eine App für Reise-Playlists.</p>
+                        <div class="options">
+                            <select class="option-select enabled" data-value="">
+                                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                                <option value="0">0</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                <option value="c">c</option>
+                                <option value="d">d</option>
+                                <option value="e">e</option>
+                                <option value="f">f</option>
+                                <option value="g">g</option>
+                                <option value="h">h</option>
+                                <option value="i">i</option>
+                                <option value="j">j</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q19">
+                        <p>19. Zasim möchte eine App mit nepalesischen Kinderliedern.</p>
+                        <div class="options">
+                            <select class="option-select enabled" data-value="">
+                                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                                <option value="0">0</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                <option value="c">c</option>
+                                <option value="d">d</option>
+                                <option value="e">e</option>
+                                <option value="f">f</option>
+                                <option value="g">g</option>
+                                <option value="h">h</option>
+                                <option value="i">i</option>
+                                <option value="j">j</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="reading-text">
+                        <h3>Anzeigen</h3>
+                        <div class="anzeige-container">
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">a)</span>
+                                <div class="anzeige-card" data-anzeige="a">
+                                    <h4>GREEN TUNES</h4>
+                                    <p>Musik mit Botschaften für Nachhaltigkeit.</p>
+                                    <p>Preis: Kostenlos</p>
+                                    <p><strong>Web:</strong> www.greentunes.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">b)</span>
+                                <div class="anzeige-card" data-anzeige="b">
+                                    <h4>NEPALI KIDS</h4>
+                                    <p>Traditionelle Kinderlieder aus Nepal.</p>
+                                    <p>Preis: 2,99 €</p>
+                                    <p><strong>Web:</strong> www.nepalikids.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">c)</span>
+                                <div class="anzeige-card" data-anzeige="c">
+                                    <h4>PIANO STAR</h4>
+                                    <p>Lerne Klavier mit einfachen Übungen.</p>
+                                    <p>Preis: 4,99 €</p>
+                                    <p><strong>Web:</strong> www.pianostar.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">d)</span>
+                                <div class="anzeige-card" data-anzeige="d">
+                                    <h4>ZEN BEATS</h4>
+                                    <p>Entspannende Musik und Meditation.</p>
+                                    <p>Preis: 5,99 €/Monat</p>
+                                    <p><strong>Web:</strong> www.zenbeats.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">e)</span>
+                                <div class="anzeige-card" data-anzeige="e">
+                                    <h4>TRAVEL VIBES</h4>
+                                    <p>Playlists für unterwegs.</p>
+                                    <p>Preis: Kostenlos</p>
+                                    <p><strong>Web:</strong> www.travelvibes.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">f)</span>
+                                <div class="anzeige-card" data-anzeige="f">
+                                    <h4>GUITAR PRO</h4>
+                                    <p>Gitarrenunterricht für Anfänger.</p>
+                                    <p>Preis: 3,99 €</p>
+                                    <p><strong>Web:</strong> www.guitarpro.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">g)</span>
+                                <div class="anzeige-card" data-anzeige="g">
+                                    <h4>NEPALI SOUNDS</h4>
+                                    <p>Traditionelle Musik aus Nepal.</p>
+                                    <p>Preis: 6,99 €/Monat</p>
+                                    <p><strong>Web:</strong> www.nepalisounds.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">h)</span>
+                                <div class="anzeige-card" data-anzeige="h">
+                                    <h4>POP HITS</h4>
+                                    <p>Die neuesten Pop-Songs weltweit.</p>
+                                    <p>Preis: 9,99 €/Monat</p>
+                                    <p><strong>Web:</strong> www.pophits.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">i)</span>
+                                <div class="anzeige-card" data-anzeige="i">
+                                    <h4>ROCK NOW</h4>
+                                    <p>Rockmusik für Fans.</p>
+                                    <p>Preis: 7,99 €/Monat</p>
+                                    <p><strong>Web:</strong> www.rocknow.de</p>
+                                </div>
+                            </div>
+                            <div class="anzeige-item">
+                                <span class="anzeige-label">j)</span>
+                                <div class="anzeige-card" data-anzeige="j">
+                                    <h4>CLASSIC VIBE</h4>
+                                    <p>Klassische Musik zum Entspannen.</p>
+                                    <p>Preis: 4,99 €</p>
+                                    <p><strong>Web:</strong> www.classicvibe.de</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teil 4 -->
+                <div class="section" id="teil4">
+                    <h2><strong>Teil 4: Nachhaltigkeit oder Komfort?</strong></h2>
+                    <div class="reading-text">
+                        <p>Im Jahr 2025 diskutieren viele, ob Nachhaltigkeit oder Komfort wichtiger ist. Nachhaltigkeit bedeutet, die Umwelt zu schützen, weniger Ressourcen zu nutzen und bewusst zu leben. Komfort hingegen steht für Bequemlichkeit, schnelle Lösungen und ein einfaches Leben. Was denken die Menschen darüber? Wir haben Meinungen gesammelt.</p>
+                        <p><strong>Arbeitszeit: 15 Minuten</strong></p>
+                        <p>Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person für Nachhaltigkeit?</p>
+                    </div>
+
+                    <div class="question-table">
+                        <div class="kommentare-section">
+                            <!-- Randomized Questions -->
+                            <div class="comment">
+                                <div class="question-row question" data-question="q20">
+                                    <div class="question-cell number"><strong>20</strong></div>
+                                    <div class="question-cell name"><strong>Sara</strong></div>
+                                    <div class="question-cell options">
+                                        <button class="option enabled" data-value="Ja">Ja</button>
+                                        <button class="option enabled" data-value="Nein">Nein</button>
+                                    </div>
+                                </div>
+                                <p class="comment-text">
+                                    Ich finde es wichtiger, dass das Leben einfach ist. Mit Apps und Autos spare ich Zeit und kann mehr erleben. Nachhaltigkeit ist schön, aber oft zu kompliziert.<br>
+                                    <em>Sara, 22 Jahre, Berlin</em>
+                                </p>
+                            </div>
+
+                            <div class="comment">
+                                <div class="question-row question" data-question="q21">
+                                    <div class="question-cell number"><strong>21</strong></div>
+                                    <div class="question-cell name"><strong>Lukas</strong></div>
+                                    <div class="question-cell options">
+                                        <button class="option enabled" data-value="Ja">Ja</button>
+                                        <button class="option enabled" data-value="Nein">Nein</button>
+                                    </div>
+                                </div>
+                                <p class="comment-text">
+                                    Ich liebe meinen E-Scooter und bestelle oft Essen online. Das macht mein Leben bequem, und ich will nicht darauf verzichten, auch wenn es nicht immer nachhaltig ist.<br>
+                                    <em>Lukas, 19 Jahre, Hamburg</em>
+                                </p>
+                            </div>
+
+                            <div class="comment">
+                                <div class="question-row question" data-question="q22">
+                                    <div class="question-cell number"><strong>22</strong></div>
+                                    <div class="question-cell name"><strong>Mia</strong></div>
+                                    <div class="question-cell options">
+                                        <button class="option enabled" data-value="Ja">Ja</button>
+                                        <button class="option enabled" data-value="Nein">Nein</button>
+                                    </div>
+                                </div>
+                                <p class="comment-text">
+                                    Für mich ist die Umwelt wichtiger als Bequemlichkeit. Ich fahre Fahrrad und kaufe lokal ein – das fühlt sich richtig an, auch wenn es mehr Zeit kostet.<br>
+                                    <em>Mia, 30 Jahre, Köln</em>
+                                </p>
+                            </div>
+
+                            <div class="comment">
+                                <div class="question-row question" data-question="q23">
+                                    <div class="question-cell number"><strong>23</strong></div>
+                                    <div class="question-cell name"><strong>Tom</strong></div>
+                                    <div class="question-cell options">
+                                        <button class="option enabled" data-value="Ja">Ja</button>
+                                        <button class="option enabled" data-value="Nein">Nein</button>
+                                    </div>
+                                </div>
+                                <p class="comment-text">
+                                    Nachhaltigkeit ist mir egal. Ich will schnell zur Arbeit und nicht über Müll nachdenken. Komfort macht das Leben besser, finde ich.<br>
+                                    <em>Tom, 25 Jahre, München</em>
+                                </p>
+                            </div>
+
+                            <div class="comment">
+                                <div class="question-row question" data-question="q24">
+                                    <div class="question-cell number"><strong>24</strong></div>
+                                    <div class="question-cell name"><strong>Anna</strong></div>
+                                    <div class="question-cell options">
+                                        <button class="option enabled" data-value="Ja">Ja</button>
+                                        <button class="option enabled" data-value="Nein">Nein</button>
+                                    </div>
+                                </div>
+                                <p class="comment-text">
+                                    Ich denke an die Zukunft und versuche, nachhaltig zu leben. Weniger Plastik und mehr Ökostrom sind für mich wichtiger als Bequemlichkeit.<br>
+                                    <em>Anna, 28 Jahre, Leipzig</em>
+                                </p>
+                            </div>
+
+                            <div class="comment">
+                                <div class="question-row question" data-question="q25">
+                                    <div class="question-cell number"><strong>25</strong></div>
+                                    <div class="question-cell name"><strong>Paul</strong></div>
+                                    <div class="question-cell options">
+                                        <button class="option enabled" data-value="Ja">Ja</button>
+                                        <button class="option enabled" data-value="Nein">Nein</button>
+                                    </div>
+                                </div>
+                                <p class="comment-text">
+                                    Komfort ist mir wichtiger. Ich nutze gerne Technologie und denke nicht immer an die Umwelt. Das Leben soll einfach sein.<br>
+                                    <em>Paul, 33 Jahre, Frankfurt</em>
+                                </p>
+                            </div>
+
+                            <div class="comment">
+                                <div class="question-row question" data-question="q26">
+                                    <div class="question-cell number"><strong>26</strong></div>
+                                    <div class="question-cell name"><strong>Lisa</strong></div>
+                                    <div class="question-cell options">
+                                        <button class="option enabled" data-value="Ja">Ja</button>
+                                        <button class="option enabled" data-value="Nein">Nein</button>
+                                    </div>
+                                </div>
+                                <p class="comment-text">
+                                    Ich finde Nachhaltigkeit super. Ich verzichte auf Einwegplastik und fahre mit dem Zug, auch wenn es länger dauert. Die Umwelt ist es wert!<br>
+                                    <em>Lisa, 21 Jahre, Stuttgart</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teil 5 -->
+                <div class="section section-grey-border">
+                    <h2><strong>Teil 5:</strong></h2>
+                    <p><strong>Lesen Sie die Aufgaben 27 bis 30 und den Text dazu.</strong></p>
+                    <p><strong>Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.</strong></p>
+                    <p><strong>Arbeitszeit: 10 Minuten</strong></p>
+                    <div class="reading-text">
+                        <p>Sie planen eine Reise und informieren sich über einen Tag auf dem Food-Festival in Berlin, das sich auf nachhaltige Ernährung konzentriert.</p>
+                        <div class="reading-content">
+                            <h3>Ein Tag auf dem Food-Festival Berlin</h3>
+                            <table class="info-table">
+                                <tr>
+                                    <th>10:00</th>
+                                    <td><strong>Öffnung des Festivals</strong><br>Das Food-Festival öffnet. Besucher können Stände mit veganen und regionalen Lebensmitteln sehen.</td>
+                                </tr>
+                                <tr>
+                                    <th>11:00</th>
+                                    <td><strong>Koch-Workshops</strong><br>Experten zeigen, wie man nachhaltige Gerichte kocht, z. B. mit Zero-Waste-Ideen.</td>
+                                </tr>
+                                <tr>
+                                    <th>13:00</th>
+                                    <td><strong>Mittagspause</strong><br>Es gibt Essen an den Ständen, aber viele Besucher bringen auch eigene Behälter mit.</td>
+                                </tr>
+                                <tr>
+                                    <th>15:00</th>
+                                    <td><strong>Vorträge</strong><br>Referenten sprechen über Themen wie Klimawandel und Ernährung.</td>
+                                </tr>
+                                <tr>
+                                    <th>17:00</th>
+                                    <td><strong>Live-Musik</strong><br>Bands spielen nachhaltige Songs, und Besucher können tanzen.</td>
+                                </tr>
+                                <tr>
+                                    <th>19:00</th>
+                                    <td><strong>Schließung</strong><br>Das Festival endet. Viele machen noch Fotos von den dekorierten Ständen.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="question-header">Wähle die richtige Antwort:</div>
+
+                    <!-- Randomized Questions -->
+                    <div class="question" data-question="q27">
+                        <p>27. Was können Besucher um 11 Uhr machen?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q27-a">a) An Koch-Workshops teilnehmen.</div>
+                            <div class="option enabled" data-value="b" id="q27-b">b) Live-Musik hören.</div>
+                            <div class="option enabled" data-value="c" id="q27-c">c) Das Festival verlassen.</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q28">
+                        <p>28. Wann endet das Festival?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q28-a">a) Um 19 Uhr.</div>
+                            <div class="option enabled" data-value="b" id="q28-b">b) Um 17 Uhr.</div>
+                            <div class="option enabled" data-value="c" id="q28-c">c) Um 15 Uhr.</div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q29">
+                        <p>29. Woher kommt das Essen während der Mittagspause?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q29-a">a) Nur aus Restaurants in der Nähe.</div>
+                            <div class="option enabled" data-value="b" id="q29-b">b) Von einem großen Buffet.</div>
+                            <div class="option enabled" data-value="c" id="q29-c">c) Von den Ständen oder aus eigenen Behältern. </div>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="q30">
+                        <p>30. Was passiert um 15 Uhr?</p>
+                        <div class="options">
+                            <div class="option enabled" data-value="a" id="q30-a">a) Das Festival öffnet.</div>
+                            <div class="option enabled" data-value="b" id="q30-b">b) Besucher essen an den Ständen.</div>
+                            <div class="option enabled" data-value="c" id="q30-c">c) Es gibt Vorträge über Klimawandel.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="submitBtn" class="submit-button">Submit Your Answers</button>
+            </div>
+
+            <div id="results" class="results" style="display: none;">
+                <h2 class="review-heading">Review Your Answers</h2>
+                <div id="reviewContent"></div>
+            </div>
+
+            <div id="progressSection" class="progress-section" style="display: none;">
+                <h2>Your Progress</h2>
+                <div id="progressMessage"></div>
+                <div id="progressScore" class="score"></div>
+                <button id="timeupTryAgainBtn" class="try-again-btn">Try Again</button>
+                <div id="progressSharePrompt">Share your results with friends!</div>
+            </div>
+
+            <div id="scorePopup" class="popup">
+                <div class="popup-content">
+                    <span class="close">×</span>
+                    <h2>Your Score</h2>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <div id="scoreDisplay" class="score"></div>
+                    <div id="scoreMessage"></div>
+                    <div id="completionTime"></div>
+                    <div id="sharePrompt">Screenshot and share progress with your friends!</div>
+                    <button id="viewAnswersBtn" class="popup-button">View My Answers</button>
+                    <button id="shareBtn" class="popup-button">📤 Recommend this site</button>
+                    <button id="tryAgainBtn" class="try-again-btn">Try Again</button>
+                </div>
+            </div>
+
+            <div id="timeupPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close">×</span>
+                    <h2>Time's Up!</h2>
+                    <div class="progress-bar">
+                        <div id="timeupProgressFill" class="progress-fill"></div>
+                    </div>
+                    <div id="timeupProgress"></div>
+                    <div id="timeupMessage"></div>
+                    <div id="timeupSharePrompt">Screenshot and share progress with your friends!</div>
+                    <button id="timeupViewAnswersBtn" class="popup-button">View My Answers</button>
+                    <button id="timeupShareBtn" class="popup-button">📤 Recommend this site</button>
+                    <button id="timeupTryAgainBtn" class="try-again-btn">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'css/exam5.js' %}"></script>
+</body>
+
+{% endblock body %}

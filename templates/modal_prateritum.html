@@ -1,0 +1,545 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Modal Verbs in Präteritum{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a2-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Modal Verbs in Präteritum: The Complete Guide</h1>
+            <p>
+                <strong>Modalverben</strong> (modal verbs) like <em>können</em> (can), <em>müssen</em> (must), and others are super useful in German. In the <strong>Präteritum</strong> (simple past), they help you talk about abilities, obligations, or wishes in the past—like “I could” or “She had to.” This guide explains how to form and use them, with examples and exercises. It’s perfect for understanding modal verbs in the past. let’s get started!
+            </p>
+        </section>
+
+        <!-- What Are Modal Verbs? -->
+        <section id="what-are-modal-verbs">
+            <h2>What Are Modal Verbs?</h2>
+            <p>Modal verbs express ideas like ability (<em>können</em>), necessity (<em>müssen</em>), permission (<em>dürfen</em>), wanting (<em>wollen</em>), liking (<em>mögen</em>), and obligation (<em>sollen</em>). In Präteritum, they describe these ideas in the past, often paired with an infinitive verb at the end of the sentence.</p>
+            <div class="subsection">
+                <h3>Key Features</h3>
+                <ul class="example-list">
+                    <li><strong>Präteritum Form</strong>: Each modal verb has a special past tense form (no *-te* ending like regular verbs).</li>
+                    <li><strong>Sentence Structure</strong>: Modal verb in Präteritum (second position) + infinitive at the end.</li>
+                    <li><strong>Usage</strong>: Common in storytelling, writing, or formal speech (Perfekt is more casual).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- The Six Modal Verbs in Präteritum -->
+        <section id="modal-verbs-prateritum">
+            <h2>The Six Modal Verbs in Präteritum</h2>
+            <p>Here are the six modal verbs with their Präteritum conjugations and meanings in the past.</p>
+            <div class="subsection">
+                <h3>1. <em>Können</em> (to be able to) → <em>konnte</em> (could)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Präteritum Form</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>konnte</td><td>Ich konnte schwimmen. (I could swim.)</td></tr>
+                        <tr><td>du</td><td>konntest</td><td>Du konntest helfen. (You could help.)</td></tr>
+                        <tr><td>er/sie/es</td><td>konnte</td><td>Er konnte das machen. (He could do it.)</td></tr>
+                        <tr><td>wir</td><td>konnten</td><td>Wir konnten spielen. (We could play.)</td></tr>
+                        <tr><td>ihr</td><td>konntet</td><td>Ihr konntet kommen. (You all could come.)</td></tr>
+                        <tr><td>sie/Sie</td><td>konnten</td><td>Sie konnten laufen. (They could run.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. <em>Müssen</em> (to have to) → <em>musste</em> (had to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Präteritum Form</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>musste</td><td>Ich musste arbeiten. (I had to work.)</td></tr>
+                        <tr><td>du</td><td>musstest</td><td>Du musstest gehen. (You had to go.)</td></tr>
+                        <tr><td>er/sie/es</td><td>musste</td><td>Sie musste lernen. (She had to learn.)</td></tr>
+                        <tr><td>wir</td><td>mussten</td><td>Wir mussten warten. (We had to wait.)</td></tr>
+                        <tr><td>ihr</td><td>musstet</td><td>Ihr musstet kochen. (You all had to cook.)</td></tr>
+                        <tr><td>sie/Sie</td><td>mussten</td><td>Sie mussten helfen. (They had to help.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. <em>Dürfen</em> (to be allowed to) → <em>durfte</em> (was allowed to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Präteritum Form</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>durfte</td><td>Ich durfte spielen. (I was allowed to play.)</td></tr>
+                        <tr><td>du</td><td>durftest</td><td>Du durftest bleiben. (You were allowed to stay.)</td></tr>
+                        <tr><td>er/sie/es</td><td>durfte</td><td>Er durfte kommen. (He was allowed to come.)</td></tr>
+                        <tr><td>wir</td><td>durften</td><td>Wir durften tanzen. (We were allowed to dance.)</td></tr>
+                        <tr><td>ihr</td><td>durftet</td><td>Ihr durftet schauen. (You all were allowed to watch.)</td></tr>
+                        <tr><td>sie/Sie</td><td>durften</td><td>Sie durften reisen. (They were allowed to travel.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. <em>Wollen</em> (to want to) → <em>wollte</em> (wanted to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Präteritum Form</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>wollte</td><td>Ich wollte essen. (I wanted to eat.)</td></tr>
+                        <tr><td>du</td><td>wolltest</td><td>Du wolltest lesen. (You wanted to read.)</td></tr>
+                        <tr><td>er/sie/es</td><td>wollte</td><td>Sie wollte singen. (She wanted to sing.)</td></tr>
+                        <tr><td>wir</td><td>wollten</td><td>Wir wollten gehen. (We wanted to go.)</td></tr>
+                        <tr><td>ihr</td><td>wolltet</td><td>Ihr wolltet spielen. (You all wanted to play.)</td></tr>
+                        <tr><td>sie/Sie</td><td>wollten</td><td>Sie wollten lernen. (They wanted to learn.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>5. <em>Mögen</em> (to like to) → <em>mochte</em> (liked to/wanted to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Präteritum Form</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>mochte</td><td>Ich mochte das Buch. (I liked the book.)</td></tr>
+                        <tr><td>du</td><td>mochtest</td><td>Du mochtest den Film. (You liked the movie.)</td></tr>
+                        <tr><td>er/sie/es</td><td>mochte</td><td>Er mochte Fußball. (He liked soccer.)</td></tr>
+                        <tr><td>wir</td><td>mochten</td><td>Wir mochten die Musik. (We liked the music.)</td></tr>
+                        <tr><td>ihr</td><td>mochtet</td><td>Ihr mochtet das Essen. (You all liked the food.)</td></tr>
+                        <tr><td>sie/Sie</td><td>mochten</td><td>Sie mochten die Stadt. (They liked the city.)</td></tr>
+                    </table>
+                </div>
+                <p><strong>Note</strong>: In Präteritum, <em>mochte</em> can mean “liked” or “wanted,” depending on context. With an infinitive, it’s rare—usually it’s standalone.</p>
+            </div>
+            <div class="subsection">
+                <h3>6. <em>Sollen</em> (to be supposed to) → <em>sollte</em> (was supposed to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Präteritum Form</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>sollte</td><td>Ich sollte lernen. (I was supposed to study.)</td></tr>
+                        <tr><td>du</td><td>solltest</td><td>Du solltest kommen. (You were supposed to come.)</td></tr>
+                        <tr><td>er/sie/es</td><td>sollte</td><td>Sie sollte helfen. (She was supposed to help.)</td></tr>
+                        <tr><td>wir</td><td>sollten</td><td>Wir sollten arbeiten. (We were supposed to work.)</td></tr>
+                        <tr><td>ihr</td><td>solltet</td><td>Ihr solltet schlafen. (You all were supposed to sleep.)</td></tr>
+                        <tr><td>sie/Sie</td><td>sollten</td><td>Sie sollten gehen. (They were supposed to go.)</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Using Modal Verbs in Sentences -->
+        <section id="using-modal-verbs">
+            <h2>Sentence Structure</h2>
+            <div class="subsection">
+                <h3>Structure Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Main Clause</strong>: Modal verb in Präteritum (second position) + infinitive at the end.
+                            <ul><li><em>Ich konnte gestern schwimmen.</em> (I could swim yesterday.)</li></ul>
+                        </li>
+                        <li><strong>Questions</strong>: Modal verb first, infinitive last.
+                            <ul><li><em>Konntest du helfen?</em> (Could you help?)</li></ul>
+                        </li>
+                        <li><strong>Negation</strong>: <em>Nicht</em> before the infinitive or after the modal.
+                            <ul><li><em>Ich musste nicht arbeiten.</em> (I didn’t have to work.)</li></ul>
+                        </li>
+                        <li><strong>No Infinitive</strong>: <em>Mögen</em> and sometimes others can stand alone.
+                            <ul><li><em>Ich mochte das.</em> (I liked that—no infinitive.)</li></ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3><em>Können</em> (Could)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich konnte das Buch lesen.</em> (I could read the book.)</li>
+                        <li><em>Du konntest gut tanzen.</em> (You could dance well.)</li>
+                        <li><em>Er konnte nicht kommen.</em> (He couldn’t come.)</li>
+                        <li><em>Wir konnten die Stadt sehen.</em> (We could see the city.)</li>
+                        <li><em>Ihr konntet schneller laufen.</em> (You all could run faster.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Müssen</em> (Had to)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich musste zur Schule gehen.</em> (I had to go to school.)</li>
+                        <li><em>Du musstest das Essen kochen.</em> (You had to cook the food.)</li>
+                        <li><em>Sie musste den Arzt rufen.</em> (She had to call the doctor.)</li>
+                        <li><em>Wir mussten lange warten.</em> (We had to wait a long time.)</li>
+                        <li><em>Sie mussten früh aufstehen.</em> (They had to get up early.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Dürfen</em> (Was Allowed to)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich durfte ins Kino gehen.</em> (I was allowed to go to the cinema.)</li>
+                        <li><em>Du durftest das Spiel spielen.</em> (You were allowed to play the game.)</li>
+                        <li><em>Er durfte nicht rauchen.</em> (He wasn’t allowed to smoke.)</li>
+                        <li><em>Wir durften die Musik hören.</em> (We were allowed to listen to the music.)</li>
+                        <li><em>Ihr durftet zu Hause bleiben.</em> (You all were allowed to stay home.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Wollen</em> (Wanted to)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich wollte ein Eis essen.</em> (I wanted to eat ice cream.)</li>
+                        <li><em>Du wolltest den Film sehen.</em> (You wanted to watch the movie.)</li>
+                        <li><em>Sie wollte nicht kommen.</em> (She didn’t want to come.)</li>
+                        <li><em>Wir wollten im Park spielen.</em> (We wanted to play in the park.)</li>
+                        <li><em>Sie wollten Deutsch lernen.</em> (They wanted to learn German.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Mögen</em> (Liked/Wanted)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich mochte die Suppe.</em> (I liked the soup.)</li>
+                        <li><em>Du mochtest den Hund.</em> (You liked the dog.)</li>
+                        <li><em>Er mochte keine Katzen.</em> (He didn’t like cats.)</li>
+                        <li><em>Wir mochten das Spiel.</em> (We liked the game.)</li>
+                        <li><em>Ihr mochtet die Lehrerin.</em> (You all liked the teacher.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Sollen</em> (Was Supposed to)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich sollte das Buch lesen.</em> (I was supposed to read the book.)</li>
+                        <li><em>Du solltest helfen.</em> (You were supposed to help.)</li>
+                        <li><em>Sie sollte nicht lügen.</em> (She wasn’t supposed to lie.)</li>
+                        <li><em>Wir sollten pünktlich sein.</em> (We were supposed to be on time.)</li>
+                        <li><em>Sie sollten das Fenster schließen.</em> (They were supposed to close the window.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips for Using Modal Verbs -->
+        <section id="tips-using-modal-verbs">
+            <h2>Tips for Modal Verbs in Präteritum</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Memorize Forms</strong>: Chant <em>konnte, musste, durfte, wollte, mochte, sollte</em>—they’re unique!</li>
+                    <li><strong>Infinitive Last</strong>: Always push the second verb to the end—<em>Ich konnte schwimmen.</em></li>
+                    <li><strong>Context</strong>: Präteritum fits stories—<em>Er musste gehen</em> (He had to go—past event).</li>
+                    <li><strong>Mögen Trick</strong>: No infinitive? It’s just “liked”—<em>Ich mochte das.</em></li>
+                    <li><strong>Practice</strong>: Say <em>Ich konnte nicht schlafen</em> when you’re tired—make it real!</li>
+                </ul>
+            </div>
+        </section>
+
+      <!-- Exercises -->
+<section id="practice">
+    <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+    <div class="subsection" id="exercise1">
+        <h3>Exercise 1: Pick the Correct <em>Weil</em> Sentence</h3>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Why are you tired?
+                    <select class="answer-select" data-correct="Ich bin müde, weil ich wenig geschlafen habe.">
+                        <option value="">Select</option>
+                        <option value="Ich bin müde, weil ich wenig habe geschlafen.">Ich bin müde, weil ich wenig habe geschlafen.</option>
+                        <option value="Ich bin müde, weil ich wenig geschlafen habe.">Ich bin müde, weil ich wenig geschlafen habe.</option>
+                        <option value="Ich bin müde, weil ich lange geschlafen habe.">Ich bin müde, weil ich lange geschlafen habe.</option>
+                    </select>
+                </li>
+                <li>Why is she happy?
+                    <select class="answer-select" data-correct="Sie ist glücklich, weil sie einen Preis gewonnen hat.">
+                        <option value="">Select</option>
+                        <option value="Sie ist glücklich, weil sie einen Preis hat gewonnen.">Sie ist glücklich, weil sie einen Preis hat gewonnen.</option>
+                        <option value="Sie ist glücklich, weil sie hat einen Preis gewonnen.">Sie ist glücklich, weil sie hat einen Preis gewonnen.</option>
+                        <option value="Sie ist glücklich, weil sie einen Preis gewonnen hat.">Sie ist glücklich, weil sie einen Preis gewonnen hat.</option>
+                    </select>
+                </li>
+                <li>Why are we staying home?
+                    <select class="answer-select" data-correct="Wir bleiben zu Hause, weil es regnet.">
+                        <option value="">Select</option>
+                        <option value="Wir bleiben zu Hause, weil es regnet ist.">Wir bleiben zu Hause, weil es regnet ist.</option>
+                        <option value="Wir bleiben zu Hause, weil es regnet.">Wir bleiben zu Hause, weil es regnet.</option>
+                        <option value="Wir bleiben zu Hause, weil es ist regnet.">Wir bleiben zu Hause, weil es ist regnet.</option>
+                    </select>
+                </li>
+                <li>Why is he late?
+                    <select class="answer-select" data-correct="Er ist spät, weil er den Bus verpasst hat.">
+                        <option value="">Select</option>
+                        <option value="Er ist spät, weil er den Bus hat verpasst.">Er ist spät, weil er den Bus hat verpasst.</option>
+                        <option value="Er ist spät, weil er den Bus verpasst hat.">Er ist spät, weil er den Bus verpasst hat.</option>
+                        <option value="Er ist spät, weil er hat den Bus verpasst.">Er ist spät, weil er hat den Bus verpasst.</option>
+                    </select>
+                </li>
+                <li>Why are you laughing?
+                    <select class="answer-select" data-correct="Ich lache, weil der Witz lustig ist.">
+                        <option value="">Select</option>
+                        <option value="Ich lache, weil der Witz lustig ist.">Ich lache, weil der Witz lustig ist.</option>
+                        <option value="Ich lache, weil der Witz lustig hat.">Ich lache, weil der Witz lustig hat.</option>
+                        <option value="Ich lache, weil der Witz ist lustig.">Ich lache, weil der Witz ist lustig.</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Ich bin müde, weil ich wenig geschlafen habe.</em></li>
+                    <li><em>Sie ist glücklich, weil sie einen Preis gewonnen hat.</em></li>
+                    <li><em>Wir bleiben zu Hause, weil es regnet.</em></li>
+                    <li><em>Er ist spät, weil er den Bus verpasst hat.</em></li>
+                    <li><em>Ich lache, weil der Witz lustig ist.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise2">
+        <h3>Exercise 2: Choose the Right Word Order</h3>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Ich lerne Deutsch, ___ ich es mag.
+                    <select class="answer-select" data-correct="weil">
+                        <option value="">Select</option>
+                        <option value="weil mag ich es">weil mag ich es</option>
+                        <option value="weil ich mag es">weil ich mag es</option>
+                        <option value="weil">weil</option>
+                    </select>
+                </li>
+                <li>Sie ist müde, ___ sie viel gearbeitet hat.
+                    <select class="answer-select" data-correct="weil">
+                        <option value="">Select</option>
+                        <option value="weil">weil</option>
+                        <option value="weil hat sie viel gearbeitet">weil hat sie viel gearbeitet</option>
+                        <option value="weil sie hat viel gearbeitet">weil sie hat viel gearbeitet</option>
+                    </select>
+                </li>
+                <li>Wir gehen nicht raus, ___ es regnet.
+                    <select class="answer-select" data-correct="weil">
+                        <option value="">Select</option>
+                        <option value="weil es regnet ist">weil es regnet ist</option>
+                        <option value="weil">weil</option>
+                        <option value="weil regnet es">weil regnet es</option>
+                    </select>
+                </li>
+                <li>Er ruft an, ___ er dich vermisst.
+                    <select class="answer-select" data-correct="weil">
+                        <option value="">Select</option>
+                        <option value="weil er dich hat vermisst">weil er dich hat vermisst</option>
+                        <option value="weil vermisst er dich">weil vermisst er dich</option>
+                        <option value="weil">weil</option>
+                    </select>
+                </li>
+                <li>Ich esse jetzt, ___ ich Hunger habe.
+                    <select class="answer-select" data-correct="weil">
+                        <option value="">Select</option>
+                        <option value="weil ich habe Hunger">weil ich habe Hunger</option>
+                        <option value="weil">weil</option>
+                        <option value="weil habe ich Hunger">weil habe ich Hunger</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li>Ich lerne Deutsch, <em>weil</em> ich es mag.</li>
+                    <li>Sie ist müde, <em>weil</em> sie viel gearbeitet hat.</li>
+                    <li>Wir gehen nicht raus, <em>weil</em> es regnet.</li>
+                    <li>Er ruft an, <em>weil</em> er dich vermisst.</li>
+                    <li>Ich esse jetzt, <em>weil</em> ich Hunger habe.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise3">
+        <h3>Exercise 3: Fix the Jumbled Sentence</h3>
+        <p>Here’s a wrong sentence with <em>weil</em>. Rearrange the words to make it correct.</p>
+        <div class="examples">
+            <p><strong>Wrong Sentence</strong>: <em>Ich bin froh, weil habe ich Urlaub.</em><br>
+            <strong>Words</strong>: Ich / bin / froh / , / weil / habe / ich / Urlaub / .<br>
+            <strong>Task</strong>: Put them in the right order.</p>
+            <select class="answer-select" data-correct="Ich bin froh, weil ich Urlaub habe.">
+                <option value="">Select</option>
+                <option value="Ich bin froh, weil ich habe Urlaub.">Ich bin froh, weil ich habe Urlaub.</option>
+                <option value="Ich bin froh, weil habe ich Urlaub.">Ich bin froh, weil habe ich Urlaub.</option>
+                <option value="Ich bin froh, weil ich Urlaub habe.">Ich bin froh, weil ich Urlaub habe.</option>
+            </select>
+            <button class="toggle-btn check-answers">Check Answer</button>
+            <button class="toggle-btn show-answers">Show Answer</button>
+            <div class="hidden answers">
+                <p><strong>Answer:</strong> <em>Ich bin froh, weil ich Urlaub habe.</em><br>
+                <strong>Explanation:</strong> Main clause (<em>Ich bin froh</em>) is fine. In the <em>weil</em> clause, the verb <em>habe</em> must go to the end (<em>weil ich Urlaub habe</em>), not after <em>weil</em> (<em>weil habe ich</em> is wrong).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise4">
+        <h3>Exercise 4: Mixed <em>Weil</em> Story</h3>
+        <p>Fill in with the correct <em>weil</em> clause.</p>
+        <div class="examples">
+            <p>Ich bin heute spät, ___ (1) ich den Bus verpasst habe. Ich lerne viel, ___ (2) ich eine Prüfung habe. Meine Freundin ist froh, ___ (3) sie Urlaub hat. Wir lachen, ___ (4) der Film lustig ist. Er bleibt zu Hause, ___ (5) es regnet.</p>
+            <ol class="example-list">
+                <li><select class="answer-select" data-correct="weil">
+                    <option value="">Select</option>
+                    <option value="weil habe ich den Bus verpasst">weil habe ich den Bus verpasst</option>
+                    <option value="weil">weil</option>
+                    <option value="weil ich den Bus habe verpasst">weil ich den Bus habe verpasst</option>
+                </select></li>
+                <li><select class="answer-select" data-correct="weil">
+                    <option value="">Select</option>
+                    <option value="weil habe ich eine Prüfung">weil habe ich eine Prüfung</option>
+                    <option value="weil ich habe eine Prüfung">weil ich habe eine Prüfung</option>
+                    <option value="weil">weil</option>
+                </select></li>
+                <li><select class="answer-select" data-correct="weil">
+                    <option value="">Select</option>
+                    <option value="weil">weil</option>
+                    <option value="weil sie hat Urlaub">weil sie hat Urlaub</option>
+                    <option value="weil hat sie Urlaub">weil hat sie Urlaub</option>
+                </select></li>
+                <li><select class="answer-select" data-correct="weil">
+                    <option value="">Select</option>
+                    <option value="weil der Film lustig hat">weil der Film lustig hat</option>
+                    <option value="weil">weil</option>
+                    <option value="weil ist der Film lustig">weil ist der Film lustig</option>
+                </select></li>
+                <li><select class="answer-select" data-correct="weil">
+                    <option value="">Select</option>
+                    <option value="weil es ist regnet">weil es ist regnet</option>
+                    <option value="weil regnet es">weil regnet es</option>
+                    <option value="weil">weil</option>
+                </select></li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong><br>
+                Ich bin heute spät, <em>weil</em> ich den Bus verpasst habe. Ich lerne viel, <em>weil</em> ich eine Prüfung habe. Meine Freundin ist froh, <em>weil</em> sie Urlaub hat. Wir lachen, <em>weil</em> der Film lustig ist. Er bleibt zu Hause, <em>weil</em> es regnet.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Tips to Master Modal Verbs -->
+        <section id="tips">
+            <h2>Tips to Master Modal Verbs in Präteritum</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Chant Forms</strong>: Repeat <em>konnte, musste, durfte, wollte, mochte, sollte</em>—make it a rhythm!</li>
+                    <li><strong>Infinitive End</strong>: Practice <em>Ich konnte laufen</em>—push <em>laufen</em> to the back.</li>
+                    <li><strong>Story Time</strong>: Tell a past story—<em>Ich wollte spielen, aber ich musste lernen.</em></li>
+                    <li><strong>Mögen Note</strong>: Use it alone for “liked”—<em>Ich mochte das Essen.</em></li>
+                    <li><strong>Daily Use</strong>: Say <em>Ich konnte nicht schlafen</em> when tired—make it yours!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide gives you everything on modal verbs in Präteritum—forms, examples, and exercises. You’re ready to talk about the past with confidence! Next, you could try modal verbs in Perfekt or mix them with <em>weil</em>—your choice!
+            </p>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br>Verbs in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear verbs in real talk.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free verb exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="welcherdieser.html" class="see-also-rect">Interrogativ- & Demonstrativartikel</a>
+                <a href="partizip2.html" class="see-also-rect">Perfekt & Partizip II</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="weil.html" class="next-btn">Next: Weil (Because) →</a>
+        </div>
+    </main>
+
+   <!-- JavaScript -->
+  <script>
+    // Dark Mode Toggle
+    const modeToggle = document.getElementById('mode-toggle');
+    modeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    });
+
+    // Load dark mode preference
+    if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Toggle Answers
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const answersDiv = button.nextElementSibling;
+            if (button.classList.contains('show-answers')) {
+                answersDiv.classList.toggle('hidden');
+            } else if (button.classList.contains('check-answers')) {
+                const selects = button.parentElement.querySelectorAll('.answer-select');
+                selects.forEach(select => {
+                    const selectedValue = select.value;
+                    const correctValue = select.getAttribute('data-correct');
+                    if (selectedValue === correctValue) {
+                        select.style.backgroundColor = '#d4edda'; // Green for correct
+                    } else {
+                        select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                    }
+                });
+            }
+        });
+    });
+</script>
+</body>
+{% endblock body %}

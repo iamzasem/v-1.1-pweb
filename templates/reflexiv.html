@@ -1,0 +1,579 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Reflexive Pronouns in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/temp-neben.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Reflexive Pronouns in German</h1>
+            <p>
+                A guide to using reflexive pronouns in the accusative and dative cases with reflexive verbs, including examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding Reflexive Pronouns</h2>
+            <div class="subsection">
+                <h3>What Are Reflexive Pronouns?</h3>
+                <p>Reflexive pronouns reflect the action back to the subject, used with reflexive verbs in accusative (direct object) or dative (indirect object) case.</p>
+                <ul class="example-list">
+                    <li><strong>Accusative</strong>: Ich wasche mich. (I wash myself.)</li>
+                    <li><strong>Dative</strong>: Ich wasche mir die Hände. (I wash my hands.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Formation</h2>
+            <div class="subsection">
+                <h3>Accusative vs. Dative</h3>
+                <p>Accusative is for direct actions on the subject; dative is for indirect actions, often with another object.</p>
+                <table>
+                    <tr><th>Person</th><th>Accusative</th><th>Dative</th></tr>
+                    <tr><td>ich</td><td>mich</td><td>mir</td></tr>
+                    <tr><td>du</td><td>dich</td><td>dir</td></tr>
+                    <tr><td>er/sie/es</td><td>sich</td><td>sich</td></tr>
+                    <tr><td>wir</td><td>uns</td><td>uns</td></tr>
+                    <tr><td>ihr</td><td>euch</td><td>euch</td></tr>
+                    <tr><td>sie/Sie</td><td>sich</td><td>sich</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Reflexive Pronouns</h2>
+            <div class="subsection">
+                <h3>Daily Actions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich dusche mich.</em> (I shower myself.) - Accusative</li>
+                        <li><em>Ich trockne mir die Hände.</em> (I dry my hands.) - Dative</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Emotions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Wir freuen uns.</em> (We’re happy.) - Accusative</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Possession</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Du schneidest dir den Finger.</em> (You cut your finger.) - Dative</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of 25 Common Examples</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th><th>Case</th></tr>
+                    <tr><td><em>Ich wasche mich jeden Morgen.</em></td><td>I wash myself every morning.</td><td>Accusative</td></tr>
+                    <tr><td><em>Du setzt dich auf den Stuhl.</em></td><td>You sit down on the chair.</td><td>Accusative</td></tr>
+                    <tr><td><em>Er rasiert sich im Bad.</em></td><td>He shaves himself in the bathroom.</td><td>Accusative</td></tr>
+                    <tr><td><em>Wir beeilen uns, um pünktlich zu sein.</em></td><td>We hurry to be on time.</td><td>Accusative</td></tr>
+                    <tr><td><em>Ihr versteckt euch im Garten.</em></td><td>You all hide in the garden.</td><td>Accusative</td></tr>
+                    <tr><td><em>Sie freut sich über das Geschenk.</em></td><td>She’s happy about the gift.</td><td>Accusative</td></tr>
+                    <tr><td><em>Ich erinnere mich an den Tag.</em></td><td>I remember the day.</td><td>Accusative</td></tr>
+                    <tr><td><em>Du bewegst dich schnell.</em></td><td>You move quickly.</td><td>Accusative</td></tr>
+                    <tr><td><em>Er zieht sich an.</em></td><td>He gets dressed.</td><td>Accusative</td></tr>
+                    <tr><td><em>Wir schämen uns nicht.</em></td><td>We’re not ashamed.</td><td>Accusative</td></tr>
+                    <tr><td><em>Ihr meldet euch an.</em></td><td>You all sign up.</td><td>Accusative</td></tr>
+                    <tr><td><em>Sie sonnt sich am Strand.</em></td><td>She sunbathes on the beach.</td><td>Accusative</td></tr>
+                    <tr><td><em>Ich putze mir die Zähne.</em></td><td>I brush my teeth.</td><td>Dative</td></tr>
+                    <tr><td><em>Du kämmst dir die Haare.</em></td><td>You comb your hair.</td><td>Dative</td></tr>
+                    <tr><td><em>Er wäscht sich die Hände.</em></td><td>He washes his hands.</td><td>Dative</td></tr>
+                    <tr><td><em>Wir kaufen uns ein Auto.</em></td><td>We buy ourselves a car.</td><td>Dative</td></tr>
+                    <tr><td><em>Ihr zieht euch die Jacken an.</em></td><td>You all put on your jackets.</td><td>Dative</td></tr>
+                    <tr><td><em>Sie schneidet sich die Nägel.</em></td><td>She cuts her nails.</td><td>Dative</td></tr>
+                    <tr><td><em>Ich hole mir ein Glas Wasser.</em></td><td>I get myself a glass of water.</td><td>Dative</td></tr>
+                    <tr><td><em>Du machst dir einen Kaffee.</em></td><td>You make yourself a coffee.</td><td>Dative</td></tr>
+                    <tr><td><em>Er cremt sich die Haut ein.</em></td><td>He applies cream to his skin.</td><td>Dative</td></tr>
+                    <tr><td><em>Wir bauen uns ein Haus.</em></td><td>We build ourselves a house.</td><td>Dative</td></tr>
+                    <tr><td><em>Ihr gönnt euch eine Pause.</em></td><td>You all treat yourselves to a break.</td><td>Dative</td></tr>
+                    <tr><td><em>Sie leiht sich ein Buch.</em></td><td>She borrows herself a book.</td><td>Dative</td></tr>
+                    <tr><td><em>Ich stelle mir die Zukunft vor.</em></td><td>I imagine the future.</td><td>Dative</td></tr>
+                </table>
+            </div>
+        </section>
+
+  <!-- Exercises -->
+<section id="practice">
+    <h2>Exercises to Practice Reflexive Pronouns</h2>
+    <div class="subsection" id="exercise1">
+        <h3>Exercise 1: Choose Accusative or Dative Reflexive Pronoun</h3>
+        <p>Select the correct reflexive pronoun.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Ich ___ (mich/mir) auf den Film freue.  
+                    <select class="answer-select" data-correct="Ich freue mich auf den Film.">
+                        <option value="">Select</option>
+                        <option value="Ich freue mich auf den Film.">mich</option>
+                        <option value="Ich freue dir auf den Film.">dir</option>
+                        <option value="Ich freue sich auf den Film.">sich</option>
+                        <option value="Ich freue dich auf den Film.">dich</option>
+                        <option value="Ich freue mir auf den Film.">mir</option>
+                    </select>
+                </li>
+                <li>Du ___ (dich/dir) die Schuhe anziehst.  
+                    <select class="answer-select" data-correct="Du ziehst dir die Schuhe an.">
+                        <option value="">Select</option>
+                        <option value="Du ziehst mich die Schuhe an.">mich</option>
+                        <option value="Du ziehst dich die Schuhe an.">dich</option>
+                        <option value="Du ziehst dir die Schuhe an.">dir</option>
+                        <option value="Du ziehst mir die Schuhe an.">mir</option>
+                        <option value="Du ziehst sich die Schuhe an.">sich</option>
+                    </select>
+                </li>
+                <li>Er ___ (sich/sich) jeden Tag rasiert.  
+                    <select class="answer-select" data-correct="Er rasiert sich jeden Tag.">
+                        <option value="">Select</option>
+                        <option value="Er rasiert mir jeden Tag.">mir</option>
+                        <option value="Er rasiert sich jeden Tag die Haare.">sich (dat)</option>
+                        <option value="Er rasiert mich jeden Tag.">mich</option>
+                        <option value="Er rasiert sich jeden Tag.">sich (acc)</option>
+                        <option value="Er rasiert dir jeden Tag.">dir</option>
+                    </select>
+                </li>
+                <li>Wir ___ (uns/uns) ein Eis kaufen.  
+                    <select class="answer-select" data-correct="Wir kaufen uns ein Eis.">
+                        <option value="">Select</option>
+                        <option value="Wir kaufen dir ein Eis.">dir</option>
+                        <option value="Wir kaufen mich ein Eis.">mich</option>
+                        <option value="Wir kaufen uns ein Eis.">uns (acc)</option>
+                        <option value="Wir kaufen euch ein Eis.">euch</option>
+                        <option value="Wir kaufen uns ein Eis.">uns (dat)</option>
+                    </select>
+                </li>
+                <li>Ihr ___ (euch/euch) im Park versteckt.  
+                    <select class="answer-select" data-correct="Ihr versteckt euch im Park.">
+                        <option value="">Select</option>
+                        <option value="Ihr versteckt uns im Park.">uns</option>
+                        <option value="Ihr versteckt euch die Sachen im Park.">euch (dat)</option>
+                        <option value="Ihr versteckt mir im Park.">mir</option>
+                        <option value="Ihr versteckt sich im Park.">sich</option>
+                        <option value="Ihr versteckt euch im Park.">euch (acc)</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Ich freue mich auf den Film.</em></li>
+                    <li><em>Du ziehst dir die Schuhe an.</em></li>
+                    <li><em>Er rasiert sich jeden Tag.</em></li>
+                    <li><em>Wir kaufen uns ein Eis.</em></li>
+                    <li><em>Ihr versteckt euch im Park.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise2">
+        <h3>Exercise 2: Fill in the Correct Reflexive Pronoun</h3>
+        <p>Choose the appropriate reflexive pronoun.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Sie ___ die Hände wäscht.  
+                    <select class="answer-select" data-correct="Sie wäscht sich die Hände.">
+                        <option value="">Select</option>
+                        <option value="Sie wäscht mir die Hände.">mir</option>
+                        <option value="Sie wäscht sich die Hände.">sich</option>
+                        <option value="Sie wäscht dich die Hände.">dich</option>
+                        <option value="Sie wäscht mich die Hände.">mich</option>
+                        <option value="Sie wäscht dir die Hände.">dir</option>
+                    </select>
+                </li>
+                <li>Ich ___ jeden Morgen dusche.  
+                    <select class="answer-select" data-correct="Ich dusche mich jeden Morgen.">
+                        <option value="">Select</option>
+                        <option value="Ich dusche sich jeden Morgen.">sich</option>
+                        <option value="Ich dusche mir jeden Morgen.">mir</option>
+                        <option value="Ich dusche dich jeden Morgen.">dich</option>
+                        <option value="Ich dusche mich jeden Morgen.">mich</option>
+                        <option value="Ich dusche dir jeden Morgen.">dir</option>
+                    </select>
+                </li>
+                <li>Du ___ ein Geschenk kaufst.  
+                    <select class="answer-select" data-correct="Du kaufst dir ein Geschenk.">
+                        <option value="">Select</option>
+                        <option value="Du kaufst mich ein Geschenk.">mich</option>
+                        <option value="Du kaufst sich ein Geschenk.">sich</option>
+                        <option value="Du kaufst dir ein Geschenk.">dir</option>
+                        <option value="Du kaufst mir ein Geschenk.">mir</option>
+                        <option value="Du kaufst dich ein Geschenk.">dich</option>
+                    </select>
+                </li>
+                <li>Er ___ auf den Stuhl setzt.  
+                    <select class="answer-select" data-correct="Er setzt sich auf den Stuhl.">
+                        <option value="">Select</option>
+                        <option value="Er setzt sich auf den Stuhl.">sich</option>
+                        <option value="Er setzt dir auf den Stuhl.">dir</option>
+                        <option value="Er setzt mich auf den Stuhl.">mich</option>
+                        <option value="Er setzt dich auf den Stuhl.">dich</option>
+                        <option value="Er setzt mir auf den Stuhl.">mir</option>
+                    </select>
+                </li>
+                <li>Wir ___ die Zähne putzen.  
+                    <select class="answer-select" data-correct="Wir putzen uns die Zähne.">
+                        <option value="">Select</option>
+                        <option value="Wir putzen dir die Zähne.">dir</option>
+                        <option value="Wir putzen mich die Zähne.">mich</option>
+                        <option value="Wir putzen euch die Zähne.">euch</option>
+                        <option value="Wir putzen sich die Zähne.">sich</option>
+                        <option value="Wir putzen uns die Zähne.">uns</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Sie wäscht sich die Hände.</em></li>
+                    <li><em>Ich dusche mich jeden Morgen.</em></li>
+                    <li><em>Du kaufst dir ein Geschenk.</em></li>
+                    <li><em>Er setzt sich auf den Stuhl.</em></li>
+                    <li><em>Wir putzen uns die Zähne.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise3">
+        <h3>Exercise 3: Translate</h3>
+        <p>Choose the correct translation with the appropriate reflexive pronoun.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>I wash my face every day.  
+                    <select class="answer-select" data-correct="Ich wasche mir das Gesicht jeden Tag.">
+                        <option value="">Select</option>
+                        <option value="Ich wasche dir das Gesicht jeden Tag.">Ich wasche dir das Gesicht jeden Tag.</option>
+                        <option value="Ich wasche mich das Gesicht jeden Tag.">Ich wasche mich das Gesicht jeden Tag.</option>
+                        <option value="Ich wasche sich das Gesicht jeden Tag.">Ich wasche sich das Gesicht jeden Tag.</option>
+                        <option value="Ich wasche mir das Gesicht jeden Tag.">Ich wasche mir das Gesicht jeden Tag.</option>
+                        <option value="Ich wasche mich jeden Tag das Gesicht.">Ich wasche mich jeden Tag das Gesicht.</option>
+                    </select>
+                </li>
+                <li>She dresses herself quickly.  
+                    <select class="answer-select" data-correct="Sie zieht sich schnell an.">
+                        <option value="">Select</option>
+                        <option value="Sie zieht sich schnell an.">Sie zieht sich schnell an.</option>
+                        <option value="Sie zieht mir schnell an.">Sie zieht mir schnell an.</option>
+                        <option value="Sie zieht dich schnell an.">Sie zieht dich schnell an.</option>
+                        <option value="Sie zieht sich schnell die Kleider an.">Sie zieht sich schnell die Kleider an.</option>
+                        <option value="Sie zieht dir schnell an.">Sie zieht dir schnell an.</option>
+                    </select>
+                </li>
+                <li>You buy yourself a book.  
+                    <select class="answer-select" data-correct="Du kaufst dir ein Buch.">
+                        <option value="">Select</option>
+                        <option value="Du kaufst sich ein Buch.">Du kaufst sich ein Buch.</option>
+                        <option value="Du kaufst mich ein Buch.">Du kaufst mich ein Buch.</option>
+                        <option value="Du kaufst euch ein Buch.">Du kaufst euch ein Buch.</option>
+                        <option value="Du kaufst dich ein Buch.">Du kaufst dich ein Buch.</option>
+                        <option value="Du kaufst dir ein Buch.">Du kaufst dir ein Buch.</option>
+                    </select>
+                </li>
+                <li>We’re happy about the news.  
+                    <select class="answer-select" data-correct="Wir freuen uns über die Nachrichten.">
+                        <option value="">Select</option>
+                        <option value="Wir freuen dich über die Nachrichten.">Wir freuen dich über die Nachrichten.</option>
+                        <option value="Wir freuen euch über die Nachrichten.">Wir freuen euch über die Nachrichten.</option>
+                        <option value="Wir freuen mir über die Nachrichten.">Wir freuen mir über die Nachrichten.</option>
+                        <option value="Wir freuen uns über die Nachrichten.">Wir freuen uns über die Nachrichten.</option>
+                        <option value="Wir freuen dir über die Nachrichten.">Wir freuen dir über die Nachrichten.</option>
+                    </select>
+                </li>
+                <li>He combs his hair every morning.  
+                    <select class="answer-select" data-correct="Er kämmt sich die Haare jeden Morgen.">
+                        <option value="">Select</option>
+                        <option value="Er kämmt mich die Haare jeden Morgen.">Er kämmt mich die Haare jeden Morgen.</option>
+                        <option value="Er kämmt sich die Haare jeden Morgen.">Er kämmt sich die Haare jeden Morgen.</option>
+                        <option value="Er kämmt dir die Haare jeden Morgen.">Er kämmt dir die Haare jeden Morgen.</option>
+                        <option value="Er kämmt mir die Haare jeden Morgen.">Er kämmt mir die Haare jeden Morgen.</option>
+                        <option value="Er kämmt sich jeden Morgen.">Er kämmt sich jeden Morgen.</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Ich wasche mir das Gesicht jeden Tag.</em></li>
+                    <li><em>Sie zieht sich schnell an.</em></li>
+                    <li><em>Du kaufst dir ein Buch.</em></li>
+                    <li><em>Wir freuen uns über die Nachrichten.</em></li>
+                    <li><em>Er kämmt sich die Haare jeden Morgen.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise4">
+        <h3>Exercise 4: Correct the Mistake</h3>
+        <p>Choose the corrected sentence.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li><em>Ich freue mir auf den Tag.</em>  
+                    <select class="answer-select" data-correct="Ich freue mich auf den Tag.">
+                        <option value="">Select</option>
+                        <option value="Ich freue dir auf den Tag.">Ich freue dir auf den Tag.</option>
+                        <option value="Ich freue mich den Tag auf.">Ich freue mich den Tag auf.</option>
+                        <option value="Ich freue sich auf den Tag.">Ich freue sich auf den Tag.</option>
+                        <option value="Ich freue mich auf den Tag.">Ich freue mich auf den Tag.</option>
+                        <option value="Ich freue mir den Tag auf.">Ich freue mir den Tag auf.</option>
+                    </select>
+                </li>
+                <li><em>Du wäschst dich die Hände.</em>  
+                    <select class="answer-select" data-correct="Du wäschst dir die Hände.">
+                        <option value="">Select</option>
+                        <option value="Du wäschst euch die Hände.">Du wäschst euch die Hände.</option>
+                        <option value="Du wäschst dir die Hände.">Du wäschst dir die Hände.</option>
+                        <option value="Du wäschst mich die Hände.">Du wäschst mich die Hände.</option>
+                        <option value="Du wäschst mir die Hände.">Du wäschst mir die Hände.</option>
+                        <option value="Du wäschst sich die Hände.">Du wäschst sich die Hände.</option>
+                    </select>
+                </li>
+                <li><em>Er setzt mir auf den Tisch.</em>  
+                    <select class="answer-select" data-correct="Er setzt sich auf den Tisch.">
+                        <option value="">Select</option>
+                        <option value="Er setzt sich auf den Tisch.">Er setzt sich auf den Tisch.</option>
+                        <option value="Er setzt mich den Tisch auf.">Er setzt mich den Tisch auf.</option>
+                        <option value="Er setzt dir auf den Tisch.">Er setzt dir auf den Tisch.</option>
+                        <option value="Er setzt mich auf den Tisch.">Er setzt mich auf den Tisch.</option>
+                        <option value="Er setzt sich den Tisch auf.">Er setzt sich den Tisch auf.</option>
+                    </select>
+                </li>
+                <li><em>Wir kaufen sich ein Haus.</em>  
+                    <select class="answer-select" data-correct="Wir kaufen uns ein Haus.">
+                        <option value="">Select</option>
+                        <option value="Wir kaufen dir ein Haus.">Wir kaufen dir ein Haus.</option>
+                        <option value="Wir kaufen mich ein Haus.">Wir kaufen mich ein Haus.</option>
+                        <option value="Wir kaufen euch ein Haus.">Wir kaufen euch ein Haus.</option>
+                        <option value="Wir kaufen mich ein Haus.">Wir kaufen mich ein Haus.</option>
+                        <option value="Wir kaufen uns ein Haus.">Wir kaufen uns ein Haus.</option>
+                    </select>
+                </li>
+                <li><em>Ihr zieht euch an die Jacken.</em>  
+                    <select class="answer-select" data-correct="Ihr zieht euch die Jacken an.">
+                        <option value="">Select</option>
+                        <option value="Ihr zieht mir an die Jacken.">Ihr zieht mir an die Jacken.</option>
+                        <option value="Ihr zieht euch die Jacken an.">Ihr zieht euch die Jacken an.</option>
+                        <option value="Ihr zieht dich an die Jacken.">Ihr zieht dich an die Jacken.</option>
+                        <option value="Ihr zieht sich an die Jacken.">Ihr zieht sich an die Jacken.</option>
+                        <option value="Ihr zieht mir an die Jacken.">Ihr zieht mir an die Jacken.</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Ich freue mich auf den Tag.</em></li>
+                    <li><em>Du wäschst dir die Hände.</em></li>
+                    <li><em>Er setzt sich auf den Tisch.</em></li>
+                    <li><em>Wir kaufen uns ein Haus.</em></li>
+                    <li><em>Ihr zieht euch die Jacken an.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise5">
+        <h3>Exercise 5: Mixed Examples</h3>
+        <p>Choose the correct reflexive pronoun and verb form.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Sie ___ jeden Abend die Zähne.  
+                    <select class="answer-select" data-correct="Sie putzt sich jeden Abend die Zähne.">
+                        <option value="">Select</option>
+                        <option value="Sie putzt dir jeden Abend die Zähne.">putzt dir</option>
+                        <option value="Sie putzt mich jeden Abend die Zähne.">putzt mich</option>
+                        <option value="Sie putzt euch jeden Abend die Zähne.">putzt euch</option>
+                        <option value="Sie putzt sich jeden Abend die Zähne.">putzt sich</option>
+                        <option value="Sie putzt mir jeden Abend die Zähne.">putzt mir</option>
+                    </select>
+                </li>
+                <li>Ich ___ auf den Bus.  
+                    <select class="answer-select" data-correct="Ich warte auf den Bus.">
+                        <option value="">Select</option>
+                        <option value="Ich warte dir auf den Bus.">warte dir</option>
+                        <option value="Ich warte auf den Bus.">warte (no reflexive)</option>
+                        <option value="Ich warte mich auf den Bus.">warte mich</option>
+                        <option value="Ich warte mir auf den Bus.">warte mir</option>
+                        <option value="Ich warte sich auf den Bus.">warte sich</option>
+                    </select>
+                    <p><em>Note:</em> Warten isn’t reflexive here; correct answer adjusted.</p>
+                </li>
+                <li>Du ___ ein neues Kleid.  
+                    <select class="answer-select" data-correct="Du kaufst dir ein neues Kleid.">
+                        <option value="">Select</option>
+                        <option value="Du kaufst dir ein neues Kleid.">kaufst dir</option>
+                        <option value="Du kaufst mich ein neues Kleid.">kaufst mich</option>
+                        <option value="Du kaufst euch ein neues Kleid.">kaufst euch</option>
+                        <option value="Du kaufst mir ein neues Kleid.">kaufst mir</option>
+                        <option value="Du kaufst sich ein neues Kleid.">kaufst sich</option>
+                    </select>
+                </li>
+                <li>Wir ___ jeden Tag.  
+                    <select class="answer-select" data-correct="Wir duschen uns jeden Tag.">
+                        <option value="">Select</option>
+                        <option value="Wir duschen euch jeden Tag.">duschen euch</option>
+                        <option value="Wir duschen mir jeden Tag.">duschen mir</option>
+                        <option value="Wir duschen sich jeden Tag.">duschen sich</option>
+                        <option value="Wir duschen uns jeden Tag.">duschen uns</option>
+                        <option value="Wir duschen dich jeden Tag.">duschen dich</option>
+                    </select>
+                </li>
+                <li>Er ___ die Nägel.  
+                    <select class="answer-select" data-correct="Er schneidet sich die Nägel.">
+                        <option value="">Select</option>
+                        <option value="Er schneidet dir die Nägel.">schneidet dir</option>
+                        <option value="Er schneidet mich die Nägel.">schneidet mich</option>
+                        <option value="Er schneidet sich die Nägel.">schneidet sich</option>
+                        <option value="Er schneidet euch die Nägel.">schneidet euch</option>
+                        <option value="Er schneidet mir die Nägel.">schneidet mir</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Sie putzt sich jeden Abend die Zähne.</em></li>
+                    <li><em>Ich warte auf den Bus.</em> (No reflexive needed)</li>
+                    <li><em>Du kaufst dir ein neues Kleid.</em></li>
+                    <li><em>Wir duschen uns jeden Tag.</em></li>
+                    <li><em>Er schneidet sich die Nägel.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Reflexive Pronouns</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb Check</strong>: Learn if the verb takes accusative (sich setzen) or dative (sich die Haare kämmen).</li>
+                    <li><strong>Object Clue</strong>: No direct object = accusative; with a direct object = dative.</li>
+                    <li><strong>Word Order</strong>: Place the reflexive pronoun right after the conjugated verb.</li>
+                    <li><strong>Practice Common Verbs</strong>: Focus on sich freuen, sich waschen, sich kaufen.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on reflexive pronouns.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on reflexive pronouns.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/pronouns/reflexive-pronouns" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="brauchen-zu.html" class="see-also-rect">Nicht/Kein & Nur Brauchen Zu</a>
+                <a href="temp-neben.html" class="see-also-rect">Temporale Nebensätze</a>
+                <a href="plusquam.html" class="see-also-rect">Plusquamperfekt</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="brauchen-zu.html" class="next-btn">Next: Nicht/Kein & Nur Brauchen Zu →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

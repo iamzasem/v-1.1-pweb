@@ -1,0 +1,495 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}N-Deklination{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/konj2.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>N-Deklination (N-Declension)</h1>
+            <p>
+                A guide to 'N-Deklination'—masculine nouns adding '-n' or '-en' in all cases except nominative singular—with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding N-Declension</h2>
+            <div class="subsection">
+                <h3>Definition</h3>
+                <p>'N-Deklination' applies to masculine "weak nouns" that add '-n' or '-en' in accusative, dative, genitive, and plural, but not nominative singular.</p>
+            </div>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>- Nominative singular: Base form.<br>- Other cases/plural: Add '-n' (if ends in '-e') or '-en' (if ends in consonant).<br>- Articles decline normally.</p>
+                <p>Examples: 'Mensch' → 'Menschen', 'Affe' → 'Affen'.</p>
+            </div>
+            <div class="subsection">
+                <h3>Declension Table</h3>
+                <table>
+                    <tr><th>Case</th><th>Singular ('Mensch')</th><th>Singular ('Affe')</th><th>Plural ('Menschen')</th><th>Plural ('Affen')</th></tr>
+                    <tr><td>Nominative</td><td>der Mensch</td><td>der Affe</td><td>die Menschen</td><td>die Affen</td></tr>
+                    <tr><td>Accusative</td><td>den Menschen</td><td>den Affen</td><td>die Menschen</td><td>die Affen</td></tr>
+                    <tr><td>Dative</td><td>dem Menschen</td><td>dem Affen</td><td>den Menschen</td><td>den Affen</td></tr>
+                    <tr><td>Genitive</td><td>des Menschen</td><td>des Affen</td><td>der Menschen</td><td>der Affen</td></tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>- Masculine only.<br>- '-n'/'-en' in all but nominative singular.<br>- Plural matches oblique cases.<br>- Adjectives decline normally.</p>
+            </div>
+            <div class="subsection">
+                <h3>Which Nouns?</h3>
+                <p>1. Living beings: 'Mensch, Affe, Bär.'<br>2. Roles: 'Kollege, Kunde.'<br>3. Specific: 'Name, Glaube.'<br>4. Foreign: 'Student, Herr.'</p>
+            </div>
+            <div class="subsection">
+                <h3>Uses</h3>
+                <p>1. Identification: 'Der Mensch denkt.'<br>2. Description: 'Ein netter Kollege.'<br>3. General: 'Die Affen klettern.'</p>
+            </div>
+        </section>
+
+        <!-- Examples -->
+        <section id="examples">
+            <h2>Examples: N-Declension (25 Total)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <!-- Singular -->
+                    <tr><td><em>Der Mensch liest ein Buch im Park.</em></td><td>The human reads a book in the park.</td></tr>
+                    <tr><td><em>Ich sehe den Menschen auf der Straße.</em></td><td>I see the human on the street.</td></tr>
+                    <tr><td><em>Ich helfe dem Menschen mit seinem Problem.</em></td><td>I help the human with his problem.</td></tr>
+                    <tr><td><em>Das Buch des Menschen ist alt.</em></td><td>The human’s book is old.</td></tr>
+                    <tr><td><em>Ein Affe springt von Baum zu Baum.</em></td><td>A monkey jumps from tree to tree.</td></tr>
+                    <tr><td><em>Ich füttere den Affen im Zoo heute.</em></td><td>I feed the monkey in the zoo today.</td></tr>
+                    <tr><td><em>Mit dem Affen spiele ich oft.</em></td><td>I often play with the monkey.</td></tr>
+                    <tr><td><em>Das Fell des Affen ist braun.</em></td><td>The monkey’s fur is brown.</td></tr>
+                    <tr><td><em>Der Kollege arbeitet jeden Tag hart.</em></td><td>The colleague works hard every day.</td></tr>
+                    <tr><td><em>Ich treffe den Kollegen nach der Arbeit.</em></td><td>I meet the colleague after work.</td></tr>
+                    <tr><td><em>Dem Kollegen gebe ich ein Geschenk.</em></td><td>I give the colleague a gift.</td></tr>
+                    <tr><td><em>Die Idee des Kollegen ist gut.</em></td><td>The colleague’s idea is good.</td></tr>
+                    <tr><td><em>Ein Student lernt in der Bibliothek jetzt.</em></td><td>A student studies in the library now.</td></tr>
+                    <tr><td><em>Ich sehe den Studenten im Flur oft.</em></td><td>I see the student in the hallway often.</td></tr>
+                    <tr><td><em>Mit dem Studenten spreche ich später.</em></td><td>I’ll speak with the student later.</td></tr>
+                    <!-- Plural -->
+                    <tr><td><em>Die Menschen gehen zur Arbeit morgens.</em></td><td>The humans go to work in the morning.</td></tr>
+                    <tr><td><em>Ich sehe die Menschen in der Stadt heute.</em></td><td>I see the humans in the city today.</td></tr>
+                    <tr><td><em>Den Menschen helfe ich gerne immer.</em></td><td>I gladly help the humans always.</td></tr>
+                    <tr><td><em>Die Probleme der Menschen sind groß.</em></td><td>The humans’ problems are big.</td></tr>
+                    <tr><td><em>Die Affen klettern hoch in den Bäumen.</em></td><td>The monkeys climb high in the trees.</td></tr>
+                    <tr><td><em>Ich füttere die Affen jeden Tag gern.</em></td><td>I feed the monkeys every day happily.</td></tr>
+                    <tr><td><em>Den Affen gebe ich Obst zum Essen.</em></td><td>I give the monkeys fruit to eat.</td></tr>
+                    <tr><td><em>Die Farben der Affen sind bunt.</em></td><td>The monkeys’ colors are bright.</td></tr>
+                    <tr><td><em>Die Kollegen treffen sich nach der Arbeit.</em></td><td>The colleagues meet after work.</td></tr>
+                    <tr><td><em>Den Kollegen erzähle ich eine Geschichte.</em></td><td>I tell the colleagues a story.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Identify N-Declension Nouns</h3>
+                <p>Select the 'N-Deklination' noun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Which noun follows 'N-Deklination'?  
+                            <select class="answer-select" data-correct="Mensch">
+                                <option value="">Select</option>
+                                <option value="Tisch">Tisch</option>
+                                <option value="Mensch">Mensch</option>
+                                <option value="Frau">Frau</option>
+                            </select>
+                        </li>
+                        <li>Which is an 'N-Deklination' noun?  
+                            <select class="answer-select" data-correct="Affe">
+                                <option value="">Select</option>
+                                <option value="Auto">Auto</option>
+                                <option value="Affe">Affe</option>
+                                <option value="Katze">Katze</option>
+                            </select>
+                        </li>
+                        <li>Pick the 'N-Deklination' noun:  
+                            <select class="answer-select" data-correct="Kollege">
+                                <option value="">Select</option>
+                                <option value="Hund">Hund</option>
+                                <option value="Kollege">Kollege</option>
+                                <option value="Sonne">Sonne</option>
+                            </select>
+                        </li>
+                        <li>Which noun uses 'N-Deklination'?  
+                            <select class="answer-select" data-correct="Student">
+                                <option value="">Select</option>
+                                <option value="Baum">Baum</option>
+                                <option value="Student">Student</option>
+                                <option value="Stadt">Stadt</option>
+                            </select>
+                        </li>
+                        <li>Identify the 'N-Deklination' noun:  
+                            <select class="answer-select" data-correct="Name">
+                                <option value="">Select</option>
+                                <option value="Name">Name</option>
+                                <option value="Haus">Haus</option>
+                                <option value="Tür">Tür</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Mensch</em></li>
+                            <li><em>Affe</em></li>
+                            <li><em>Kollege</em></li>
+                            <li><em>Student</em></li>
+                            <li><em>Name</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Add the Correct Ending</h3>
+                <p>Choose the correct form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Der Mensch</em> → ___ (dative singular)  
+                            <select class="answer-select" data-correct="dem Menschen">
+                                <option value="">Select</option>
+                                <option value="dem Mensch">dem Mensch</option>
+                                <option value="dem Menschen">dem Menschen</option>
+                                <option value="des Menschen">des Menschen</option>
+                            </select>
+                        </li>
+                        <li><em>Ein Affe</em> → ___ (accusative singular)  
+                            <select class="answer-select" data-correct="einen Affen">
+                                <option value="">Select</option>
+                                <option value="ein Affe">ein Affe</option>
+                                <option value="einen Affen">einen Affen</option>
+                                <option value="einem Affen">einem Affen</option>
+                            </select>
+                        </li>
+                        <li><em>Die Kollegen</em> → ___ (genitive plural)  
+                            <select class="answer-select" data-correct="der Kollegen">
+                                <option value="">Select</option>
+                                <option value="der Kollegen">der Kollegen</option>
+                                <option value="den Kollegen">den Kollegen</option>
+                                <option value="die Kollegen">die Kollegen</option>
+                            </select>
+                        </li>
+                        <li><em>Der Student</em> → ___ (nominative plural)  
+                            <select class="answer-select" data-correct="die Studenten">
+                                <option value="">Select</option>
+                                <option value="die Studenten">die Studenten</option>
+                                <option value="die Student">die Student</option>
+                                <option value="der Studenten">der Studenten</option>
+                            </select>
+                        </li>
+                        <li><em>Ein Name</em> → ___ (dative singular)  
+                            <select class="answer-select" data-correct="einem Namen">
+                                <option value="">Select</option>
+                                <option value="ein Namen">ein Namen</option>
+                                <option value="einem Namen">einem Namen</option>
+                                <option value="einen Namen">einen Namen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>dem Menschen</em></li>
+                            <li><em>einen Affen</em></li>
+                            <li><em>der Kollegen</em></li>
+                            <li><em>die Studenten</em></li>
+                            <li><em>einem Namen</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct translation.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>The monkey climbs the tree.  
+                            <select class="answer-select" data-correct="Der Affe klettert den Baum.">
+                                <option value="">Select</option>
+                                <option value="Der Affe klettert den Baum.">Der Affe klettert den Baum.</option>
+                                <option value="Den Affen klettert der Baum.">Den Affen klettert der Baum.</option>
+                            </select>
+                        </li>
+                        <li>I help the human.  
+                            <select class="answer-select" data-correct="Ich helfe dem Menschen.">
+                                <option value="">Select</option>
+                                <option value="Ich helfe dem Mensch.">Ich helfe dem Mensch.</option>
+                                <option value="Ich helfe dem Menschen.">Ich helfe dem Menschen.</option>
+                            </select>
+                        </li>
+                        <li>The colleagues work here.  
+                            <select class="answer-select" data-correct="Die Kollegen arbeiten hier.">
+                                <option value="">Select</option>
+                                <option value="Die Kollegen arbeiten hier.">Die Kollegen arbeiten hier.</option>
+                                <option value="Die Kollege arbeiten hier.">Die Kollege arbeiten hier.</option>
+                            </select>
+                        </li>
+                        <li>I see the student.  
+                            <select class="answer-select" data-correct="Ich sehe den Studenten.">
+                                <option value="">Select</option>
+                                <option value="Ich sehe den Studenten.">Ich sehe den Studenten.</option>
+                                <option value="Ich sehe der Student.">Ich sehe der Student.</option>
+                            </select>
+                        </li>
+                        <li>The boy’s book is new.  
+                            <select class="answer-select" data-correct="Das Buch des Jungen ist neu.">
+                                <option value="">Select</option>
+                                <option value="Das Buch des Jungen ist neu.">Das Buch des Jungen ist neu.</option>
+                                <option value="Das Buch der Junge ist neu.">Das Buch der Junge ist neu.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der Affe klettert den Baum.</em></li>
+                            <li><em>Ich helfe dem Menschen.</em></li>
+                            <li><em>Die Kollegen arbeiten hier.</em></li>
+                            <li><em>Ich sehe den Studenten.</em></li>
+                            <li><em>Das Buch des Jungen ist neu.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich spreche mit dem Mensch.</em>  
+                            <select class="answer-select" data-correct="Ich spreche mit dem Menschen.">
+                                <option value="">Select</option>
+                                <option value="Ich spreche mit dem Menschen.">Ich spreche mit dem Menschen.</option>
+                                <option value="Ich spreche mit dem Mensch.">Correct as is</option>
+                            </select>
+                        </li>
+                        <li><em>Der Affen springt hoch.</em>  
+                            <select class="answer-select" data-correct="Der Affe springt hoch.">
+                                <option value="">Select</option>
+                                <option value="Der Affe springt hoch.">Der Affe springt hoch.</option>
+                                <option value="Der Affen springt hoch.">Correct as is</option>
+                            </select>
+                        </li>
+                        <li><em>Die Kollege kommen später.</em>  
+                            <select class="answer-select" data-correct="Die Kollegen kommen später.">
+                                <option value="">Select</option>
+                                <option value="Die Kollegen kommen später.">Die Kollegen kommen später.</option>
+                                <option value="Die Kollege kommen später.">Correct as is</option>
+                            </select>
+                        </li>
+                        <li><em>Ich helfe den Student.</em>  
+                            <select class="answer-select" data-correct="Ich helfe den Studenten.">
+                                <option value="">Select</option>
+                                <option value="Ich helfe den Studenten.">Ich helfe den Studenten.</option>
+                                <option value="Ich helfe den Student.">Correct as is</option>
+                            </select>
+                        </li>
+                        <li><em>Das Haus des Namen ist groß.</em>  
+                            <select class="answer-select" data-correct="Das Haus des Namens ist groß.">
+                                <option value="">Select</option>
+                                <option value="Das Haus des Namens ist groß.">Das Haus des Namens ist groß.</option>
+                                <option value="Das Haus des Namen ist groß.">Correct as is</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich spreche mit dem Menschen.</em></li>
+                            <li><em>Der Affe springt hoch.</em></li>
+                            <li><em>Die Kollegen kommen später.</em></li>
+                            <li><em>Ich helfe den Studenten.</em></li>
+                            <li><em>Das Haus des Namens ist groß.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>___ liest ein Buch.</em> (Mensch, nominative singular)  
+                            <select class="answer-select" data-correct="Der Mensch liest ein Buch.">
+                                <option value="">Select</option>
+                                <option value="Der Mensch liest ein Buch.">Der Mensch</option>
+                                <option value="Den Menschen liest ein Buch.">Den Menschen</option>
+                                <option value="Dem Menschen liest ein Buch.">Dem Menschen</option>
+                            </select>
+                        </li>
+                        <li><em>Ich sehe ___.</em> (Affe, accusative singular)  
+                            <select class="answer-select" data-correct="Ich sehe den Affen.">
+                                <option value="">Select</option>
+                                <option value="Ich sehe den Affe.">den Affe</option>
+                                <option value="Ich sehe den Affen.">den Affen</option>
+                                <option value="Ich sehe dem Affen.">dem Affen</option>
+                            </select>
+                        </li>
+                        <li><em>___ arbeiten zusammen.</em> (Kollege, nominative plural)  
+                            <select class="answer-select" data-correct="Die Kollegen arbeiten zusammen.">
+                                <option value="">Select</option>
+                                <option value="Die Kollegen arbeiten zusammen.">Die Kollegen</option>
+                                <option value="Der Kollegen arbeiten zusammen.">Der Kollegen</option>
+                                <option value="Den Kollegen arbeiten zusammen.">Den Kollegen</option>
+                            </select>
+                        </li>
+                        <li><em>Ich spreche mit ___.</em> (Student, dative singular)  
+                            <select class="answer-select" data-correct="Ich spreche mit dem Studenten.">
+                                <option value="">Select</option>
+                                <option value="Ich spreche mit dem Student.">dem Student</option>
+                                <option value="Ich spreche mit dem Studenten.">dem Studenten</option>
+                                <option value="Ich spreche mit den Studenten.">den Studenten</option>
+                            </select>
+                        </li>
+                        <li><em>Die Farbe ___ ist rot.</em> (Bär, genitive singular)  
+                            <select class="answer-select" data-correct="Die Farbe des Bären ist rot.">
+                                <option value="">Select</option>
+                                <option value="Die Farbe des Bärs ist rot.">des Bärs</option>
+                                <option value="Die Farbe des Bären ist rot.">des Bären</option>
+                                <option value="Die Farbe dem Bären ist rot.">dem Bären</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der Mensch liest ein Buch.</em></li>
+                            <li><em>Ich sehe den Affen.</em></li>
+                            <li><em>Die Kollegen arbeiten zusammen.</em></li>
+                            <li><em>Ich spreche mit dem Studenten.</em></li>
+                            <li><em>Die Farbe des Bären ist rot.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master N-Declension</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Spot the Pattern</strong>: Look for '-n'/'-en' in non-nominative singular forms.</li>
+                    <li><strong>Memorize Key Nouns</strong>: Start with 'Mensch, Affe, Kollege, Student'.</li>
+                    <li><strong>Check Gender</strong>: Only masculine nouns use this.</li>
+                    <li><strong>Practice Cases</strong>: Use sentences to test all forms.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on 'N-Deklination'.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on weak nouns.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/declension/n-declension" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples with subtitles.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="parti.html" class="see-also-rect">Partizip als Adjektiv</a>
+                <a href="jedesto.html" class="see-also-rect">Sätze mit "je ... desto ..."</a>
+                <a href="artikelp.html" class="see-also-rect">Artikelwörter als Pronomen</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="parti.html" class="next-btn">Next: Partizip als Adjektiv →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

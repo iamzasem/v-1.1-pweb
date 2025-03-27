@@ -1,0 +1,571 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Verbs with Prepositions in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/verben-praep.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Verbs with Prepositions in German</h1>
+            <p>
+                A guide to German verbs with prepositions (e.g., achten auf, warten auf), including their use in subordinate clauses like worauf wartet man? and phrases like man wartet auf eine Antwort, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>What Are Verbs with Prepositions?</h2>
+            <p>These verbs require a specific preposition and an object in a fixed case (accusative, dative, or genitive) to complete their meaning.</p>
+            <div class="subsection">
+                <h3>Key Points</h3>
+                <ul class="example-list">
+                    <li><strong>Fixed Pairing</strong>: Verb + preposition (e.g., fragen nach).</li>
+                    <li><strong>Case Rules</strong>: Accusative (auf), dative (an), genitive (für).</li>
+                    <li><strong>Subordinate Clauses</strong>: Use question words like worauf (e.g., Worauf wartet man?).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Usage</h2>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Verb + preposition + object, or question word + subject + verb (end) in subordinate clauses.</p>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Verbs with Prepositions</h2>
+            <div class="subsection">
+                <h3>Basic: Daily Actions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich achte auf die Zeit.</em> (I pay attention to the time.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Intermediate: Gratitude and Interests</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Sie dankt für das Geschenk.</em> (She thanks for the gift.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Advanced: Subordinate Clauses</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Worauf wartet man heute?</em> (What is one waiting for today?)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of 25 Common Examples</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <!-- Verbs with Prepositions (10) -->
+                    <tr><td><em>Ich achte auf die Kinder.</em></td><td>I pay attention to the children.</td></tr>
+                    <tr><td><em>Er fragt nach der Uhrzeit.</em></td><td>He asks for the time.</td></tr>
+                    <tr><td><em>Sie dankt für das Essen.</em></td><td>She thanks for the food.</td></tr>
+                    <tr><td><em>Wir arbeiten an der Lösung.</em></td><td>We work on the solution.</td></tr>
+                    <tr><td><em>Ich interessiere mich für Sport.</em></td><td>I’m interested in sports.</td></tr>
+                    <tr><td><em>Er rechnet mit Schnee.</em></td><td>He counts on snow.</td></tr>
+                    <tr><td><em>Sie beginnt mit dem Spiel.</em></td><td>She begins with the game.</td></tr>
+                    <tr><td><em>Ich verlasse mich auf meinen Freund.</em></td><td>I rely on my friend.</td></tr>
+                    <tr><td><em>Er nimmt am Kurs teil.</em></td><td>He participates in the course.</td></tr>
+                    <tr><td><em>Wir danken für die Blumen.</em></td><td>We thank for the flowers.</td></tr>
+                    <!-- Subordinate Clauses (8) -->
+                    <tr><td><em>Worauf wartet man heute?</em></td><td>What is one waiting for today?</td></tr>
+                    <tr><td><em>Ich verstehe, worauf man wartet.</em></td><td>I understand what one is waiting for.</td></tr>
+                    <tr><td><em>Das zeigt, worauf man wartet.</em></td><td>That shows what one is waiting for.</td></tr>
+                    <tr><td><em>Er fragt, worauf man wartet.</em></td><td>He asks what one is waiting for.</td></tr>
+                    <tr><td><em>Sie erklärt, worauf man wartet.</em></td><td>She explains what one is waiting for.</td></tr>
+                    <tr><td><em>Worauf wartete man gestern?</em></td><td>What was one waiting for yesterday?</td></tr>
+                    <tr><td><em>Ich weiß, worauf man wartet.</em></td><td>I know what one is waiting for.</td></tr>
+                    <tr><td><em>Das ist, worauf man wartet.</em></td><td>That’s what one is waiting for.</td></tr>
+                    <!-- Man wartet auf (7) -->
+                    <tr><td><em>Man wartet auf eine Antwort.</em></td><td>One waits for an answer.</td></tr>
+                    <tr><td><em>Man wartet darauf.</em></td><td>One waits for it.</td></tr>
+                    <tr><td><em>Man wartet auf den Bus.</em></td><td>One waits for the bus.</td></tr>
+                    <tr><td><em>Man wartet auf die Sonne.</em></td><td>One waits for the sun.</td></tr>
+                    <tr><td><em>Man wartet auf den Gast.</em></td><td>One waits for the guest.</td></tr>
+                    <tr><td><em>Man wartete auf den Brief.</em></td><td>One waited for the letter.</td></tr>
+                    <tr><td><em>Man wartet auf ein Zeichen.</em></td><td>One waits for a sign.</td></tr>
+                </table>
+            </div>
+        </section>
+
+    <!-- Exercises -->
+<section id="practice">
+    <h2>Exercises to Practice Verbs with Prepositions</h2>
+    <div class="subsection" id="exercise1">
+        <h3>Exercise 1: Verbs with Prepositions</h3>
+        <p>Select the correct verb to complete the sentence.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Ich ___ auf die.gas Details.
+                    <select class="answer-select" data-correct="Ich achte auf die Details.">
+                        <option value="">Select</option>
+                        <option value="Ich arbeite auf die Details.">arbeite</option>
+                        <option value="Ich achte auf die Details.">achte</option>
+                        <option value="Ich interessiere auf die Details.">interessiere</option>
+                        <option value="Ich frage auf die Details.">frage</option>
+                        <option value="Ich danke auf die Details.">danke</option>
+                    </select>
+                </li>
+                <li>Er ___ nach dem Schlüssel.
+                    <select class="answer-select" data-correct="Er fragt nach dem Schlüssel.">
+                        <option value="">Select</option>
+                        <option value="Er achtet nach dem Schlüssel.">achtet</option>
+                        <option value="Er verlässt nach dem Schlüssel.">verlässt</option>
+                        <option value="Er fragt nach dem Schlüssel.">fragt</option>
+                        <option value="Er arbeitet nach dem Schlüssel.">arbeitet</option>
+                        <option value="Er dankt nach dem Schlüssel.">dankt</option>
+                    </select>
+                </li>
+                <li>Sie ___ für die Mühe.
+                    <select class="answer-select" data-correct="Sie dankt für die Mühe.">
+                        <option value="">Select</option>
+                        <option value="Sie beginnt für die Mühe.">beginnt</option>
+                        <option value="Sie wartet für die Mühe.">wartet</option>
+                        <option value="Sie denkt für die Mühe.">denkt</option>
+                        <option value="Sie dankt für die Mühe.">dankt</option>
+                        <option value="Sie achtet für die Mühe.">achtet</option>
+                    </select>
+                </li>
+                <li>Wir ___ an einem Plan.
+                    <select class="answer-select" data-correct="Wir arbeiten an einem Plan.">
+                        <option value="">Select</option>
+                        <option value="Wir rechnen an einem Plan.">rechnen</option>
+                        <option value="Wir fragen an einem Plan.">fragen</option>
+                        <option value="Wir warten an einem Plan.">warten</option>
+                        <option value="Wir arbeiten an einem Plan.">arbeiten</option>
+                        <option value="Wir danken an einem Plan.">danken</option>
+                    </select>
+                </li>
+                <li>Ich ___ mich für Filme.
+                    <select class="answer-select" data-correct="Ich interessiere mich für Filme.">
+                        <option value="">Select</option>
+                        <option value="Ich danke mich für Filme.">danke</option>
+                        <option value="Ich verlasse mich für Filme.">verlasse</option>
+                        <option value="Ich interessiere mich für Filme.">interessiere</option>
+                        <option value="Ich achte mich für Filme.">achte</option>
+                        <option value="Ich frage mich für Filme.">frage</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Ich achte auf die Details.</em></li>
+                    <li><em>Er fragt nach dem Schlüssel.</em></li>
+                    <li><em>Sie dankt für die Mühe.</em></li>
+                    <li><em>Wir arbeiten an einem Plan.</em></li>
+                    <li><em>Ich interessiere mich für Filme.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise2">
+        <h3>Exercise 2: Subordinate Clause "Worauf wartet man?"</h3>
+        <p>Choose the correct word to complete the sentence.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>___ wartet man heute?
+                    <select class="answer-select" data-correct="Worauf wartet man heute?">
+                        <option value="">Select</option>
+                        <option value="Damit wartet man heute?">Damit</option>
+                        <option value="Womit wartet man heute?">Womit</option>
+                        <option value="Wofür wartet man heute?">Wofür</option>
+                        <option value="Darauf wartet man heute?">Darauf</option>
+                        <option value="Worauf wartet man heute?">Worauf</option>
+                    </select>
+                </li>
+                <li>Ich sehe, ___ man wartet.
+                    <select class="answer-select" data-correct="Ich sehe, worauf man wartet.">
+                        <option value="">Select</option>
+                        <option value="Ich sehe, womit man wartet.">womit</option>
+                        <option value="Ich sehe, worauf man wartet.">worauf</option>
+                        <option value="Ich sehe, wofür man wartet.">wofür</option>
+                        <option value="Ich sehe, darauf man wartet.">darauf</option>
+                        <option value="Ich sehe, damit man wartet.">damit</option>
+                    </select>
+                </li>
+                <li>Das erklärt, ___ man wartet.
+                    <select class="answer-select" data-correct="Das erklärt, worauf man wartet.">
+                        <option value="">Select</option>
+                        <option value="Das erklärt, wofür man wartet.">wofür</option>
+                        <option value="Das erklärt, damit man wartet.">damit</option>
+                        <option value="Das erklärt, worauf man wartet.">worauf</option>
+                        <option value="Das erklärt, womit man wartet.">womit</option>
+                        <option value="Das erklärt, darauf man wartet.">darauf</option>
+                    </select>
+                </li>
+                <li>Er weiß, ___ man wartet.
+                    <select class="answer-select" data-correct="Er weiß, worauf man wartet.">
+                        <option value="">Select</option>
+                        <option value="Er weiß, womit man wartet.">womit</option>
+                        <option value="Er weiß, darauf man wartet.">darauf</option>
+                        <option value="Er weiß, damit man wartet.">damit</option>
+                        <option value="Er weiß, worauf man wartet.">worauf</option>
+                        <option value="Er weiß, wofür man wartet.">wofür</option>
+                    </select>
+                </li>
+                <li>Sie fragt, ___ man wartet.
+                    <select class="answer-select" data-correct="Sie fragt, worauf man wartet.">
+                        <option value="">Select</option>
+                        <option value="Sie fragt, womit man wartet.">womit</option>
+                        <option value="Sie fragt, damit man wartet.">damit</option>
+                        <option value="Sie fragt, darauf man wartet.">darauf</option>
+                        <option value="Sie fragt, wofür man wartet.">wofür</option>
+                        <option value="Sie fragt, worauf man wartet.">worauf</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Worauf wartet man heute?</em></li>
+                    <li><em>Ich sehe, worauf man wartet.</em></li>
+                    <li><em>Das erklärt, worauf man wartet.</em></li>
+                    <li><em>Er weiß, worauf man wartet.</em></li>
+                    <li><em>Sie fragt, worauf man wartet.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise3">
+        <h3>Exercise 3: "Man wartet auf eine Antwort"</h3>
+        <p>Choose the correct word to complete the sentence.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Man ___ auf den Freund.
+                    <select class="answer-select" data-correct="Man wartet auf den Freund.">
+                        <option value="">Select</option>
+                        <option value="Man fragt auf den Freund.">fragt</option>
+                        <option value="Man dankt auf den Freund.">dankt</option>
+                        <option value="Man achtet auf den Freund.">achtet</option>
+                        <option value="Man wartet auf den Freund.">wartet</option>
+                        <option value="Man arbeitet auf den Freund.">arbeitet</option>
+                    </select>
+                </li>
+                <li>Man wartet ___.
+                    <select class="answer-select" data-correct="Man wartet darauf.">
+                        <option value="">Select</option>
+                        <option value="Man wartet womit.">womit</option>
+                        <option value="Man wartet dafür.">dafür</option>
+                        <option value="Man wartet darauf.">darauf</option>
+                        <option value="Man wartet worauf.">worauf</option>
+                        <option value="Man wartet daran.">daran</option>
+                    </select>
+                </li>
+                <li>Man ___ auf die Kinder.
+                    <select class="answer-select" data-correct="Man wartet auf die Kinder.">
+                        <option value="">Select</option>
+                        <option value="Man fragt auf die Kinder.">fragt</option>
+                        <option value="Man arbeitet auf die Kinder.">arbeitet</option>
+                        <option value="Man wartet auf die Kinder.">wartet</option>
+                        <option value="Man denkt auf die Kinder.">denkt</option>
+                        <option value="Man dankt auf die Kinder.">dankt</option>
+                    </select>
+                </li>
+                <li>Man wartet auf ___ Nachricht.
+                    <select class="answer-select" data-correct="Man wartet auf eine Nachricht.">
+                        <option value="">Select</option>
+                        <option value="Man wartet auf einem Nachricht.">einem</option>
+                        <option value="Man wartet auf einer Nachricht.">einer</option>
+                        <option value="Man wartet auf eine Nachricht.">eine</option>
+                        <option value="Man wartet auf eines Nachricht.">eines</option>
+                        <option value="Man wartet auf einen Nachricht.">einen</option>
+                    </select>
+                </li>
+                <li>Man ___ auf den Regen.
+                    <select class="answer-select" data-correct="Man wartet auf den Regen.">
+                        <option value="">Select</option>
+                        <option value="Man dankt auf den Regen.">dankt</option>
+                        <option value="Man fragt auf den Regen.">fragt</option>
+                        <option value="Man interessiert auf den Regen.">interessiert</option>
+                        <option value="Man achtet auf den Regen.">achtet</option>
+                        <option value="Man wartet auf den Regen.">wartet</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Man wartet auf den Freund.</em></li>
+                    <li><em>Man wartet darauf.</em></li>
+                    <li><em>Man wartet auf die Kinder.</em></li>
+                    <li><em>Man wartet auf eine Nachricht.</em></li>
+                    <li><em>Man wartet auf den Regen.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise4">
+        <h3>Exercise 4: Mixed Topics</h3>
+        <p>Choose the correct word to complete the sentence.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>Ich ___ auf die Uhr.
+                    <select class="answer-select" data-correct="Ich achte auf die Uhr.">
+                        <option value="">Select</option>
+                        <option value="Ich arbeite auf die Uhr.">arbeite</option>
+                        <option value="Ich interessiere auf die Uhr.">interessiere</option>
+                        <option value="Ich achte auf die Uhr.">achte</option>
+                        <option value="Ich danke auf die Uhr.">danke</option>
+                        <option value="Ich frage auf die Uhr.">frage</option>
+                    </select>
+                </li>
+                <li>___ wartet man heute?
+                    <select class="answer-select" data-correct="Worauf wartet man heute?">
+                        <option value="">Select</option>
+                        <option value="Womit wartet man heute?">Womit</option>
+                        <option value="Worauf wartet man heute?">Worauf</option>
+                        <option value="Damit wartet man heute?">Damit</option>
+                        <option value="Wofür wartet man heute?">Wofür</option>
+                        <option value="Darauf wartet man heute?">Darauf</option>
+                    </select>
+                </li>
+                <li>Man wartet auf ___ Lösung.
+                    <select class="answer-select" data-correct="Man wartet auf eine Lösung.">
+                        <option value="">Select</option>
+                        <option value="Man wartet auf einem Lösung.">einem</option>
+                        <option value="Man wartet auf einer Lösung.">einer</option>
+                        <option value="Man wartet auf einen Lösung.">einen</option>
+                        <option value="Man wartet auf eine Lösung.">eine</option>
+                        <option value="Man wartet auf eines Lösung.">eines</option>
+                    </select>
+                </li>
+                <li>Er ___ für die Unterstützung.
+                    <select class="answer-select" data-correct="Er dankt für die Unterstützung.">
+                        <option value="">Select</option>
+                        <option value="Er achtet für die Unterstützung.">achtet</option>
+                        <option value="Er dankt für die Unterstützung.">dankt</option>
+                        <option value="Er fragt für die Unterstützung.">fragt</option>
+                        <option value="Er arbeitet für die Unterstützung.">arbeitet</option>
+                        <option value="Er wartet für die Unterstützung.">wartet</option>
+                    </select>
+                </li>
+                <li>Ich verstehe, ___ man wartet.
+                    <select class="answer-select" data-correct="Ich verstehe, worauf man wartet.">
+                        <option value="">Select</option>
+                        <option value="Ich verstehe, womit man wartet.">womit</option>
+                        <option value="Ich verstehe, damit man wartet.">damit</option>
+                        <option value="Ich verstehe, wofür man wartet.">wofür</option>
+                        <option value="Ich verstehe, worauf man wartet.">worauf</option>
+                        <option value="Ich verstehe, darauf man wartet.">darauf</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Ich achte auf die Uhr.</em></li>
+                    <li><em>Worauf wartet man heute?</em></li>
+                    <li><em>Man wartet auf eine Lösung.</em></li>
+                    <li><em>Er dankt für die Unterstützung.</em></li>
+                    <li><em>Ich verstehe, worauf man wartet.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection" id="exercise5">
+        <h3>Exercise 5: Translate</h3>
+        <p>Choose the correct translation.</p>
+        <div class="examples">
+            <ol class="example-list">
+                <li>I pay attention to the dog.
+                    <select class="answer-select" data-correct="Ich achte auf den Hund.">
+                        <option value="">Select</option>
+                        <option value="Ich frage nach dem Hund.">Ich frage nach dem Hund.</option>
+                        <option value="Ich interessiere mich für den Hund.">Ich interessiere mich für den Hund.</option>
+                        <option value="Ich achte auf den Hund.">Ich achte auf den Hund.</option>
+                        <option value="Ich arbeite an dem Hund.">Ich arbeite an dem Hund.</option>
+                        <option value="Ich danke für den Hund.">Ich danke für den Hund.</option>
+                    </select>
+                </li>
+                <li>What is one waiting for now?
+                    <select class="answer-select" data-correct="Worauf wartet man jetzt?">
+                        <option value="">Select</option>
+                        <option value="Womit wartet man jetzt?">Womit wartet man jetzt?</option>
+                        <option value="Darauf wartet man jetzt?">Darauf wartet man jetzt?</option>
+                        <option value="Worauf wartet man jetzt?">Worauf wartet man jetzt?</option>
+                        <option value="Damit wartet man jetzt?">Damit wartet man jetzt?</option>
+                        <option value="Wofür wartet man jetzt?">Wofür wartet man jetzt?</option>
+                    </select>
+                </li>
+                <li>One waits for a friend.
+                    <select class="answer-select" data-correct="Man wartet auf einen Freund.">
+                        <option value="">Select</option>
+                        <option value="Man achtet auf einen Freund.">Man achtet auf einen Freund.</option>
+                        <option value="Man arbeitet an einem Freund.">Man arbeitet an einem Freund.</option>
+                        <option value="Man fragt nach einem Freund.">Man fragt nach einem Freund.</option>
+                        <option value="Man wartet auf einen Freund.">Man wartet auf einen Freund.</option>
+                        <option value="Man dankt für einen Freund.">Man dankt für einen Freund.</option>
+                    </select>
+                </li>
+                <li>She knows what one is waiting for.
+                    <select class="answer-select" data-correct="Sie weiß, worauf man wartet.">
+                        <option value="">Select</option>
+                        <option value="Sie weiß, womit man wartet.">Sie weiß, womit man wartet.</option>
+                        <option value="Sie weiß, damit man wartet.">Sie weiß, damit man wartet.</option>
+                        <option value="Sie weiß, worauf man wartet.">Sie weiß, worauf man wartet.</option>
+                        <option value="Sie weiß, darauf man wartet.">Sie weiß, darauf man wartet.</option>
+                        <option value="Sie weiß, wofür man wartet.">Sie weiß, wofür man wartet.</option>
+                    </select>
+                </li>
+                <li>He works on a task.
+                    <select class="answer-select" data-correct="Er arbeitet an einer Aufgabe.">
+                        <option value="">Select</option>
+                        <option value="Er dankt für eine Aufgabe.">Er dankt für eine Aufgabe.</option>
+                        <option value="Er arbeitet an einer Aufgabe.">Er arbeitet an einer Aufgabe.</option>
+                        <option value="Er wartet auf eine Aufgabe.">Er wartet auf eine Aufgabe.</option>
+                        <option value="Er achtet auf eine Aufgabe.">Er achtet auf eine Aufgabe.</option>
+                        <option value="Er fragt nach einer Aufgabe.">Er fragt nach einer Aufgabe.</option>
+                    </select>
+                </li>
+            </ol>
+            <button class="toggle-btn check-answers">Check Answers</button>
+            <button class="toggle-btn show-answers">Show Answers</button>
+            <div class="hidden answers">
+                <p><strong>Answers:</strong></p>
+                <ol>
+                    <li><em>Ich achte auf den Hund.</em></li>
+                    <li><em>Worauf wartet man jetzt?</em></li>
+                    <li><em>Man wartet auf einen Freund.</em></li>
+                    <li><em>Sie weiß, worauf man wartet.</em></li>
+                    <li><em>Er arbeitet an einer Aufgabe.</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Verbs with Prepositions</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Memorize Pairs</strong>: Learn verbs with their prepositions (e.g., achten auf).</li>
+                    <li><strong>Check Cases</strong>: Know if it’s accusative, dative, or genitive.</li>
+                    <li><strong>Use Worauf</strong>: Practice subordinate clauses with question words.</li>
+                    <li><strong>Man + Auf</strong>: Use man for general statements with warten auf.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on verbs with prepositions.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on verbs with prepositions.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/verbs/verbs-with-prepositions" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Real-life examples in context.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="sodass.html" class="see-also-rect">So...dass and Sodass</a>
+                <a href="konj2.html" class="see-also-rect">Konjunktiv II</a>
+                <a href="temp-praep.html" class="see-also-rect">Temporal Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="konj2.html" class="next-btn">Next: Konjunktiv II →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

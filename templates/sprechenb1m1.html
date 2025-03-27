@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German B1 Sprechen Prüfung Model 1{% endblock title %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/sprechenb1m1.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+<body>
+    <main>
+   
+        <div class="container">
+            <div class="header-section">
+                <header>
+                    <h1>Sprechen Prüfung</h1>
+                </header>
+                <div class="exam-title">Deutsch B1 Sprechen Model 1</div>
+                <div class="nav-buttons">
+                    <a href="german.html" class="btn home-btn">Home</a>
+                    <a href="practice_Exam.html" class="btn back-btn">Back</a>
+                </div>
+            </div>
+        </div>
+<!-- Teil 1: Gemeinsam etwas planen -->
+<div class="section" id="teil1">
+    <h2><strong>Teil 1: Gemeinsam etwas planen</strong></h2>
+    <p>Ihre Sprachschule möchte eine eigene Internetseite haben und hat Sie beauftragt, alles dafür zu organisieren. Sie müssen auch ein Team zusammenstellen, um diese Aufgabe zu erledigen.</p>
+    <p>Sprechen Sie über die Punkte unten, machen Sie Vorschläge und reagieren Sie auf die Vorschläge Ihres Gesprächspartners / Ihrer Gesprächspartnerin. Planen und entscheiden Sie gemeinsam, was Sie tun möchten.</p>
+    <div class="clipboard">
+        <div class="clipboard-header">
+            <div class="clip"></div>
+            <h3>Team bilden und Internetseite einrichten</h3>
+        </div>
+        <div class="clipboard-content">
+            <ul>
+                <li>Wer mitmachen?</li>
+                <li>Treffen? (Wie oft? Wo?)</li>
+                <li>Welche Informationen kommen auf die Seite? (über Sprachschule, Sprachenlernen allgemein, …)</li>
+                <li>Werbung aufnehmen?</li>
+                <li>…</li>
+            </ul>
+        </div>
+        <div class="pen"></div>
+    </div>
+    <div class="conversation-section">
+        <h4>Gespräch zwischen Anna und Ben:</h4>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Hallo Ben! Wir sollen eine Internetseite für unsere Sprachschule machen. Wer könnte denn mitmachen?</p>
+        </div>
+        <div class="chat-bubble right">
+            <p><strong>Ben:</strong> Hallo Anna! Ich denke, wir brauchen drei Personen: einen Designer, einen Programmierer und einen Lehrer. Was meinst du?</p>
+        </div>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Hm, drei Personen finde ich zu wenig. Wir brauchen auch einen Marketingexperten, damit die Seite bekannt wird. Ich schlage vor, dass wir ein Team aus fünf Personen machen: zwei Designer, ein Programmierer, ein Marketingexperte und ein Lehrer. Bist du einverstanden?</p>
+        </div>
+        <div class="chat-bubble right">
+            <p><strong>Ben:</strong> Ja, das klingt besser. Fünf Personen sind gut. Ich kenne einen Programmierer, Max, und einen Lehrer, Frau Müller. Du kennst vielleicht Designer?</p>
+        </div>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Ja, ich kenne zwei Designer, Lisa und Tom. Und für den Marketingexperten könnten wir Sara fragen. Okay, jetzt die Treffen: Wie wäre es, wenn wir uns jeden Tag treffen?</p>
+        </div>
+        <div class="chat-bubble right">
+            <p><strong>Ben:</strong> Jeden Tag ist zu viel, finde ich. Wir haben doch auch andere Aufgaben. Ich schlage vor, dass wir uns einmal pro Woche treffen, mittwochs um 15 Uhr in der Sprachschule. Passt dir das?</p>
+        </div>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Mittwochs um 15 Uhr ist okay, aber ich finde, einmal pro Woche ist zu wenig. Wie wäre es mit zweimal pro Woche, mittwochs und freitags? Und in der Sprachschule ist gut.</p>
+        </div>
+        <div class="chat-bubble right">
+            <p><strong>Ben:</strong> Ja, zweimal pro Woche klingt gut. Mittwochs und freitags um 15 Uhr in der Sprachschule passt mir. Jetzt die Inhalte: Ich denke, wir sollten nur die Kurse und Preise auf die Seite setzen. Was meinst du?</p>
+        </div>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Nur Kurse und Preise finde ich zu wenig. Wir sollten auch die Lehrer vorstellen und Erfahrungsberichte von Schülern zeigen. Und vielleicht Tipps zum Sprachenlernen, damit die Seite nützlich ist. Was hältst du davon?</p>
+        </div>
+        <div class="chat-bubble right">
+            <p><strong>Ben:</strong> Das ist eine gute Idee! Also Kurse, Preise, Lehrer, Erfahrungsberichte und Tipps. Ich würde auch ein Kontaktformular vorschlagen, damit die Leute uns erreichen können. Einverstanden?</p>
+        </div>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Ja, ein Kontaktformular ist super! Jetzt der letzte Punkt: Sollen wir Werbung auf der Seite aufnehmen? Ich finde, wir könnten Werbung von Buchverlagen machen.</p>
+        </div>
+        <div class="chat-bubble right">
+            <p><strong>Ben:</strong> Ich bin dagegen. Werbung macht die Seite unprofessionell. Ich schlage vor, dass wir keine Werbung aufnehmen, zumindest am Anfang. Was meinst du?</p>
+        </div>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Okay, du hast recht. Keine Werbung ist besser. Also, unser Plan: Team aus Lisa, Tom, Max, Sara und Frau Müller. Treffen mittwochs und freitags um 15 Uhr in der Sprachschule. Inhalte sind Kurse, Preise, Lehrer, Erfahrungsberichte, Tipps und ein Kontaktformular. Keine Werbung. Stimmt das?</p>
+        </div>
+        <div class="chat-bubble right">
+            <p><strong>Ben:</strong> Ja, das stimmt genau! Wir haben einen guten Plan. Ich freue mich, dass wir uns geeinigt haben. Bis mittwoch, Anna!</p>
+        </div>
+        <div class="chat-bubble left">
+            <p><strong>Anna:</strong> Bis mittwoch, Ben! Tschüss!</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Teil 2: Ein Thema präsentieren -->
+<div class="section" id="teil2">
+    <h2><strong>Teil 2: Ein Thema präsentieren</strong></h2>
+    <p>Sie sollen Ihren Zuhörern ein aktuelles Thema präsentieren. Danach finden Sie hier fünf Folien. Folgen Sie den Anweisungen links und sehen Sie die Schlüsselwörter rechts, um Ihre Präsentation vorzubereiten.</p>
+    <div class="presentation-box">
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 1</h4>
+                <p>„Ich gehe auf die Demo!“</p>
+                <p>Sollte man seinen Protest zeigen, indem man bei einer Demonstration mitmacht?</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>Protest zeigen</li>
+                    <li>Aufmerksamkeit</li>
+                    <li>Umweltdemos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 2</h4>
+                <p>Sollte man seinen Protest zeigen, indem man bei einer Demonstration mitmacht?</p>
+                <p>Meine persönlichen Erfahrungen</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>Klimaschutz-Demo</li>
+                    <li>tolle Erfahrung</li>
+                    <li>zusammen kämpfen</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 3</h4>
+                <p>Sollte man seinen Protest zeigen, indem man bei einer Demonstration mitmacht?</p>
+                <p>Die Rolle von Demonstrationen in meinem Heimatland</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>politische Veränderungen</li>
+                    <li>Wahlen</li>
+                    <li>wichtig</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 4</h4>
+                <p>Sollte man seinen Protest zeigen, indem man bei einer Demonstration mitmacht?</p>
+                <p>Vor- und Nachteile & Meine Meinung</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>Aufmerksamkeit schaffen</li>
+                    <li>Gewalt</li>
+                    <li>friedlich</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 5</h4>
+                <p>Sollte man seinen Protest zeigen, indem man bei einer Demonstration mitmacht?</p>
+                <p>Abschluss & Dank</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>zusammenfassen</li>
+                    <li>friedlich</li>
+                    <li>Danke</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="presentation-answer">
+        <h4>Präsentation:</h4>
+        <p><strong>Vor der Präsentation:</strong> Guten Tag, meine Damen und Herren! Ich heiße Lisa und freue mich, dass ich heute hier bin. Ich möchte über ein wichtiges Thema sprechen, nämlich: „Sollte man seinen Protest zeigen, indem man bei einer Demonstration mitmacht?“ In meiner Präsentation erzähle ich zuerst, warum Demonstrationen wichtig sind, wenn man ein Problem hat. Danach spreche ich über meine Erfahrungen und die Rolle von Demonstrationen in meinem Heimatland Indien. Am Ende erkläre ich die Vor- und Nachteile und sage meine Meinung, weil ich das Thema sehr interessant finde.</p>
+        
+        <p><strong>Folie 1:</strong> Ich finde, man sollte seinen Protest zeigen, wenn man ein Problem hat. Demonstrationen machen auf wichtige Themen aufmerksam, wie zum Beispiel Umweltdemos, die den Klimaschutz zeigen. Deshalb denke ich, dass Demonstrationen eine gute Idee sind, obwohl sie manchmal laut sind.</p>
+        <p><strong>Übergang:</strong> Jetzt möchte ich über meine persönlichen Erfahrungen mit Demonstrationen sprechen.</p>
+        
+        <p><strong>Folie 2:</strong> Ich war letztes Jahr bei einer Klimaschutz-Demo in Berlin, als ich dort gelebt habe. Es war eine tolle Erfahrung, weil viele Menschen zusammen für die Umwelt gekämpft haben. Obwohl es geregnet hat, habe ich mich sehr stark gefühlt.</p>
+        <p><strong>Übergang:</strong> Jetzt erzähle ich Ihnen, wie Demonstrationen in meinem Heimatland Indien sind.</p>
+        
+        <p><strong>Folie 3:</strong> In Indien sind Demonstrationen sehr wichtig, weil sie oft politische Veränderungen gemacht haben. Als ich klein war, haben die Menschen bei Wahlen protestiert, damit es mehr Gerechtigkeit gibt. Wegen dieser Proteste hat die Regierung manchmal zugehört.</p>
+        <p><strong>Übergang:</strong> Jetzt möchte ich über die Vor- und Nachteile von Demonstrationen sprechen und meine Meinung äußern.</p>
+        
+        <p><strong>Folie 4:</strong> Demonstrationen haben Vorteile und Nachteile. <br>
+        <strong>Vorteile:</strong> Erstens schaffen Demonstrationen Aufmerksamkeit, wenn ein Problem groß ist. Zweitens bringen sie Menschen zusammen, die das gleiche Ziel haben. Drittens können sie Politiker beeinflussen, weil sie die Probleme sehen. <br>
+        <strong>Nachteile:</strong> Erstens gibt es manchmal Gewalt, obwohl viele Menschen friedlich sind. Zweitens sind Demonstrationen oft laut, deshalb können sie andere stören. Drittens dauern sie lange, und das ist anstrengend. <br>
+        <strong>Meine Meinung:</strong> Ich finde Demonstrationen gut, wenn sie friedlich sind. Ich mag keine Gewalt, deshalb denke ich, dass Frieden wichtig ist. Trotzdem sind Demonstrationen nützlich, weil sie Veränderungen bringen können.</p>
+        <p><strong>Übergang:</strong> Zum Schluss möchte ich meine Präsentation zusammenfassen und mich bedanken.</p>
+        
+        <p><strong>Folie 5:</strong> Zusammenfassend finde ich, dass Demonstrationen wichtig sind, obwohl sie Nachteile haben. Sie sollten immer friedlich sein, damit die Botschaft klar ist. Vielen Dank, dass Sie mir zugehört haben, und wenn Sie Fragen haben, beantworte ich sie gern!</p>
+    </div>
+</div>
+
+<!-- Teil 3: Über ein Thema sprechen -->
+<div class="section" id="teil3">
+    <h2><strong>Teil 3: Über ein Thema sprechen</strong></h2>
+    <p>Nach Ihrer Präsentation: Reagieren Sie auf die Rückmeldung und Fragen der Prüfer/-innen und des Gesprächspartners / der Gesprächspartnerin.</p>
+    <div class="qa-section">
+        <div class="qa-card">
+            <h4>Rückmeldung und Frage vom Lehrer:</h4>
+            <p><strong>Lehrer:</strong> Vielen Dank für deine Präsentation, Lisa, sie war wirklich sehr interessant! Besonders gut fand ich, dass du über deine Erfahrungen bei der Klimaschutz-Demo gesprochen hast, weil das sehr persönlich war. Denkst du, dass Demonstrationen auch online, zum Beispiel in sozialen Medien, genauso effektiv sein können wie auf der Straße?</p>
+            <div class="qa-answer">
+                <h5>Antwort:</h5>
+                <p>Vielen Dank für Ihre Rückmeldung und die Frage! Ich glaube, dass Online-Demonstrationen nützlich sein können, weil sie viele Menschen erreichen, obwohl sie nicht so stark wirken wie auf der Straße. Deshalb denke ich, dass beide Arten zusammen am besten sind, wenn man Protest zeigen will.</p>
+            </div>
+        </div>
+        <div class="qa-card">
+            <h4>Rückmeldung und Frage vom Freund:</h4>
+            <p><strong>Freund (Mark):</strong> Wow, Lisa, deine Präsentation war echt super, ich habe viel gelernt! Besonders spannend fand ich, dass du gesagt hast, Demonstrationen sollten friedlich sein, weil das sehr wichtig ist. Was würdest du machen, wenn du eine Demo organisieren könntest, um die Leute zu motivieren?</p>
+            <div class="qa-answer">
+                <h5>Antwort:</h5>
+                <p>Danke für deine Rückmeldung und die Frage, Mark! Wenn ich eine Demo organisieren könnte, würde ich Musik und Reden planen, weil das die Leute motiviert, obwohl es viel Arbeit ist. Ich würde auch Plakate machen, damit die Botschaft klar ist.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+    
+    <script src="{% static 'css/sprechenb1m1.js' %}"></script>
+</body>
+
+{% endblock body %}

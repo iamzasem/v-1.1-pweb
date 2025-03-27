@@ -1,0 +1,399 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}B1 Grammar Topics{% endblock title %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/a1-topics.css' %}">
+
+<header>
+    <div class="nav-buttons">
+        <a href="german.html" class="nav-button home-btn" title="Back to Home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <a href="grammar-levels.html" class="nav-button back-btn" title="Go Back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"></path>
+            </svg>
+        </a>
+    </div>
+    <div class="container header-container">
+        <h1>B1 Grammar Topics</h1>
+        <p class="subtitle">Beginner level grammar for novice German learners</p>
+    </div>
+</header>
+
+<main class="container">
+    <h2>Select a Grammar Topic</h2>
+    
+    <div class="topic-grid">
+        <!-- Topic 1 -->
+        <a href="infinitiv-zu.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">1</div>
+                <div class="topic-title">Infinitiv mit zu</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn infinitives with "zu" and their use in German sentences.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 2 -->
+        <a href="lassen.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">2</div>
+                <div class="topic-title">Lassen</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Explore "lassen" in W-frage, Ja-nein Frage, and Normaler Satz.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 3 -->
+        <a href="obwohl.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">3</div>
+                <div class="topic-title">Obwohl</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand "obwohl" and its role in despite clauses.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 4 -->
+        <a href="genitiv.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">4</div>
+                <div class="topic-title">Genitiv</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn the genitive case and its effect on articles and pronouns.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 5 -->
+        <a href="wegen-trotz.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">5</div>
+                <div class="topic-title">Wegen & Trotz</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Explore prepositions "wegen" and "trotz" with genitive.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 6 -->
+        <a href="praeteritum.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">6</div>
+                <div class="topic-title">Präteritum</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn the Präteritum tense for verbs like "haben" and "sein".</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 7 -->
+        <a href="temp-praep.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">7</div>
+                <div class="topic-title">Temporal Preposition</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand temporal prepositions like "vor", "nach", and "während".</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 8 -->
+        <a href="deshalb-darum.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">8</div>
+                <div class="topic-title">Deshalb Darum</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn causal connectors "deshalb", "darum", and "deswegen".</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 9 -->
+        <a href="sodass.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">9</div>
+                <div class="topic-title">Sodass</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Explore the use of "sodass" for result clauses.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 10 -->
+        <a href="konj2.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">10</div>
+                <div class="topic-title">Konjunktiv II</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn Konjunktiv II for hypothetical situations.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 11 -->
+        <a href="pronomen-praep.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">11</div>
+                <div class="topic-title">Pronomen Preposition</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand pronouns with prepositions in German.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+        
+        <!-- Topic 12 -->
+        <a href="verben-praep.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">12</div>
+                <div class="topic-title">Verben mit Preposition</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn verbs with prepositions and their cases.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 13 -->
+        <a href="komp-super.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">13</div>
+                <div class="topic-title">Komparativ Superlativ</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Explore comparative and superlative forms in German.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 14 -->
+        <a href="aus-material.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">14</div>
+                <div class="topic-title">Aus Material</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn expressions for materials with "aus".</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 15 -->
+        <a href="relativ-dativ.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">15</div>
+                <div class="topic-title">Relativsatz Dativ</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand relative clauses in the dative case.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 16 -->
+        <a href="relativ-praep.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">16</div>
+                <div class="topic-title">Relativ Preposition</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn relative clauses with prepositions.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 17 -->
+        <a href="plusquam.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">17</div>
+                <div class="topic-title">Plusquamperfekt</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Explore the past perfect tense in German.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 18 -->
+        <a href="temp-neben.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">18</div>
+                <div class="topic-title">Temporal Nebensatz</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn temporal subordinate clauses.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 19 -->
+        <a href="brauchen-zu.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">19</div>
+                <div class="topic-title">Brauchen zu</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand "brauchen" with "zu" in sentences.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a>
+
+        <!-- Topic 20 -->
+        <a href="reflexiv.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">20</div>
+                <div class="topic-title">Reflexivpronomen</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn reflexive pronouns in German.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 21 -->
+        <a href="konnektoren.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">21</div>
+                <div class="topic-title">Zweitkonnektoren</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Explore connectors like "und" and "oder".</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 22 -->
+        <a href="adj-ohne-art.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">22</div>
+                <div class="topic-title">Adjektiv ohne Artikel</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn adjectives without articles.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 23 -->
+        <a href="passiv.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">23</div>
+                <div class="topic-title">Passivbildung</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand the passive voice in German.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 24 -->
+        <a href="genitiv-praep.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">24</div>
+                <div class="topic-title">Genitiv Preposition</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn prepositions with the genitive case.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 25 -->
+        <a href="artikelpronomen.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">25</div>
+                <div class="topic-title">Artikelpronomen</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Explore article pronouns in German.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 26 -->
+        <a href="relativ-was-wo.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">26</div>
+                <div class="topic-title">Relativpronomen</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn relative pronouns "was" and "wo".</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 27 -->
+        <a href="je-desto.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">27</div>
+                <div class="topic-title">Je Desto</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand "je...desto" constructions.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 28 -->
+        <a href="partizip-adj.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">28</div>
+                <div class="topic-title">Partizip Adjektiv</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Learn participles as adjectives.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+        <!-- Topic 29 -->
+        <a href="n-dekl.html" class="topic-card">
+            <div class="topic-header">
+                <div class="topic-number">29</div>
+                <div class="topic-title">N-Deklination</div>
+            </div>
+            <div class="topic-body">
+                <p class="topic-description">Understand N-declension in German nouns.</p>
+            </div>
+            <div class="topic-footer">View Topic →</div>
+        </a> 
+
+    </div>
+
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.topic-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(15px)';
+            setTimeout(() => {
+                card.style.transition = 'all 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 80);
+        });
+    });
+</script>
+{% endblock body %}

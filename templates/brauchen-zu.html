@@ -1,0 +1,564 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Nicht/Kein and Nur + Brauchen + Zu in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/temp-neben.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Nicht/Kein and Nur + Brauchen + Zu in German</h1>
+            <p>
+                A guide to negation with nicht and kein, and the simplified nur + brauchen + zu construction, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding Nicht/Kein and Nur + Brauchen + Zu</h2>
+            <div class="subsection">
+                <h3>Nicht vs. Kein</h3>
+                <p>Nicht negates verbs, adjectives, or phrases; kein negates nouns as a negative article.</p>
+                <ul class="example-list">
+                    <li><strong>Nicht</strong>: Ich gehe nicht. (I’m not going.)</li>
+                    <li><strong>Kein</strong>: Ich habe kein Geld. (I have no money.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Nur + Brauchen + Zu</h3>
+                <p>A colloquial way to say "only need to," using nur + conjugated brauchen + zu + infinitive.</p>
+                <ul class="example-list">
+                    <li><strong>Example</strong>: Du brauchst nur zu fragen. (You only need to ask.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Formation</h2>
+            <div class="subsection">
+                <h3>Nicht/Kein</h3>
+                <p>Nicht is flexible in position; kein agrees with the noun’s case and gender.</p>
+            </div>
+            <div class="subsection">
+                <h3>Nur + Brauchen + Zu</h3>
+                <p>Subject + nur + brauchen (conjugated) + zu + infinitive verb.</p>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses</h2>
+            <div class="subsection">
+                <h3>Nicht: Actions/Qualities</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich schlafe nicht.</em> (I’m not sleeping.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Kein: Nouns</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich habe keine Zeit.</em> (I have no time.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Nur + Brauchen + Zu: Ease</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Wir brauchen nur zu warten.</em> (We only need to wait.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of Combined Examples</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <tr><td><em>Ich habe kein Problem.</em></td><td>I have no problem.</td></tr>
+                    <tr><td><em>Ich brauche nur zu warten.</em></td><td>I only need to wait.</td></tr>
+                    <tr><td><em>Er liest nicht gern.</em></td><td>He doesn’t like to read.</td></tr>
+                    <tr><td><em>Sie braucht nur zu fragen.</em></td><td>She only needs to ask.</td></tr>
+                    <tr><td><em>Wir haben keine Äpfel.</em></td><td>We have no apples.</td></tr>
+                    <tr><td><em>Du brauchst nur zu kommen.</em></td><td>You only need to come.</td></tr>
+                    <tr><td><em>Das ist nicht schwer.</em></td><td>That’s not hard.</td></tr>
+                    <tr><td><em>Ihr braucht nur zu helfen.</em></td><td>You all only need to help.</td></tr>
+                    <tr><td><em>Ich sehe keinen Hund.</em></td><td>I see no dog.</td></tr>
+                    <tr><td><em>Er braucht nur zu malen.</em></td><td>He only needs to paint.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Nicht or Kein</h3>
+                <p>Choose nicht or the correct form of kein.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich habe ___ Zeit heute.  
+                            <select class="answer-select" data-correct="Ich habe keine Zeit heute.">
+                                <option value="">Select</option>
+                                <option value="Ich habe nicht Zeit heute.">nicht</option>
+                                <option value="Ich habe kein Zeit heute.">kein</option>
+                                <option value="Ich habe keine Zeit heute.">keine</option>
+                                <option value="Ich habe keins Zeit heute.">keins</option>
+                                <option value="Ich habe nichte Zeit heute.">nichte</option>
+                            </select>
+                        </li>
+                        <li>Sie ist ___ glücklich.  
+                            <select class="answer-select" data-correct="Sie ist nicht glücklich.">
+                                <option value="">Select</option>
+                                <option value="Sie ist kein glücklich.">kein</option>
+                                <option value="Sie ist nicht glücklich.">nicht</option>
+                                <option value="Sie ist keine glücklich.">keine</option>
+                                <option value="Sie ist keins glücklich.">keins</option>
+                                <option value="Sie ist nichte glücklich.">nichte</option>
+                            </select>
+                        </li>
+                        <li>Wir sehen ___ Vögel.  
+                            <select class="answer-select" data-correct="Wir sehen keine Vögel.">
+                                <option value="">Select</option>
+                                <option value="Wir sehen nicht Vögel.">nicht</option>
+                                <option value="Wir sehen kein Vögel.">kein</option>
+                                <option value="Wir sehen keine Vögel.">keine</option>
+                                <option value="Wir sehen keins Vögel.">keins</option>
+                                <option value="Wir sehen nichte Vögel.">nichte</option>
+                            </select>
+                        </li>
+                        <li>Er läuft ___ schnell.  
+                            <select class="answer-select" data-correct="Er läuft nicht schnell.">
+                                <option value="">Select</option>
+                                <option value="Er läuft kein schnell.">kein</option>
+                                <option value="Er läuft keine schnell.">keine</option>
+                                <option value="Er läuft keins schnell.">keins</option>
+                                <option value="Er läuft nicht schnell.">nicht</option>
+                                <option value="Er läuft nichte schnell.">nichte</option>
+                            </select>
+                        </li>
+                        <li>Das ist ___ mein Stift.  
+                            <select class="answer-select" data-correct="Das ist nicht mein Stift.">
+                                <option value="">Select</option>
+                                <option value="Das ist keine mein Stift.">keine</option>
+                                <option value="Das ist nicht mein Stift.">nicht</option>
+                                <option value="Das ist kein mein Stift.">kein</option>
+                                <option value="Das ist keins mein Stift.">keins</option>
+                                <option value="Das ist nichte mein Stift.">nichte</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich habe keine Zeit heute.</em></li>
+                            <li><em>Sie ist nicht glücklich.</em></li>
+                            <li><em>Wir sehen keine Vögel.</em></li>
+                            <li><em>Er läuft nicht schnell.</em></li>
+                            <li><em>Das ist nicht mein Stift.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Form Nur + Brauchen + Zu</h3>
+                <p>Choose the correct nur + brauchen + zu construction.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ (rufen), und er kommt.  
+                            <select class="answer-select" data-correct="Ich brauche nur zu rufen, und er kommt.">
+                                <option value="">Select</option>
+                                <option value="Ich brauche nur zu rufen, und er kommt.">brauche nur zu rufen</option>
+                                <option value="Ich brauche nur rufen, und er kommt.">brauche nur rufen</option>
+                                <option value="Ich nur brauche rufen, und er kommt.">nur brauche rufen</option>
+                                <option value="Ich brauche zu nur rufen, und er kommt.">brauche zu nur rufen</option>
+                                <option value="Ich brauche rufen nur, und er kommt.">brauche rufen nur</option>
+                            </select>
+                        </li>
+                        <li>Du ___ (sagen), was du willst.  
+                            <select class="answer-select" data-correct="Du brauchst nur zu sagen, was du willst.">
+                                <option value="">Select</option>
+                                <option value="Du brauchst sagen nur, was du willst.">brauchst sagen nur</option>
+                                <option value="Du brauchst nur sagen, was du willst.">brauchst nur sagen</option>
+                                <option value="Du brauchst nur zu sagen, was du willst.">brauchst nur zu sagen</option>
+                                <option value="Du nur brauchst zu sagen, was du willst.">nur brauchst zu sagen</option>
+                                <option value="Du brauche nur zu sagen, was du willst.">brauche nur zu sagen</option>
+                            </select>
+                        </li>
+                        <li>Er ___ (gehen), um es zu holen.  
+                            <select class="answer-select" data-correct="Er braucht nur zu gehen, um es zu holen.">
+                                <option value="">Select</option>
+                                <option value="Er braucht nur gehen, um es zu holen.">braucht nur gehen</option>
+                                <option value="Er braucht nur zu gehen, um es zu holen.">braucht nur zu gehen</option>
+                                <option value="Er nur braucht zu gehen, um es zu holen.">nur braucht zu gehen</option>
+                                <option value="Er brauche nur zu gehen, um es zu holen.">brauche nur zu gehen</option>
+                                <option value="Er braucht zu nur gehen, um es zu holen.">braucht zu nur gehen</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ (fragen), und sie antwortet.  
+                            <select class="answer-select" data-correct="Wir brauchen nur zu fragen, und sie antwortet.">
+                                <option value="">Select</option>
+                                <option value="Wir brauchen fragen nur, und sie antwortet.">brauchen fragen nur</option>
+                                <option value="Wir brauchen nur fragen, und sie antwortet.">brauchen nur fragen</option>
+                                <option value="Wir brauchen nur zu fragen, und sie antwortet.">brauchen nur zu fragen</option>
+                                <option value="Wir nur brauchen zu fragen, und sie antwortet.">nur brauchen zu fragen</option>
+                                <option value="Wir brauche nur zu fragen, und sie antwortet.">brauche nur zu fragen</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ (schreiben), um zu gewinnen.  
+                            <select class="answer-select" data-correct="Sie braucht nur zu schreiben, um zu gewinnen.">
+                                <option value="">Select</option>
+                                <option value="Sie braucht nur zu schreiben, um zu gewinnen.">braucht nur zu schreiben</option>
+                                <option value="Sie braucht schreiben nur, um zu gewinnen.">braucht schreiben nur</option>
+                                <option value="Sie nur braucht zu schreiben, um zu gewinnen.">nur braucht zu schreiben</option>
+                                <option value="Sie brauche nur zu schreiben, um zu gewinnen.">brauche nur zu schreiben</option>
+                                <option value="Sie braucht nur schreiben, um zu gewinnen.">braucht nur schreiben</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich brauche nur zu rufen, und er kommt.</em></li>
+                            <li><em>Du brauchst nur zu sagen, was du willst.</em></li>
+                            <li><em>Er braucht nur zu gehen, um es zu holen.</em></li>
+                            <li><em>Wir brauchen nur zu fragen, und sie antwortet.</em></li>
+                            <li><em>Sie braucht nur zu schreiben, um zu gewinnen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate (Nicht/Kein)</h3>
+                <p>Choose the correct translation with nicht or kein.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>I don’t have a car.  
+                            <select class="answer-select" data-correct="Ich habe kein Auto.">
+                                <option value="">Select</option>
+                                <option value="Ich habe kein Auto.">Ich habe kein Auto.</option>
+                                <option value="Ich habe nicht Auto.">Ich habe nicht Auto.</option>
+                                <option value="Ich nicht habe ein Auto.">Ich nicht habe ein Auto.</option>
+                                <option value="Ich habe keine Auto.">Ich habe keine Auto.</option>
+                                <option value="Ich kein habe Auto.">Ich kein habe Auto.</option>
+                            </select>
+                        </li>
+                        <li>She isn’t coming today.  
+                            <select class="answer-select" data-correct="Sie kommt nicht heute.">
+                                <option value="">Select</option>
+                                <option value="Sie kommt keine heute.">Sie kommt keine heute.</option>
+                                <option value="Sie nicht kommt heute.">Sie nicht kommt heute.</option>
+                                <option value="Sie kommt nicht heute.">Sie kommt nicht heute.</option>
+                                <option value="Sie kein kommt heute.">Sie kein kommt heute.</option>
+                                <option value="Sie kommt heute nichte.">Sie kommt heute nichte.</option>
+                            </select>
+                        </li>
+                        <li>There are no flowers here.  
+                            <select class="answer-select" data-correct="Es gibt keine Blumen hier.">
+                                <option value="">Select</option>
+                                <option value="Es gibt nicht Blumen hier.">Es gibt nicht Blumen hier.</option>
+                                <option value="Es gibt keine Blumen hier.">Es gibt keine Blumen hier.</option>
+                                <option value="Es gibt kein Blumen hier.">Es gibt kein Blumen hier.</option>
+                                <option value="Hier gibt es nicht Blumen.">Hier gibt es nicht Blumen.</option>
+                                <option value="Es gibt Blumen nicht hier.">Es gibt Blumen nicht hier.</option>
+                            </select>
+                        </li>
+                        <li>He doesn’t eat fast.  
+                            <select class="answer-select" data-correct="Er isst nicht schnell.">
+                                <option value="">Select</option>
+                                <option value="Er isst kein schnell.">Er isst kein schnell.</option>
+                                <option value="Er nicht isst schnell.">Er nicht isst schnell.</option>
+                                <option value="Er isst nicht schnell.">Er isst nicht schnell.</option>
+                                <option value="Er keine isst schnell.">Er keine isst schnell.</option>
+                                <option value="Er isst schnell nichte.">Er isst schnell nichte.</option>
+                            </select>
+                        </li>
+                        <li>We don’t know a teacher.  
+                            <select class="answer-select" data-correct="Wir kennen keinen Lehrer.">
+                                <option value="">Select</option>
+                                <option value="Wir kennen nicht Lehrer.">Wir kennen nicht Lehrer.</option>
+                                <option value="Wir kennen kein Lehrer.">Wir kennen kein Lehrer.</option>
+                                <option value="Wir kennen keine Lehrer.">Wir kennen keine Lehrer.</option>
+                                <option value="Wir kennen keinen Lehrer.">Wir kennen keinen Lehrer.</option>
+                                <option value="Wir nicht kennen Lehrer.">Wir nicht kennen Lehrer.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich habe kein Auto.</em></li>
+                            <li><em>Sie kommt nicht heute.</em></li>
+                            <li><em>Es gibt keine Blumen hier.</em></li>
+                            <li><em>Er isst nicht schnell.</em></li>
+                            <li><em>Wir kennen keinen Lehrer.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Translate (Nur + Brauchen + Zu)</h3>
+                <p>Choose the correct translation with nur + brauchen + zu.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>I only need to call her.  
+                            <select class="answer-select" data-correct="Ich brauche nur sie zu rufen.">
+                                <option value="">Select</option>
+                                <option value="Ich brauche nur rufen sie.">Ich brauche nur rufen sie.</option>
+                                <option value="Ich brauche nur zu rufen sie.">Ich brauche nur zu rufen sie.</option>
+                                <option value="Ich nur brauche zu rufen sie.">Ich nur brauche zu rufen sie.</option>
+                                <option value="Ich brauche nur sie zu rufen.">Ich brauche nur sie zu rufen.</option>
+                                <option value="Ich brauche sie nur rufen.">Ich brauche sie nur rufen.</option>
+                            </select>
+                        </li>
+                        <li>You only need to knock.  
+                            <select class="answer-select" data-correct="Du brauchst nur zu klopfen.">
+                                <option value="">Select</option>
+                                <option value="Du brauchst nur klopfen.">Du brauchst nur klopfen.</option>
+                                <option value="Du brauchst nur zu klopfen.">Du brauchst nur zu klopfen.</option>
+                                <option value="Du nur brauchst klopfen.">Du nur brauchst klopfen.</option>
+                                <option value="Du brauchst klopfen nur.">Du brauchst klopfen nur.</option>
+                                <option value="Du brauche nur zu klopfen.">Du brauche nur zu klopfen.</option>
+                            </select>
+                        </li>
+                        <li>He only needs to wait.  
+                            <select class="answer-select" data-correct="Er braucht nur zu warten.">
+                                <option value="">Select</option>
+                                <option value="Er braucht nur warten.">Er braucht nur warten.</option>
+                                <option value="Er nur braucht zu warten.">Er nur braucht zu warten.</option>
+                                <option value="Er braucht nur zu warten.">Er braucht nur zu warten.</option>
+                                <option value="Er brauche nur warten.">Er brauche nur warten.</option>
+                                <option value="Er braucht warten nur.">Er braucht warten nur.</option>
+                            </select>
+                        </li>
+                        <li>We only need to listen.  
+                            <select class="answer-select" data-correct="Wir brauchen nur zu hören.">
+                                <option value="">Select</option>
+                                <option value="Wir brauchen nur hören.">Wir brauchen nur hören.</option>
+                                <option value="Wir brauchen nur zu hören.">Wir brauchen nur zu hören.</option>
+                                <option value="Wir nur brauchen hören.">Wir nur brauchen hören.</option>
+                                <option value="Wir brauche nur zu hören.">Wir brauche nur zu hören.</option>
+                                <option value="Wir brauchen hören nur.">Wir brauchen hören nur.</option>
+                            </select>
+                        </li>
+                        <li>She only needs to dance.  
+                            <select class="answer-select" data-correct="Sie braucht nur zu tanzen.">
+                                <option value="">Select</option>
+                                <option value="Sie braucht nur tanzen.">Sie braucht nur tanzen.</option>
+                                <option value="Sie brauche nur zu tanzen.">Sie brauche nur zu tanzen.</option>
+                                <option value="Sie braucht nur zu tanzen.">Sie braucht nur zu tanzen.</option>
+                                <option value="Sie nur braucht tanzen.">Sie nur braucht tanzen.</option>
+                                <option value="Sie braucht tanzen nur.">Sie braucht tanzen nur.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich brauche nur sie zu rufen.</em></li>
+                            <li><em>Du brauchst nur zu klopfen.</em></li>
+                            <li><em>Er braucht nur zu warten.</em></li>
+                            <li><em>Wir brauchen nur zu hören.</em></li>
+                            <li><em>Sie braucht nur zu tanzen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed (Nicht/Kein + Nur Brauchen Zu)</h3>
+                <p>Choose the correct option for negation or nur brauchen zu.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ Milch im Haus.  
+                            <select class="answer-select" data-correct="Ich habe keine Milch im Haus.">
+                                <option value="">Select</option>
+                                <option value="Ich habe nicht Milch im Haus.">habe nicht</option>
+                                <option value="Ich habe kein Milch im Haus.">habe kein</option>
+                                <option value="Ich habe keine Milch im Haus.">habe keine</option>
+                                <option value="Ich nicht habe Milch im Haus.">nicht habe</option>
+                                <option value="Ich kein habe Milch im Haus.">kein habe</option>
+                            </select>
+                        </li>
+                        <li>Du ___ nur ___ (lächeln), und alle sind froh.  
+                            <select class="answer-select" data-correct="Du brauchst nur zu lächeln, und alle sind froh.">
+                                <option value="">Select</option>
+                                <option value="Du brauchst lächeln, und alle sind froh.">brauchst / lächeln</option>
+                                <option value="Du brauchst nur zu lächeln, und alle sind froh.">brauchst / zu lächeln</option>
+                                <option value="Du nur brauchst lächeln, und alle sind froh.">nur brauchst / lächeln</option>
+                                <option value="Du brauche nur zu lächeln, und alle sind froh.">brauche / zu lächeln</option>
+                                <option value="Du brauchst nur lächeln, und alle sind froh.">brauchst / nur lächeln</option>
+                            </select>
+                        </li>
+                        <li>Er ___ laut, wenn er spricht.  
+                            <select class="answer-select" data-correct="Er ist nicht laut, wenn er spricht.">
+                                <option value="">Select</option>
+                                <option value="Er ist kein laut, wenn er spricht.">ist kein</option>
+                                <option value="Er ist nicht laut, wenn er spricht.">ist nicht</option>
+                                <option value="Er nicht ist laut, wenn er spricht.">nicht ist</option>
+                                <option value="Er keine ist laut, wenn er spricht.">keine ist</option>
+                                <option value="Er kein ist laut, wenn er spricht.">kein ist</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ nur ___ (fragen), um zu wissen.  
+                            <select class="answer-select" data-correct="Wir brauchen nur zu fragen, um zu wissen.">
+                                <option value="">Select</option>
+                                <option value="Wir brauchen fragen, um zu wissen.">brauchen / fragen</option>
+                                <option value="Wir nur brauchen zu fragen, um zu wissen.">nur brauchen / zu fragen</option>
+                                <option value="Wir brauchen nur zu fragen, um zu wissen.">brauchen / zu fragen</option>
+                                <option value="Wir brauche nur zu fragen, um zu wissen.">brauche / zu fragen</option>
+                                <option value="Wir brauchen nur fragen, um zu wissen.">brauchen / nur fragen</option>
+                            </select>
+                        </li>
+                        <li>Es gibt ___ Bäume im Garten.  
+                            <select class="answer-select" data-correct="Es gibt keine Bäume im Garten.">
+                                <option value="">Select</option>
+                                <option value="Es gibt nicht Bäume im Garten.">nicht</option>
+                                <option value="Es gibt kein Bäume im Garten.">kein</option>
+                                <option value="Es gibt keine Bäume im Garten.">keine</option>
+                                <option value="Es gibt keins Bäume im Garten.">keins</option>
+                                <option value="Es gibt nichte Bäume im Garten.">nichte</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich habe keine Milch im Haus.</em></li>
+                            <li><em>Du brauchst nur zu lächeln, und alle sind froh.</em></li>
+                            <li><em>Er ist nicht laut, wenn er spricht.</em></li>
+                            <li><em>Wir brauchen nur zu fragen, um zu wissen.</em></li>
+                            <li><em>Es gibt keine Bäume im Garten.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Nicht/Kein and Nur + Brauchen + Zu</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Nicht vs. Kein</strong>: Use nicht for verbs/adjectives, kein for nouns.</li>
+                    <li><strong>Kein Agreement</strong>: Match kein to the noun’s gender and case.</li>
+                    <li><strong>Nur Position</strong>: Place nur right before brauchen.</li>
+                    <li><strong>Zu Usage</strong>: Always include zu before the infinitive with brauchen.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on negation and modals.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on nicht/kein and brauchen.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/negation" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="konj2.html" class="see-also-rect">Konjunktiv II</a>
+                <a href="temp-neben.html" class="see-also-rect">Temporale Nebensätze</a>
+                <a href="plusquam.html" class="see-also-rect">Plusquamperfekt</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="temp-neben.html" class="next-btn">Next: Temporale Nebensätze →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

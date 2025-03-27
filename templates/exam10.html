@@ -1,0 +1,680 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German B1 Lesen Prüfung Model 10{% endblock title %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/exam1.css' %}">
+
+<body>
+    <div class="timer-container">
+        <div class="timer-toggle">
+            <div class="toggle-wrapper">
+                <span class="toggle-icon" data-state="open">👁️</span>
+                <span class="green-dot"></span>
+            </div>
+            <div class="separator"></div>
+            <span id="timer" class="timer">65:00</span>
+        </div>
+        <div class="timer-controls">
+            <button id="pauseBtn" class="timer-control">⏸️</button>
+            <button id="restartBtn" class="timer-control">🔄</button>
+        </div>
+    </div> <!-- Closing the timer-controls div -->
+    <main>
+        <div class="container">
+            <div class="header-section">
+                <div class="nav-buttons">
+                    <a href="german.html" class="nav-button">🏠</a>
+                    <a href="practice_Exam.html" class="nav-button">⬅️</a>
+                </div>
+                <header>
+                    <h1>Lesen Prüfung</h1>
+                </header>
+                <div class="exam-title">Deutsch B1 Lesen Prüfung Model 10</div>
+                <button id="startBtn" class="start-button">Begin Exam</button>
+                <div id="timeTaken" class="time-taken" style="display: none;"></div>
+            </div>
+
+            <div id="examContent">
+<!-- Teil 1 -->
+<div class="section">
+    <h2><strong>Teil 1:</strong></h2>
+    <p><strong>Lesen Sie den Text und die Aufgaben 1 bis 6 dazu.</strong></p>
+    <p><strong>Wählen Sie: Sind die Aussagen richtig oder falsch?</strong></p>
+    <p><strong>Arbeitszeit: 12 Minuten</strong></p>
+    <div class="reading-text">
+        <h3>Bishnu Neupanes Blog – Meine Forschung zu Nanopartikeln</h3>
+        <p>Bishnu Neupane</p>
+        <p>Hallo, liebe Leser,</p>
+        <p>ich bin Bishnu Neupane, 35 Jahre alt, und arbeite als Physikdozent am Damak Multiple Campus in Jhapa, Nepal. Ich habe meinen PhD über Nanopartikel an der Tribhuvan University gemacht. Heute möchte ich euch von meiner Forschung und den Problemen erzählen, die ich dabei hatte.</p>
+        <p>Ich habe vor einigen Jahren mit meiner Forschung begonnen. Nanopartikel sind sehr kleine Teilchen, die in der Medizin oder Technologie genutzt werden können, zum Beispiel um Krankheiten wie Krebs zu behandeln. Aber meine Arbeit war nicht einfach. Eines Tages hatte ich ein großes Problem: Unser Labor hatte nicht genug moderne Geräte. Ich brauchte ein spezielles Mikroskop, um die Nanopartikel zu sehen, aber das war sehr teuer, und wir hatten es nicht.</p>
+        <p>Ein anderes Mal habe ich mit meinem Professor über die Finanzierung gesprochen. Die Regierung gab wenig Geld für solche Forschungen, und das machte meine Arbeit schwer. Ich hatte auch nicht genug Mitarbeiter, die mir helfen konnten. Später las ich einen Artikel über Nanopartikel, der in Indien veröffentlicht wurde. Dort hatten Forscher bessere Geräte, und ich war ein bisschen neidisch. Ich träumte davon, eines Tages in einem besseren Labor zu arbeiten, vielleicht sogar in Indien.</p>
+        <p>Einmal nahm ich an einer kleinen Konferenz in Kathmandu teil. Dort traf ich andere Wissenschaftler, die ähnliche Probleme hatten. Viele sagten, dass es in Nepal schwierig ist, solche Forschung zu machen, weil es wenig Unterstützung gibt. Trotz der Probleme gab ich nicht auf. Meine Familie unterstützte mich sehr, und mein Bruder sagte, dass ich hart arbeiten soll, um erfolgreich zu sein. Ich habe meine Forschung inzwischen beendet, aber es war ein langer Weg. Was denkt ihr? Schreibt mir eure Meinung in die Kommentare!</p>
+        <p>Liebe Grüße,</p>
+        <p>Bishnu Neupane</p>
+    </div>
+
+    <!-- Randomized Questions -->
+    <div class="question" data-question="q1">
+        <p>1. Bishnu Neupane hat in Indien bessere Geräte für seine Forschung gesehen.</p>
+        <div class="options">
+            <div class="option enabled" data-value="richtig">Richtig</div>
+            <div class="option enabled" data-value="falsch">Falsch</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q2">
+        <p>2. Bishnu hat an der Konferenz in Kathmandu erfahren, dass es in Nepal leicht ist, solche Forschung zu machen.</p>
+        <div class="options">
+            <div class="option enabled" data-value="richtig">Richtig</div>
+            <div class="option enabled" data-value="falsch">Falsch</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q3">
+        <p>3. Bishnu hat mit seinem Professor über die Probleme mit den Geräten gesprochen.</p>
+        <div class="options">
+            <div class="option enabled" data-value="richtig">Richtig</div>
+            <div class="option enabled" data-value="falsch">Falsch</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q4">
+        <p>4. Bishnu hat seine Forschung noch nicht beendet.</p>
+        <div class="options">
+            <div class="option enabled" data-value="richtig">Richtig</div>
+            <div class="option enabled" data-value="falsch">Falsch</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q5">
+        <p>5. Bishnu träumte davon, in einem besseren Labor in Nepal zu arbeiten.</p>
+        <div class="options">
+            <div class="option enabled" data-value="richtig">Richtig</div>
+            <div class="option enabled" data-value="falsch">Falsch</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q6">
+        <p>6. Bishnu hat genug Geld von der Regierung für seine Forschung bekommen.</p>
+        <div class="options">
+            <div class="option enabled" data-value="richtig">Richtig</div>
+            <div class="option enabled" data-value="falsch">Falsch</div>
+        </div>
+    </div>
+</div>
+ <!-- Teil 2 -->
+<div class="section">
+    <h2><strong>Teil 2:</strong></h2>
+    <p><strong>Lesen Sie den Text aus der Presse und die Aufgaben 7 bis 9 dazu.</strong></p>
+    <p><strong>Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.</strong></p>
+    <p><strong>Arbeitszeit: 20 Minuten</strong></p>
+    <div class="reading-text">
+        <h3>Freelancer: Freiheit und Herausforderungen</h3>
+        <p>Freelancer sind in vielen Ländern immer beliebter geworden, weil sie ihre Arbeit frei gestalten können. Sie arbeiten oft von zu Hause aus und übernehmen Projekte in Bereichen wie Design, Programmierung oder Schreiben. Diese Freiheit erlaubt es ihnen, ihre Arbeitszeiten selbst zu bestimmen und an verschiedenen Projekten gleichzeitig zu arbeiten. Viele schätzen auch die Möglichkeit, mit Kunden aus der ganzen Welt zusammenzuarbeiten, was ihren Horizont erweitert. Doch es gibt auch Probleme: Freelancer haben oft kein festes Einkommen, und die Suche nach neuen Aufträgen kann viel Zeit kosten. Außerdem müssen sie sich selbst um Steuern, Versicherungen und Altersvorsorge kümmern, was kompliziert sein kann. Manche Freelancer fühlen sich auch isoliert, weil sie nicht in einem Team arbeiten. Trotz dieser Herausforderungen wächst die Zahl der Freelancer weiter, da viele die Vorteile der Unabhängigkeit schätzen.</p>
+    </div>
+
+    <div class="question-header">Wähle die richtige Antwort:</div>
+
+    <!-- Randomized Questions -->
+    <div class="question" data-question="q7">
+        <p>7. Warum entscheiden sich viele Menschen dafür, Freelancer zu werden?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q7-a">a) Weil sie ein festes Einkommen haben.</div>
+            <div class="option enabled" data-value="b" id="q7-b">b) Weil sie ihre Arbeitszeiten selbst bestimmen können.</div>
+            <div class="option enabled" data-value="c" id="q7-c">c) Weil sie in einem Team arbeiten möchten.</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q8">
+        <p>8. Was ist ein Problem für Freelancer?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q8-a">a) Sie können nicht von zu Hause aus arbeiten.</div>
+            <div class="option enabled" data-value="b" id="q8-b">b) Sie müssen sich selbst um Steuern kümmern.</div>
+            <div class="option enabled" data-value="c" id="q8-c">c) Sie haben keine Kunden aus anderen Ländern.</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q9">
+        <p>9. Was schätzen Freelancer an ihrer Arbeit?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q9-a">a) Die Möglichkeit, in einem großen Team zu arbeiten.</div>
+            <div class="option enabled" data-value="b" id="q9-b">b) Die Möglichkeit, mit Kunden aus der ganzen Welt zusammenzuarbeiten.</div>
+            <div class="option enabled" data-value="c" id="q9-c">c) Die einfache Suche nach neuen Aufträgen.</div>
+        </div>
+    </div>
+
+    <p><strong>Lesen Sie den Text aus der Presse und die Aufgaben 10 bis 12 dazu.</strong></p>
+    <p><strong>Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.</strong></p>
+    <div class="reading-text">
+        <h3>DevOps: Die Zukunft der Softwareentwicklung</h3>
+        <p>DevOps ist ein Ansatz in der Softwareentwicklung, der in den letzten Jahren immer wichtiger geworden ist. Er bringt Entwickler und IT-Teams zusammen, um Software schneller und effizienter zu erstellen. Durch DevOps können Firmen ihre Produkte, wie Apps oder Websites, schneller auf den Markt bringen, weil die Teams besser zusammenarbeiten. Viele Unternehmen nutzen DevOps, um Fehler in der Software schneller zu finden und zu beheben. Doch es gibt auch Herausforderungen: Die Einführung von DevOps erfordert oft neue Werkzeuge und Schulungen, was teuer und zeitaufwendig sein kann. Außerdem müssen Teams ihre Arbeitsweise ändern, was nicht immer einfach ist, besonders in großen Firmen. Trotz dieser Schwierigkeiten schätzen viele Unternehmen DevOps, weil es die Qualität der Software verbessert und die Kunden zufriedener macht. Der Ansatz hat sich in der Tech-Welt als sehr nützlich erwiesen.</p>
+    </div>
+
+    <!-- Randomized Questions -->
+    <div class="question" data-question="q10">
+        <p>10. Was ist ein Vorteil von DevOps?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q10-a">a) Es macht die Einführung neuer Werkzeuge einfacher.</div>
+            <div class="option enabled" data-value="b" id="q10-b">b) Es verbessert die Qualität der Software.</div>
+            <div class="option enabled" data-value="c" id="q10-c">c) Es ist in großen Firmen leicht einzuführen.</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q11">
+        <p>11. Warum können Firmen mit DevOps ihre Produkte schneller auf den Markt bringen?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q11-a">a) Weil die Teams besser zusammenarbeiten.</div>
+            <div class="option enabled" data-value="b" id="q11-b">b) Weil sie keine neuen Werkzeuge brauchen.</div>
+            <div class="option enabled" data-value="c" id="q11-c">c) Weil sie weniger Fehler in der Software haben.</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q12">
+        <p>12. Was ist eine Herausforderung bei der Einführung von DevOps?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q12-a">a) Die Teams müssen weniger zusammenarbeiten.</div>
+            <div class="option enabled" data-value="b" id="q12-b">b) Die Einführung erfordert neue Werkzeuge und Schulungen.</div>
+            <div class="option enabled" data-value="c" id="q12-c">c) Die Qualität der Software wird schlechter.</div>
+        </div>
+    </div>
+</div>
+<!-- Teil 3 -->
+<div class="section" id="teil3">
+    <h2><strong>Teil 3: Werbeanzeigen für Dienstleistungen</strong></h2>
+    <div class="reading-text">
+        <p><strong>Arbeitszeit: 10 Minuten</strong></p>
+        <p>Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j.</p>
+        <p>Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Für eine Situation gibt es KEINE passende Anzeige. In diesem Fall wählen Sie 0.</p>
+    </div>
+
+    <!-- Randomized Questions -->
+    <div class="question" data-question="q13">
+        <p>13. Lena möchte professionelle Thumbnails für ihre YouTube-Videos erstellen lassen und sucht einen günstigen Service.</p>
+        <div class="options">
+            <select class="option-select enabled" data-value="">
+                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                <option value="0">0</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+                <option value="g">g</option>
+                <option value="h">h</option>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="question" data-question="q14">
+        <p>14. Tom will auf einer Plattform für Content-Creator einen Stand eröffnen, um seine Video-Editing-Dienste anzubieten, und braucht eine Genehmigung dafür.</p>
+        <div class="options">
+            <select class="option-select enabled" data-value="">
+                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                <option value="0">0</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+                <option value="g">g</option>
+                <option value="h">h</option>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="question" data-question="q15">
+        <p>15. Aisha sucht einen kostenlosen Beratungsdienst, um ihre Fähigkeiten im Scriptwriting für Werbevideos zu verbessern.</p>
+        <div class="options">
+            <select class="option-select enabled" data-value="">
+                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                <option value="0">0</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+                <option value="g">g</option>
+                <option value="h">h</option>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="question" data-question="q16">
+        <p>16. Paul möchte auf einem Content-Markt seine Dienstleistungen für Voice-Over anbieten und sucht eine Beratung zu rechtlichen Vorschriften.</p>
+        <div class="options">
+            <select class="option-select enabled" data-value="">
+                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                <option value="0">0</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+                <option value="g">g</option>
+                <option value="h">h</option>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="question" data-question="q17">
+        <p>17. Sara möchte auf einem Content-Markt einen Stand für Kinder betreiben, um Animationsvideos zu präsentieren, und sucht nach einem Workshop für kreative Ideen.</p>
+        <div class="options">
+            <select class="option-select enabled" data-value="">
+                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                <option value="0">0</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+                <option value="g">g</option>
+                <option value="h">h</option>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="question" data-question="q18">
+        <p>18. Jonas sucht einen Content-Markt, auf dem er professionelle Drohnenaufnahmen für seine Videos kaufen kann.</p>
+        <div class="options">
+            <select class="option-select enabled" data-value="">
+                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                <option value="0">0</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+                <option value="g">g</option>
+                <option value="h">h</option>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="question" data-question="q19">
+        <p>19. Maria möchte auf einem Content-Markt einen Stand mieten, um ihre Video-Editing-Dienste anzubieten, und sucht nach Informationen über die Kosten.</p>
+        <div class="options">
+            <select class="option-select enabled" data-value="">
+                <option value="" disabled selected>Wählen Sie eine Anzeige</option>
+                <option value="0">0</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+                <option value="f">f</option>
+                <option value="g">g</option>
+                <option value="h">h</option>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="reading-text">
+        <h3>Anzeigen</h3>
+        <div class="anzeige-container">
+            <div class="anzeige-item">
+                <span class="anzeige-label">a)</span>
+                <div class="anzeige-card" data-anzeige="a">
+                    <h4>DESIGN-SERVICE</h4>
+                    <p>Wir erstellen professionelle Designs für Content-Creator, z. B. Thumbnails für YouTube oder Instagram. Unsere Dienstleistungen sind günstig und schnell, ideal für Creator, die mehr Klicks wollen. Wir nutzen moderne Tools, um Ihre Inhalte hervorzuheben.</p>
+                    <p>Preis: Ab 5 € pro Design</p>
+                    <p><strong>Web:</strong> www.designservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">b)</span>
+                <div class="anzeige-card" data-anzeige="b">
+                    <h4>WORKSHOP-SERVICE</h4>
+                    <p>Wir bieten Workshops für Content-Creator, z. B. für Video-Editing oder Animationen. Lernen Sie Techniken wie Schnitt, Farbkorrektur und Effekte, um Ihre Inhalte zu verbessern. Perfekt für Anfänger und Profis, die auf Plattformen aktiv sind.</p>
+                    <p>Preis: 15 €/Stunde</p>
+                    <p><strong>Web:</strong> www.workshopservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">c)</span>
+                <div class="anzeige-card" data-anzeige="c">
+                    <h4>INFO-SERVICE</h4>
+                    <p>Wir geben Informationen für Content-Creator, z. B. über Standmieten und Kosten auf Märkten. Unsere Beratung hilft Ihnen, Ihre Dienstleistungen wie Video-Editing oder Scriptwriting zu präsentieren. Kostenlos und schnell verfügbar.</p>
+                    <p>Preis: Kostenlos</p>
+                    <p><strong>Web:</strong> www.infoservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">d)</span>
+                <div class="anzeige-card" data-anzeige="d">
+                    <h4>BERATUNGS-SERVICE</h4>
+                    <p>Wir bieten kostenlose Beratung für Content-Creator, z. B. für Scriptwriting von Werbevideos oder Kurzfilmen. Unsere Experten geben Tipps zu Struktur, Dialogen und Storytelling, um Ihre Inhalte zu verbessern.</p>
+                    <p>Preis: Kostenlos</p>
+                    <p><strong>Web:</strong> www.beratungsservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">e)</span>
+                <div class="anzeige-card" data-anzeige="e">
+                    <h4>WORKSHOP FÜR KINDER</h4>
+                    <p>Wir bieten Workshops für Content-Creator, z. B. für Animationsvideos für Kinder. Lernen Sie, wie Sie kreative Inhalte für junge Zuschauer erstellen und auf Märkten präsentieren können. Ideal für Stände mit Fokus auf Kinder.</p>
+                    <p>Preis: 8 €/Stunde</p>
+                    <p><strong>Web:</strong> www.workshopkinder.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">f)</span>
+                <div class="anzeige-card" data-anzeige="f">
+                    <h4>RECHTS-SERVICE</h4>
+                    <p>Wir bieten Beratung für Content-Creator, z. B. zu rechtlichen Vorschriften für Voice-Over oder Musiklizenzen. Unsere Experten helfen Ihnen, rechtliche Probleme zu vermeiden und Ihre Dienstleistungen sicher anzubieten.</p>
+                    <p>Preis: Kostenlos</p>
+                    <p><strong>Web:</strong> www.rechtsservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">g)</span>
+                <div class="anzeige-card" data-anzeige="g">
+                    <h4>ANMELDE-SERVICE</h4>
+                    <p>Wir helfen Content-Creators bei der Anmeldung von Ständen auf Märkten, z. B. für Video-Editing oder Scriptwriting. Unsere Dienstleistungen sind schnell und einfach, mit Tipps für eine erfolgreiche Präsentation.</p>
+                    <p>Preis: 20 € Gebühr</p>
+                    <p><strong>Web:</strong> www.anmeldeservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">h)</span>
+                <div class="anzeige-card" data-anzeige="h">
+                    <h4>EVENT-SERVICE</h4>
+                    <p>Wir bieten Informationen für Content-Creator, z. B. über Events und Märkte in der Stadt. Finden Sie heraus, wo Sie Ihre Dienstleistungen wie Thumbnails oder Video-Editing anbieten können, und entdecken Sie neue Möglichkeiten.</p>
+                    <p>Preis: Kostenlos</p>
+                    <p><strong>Web:</strong> www.eventservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">i)</span>
+                <div class="anzeige-card" data-anzeige="i">
+                    <h4>PLANUNGS-SERVICE</h4>
+                    <p>Wir unterstützen Content-Creator bei der Organisation von Ständen auf Märkten, z. B. für Animationen oder Voice-Over. Unsere Experten helfen bei der Planung, Gestaltung und Präsentation Ihrer Dienstleistungen.</p>
+                    <p>Preis: 12 €/Stunde</p>
+                    <p><strong>Web:</strong> www.planungsservice.de</p>
+                </div>
+            </div>
+            <div class="anzeige-item">
+                <span class="anzeige-label">j)</span>
+                <div class="anzeige-card" data-anzeige="j">
+                    <h4>VERKAUFS-SERVICE</h4>
+                    <p>Wir geben Tipps für Content-Creator, z. B. für den Verkauf von Dienstleistungen wie Scriptwriting oder Video-Editing. Unsere Beratung hilft Ihnen, Ihre Angebote auf Märkten und online erfolgreich zu vermarkten.</p>
+                    <p>Preis: Kostenlos</p>
+                    <p><strong>Web:</strong> www.verkaufsservice.de</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Teil 4 -->
+<div class="section" id="teil4">
+    <h2><strong>Teil 4: Studentenpolitik an öffentlichen Hochschulen – Was denken die Menschen?</strong></h2>
+    <div class="reading-text">
+        <p>Studentenpolitik an öffentlichen Hochschulen und Universitäten spielt eine wichtige Rolle im Leben der Studierenden. Studentenvertretungen organisieren Proteste, setzen sich für bessere Studienbedingungen ein und vertreten die Interessen der Studierenden gegenüber der Hochschulleitung. Manche Studierende finden, dass diese politische Arbeit wichtig ist, um Veränderungen zu bewirken. Andere denken, dass sie oft zu Konflikten führt oder vom Studium ablenkt. Wir haben verschiedene Meinungen dazu gesammelt.</p>
+        <p><strong>Arbeitszeit: 15 Minuten</strong></p>
+        <p>Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person für die Studentenpolitik an öffentlichen Hochschulen?</p>
+    </div>
+
+    <div class="question-table">
+        <div class="kommentare-section">
+            <!-- Randomized Questions -->
+            <div class="comment">
+                <div class="question-row question" data-question="q20">
+                    <div class="question-cell number"><strong>20</strong></div>
+                    <div class="question-cell name"><strong>Sara</strong></div>
+                    <div class="question-cell options">
+                        <button class="option enabled" data-value="Ja">Ja</button>
+                        <button class="option enabled" data-value="Nein">Nein</button>
+                    </div>
+                </div>
+                <p class="comment-text">
+                    Ich habe an meiner Uni in Berlin gesehen, wie die Studentenvertretung für bessere Bibliothekszeiten gekämpft hat, und das fand ich wirklich gut. Sie geben uns eine Stimme, und das ist wichtig, wenn man gegen Entscheidungen der Hochschulleitung protestieren will. Aber manchmal finde ich, dass die politischen Diskussionen zu viel Zeit in Anspruch nehmen. Ich habe Freunde, die sich mehr auf ihr Studium konzentrieren wollen, und sie sagen, dass die Proteste sie ablenken. Ich verstehe beide Seiten, aber ich denke, die Studentenpolitik ist trotzdem nützlich, auch wenn sie nicht perfekt ist. Es ist wichtig, dass wir uns engagieren können.<br>
+                    <em>Sara, 22 Jahre, Berlin</em>
+                </p>
+            </div>
+
+            <div class="comment">
+                <div class="question-row question" data-question="q21">
+                    <div class="question-cell number"><strong>21</strong></div>
+                    <div class="question-cell name"><strong>Lukas</strong></div>
+                    <div class="question-cell options">
+                        <button class="option enabled" data-value="Ja">Ja</button>
+                        <button class="option enabled" data-value="Nein">Nein</button>
+                    </div>
+                </div>
+                <p class="comment-text">
+                    Ich finde, die Studentenpolitik an meiner Hochschule in Hamburg ist oft zu chaotisch. Es gibt ständig Streit zwischen den verschiedenen Gruppen, und das führt zu Spannungen unter den Studierenden. Ich habe letztes Jahr an einer Versammlung teilgenommen, und es war mehr Streit als Lösungen. Aber ich muss zugeben, dass sie auch gute Dinge erreicht haben, wie günstigere Mensa-Preise. Ich denke, es ist wichtig, dass Studierende ihre Meinung sagen können, aber ich wünschte, es wäre weniger konfliktbeladen. Ich bin mir nicht sicher, ob ich das System so unterstütze, wie es jetzt ist.<br>
+                    <em>Lukas, 19 Jahre, Hamburg</em>
+                </p>
+            </div>
+
+            <div class="comment">
+                <div class="question-row question" data-question="q22">
+                    <div class="question-cell number"><strong>22</strong></div>
+                    <div class="question-cell name"><strong>Mia</strong></div>
+                    <div class="question-cell options">
+                        <button class="option enabled" data-value="Ja">Ja</button>
+                        <button class="option enabled" data-value="Nein">Nein</button>
+                    </div>
+                </div>
+                <p class="comment-text">
+                    An meiner Uni in Köln ist die Studentenpolitik sehr aktiv, und ich finde das nicht immer gut. Oft geht es mehr um Machtkämpfe zwischen den Gruppen als um die wirklichen Probleme der Studierenden. Ich habe gehört, dass sie sich für bessere Studienbedingungen einsetzen, aber ich sehe nicht viele Ergebnisse. Trotzdem denke ich, dass es wichtig ist, dass wir eine Stimme haben, um gegen ungerechte Entscheidungen zu protestieren. Ich habe mit Kommilitonen gesprochen, und einige finden die Arbeit der Studentenvertretung super, andere nicht. Ich bin mir nicht sicher, aber ich denke, es könnte besser organisiert sein.<br>
+                    <em>Mia, 30 Jahre, Köln</em>
+                </p>
+            </div>
+
+            <div class="comment">
+                <div class="question-row question" data-question="q23">
+                    <div class="question-cell number"><strong>23</strong></div>
+                    <div class="question-cell name"><strong>Tom</strong></div>
+                    <div class="question-cell options">
+                        <button class="option enabled" data-value="Ja">Ja</button>
+                        <button class="option enabled" data-value="Nein">Nein</button>
+                    </div>
+                </div>
+                <p class="comment-text">
+                    Ich finde, die Studentenpolitik an meiner Hochschule in München ist wirklich wichtig. Sie haben sich für mehr Stipendien eingesetzt, und das hat vielen Studierenden geholfen, die finanziell Probleme haben. Ohne diese Arbeit würde die Hochschulleitung oft einfach machen, was sie will. Aber ich sehe auch, dass die Proteste manchmal das Studium stören, besonders wenn Vorlesungen ausfallen. Ich habe mit meiner Schwester darüber gesprochen, und sie findet, dass die Politik zu viel Zeit kostet. Ich denke, die Vorteile überwiegen, aber es gibt auch Nachteile, die man nicht ignorieren kann.<br>
+                    <em>Tom, 25 Jahre, München</em>
+                </p>
+            </div>
+
+            <div class="comment">
+                <div class="question-row question" data-question="q24">
+                    <div class="question-cell number"><strong>24</strong></div>
+                    <div class="question-cell name"><strong>Anna</strong></div>
+                    <div class="question-cell options">
+                        <button class="option enabled" data-value="Ja">Ja</button>
+                        <button class="option enabled" data-value="Nein">Nein</button>
+                    </div>
+                </div>
+                <p class="comment-text">
+                    Ich bin nicht so begeistert von der Studentenpolitik an meiner Uni in Leipzig. Es gibt oft Streit, und ich finde, dass viele Studierende sich dadurch ausgeschlossen fühlen, wenn sie nicht politisch aktiv sind. Ich habe an einer Wahl teilgenommen, aber die Kandidaten haben mehr über ihre eigenen Interessen gesprochen als über unsere Probleme. Trotzdem sehe ich, dass sie manchmal nützliche Dinge erreichen, wie bessere Lernräume. Ich habe mit Freunden darüber geredet, und einige finden die Arbeit der Studentenvertretung gut, andere nicht. Ich denke, es könnte besser sein, aber ich verstehe, warum es existiert.<br>
+                    <em>Anna, 28 Jahre, Leipzig</em>
+                </p>
+            </div>
+
+            <div class="comment">
+                <div class="question-row question" data-question="q25">
+                    <div class="question-cell number"><strong>25</strong></div>
+                    <div class="question-cell name"><strong>Paul</strong></div>
+                    <div class="question-cell options">
+                        <button class="option enabled" data-value="Ja">Ja</button>
+                        <button class="option enabled" data-value="Nein">Nein</button>
+                    </div>
+                </div>
+                <p class="comment-text">
+                    Ich finde, die Studentenpolitik an meiner Hochschule in Frankfurt ist eine gute Sache. Sie gibt uns die Möglichkeit, unsere Meinung zu sagen und für unsere Rechte zu kämpfen, zum Beispiel gegen höhere Studiengebühren. Ohne diese Arbeit wären wir den Entscheidungen der Hochschulleitung ausgeliefert. Aber ich sehe auch, dass es oft zu Streit führt, und manchmal geht es mehr um Politik als um die Studierenden. Ich habe mit Kommilitonen gesprochen, und einige finden, dass die Proteste zu viel Zeit kosten. Ich denke, die Arbeit ist wichtig, aber sie könnte besser organisiert sein.<br>
+                    <em>Paul, 33 Jahre, Frankfurt</em>
+                </p>
+            </div>
+
+            <div class="comment">
+                <div class="question-row question" data-question="q26">
+                    <div class="question-cell number"><strong>26</strong></div>
+                    <div class="question-cell name"><strong>Lisa</strong></div>
+                    <div class="question-cell options">
+                        <button class="option enabled" data-value="Ja">Ja</button>
+                        <button class="option enabled" data-value="Nein">Nein</button>
+                    </div>
+                </div>
+                <p class="comment-text">
+                    Ich bin nicht sicher, ob ich die Studentenpolitik an meiner Uni in Stuttgart unterstütze. Einerseits finde ich es gut, dass sie sich für bessere Studienbedingungen einsetzen, zum Beispiel für mehr Plätze in der Bibliothek. Andererseits gibt es oft Konflikte, und ich habe das Gefühl, dass viele Studierende sich nicht vertreten fühlen. Ich habe an einer Versammlung teilgenommen, und es war sehr chaotisch. Ich habe mit meiner Mutter darüber gesprochen, und sie meint, dass solche Politik oft mehr Probleme macht, als sie löst. Ich denke, es gibt Vorteile, aber es gibt auch viele Nachteile.<br>
+                    <em>Lisa, 21 Jahre, Stuttgart</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</div><!-- Teil 5 -->
+<div class="section section-grey-border">
+    <h2><strong>Teil 5:</strong></h2>
+    <p><strong>Lesen Sie die Aufgaben 27 bis 30 und den Text dazu.</strong></p>
+    <p><strong>Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.</strong></p>
+    <p><strong>Arbeitszeit: 10 Minuten</strong></p>
+    <div class="reading-text">
+        <p>Sie planen einen Besuch im Nationalmuseum in Berlin, um an einem besonderen Ausstellungstag teilzunehmen und mehr über die Veranstaltungen und Aktivitäten zu erfahren.</p>
+        <div class="reading-content">
+            <h3>Ein Tag im Nationalmuseum Berlin – Sonderausstellung „Vergessene Kulturen“</h3>
+            <table class="info-table">
+                <tr>
+                    <th>Morgenstart um 08:00</th>
+                    <td><strong>Museum öffnet</strong><br>Die Türen öffnen sich. Besucher können die Dauerausstellungen besichtigen und sich auf den Tag vorbereiten.</td>
+                </tr>
+                <tr>
+                    <th>Vormittag um 10:30</th>
+                    <td><strong>Eröffnung der Sonderausstellung</strong><br>Die Ausstellung „Vergessene Kulturen“ wird mit einer kurzen Rede eröffnet. Danach können Besucher die Exponate, wie antike Keramiken und Schriftrollen, besichtigen.</td>
+                </tr>
+                <tr>
+                    <th>Mittag um 13:00</th>
+                    <td><strong>Vortrag über antike Schriftrollen</strong><br>Ein Experte hält einen Vortrag über die Bedeutung der Schriftrollen in der Ausstellung. Anschließend gibt es eine Fragerunde.</td>
+                </tr>
+                <tr>
+                    <th>Nachmittag um 15:30</th>
+                    <td><strong>Workshop: Keramik-Restauration</strong><br>Besucher können an einem Workshop teilnehmen, um Techniken der Keramik-Restauration zu lernen, inspiriert von den Exponaten der Ausstellung.</td>
+                </tr>
+                <tr>
+                    <th>Abend um 18:00</th>
+                    <td><strong>Filmvorführung und Diskussion</strong><br>Eine Dokumentation über „Vergessene Kulturen“ wird gezeigt, gefolgt von einer Diskussion mit einem Historiker.</td>
+                </tr>
+                <tr>
+                    <th>Späte Nacht um 21:00</th>
+                    <td><strong>Abschlussführung</strong><br>Eine letzte geführte Tour durch die Sonderausstellung findet statt, mit Fokus auf die Highlights der Exponate, bevor das Museum um 22:00 schließt.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-header">Wähle die richtige Antwort:</div>
+
+    <!-- Randomized Questions -->
+    <div class="question" data-question="q27">
+        <p>27. Was können Besucher um 10:30 vormittags im Museum erleben?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q27-a">a) Einen Vortrag über antike Schriftrollen hören.</div>
+            <div class="option enabled" data-value="b" id="q27-b">b) Die Eröffnung der Sonderausstellung mit einer Rede.</div>
+            <div class="option enabled" data-value="c" id="q27-c">c) An einem Workshop zur Keramik-Restauration teilnehmen.</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q28">
+        <p>28. Wann beginnt die Filmvorführung über „Vergessene Kulturen“?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q28-a">a) Um 15:30.</div>
+            <div class="option enabled" data-value="b" id="q28-b">b) Um 18:00.</div>
+            <div class="option enabled" data-value="c" id="q28-c">c) Um 21:00.</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q29">
+        <p>29. Was passiert um 13:00 mittags im Museum?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q29-a">a) Eine geführte Tour durch die Sonderausstellung.</div>
+            <div class="option enabled" data-value="b" id="q29-b">b) Ein Vortrag über antike Schriftrollen mit Fragerunde.</div>
+            <div class="option enabled" data-value="c" id="q29-c">c) Eine Dokumentation mit anschließender Diskussion.</div>
+        </div>
+    </div>
+
+    <div class="question" data-question="q30">
+        <p>30. Was können Besucher um 15:30 nachmittags tun?</p>
+        <div class="options">
+            <div class="option enabled" data-value="a" id="q30-a">a) An einem Workshop zur Keramik-Restauration teilnehmen.</div>
+            <div class="option enabled" data-value="b" id="q30-b">b) Die Dauerausstellungen besichtigen.</div>
+            <div class="option enabled" data-value="c" id="q30-c">c) Eine letzte geführte Tour durch die Ausstellung erleben.</div>
+        </div>
+    </div>
+</div>
+
+    <button id="submitBtn" class="submit-button">Submit Your Answers</button>
+</div>
+
+<div id="results" class="results" style="display: none;">
+    <h2 class="review-heading">Review Your Answers</h2>
+    <div id="reviewContent"></div>
+</div>
+
+<div id="progressSection" class="progress-section" style="display: none;">
+    <h2>Your Progress</h2>
+    <div id="progressMessage"></div>
+    <div id="progressScore" class="score"></div>
+    <button id="timeupTryAgainBtn" class="try-again-btn">Try Again</button>
+    <div id="progressSharePrompt">Share your results with friends!</div>
+</div>
+
+<div id="scorePopup" class="popup">
+    <div class="popup-content">
+        <span class="close">×</span>
+        <h2>Your Score</h2>
+        <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <div id="scoreDisplay" class="score"></div>
+        <div id="scoreMessage"></div>
+        <div id="completionTime"></div>
+        <div id="sharePrompt">Screenshot and share progress with your friends!</div>
+        <button id="viewAnswersBtn" class="popup-button">View My Answers</button>
+        <button id="shareBtn" class="popup-button">📤 Recommend this site</button>
+        <button id="tryAgainBtn" class="try-again-btn">Try Again</button>
+    </div>
+</div>
+
+<div id="timeupPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">×</span>
+        <h2>Time's Up!</h2>
+        <div class="progress-bar">
+            <div id="timeupProgressFill" class="progress-fill"></div>
+        </div>
+        <div id="timeupProgress"></div>
+        <div id="timeupMessage"></div>
+        <div id="timeupSharePrompt">Screenshot and share progress with your friends!</div>
+        <button id="timeupViewAnswersBtn" class="popup-button">View My Answers</button>
+        <button id="timeupShareBtn" class="popup-button">📤 Recommend this site</button>
+        <button id="timeupTryAgainBtn" class="try-again-btn">Try Again</button>
+    </div>
+</div>
+</div>
+</main>
+<script src="{% static 'css/exam5.js' %}"></script>
+</body>
+
+{% endblock body %}

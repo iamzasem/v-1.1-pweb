@@ -1,0 +1,401 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Passiv, Präteritum, Perfekt in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/konj2.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Passiv, Präteritum, Perfekt in German</h1>
+            <p>
+                A guide to passive voice ('Passiv'), its formation ('Bindung des Passivs'), 'Werden + Partizip II', simple past ('Präteritum'), and present perfect ('Perfekt'), with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding Passive Voice and Tenses</h2>
+            <div class="subsection">
+                <h3>What Is Passive Voice?</h3>
+                <p>Passive voice shifts focus to the action or object, using 'werden' + past participle (Partizip II), e.g., 'Das Haus wird gebaut' (The house is built).</p>
+            </div>
+            <div class="subsection">
+                <h3>Simple Past and Present Perfect</h3>
+                <p>'Präteritum' (e.g., 'ich machte') is used for written past, while 'Perfekt' (e.g., 'ich habe gemacht') is common in spoken German.</p>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Formation</h2>
+            <div class="subsection">
+                <h3>Passive Formation ('Bindung des Passivs')</h3>
+                <p>Object becomes subject + 'werden' (conjugated) + Partizip II, optionally 'von' + dative for doer.</p>
+                <table>
+                    <tr><th>Active</th><th>Passive</th></tr>
+                    <tr><td>Der Junge kickt den Ball.</td><td>Der Ball wird gekickt.</td></tr>
+                    <tr><td>Die Frau malt das Bild.</td><td>Das Bild wird gemalt.</td></tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>Werden + Partizip II</h3>
+                <p>'Werden' changes with tense: 'wird' (present), 'wurde' (past), 'wird … werden' (future).</p>
+            </div>
+            <div class="subsection">
+                <h3>Präteritum and Perfekt</h3>
+                <p>'Präteritum': Stem + '-te' or irregular form; 'Perfekt': 'haben/sein' + Partizip II.</p>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Passive and Tenses</h2>
+            <div class="subsection">
+                <h3>Passive: Unknown Doer</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Das Haus wird gebaut.</em> (The house is being built.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Präteritum: Stories</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Er lief nach Hause.</em> (He ran home.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Perfekt: Spoken Past</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich habe das Buch gelesen.</em> (I’ve read the book.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of Common Examples</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Category</th><th>Sentence</th><th>Translation</th></tr>
+                    <!-- Passiv -->
+                    <tr><td rowspan="5">Passiv</td><td><em>Das Auto wird gewaschen.</em></td><td>The car is being washed.</td></tr>
+                    <tr><td><em>Die Tür wird geöffnet.</em></td><td>The door is opened.</td></tr>
+                    <tr><td><em>Das Buch wird gelesen.</em></td><td>The book is read.</td></tr>
+                    <tr><td><em>Die Fenster werden geputzt.</em></td><td>The windows are cleaned.</td></tr>
+                    <tr><td><em>Der Brief wird von ihr geschrieben.</em></td><td>The letter is written by her.</td></tr>
+                    <!-- Bindung des Passivs -->
+                    <tr><td rowspan="5">Bindung des Passivs</td><td><em>Die Aufgabe wird erklärt.</em></td><td>The task is explained.</td></tr>
+                    <tr><td><em>Der Kuchen wird gegessen.</em></td><td>The cake is eaten.</td></tr>
+                    <tr><td><em>Ein Brief wird geschrieben.</em></td><td>A letter is written.</td></tr>
+                    <tr><td><em>Ein Haus wird gebaut.</em></td><td>A house is built.</td></tr>
+                    <tr><td><em>Der Saft wird getrunken.</em></td><td>The juice is drunk.</td></tr>
+                    <!-- Werden + Partizip II -->
+                    <tr><td rowspan="5">Werden + Partizip II</td><td><em>Das Essen wird gekocht.</em></td><td>The food is being cooked.</td></tr>
+                    <tr><td><em>Der Tisch wurde gedeckt.</em></td><td>The table was set.</td></tr>
+                    <tr><td><em>Die Arbeit wird erledigt.</em></td><td>The work is being done.</td></tr>
+                    <tr><td><em>Das Spiel wurde gespielt.</em></td><td>The game was played.</td></tr>
+                    <tr><td><em>Das Fenster wird von ihm geschlossen.</em></td><td>The window is closed by him.</td></tr>
+                    <!-- Präteritum -->
+                    <tr><td rowspan="5">Präteritum</td><td><em>Ich spielte im Park.</em></td><td>I played in the park.</td></tr>
+                    <tr><td><em>Sie schrieb einen Brief.</em></td><td>She wrote a letter.</td></tr>
+                    <tr><td><em>Das Haus wurde gebaut.</em></td><td>The house was built.</td></tr>
+                    <tr><td><em>Wir gingen zur Schule.</em></td><td>We went to school.</td></tr>
+                    <tr><td><em>Er trank Wasser.</em></td><td>He drank water.</td></tr>
+                    <!-- Perfekt -->
+                    <tr><td rowspan="5">Perfekt</td><td><em>Ich habe Pizza gegessen.</em></td><td>I’ve eaten pizza.</td></tr>
+                    <tr><td><em>Sie ist zur Schule gegangen.</em></td><td>She has gone to school.</td></tr>
+                    <tr><td><em>Das Fenster ist geöffnet worden.</em></td><td>The window has been opened.</td></tr>
+                    <tr><td><em>Wir haben ein Lied gesungen.</em></td><td>We’ve sung a song.</td></tr>
+                    <tr><td><em>Er hat den Hund gefüttert.</em></td><td>He has fed the dog.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice Passive and Tenses</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Passiv (Choose Passive Form)</h3>
+                <p>Select the correct passive form of the active sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Active: 'Der Lehrer schreibt die Aufgabe.' Passive:  
+                            <select class="answer-select" data-correct="Die Aufgabe wird geschrieben.">
+                                <option value="">Select</option>
+                                <option value="Die Aufgabe wird schreiben.">Die Aufgabe wird schreiben.</option>
+                                <option value="Die Aufgabe wird geschrieben.">Die Aufgabe wird geschrieben.</option>
+                                <option value="Die Aufgabe schreibt wird.">Die Aufgabe schreibt wird.</option>
+                            </select>
+                        </li>
+                        <li>Active: 'Die Kinder malen das Bild.' Passive:  
+                            <select class="answer-select" data-correct="Das Bild wird gemalt.">
+                                <option value="">Select</option>
+                                <option value="Das Bild wird gemalt.">Das Bild wird gemalt.</option>
+                                <option value="Das Bild malt wird.">Das Bild malt wird.</option>
+                                <option value="Das Bild wird malen.">Das Bild wird malen.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Die Aufgabe wird geschrieben.</em></li>
+                            <li><em>Das Bild wird gemalt.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Bindung des Passivs (Rewrite in Passive)</h3>
+                <p>Choose the correct passive version of the active sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>'Ich esse den Apfel.'  
+                            <select class="answer-select" data-correct="Der Apfel wird gegessen.">
+                                <option value="">Select</option>
+                                <option value="Der Apfel wird gegessen.">Der Apfel wird gegessen.</option>
+                                <option value="Der Apfel esse wird.">Der Apfel esse wird.</option>
+                                <option value="Der Apfel wird essen.">Der Apfel wird essen.</option>
+                            </select>
+                        </li>
+                        <li>'Sie öffnen die Tür.'  
+                            <select class="answer-select" data-correct="Die Tür wird geöffnet.">
+                                <option value="">Select</option>
+                                <option value="Die Tür wird öffnen.">Die Tür wird öffnen.</option>
+                                <option value="Die Tür wird geöffnet.">Die Tür wird geöffnet.</option>
+                                <option value="Die Tür öffnet wird.">Die Tür öffnet wird.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der Apfel wird gegessen.</em></li>
+                            <li><em>Die Tür wird geöffnet.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Werden + Partizip II (Fill in Tense)</h3>
+                <p>Choose the correct form of 'werden' for the tense.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Past: 'Das Buch ___ gelesen.'  
+                            <select class="answer-select" data-correct="Das Buch wurde gelesen.">
+                                <option value="">Select</option>
+                                <option value="Das Buch wird gelesen.">wird</option>
+                                <option value="Das Buch wurde gelesen.">wurde</option>
+                                <option value="Das Buch ist gelesen.">ist</option>
+                            </select>
+                        </li>
+                        <li>Present: 'Die Fenster ___ geputzt.'  
+                            <select class="answer-select" data-correct="Die Fenster werden geputzt.">
+                                <option value="">Select</option>
+                                <option value="Die Fenster werden geputzt.">werden</option>
+                                <option value="Die Fenster wurde geputzt.">wurde</option>
+                                <option value="Die Fenster sind geputzt.">sind</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Das Buch wurde gelesen.</em></li>
+                            <li><em>Die Fenster werden geputzt.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Präteritum (Simple Past Form)</h3>
+                <p>Choose the correct simple past form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>'Ich ___ das Lied.' (singen)  
+                            <select class="answer-select" data-correct="Ich sang das Lied.">
+                                <option value="">Select</option>
+                                <option value="Ich singe das Lied.">singe</option>
+                                <option value="Ich sang das Lied.">sang</option>
+                                <option value="Ich habe gesungen das Lied.">habe gesungen</option>
+                            </select>
+                        </li>
+                        <li>'Die Tür ___ geschlossen.' (Passive)  
+                            <select class="answer-select" data-correct="Die Tür wurde geschlossen.">
+                                <option value="">Select</option>
+                                <option value="Die Tür wird geschlossen.">wird</option>
+                                <option value="Die Tür wurde geschlossen.">wurde</option>
+                                <option value="Die Tür ist geschlossen.">ist</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich sang das Lied.</em></li>
+                            <li><em>Die Tür wurde geschlossen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Perfekt (Present Perfect Form)</h3>
+                <p>Choose the correct present perfect form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>'Wir ___ das Spiel ___.' (Passive: spielen)  
+                            <select class="answer-select" data-correct="Wir sind das Spiel gespielt worden.">
+                                <option value="">Select</option>
+                                <option value="Wir haben das Spiel gespielt.">haben … gespielt</option>
+                                <option value="Wir sind das Spiel gespielt worden.">sind … gespielt worden</option>
+                                <option value="Wir haben das Spiel spielen.">haben … spielen</option>
+                            </select>
+                        </li>
+                        <li>'Er ___ das Buch ___.' (lesen)  
+                            <select class="answer-select" data-correct="Er hat das Buch gelesen.">
+                                <option value="">Select</option>
+                                <option value="Er hat das Buch gelesen.">hat … gelesen</option>
+                                <option value="Er ist das Buch gelesen.">ist … gelesen</option>
+                                <option value="Er hat das Buch lesen.">hat … lesen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Wir sind das Spiel gespielt worden.</em></li>
+                            <li><em>Er hat das Buch gelesen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Passive and Tenses</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Passive Focus</strong>: Use 'werden' + Partizip II, e.g., 'wird gemacht' (is done).</li>
+                    <li><strong>Tense Clue</strong>: 'Wurde' = past, 'ist … worden' = perfect passive.</li>
+                    <li><strong>Präteritum vs. Perfekt</strong>: Use 'machte' for stories, 'habe gemacht' for talk.</li>
+                    <li><strong>Verb Type</strong>: Only transitive verbs (with objects) work in passive.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on passive and tenses.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Lingolia</strong><br>Lessons on passive voice and tenses.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/verbs/passive" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Everyday examples.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="ohneartikel.html" class="see-also-rect">Adjektivdeklination ohne Artikel</a>
+                <a href="konnektoren.html" class="see-also-rect">Zweiteilige Konnektoren</a>
+                <a href="reflexive.html" class="see-also-rect">Reflexive Pronouns</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="ohneartikel.html" class="next-btn">Next: Adjektivdeklination ohne Artikel →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

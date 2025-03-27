@@ -1,0 +1,574 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Präpositionen mit Genitiv in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/temp-praep.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Präpositionen mit Genitiv (Prepositions with Genitive)</h1>
+            <p>
+                Prepositions with genitive case ('Präpositionen mit Genitiv') in German are words that show relationships—like place, time, or reason—between things in a sentence, requiring the genitive case. This guide covers their formation, usage, examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding Prepositions with Genitive</h2>
+            <div class="subsection">
+                <h3>Definition</h3>
+                <p>Genitive prepositions indicate possession ("of") or connection, used in formal writing or educated speech, e.g., 'innerhalb' (within), 'außerhalb' (outside), 'wegen' (because of).</p>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Formation</h2>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Preposition + noun/pronoun in genitive case:</p>
+                <table>
+                    <tr><th>Gender</th><th>Genitive Ending</th><th>Example</th></tr>
+                    <tr><td>Masculine</td><td>-es/-s</td><td>des Mannes (of the man)</td></tr>
+                    <tr><td>Neuter</td><td>-es/-s</td><td>des Hauses (of the house)</td></tr>
+                    <tr><td>Feminine</td><td>-er</td><td>der Frau (of the woman)</td></tr>
+                    <tr><td>Plural</td><td>-er (or der)</td><td>der Kinder (of the children)</td></tr>
+                </table>
+                <p>Adjectives take strong genitive endings, e.g., 'wegen schlechten Wetters' (because of bad weather).</p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>- Always genitive case.<br>- Preposition first, then genitive phrase.<br>- Definite articles ('des, der') common, but omittable in fixed phrases.<br>- Spoken German may use dative (e.g., 'wegen dem Wetter'), but genitive is formal.</p>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Genitive Prepositions</h2>
+            <div class="subsection">
+                <h3>Location ('innerhalb', 'außerhalb')</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Innerhalb des Parks spielen die Kinder.</em> (Within the park, the children play.)</li>
+                        <li><em>Außerhalb der Stadt ist es ruhig.</em> (Outside of the city, it’s quiet.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Reason ('wegen')</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Wegen des Regens bleibe ich zu Hause.</em> (Because of the rain, I stay home.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Replacement ('statt', 'anstatt')</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Statt des Autos nehme ich den Bus.</em> (Instead of the car, I take the bus.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Contrast ('trotz')</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Trotz des Wetters gehe ich spazieren.</em> (Despite the weather, I go for a walk.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Time ('während')</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Während des Sommers fahre ich ans Meer.</em> (During the summer, I go to the sea.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of Common Examples (35 Total)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Preposition</th><th>Sentence</th><th>Translation</th></tr>
+                    <!-- innerhalb -->
+                    <tr><td rowspan="5">innerhalb</td><td><em>Innerhalb des Tages komme ich zurück.</em></td><td>Within the day, I’ll come back.</td></tr>
+                    <tr><td><em>Innerhalb des Parks spielen die Kinder oft.</em></td><td>Within the park, the children often play.</td></tr>
+                    <tr><td><em>Innerhalb einer Stunde ist das Essen fertig.</em></td><td>Within an hour, the food is ready.</td></tr>
+                    <tr><td><em>Innerhalb des Gebäudes gibt es viele Räume.</em></td><td>Within the building, there are many rooms.</td></tr>
+                    <tr><td><em>Innerhalb dieser Woche müssen wir alles erledigen.</em></td><td>Within this week, we must finish everything.</td></tr>
+                    <!-- außerhalb -->
+                    <tr><td rowspan="5">außerhalb</td><td><em>Außerhalb des Hauses steht ein Baum.</em></td><td>Outside of the house, there’s a tree.</td></tr>
+                    <tr><td><em>Außerhalb der Stadt ist es sehr ruhig.</em></td><td>Outside of the city, it’s very quiet.</td></tr>
+                    <tr><td><em>Außerhalb dieser Zeit kann ich nicht kommen.</em></td><td>Outside of this time, I can’t come.</td></tr>
+                    <tr><td><em>Außerhalb des Gartens laufen die Hunde frei.</em></td><td>Outside of the garden, the dogs run freely.</td></tr>
+                    <tr><td><em>Außerhalb des Landes kenne ich niemanden.</em></td><td>Outside of the country, I don’t know anyone.</td></tr>
+                    <!-- wegen -->
+                    <tr><td rowspan="5">wegen</td><td><em>Wegen des Regens bleibe ich zu Hause.</em></td><td>Because of the rain, I’m staying home.</td></tr>
+                    <tr><td><em>Wegen schlechter Noten ist er traurig.</em></td><td>Due to bad grades, he’s sad.</td></tr>
+                    <tr><td><em>Wegen des Sturms fällt der Strom aus.</em></td><td>Because of the storm, the power goes out.</td></tr>
+                    <tr><td><em>Wegen ihrer Hilfe haben wir gewonnen.</em></td><td>Due to her help, we won.</td></tr>
+                    <tr><td><em>Wegen des Lärms kann ich nicht schlafen.</em></td><td>Because of the noise, I can’t sleep.</td></tr>
+                    <!-- statt -->
+                    <tr><td rowspan="5">statt</td><td><em>Statt des Autos nehme ich den Bus.</em></td><td>Instead of the car, I’ll take the bus.</td></tr>
+                    <tr><td><em>Statt der Suppe esse ich einen Salat.</em></td><td>Instead of the soup, I’ll eat a salad.</td></tr>
+                    <tr><td><em>Statt seines Freundes kommt seine Schwester.</em></td><td>Instead of his friend, his sister is coming.</td></tr>
+                    <tr><td><em>Statt des Films sehen wir ein Spiel.</em></td><td>Instead of the movie, we’ll watch a game.</td></tr>
+                    <tr><td><em>Statt meiner Arbeit hilft er ihr zuerst.</em></td><td>Instead of my work, he helps her first.</td></tr>
+                    <!-- trotz -->
+                    <tr><td rowspan="5">trotz</td><td><em>Trotz des Wetters gehe ich spazieren.</em></td><td>Despite the weather, I’m going for a walk.</td></tr>
+                    <tr><td><em>Trotz seiner Müdigkeit arbeitet er weiter.</em></td><td>In spite of his tiredness, he keeps working.</td></tr>
+                    <tr><td><em>Trotz der Kälte spielen die Kinder draußen.</em></td><td>Despite the cold, the kids play outside.</td></tr>
+                    <tr><td><em>Trotz ihres Alters läuft sie jeden Tag.</em></td><td>In spite of her age, she runs every day.</td></tr>
+                    <tr><td><em>Trotz des Problems finden wir eine Lösung.</em></td><td>Despite the problem, we find a solution.</td></tr>
+                    <!-- während -->
+                    <tr><td rowspan="5">während</td><td><em>Während des Sommers fahre ich ans Meer.</em></td><td>During the summer, I go to the sea.</td></tr>
+                    <tr><td><em>Während der Nacht schlafe ich tief.</em></td><td>During the night, I sleep deeply.</td></tr>
+                    <tr><td><em>Während des Spiels regnet es oft.</em></td><td>During the game, it often rains.</td></tr>
+                    <tr><td><em>Während seiner Reise lernt er viel.</em></td><td>During his trip, he learns a lot.</td></tr>
+                    <tr><td><em>Während des Winters trage ich einen Mantel.</em></td><td>During the winter, I wear a coat.</td></tr>
+                    <!-- anstatt -->
+                    <tr><td rowspan="5">anstatt</td><td><em>Anstatt des Tees trinke ich Kaffee.</em></td><td>Instead of the tea, I drink coffee.</td></tr>
+                    <tr><td><em>Anstatt ihrer Hilfe brauche ich Ruhe.</em></td><td>Instead of her help, I need peace.</td></tr>
+                    <tr><td><em>Anstatt des Buches lese ich die Zeitung.</em></td><td>Instead of the book, I read the newspaper.</td></tr>
+                    <tr><td><em>Anstatt seines Plans machen wir meinen.</em></td><td>Instead of his plan, we do mine.</td></tr>
+                    <tr><td><em>Anstatt des Regens scheint die Sonne.</em></td><td>Instead of the rain, the sun shines.</td></tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>Additional Notes</h3>
+                <p>- Less common genitive prepositions: 'oberhalb' (above), 'unterhalb' (below), 'diesseits' (this side of), 'jenseits' (beyond).<br>- Modern usage: Casual speech may use dative (e.g., 'wegen dem Regen'), but genitive is grammatically correct.</p>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice Genitive Prepositions</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose the Correct Preposition</h3>
+                <p>Select the correct genitive preposition for the sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ des Hauses steht ein Baum.  
+                            <select class="answer-select" data-correct="Außerhalb des Hauses steht ein Baum.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb des Hauses steht ein Baum.">innerhalb</option>
+                                <option value="Außerhalb des Hauses steht ein Baum.">außerhalb</option>
+                                <option value="Wegen des Hauses steht ein Baum.">wegen</option>
+                                <option value="Statt des Hauses steht ein Baum.">statt</option>
+                                <option value="Trotz des Hauses steht ein Baum.">trotz</option>
+                            </select>
+                        </li>
+                        <li>___ des Regens bleiben wir drinnen.  
+                            <select class="answer-select" data-correct="Wegen des Regens bleiben wir drinnen.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb des Regens bleiben wir drinnen.">innerhalb</option>
+                                <option value="Außerhalb des Regens bleiben wir drinnen.">außerhalb</option>
+                                <option value="Wegen des Regens bleiben wir drinnen.">wegen</option>
+                                <option value="Statt des Regens bleiben wir drinnen.">statt</option>
+                                <option value="Während des Regens bleiben wir drinnen.">während</option>
+                            </select>
+                        </li>
+                        <li>___ der Woche komme ich vorbei.  
+                            <select class="answer-select" data-correct="Innerhalb der Woche komme ich vorbei.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb der Woche komme ich vorbei.">innerhalb</option>
+                                <option value="Außerhalb der Woche komme ich vorbei.">außerhalb</option>
+                                <option value="Statt der Woche komme ich vorbei.">statt</option>
+                                <option value="Trotz der Woche komme ich vorbei.">trotz</option>
+                                <option value="Anstatt der Woche komme ich vorbei.">anstatt</option>
+                            </select>
+                        </li>
+                        <li>___ des Films sehen wir ein Spiel.  
+                            <select class="answer-select" data-correct="Statt des Films sehen wir ein Spiel.">
+                                <option value="">Select</option>
+                                <option value="Wegen des Films sehen wir ein Spiel.">wegen</option>
+                                <option value="Trotz des Films sehen wir ein Spiel.">trotz</option>
+                                <option value="Statt des Films sehen wir ein Spiel.">statt</option>
+                                <option value="Während des Films sehen wir ein Spiel.">während</option>
+                                <option value="Außerhalb des Films sehen wir ein Spiel.">außerhalb</option>
+                            </select>
+                        </li>
+                        <li>___ seiner Müdigkeit läuft er weiter.  
+                            <select class="answer-select" data-correct="Trotz seiner Müdigkeit läuft er weiter.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb seiner Müdigkeit läuft er weiter.">innerhalb</option>
+                                <option value="Außerhalb seiner Müdigkeit läuft er weiter.">außerhalb</option>
+                                <option value="Wegen seiner Müdigkeit läuft er weiter.">wegen</option>
+                                <option value="Trotz seiner Müdigkeit läuft er weiter.">trotz</option>
+                                <option value="Anstatt seiner Müdigkeit läuft er weiter.">anstatt</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Außerhalb des Hauses steht ein Baum.</em></li>
+                            <li><em>Wegen des Regens bleiben wir drinnen.</em></li>
+                            <li><em>Innerhalb der Woche komme ich vorbei.</em></li>
+                            <li><em>Statt des Films sehen wir ein Spiel.</em></li>
+                            <li><em>Trotz seiner Müdigkeit läuft er weiter.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Fill in the Blank with Genitive</h3>
+                <p>Choose the correct genitive form for the preposition.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ des Sturms bleiben wir zu Hause. (wegen)  
+                            <select class="answer-select" data-correct="Wegen des Sturms bleiben wir zu Hause.">
+                                <option value="">Select</option>
+                                <option value="Wegen des Sturms bleiben wir zu Hause.">Wegen des Sturms</option>
+                                <option value="Wegen dem Sturm bleiben wir zu Hause.">Wegen dem Sturm</option>
+                                <option value="Wegen Sturm bleiben wir zu Hause.">Wegen Sturm</option>
+                            </select>
+                        </li>
+                        <li>___ des Parks ist es laut. (außerhalb)  
+                            <select class="answer-select" data-correct="Außerhalb des Parks ist es laut.">
+                                <option value="">Select</option>
+                                <option value="Außerhalb Parks ist es laut.">Außerhalb Parks</option>
+                                <option value="Außerhalb des Parks ist es laut.">Außerhalb des Parks</option>
+                                <option value="Außerhalb dem Park ist es laut.">Außerhalb dem Park</option>
+                            </select>
+                        </li>
+                        <li>___ einer Stunde bin ich fertig. (innerhalb)  
+                            <select class="answer-select" data-correct="Innerhalb einer Stunde bin ich fertig.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb einer Stunde bin ich fertig.">Innerhalb einer Stunde</option>
+                                <option value="Innerhalb eine Stunde bin ich fertig.">Innerhalb eine Stunde</option>
+                                <option value="Innerhalb Stunde bin ich fertig.">Innerhalb Stunde</option>
+                            </select>
+                        </li>
+                        <li>___ des Autos nehme ich den Zug. (statt)  
+                            <select class="answer-select" data-correct="Statt des Autos nehme ich den Zug.">
+                                <option value="">Select</option>
+                                <option value="Statt des Autos nehme ich den Zug.">Statt des Autos</option>
+                                <option value="Statt dem Auto nehme ich den Zug.">Statt dem Auto</option>
+                                <option value="Statt Auto nehme ich den Zug.">Statt Auto</option>
+                            </select>
+                        </li>
+                        <li>___ des Sommers regnet es viel. (während)  
+                            <select class="answer-select" data-correct="Während des Sommers regnet es viel.">
+                                <option value="">Select</option>
+                                <option value="Während Sommers regnet es viel.">Während Sommers</option>
+                                <option value="Während des Sommers regnet es viel.">Während des Sommers</option>
+                                <option value="Während dem Sommer regnet es viel.">Während dem Sommer</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Wegen des Sturms bleiben wir zu Hause.</em></li>
+                            <li><em>Außerhalb des Parks ist es laut.</em></li>
+                            <li><em>Innerhalb einer Stunde bin ich fertig.</em></li>
+                            <li><em>Statt des Autos nehme ich den Zug.</em></li>
+                            <li><em>Während des Sommers regnet es viel.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct translation with genitive preposition.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Within the house, it’s warm.  
+                            <select class="answer-select" data-correct="Innerhalb des Hauses ist es warm.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb des Hauses ist es warm.">Innerhalb des Hauses ist es warm.</option>
+                                <option value="Innerhalb dem Haus ist es warm.">Innerhalb dem Haus ist es warm.</option>
+                                <option value="Innerhalb Haus ist es warm.">Innerhalb Haus ist es warm.</option>
+                            </select>
+                        </li>
+                        <li>Outside of the city, I see trees.  
+                            <select class="answer-select" data-correct="Außerhalb der Stadt sehe ich Bäume.">
+                                <option value="">Select</option>
+                                <option value="Außerhalb der Stadt sehe ich Bäume.">Außerhalb der Stadt sehe ich Bäume.</option>
+                                <option value="Außerhalb dem Stadt sehe ich Bäume.">Außerhalb dem Stadt sehe ich Bäume.</option>
+                                <option value="Außerhalb Stadt sehe ich Bäume.">Außerhalb Stadt sehe ich Bäume.</option>
+                            </select>
+                        </li>
+                        <li>Because of the snow, we stay inside.  
+                            <select class="answer-select" data-correct="Wegen des Schnees bleiben wir drinnen.">
+                                <option value="">Select</option>
+                                <option value="Wegen des Schnees bleiben wir drinnen.">Wegen des Schnees bleiben wir drinnen.</option>
+                                <option value="Wegen dem Schnee bleiben wir drinnen.">Wegen dem Schnee bleiben wir drinnen.</option>
+                                <option value="Wegen Schnee bleiben wir drinnen.">Wegen Schnee bleiben wir drinnen.</option>
+                            </select>
+                        </li>
+                        <li>Instead of the book, I read a letter.  
+                            <select class="answer-select" data-correct="Statt des Buches lese ich einen Brief.">
+                                <option value="">Select</option>
+                                <option value="Statt des Buches lese ich einen Brief.">Statt des Buches lese ich einen Brief.</option>
+                                <option value="Statt dem Buch lese ich einen Brief.">Statt dem Buch lese ich einen Brief.</option>
+                                <option value="Statt Buch lese ich einen Brief.">Statt Buch lese ich einen Brief.</option>
+                            </select>
+                        </li>
+                        <li>Despite the rain, he runs.  
+                            <select class="answer-select" data-correct="Trotz des Regens läuft er.">
+                                <option value="">Select</option>
+                                <option value="Trotz des Regens läuft er.">Trotz des Regens läuft er.</option>
+                                <option value="Trotz dem Regen läuft er.">Trotz dem Regen läuft er.</option>
+                                <option value="Trotz Regen läuft er.">Trotz Regen läuft er.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Innerhalb des Hauses ist es warm.</em></li>
+                            <li><em>Außerhalb der Stadt sehe ich Bäume.</em></li>
+                            <li><em>Wegen des Schnees bleiben wir drinnen.</em></li>
+                            <li><em>Statt des Buches lese ich einen Brief.</em></li>
+                            <li><em>Trotz des Regens läuft er.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence with the right genitive form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>'Wegen dem Wind bleibe ich hier.'  
+                            <select class="answer-select" data-correct="Wegen des Winds bleibe ich hier.">
+                                <option value="">Select</option>
+                                <option value="Wegen des Windes bleibe ich hier.">Wegen des Windes bleibe ich hier.</option>
+                                <option value="Wegen des Winds bleibe ich hier.">Wegen des Winds bleibe ich hier.</option>
+                                <option value="Wegen Wind bleibe ich hier.">Wegen Wind bleibe ich hier.</option>
+                            </select>
+                        </li>
+                        <li>'Innerhalb Haus ist es ruhig.'  
+                            <select class="answer-select" data-correct="Innerhalb des Hauses ist es ruhig.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb des Hauses ist es ruhig.">Innerhalb des Hauses ist es ruhig.</option>
+                                <option value="Innerhalb dem Haus ist es ruhig.">Innerhalb dem Haus ist es ruhig.</option>
+                                <option value="Innerhalb des Haus ist es ruhig.">Innerhalb des Haus ist es ruhig.</option>
+                            </select>
+                        </li>
+                        <li>'Außerhalb Stadt wohne ich.'  
+                            <select class="answer-select" data-correct="Außerhalb der Stadt wohne ich.">
+                                <option value="">Select</option>
+                                <option value="Außerhalb der Stadt wohne ich.">Außerhalb der Stadt wohne ich.</option>
+                                <option value="Außerhalb dem Stadt wohne ich.">Außerhalb dem Stadt wohne ich.</option>
+                                <option value="Außerhalb des Stadt wohne ich.">Außerhalb des Stadt wohne ich.</option>
+                            </select>
+                        </li>
+                        <li>'Statt dem Tee trinke ich Wasser.'  
+                            <select class="answer-select" data-correct="Statt des Tees trinke ich Wasser.">
+                                <option value="">Select</option>
+                                <option value="Statt des Tees trinke ich Wasser.">Statt des Tees trinke ich Wasser.</option>
+                                <option value="Statt Tee trinke ich Wasser.">Statt Tee trinke ich Wasser.</option>
+                                <option value="Statt des Tee trinke ich Wasser.">Statt des Tee trinke ich Wasser.</option>
+                            </select>
+                        </li>
+                        <li>'Trotz Kälte gehe ich raus.'  
+                            <select class="answer-select" data-correct="Trotz der Kälte gehe ich raus.">
+                                <option value="">Select</option>
+                                <option value="Trotz der Kälte gehe ich raus.">Trotz der Kälte gehe ich raus.</option>
+                                <option value="Trotz dem Kälte gehe ich raus.">Trotz dem Kälte gehe ich raus.</option>
+                                <option value="Trotz des Kälte gehe ich raus.">Trotz des Kälte gehe ich raus.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Wegen des Winds bleibe ich hier.</em></li>
+                            <li><em>Innerhalb des Hauses ist es ruhig.</em></li>
+                            <li><em>Außerhalb der Stadt wohne ich.</em></li>
+                            <li><em>Statt des Tees trinke ich Wasser.</em></li>
+                            <li><em>Trotz der Kälte gehe ich raus.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct genitive form for the preposition.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ des Gebäudes gibt es einen Garten. (außerhalb)  
+                            <select class="answer-select" data-correct="Außerhalb des Gebäudes gibt es einen Garten.">
+                                <option value="">Select</option>
+                                <option value="Außerhalb des Gebäudes gibt es einen Garten.">Außerhalb des Gebäudes</option>
+                                <option value="Außerhalb dem Gebäude gibt es einen Garten.">Außerhalb dem Gebäude</option>
+                                <option value="Außerhalb Gebäude gibt es einen Garten.">Außerhalb Gebäude</option>
+                            </select>
+                        </li>
+                        <li>___ des Wetters bleibe ich drinnen. (wegen)  
+                            <select class="answer-select" data-correct="Wegen des Wetters bleibe ich drinnen.">
+                                <option value="">Select</option>
+                                <option value="Wegen Wetter bleibe ich drinnen.">Wegen Wetter</option>
+                                <option value="Wegen des Wetters bleibe ich drinnen.">Wegen des Wetters</option>
+                                <option value="Wegen dem Wetter bleibe ich drinnen.">Wegen dem Wetter</option>
+                            </select>
+                        </li>
+                        <li>___ eines Tages rufe ich an. (innerhalb)  
+                            <select class="answer-select" data-correct="Innerhalb eines Tages rufe ich an.">
+                                <option value="">Select</option>
+                                <option value="Innerhalb eines Tages rufe ich an.">Innerhalb eines Tages</option>
+                                <option value="Innerhalb dem Tag rufe ich an.">Innerhalb dem Tag</option>
+                                <option value="Innerhalb Tag rufe ich an.">Innerhalb Tag</option>
+                            </select>
+                        </li>
+                        <li>___ des Spiels esse ich etwas. (während)  
+                            <select class="answer-select" data-correct="Während des Spiels esse ich etwas.">
+                                <option value="">Select</option>
+                                <option value="Während Spiel esse ich etwas.">Während Spiel</option>
+                                <option value="Während des Spiels esse ich etwas.">Während des Spiels</option>
+                                <option value="Während dem Spiel esse ich etwas.">Während dem Spiel</option>
+                            </select>
+                        </li>
+                        <li>___ seiner Hilfe mache ich es selbst. (anstatt)  
+                            <select class="answer-select" data-correct="Anstatt seiner Hilfe mache ich es selbst.">
+                                <option value="">Select</option>
+                                <option value="Anstatt seiner Hilfe mache ich es selbst.">Anstatt seiner Hilfe</option>
+                                <option value="Anstatt ihm Hilfe mache ich es selbst.">Anstatt ihm Hilfe</option>
+                                <option value="Anstatt Hilfe mache ich es selbst.">Anstatt Hilfe</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Außerhalb des Gebäudes gibt es einen Garten.</em></li>
+                            <li><em>Wegen des Wetters bleibe ich drinnen.</em></li>
+                            <li><em>Innerhalb eines Tages rufe ich an.</em></li>
+                            <li><em>Während des Spiels esse ich etwas.</em></li>
+                            <li><em>Anstatt seiner Hilfe mache ich es selbst.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Genitive Prepositions</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Genitive Endings</strong>: Use 'des' (masc./neut.), 'der' (fem./pl.), e.g., 'des Hauses', 'der Frau'.</li>
+                    <li><strong>Meaning Clue</strong>: 'Wegen' = reason, 'statt' = replacement, 'trotz' = despite.</li>
+                    <li><strong>Formal Use</strong>: Stick to genitive in writing ('wegen des Regens'), not dative ('wegen dem Regen').</li>
+                    <li><strong>Practice Pairs</strong>: Learn 'innerhalb' (inside) with 'außerhalb' (outside).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on genitive prepositions with examples.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on genitive prepositions.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/prepositions/prepositions-with-genitive" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Conversations with subtitles.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="passiv-modal.html" class="see-also-rect">Passiv mit Modalverb</a>
+                <a href="passiv.html" class="see-also-rect">Passiv, Präteritum, Perfekt</a>
+                <a href="ohneartikel.html" class="see-also-rect">Adjektivdeklination ohne Artikel</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="passiv-modal.html" class="next-btn">Next: Passiv mit Modalverb →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

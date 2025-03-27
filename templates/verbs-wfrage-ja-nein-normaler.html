@@ -1,0 +1,376 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Verbs: W-Fragen, Aussagesätze, Ja/Nein-Fragen{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/konj2.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Verbs: A Simple Guide with W-Fragen, Aussagesätze, and Ja/Nein-Fragen</h1>
+            <p>
+                Verbs are the engine of German sentences—they drive the action or state of being. This guide dives straight into <strong>German verbs</strong>, explaining how they work in the present tense, how to conjugate them, and how to use them in <strong>W-Fragen</strong> (question-word questions), <strong>Aussagesätze</strong> (statements), and <strong>Ja/Nein-Fragen</strong> (yes/no questions). It’s clear, detailed, and loaded with examples to help you understand and practice. Let’s jump right in!
+            </p>
+        </section>
+
+        <!-- German Verbs: The Basics -->
+        <section id="basics">
+            <h2>German Verbs: The Basics</h2>
+            <p>
+                Verbs in German describe what’s happening—like <em>gehen</em> (to go), <em>essen</em> (to eat), or <em>sein</em> (to be). They <strong>conjugate</strong> (change form) based on the subject (who’s doing the action) and tense. We’ll focus on the <strong>present tense</strong> here—it’s the foundation for beginners.
+            </p>
+            <div class="subsection">
+                <h3>How Verbs Work</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Stem</strong>: The base of the verb (e.g., <em>lern-</em> from <em>lernen</em> – to learn).</li>
+                        <li><strong>Endings</strong>: Added to the stem depending on the subject (e.g., <em>ich lerne</em>, <em>du lernst</em>).</li>
+                        <li><strong>Verb Second Rule</strong>: In statements, the verb is the second "piece" (after the subject or an opener like time).</li>
+                        <li><strong>Questions</strong>: Verb position shifts—first for yes/no, second for W-questions.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Conjugation Example: <em>lernen</em> (to learn)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Conjugation</th>
+                            <th>Example Sentence</th>
+                        </tr>
+                        <tr>
+                            <td>ich</td>
+                            <td>lerne</td>
+                            <td>Ich lerne Deutsch. (I learn German.)</td>
+                        </tr>
+                        <tr>
+                            <td>du</td>
+                            <td>lernst</td>
+                            <td>Du lernst schnell. (You learn fast.)</td>
+                        </tr>
+                        <tr>
+                            <td>er/sie/es</td>
+                            <td>lernt</td>
+                            <td>Er lernt jeden Tag. (He learns every day.)</td>
+                        </tr>
+                        <tr>
+                            <td>wir</td>
+                            <td>lernen</td>
+                            <td>Wir lernen zusammen. (We learn together.)</td>
+                        </tr>
+                        <tr>
+                            <td>ihr</td>
+                            <td>lernt</td>
+                            <td>Ihr lernt im Park. (You all learn in the park.)</td>
+                        </tr>
+                        <tr>
+                            <td>sie/Sie</td>
+                            <td>lernen</td>
+                            <td>Sie lernen viel. (They/You [formal] learn a lot.)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Verbs to Know</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>sein</em> (to be): ich bin, du bist, er ist, wir sind, ihr seid, sie sind
+                            <ul>
+                                <li>Ich bin müde. (I am tired.)</li>
+                                <li>Ihr seid laut. (You all are loud.)</li>
+                            </ul>
+                        </li>
+                        <li><em>haben</em> (to have): ich habe, du hast, er hat, wir haben, ihr habt, sie haben
+                            <ul>
+                                <li>Er hat ein Buch. (He has a book.)</li>
+                                <li>Wir haben Zeit. (We have time.)</li>
+                            </ul>
+                        </li>
+                        <li><em>gehen</em> (to go): ich gehe, du gehst, er geht, wir gehen, ihr geht, sie gehen
+                            <ul>
+                                <li>Sie geht zur Schule. (She goes to school.)</li>
+                                <li>Ihr geht nach Hause. (You all go home.)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- W-Fragen -->
+        <section id="w-fragen">
+            <h2>W-Fragen: Question-Word Questions</h2>
+            <p>
+                W-Fragen use question words like <em>wer</em> (who), <em>was</em> (what), <em>wo</em> (where), <em>wann</em> (when), <em>wie</em> (how), or <em>warum</em> (why). The verb is <strong>second</strong>, right after the question word.
+            </p>
+            <div class="subsection">
+                <h3>Structure</h3>
+                <p><strong>Question Word + Verb + Subject + Rest</strong><br>Answers match the question’s focus.</p>
+            </div>
+            <div class="subsection">
+                <h3>Examples with Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Wer</em> kommt heute? (Who is coming today?) <br> - Anna kommt heute. (Anna is coming today.)</li>
+                        <li><em>Was</em> machst du? (What are you doing?) <br> - Ich mache Hausaufgaben. (I’m doing homework.)</li>
+                        <li><em>Wo</em> wohnt er? (Where does he live?) <br> - Er wohnt in Hamburg. (He lives in Hamburg.)</li>
+                        <li><em>Wann</em> gehst du? (When are you going?) <br> - Ich gehe morgen. (I’m going tomorrow.)</li>
+                        <li><em>Wie</em> bist du heute? (How are you today?) <br> - Ich bin gut. (I’m good.)</li>
+                        <li><em>Warum</em> lernst du Deutsch? (Why are you learning German?) <br> - Ich lerne Deutsch, weil es nützlich ist. (I learn German because it’s useful.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Practice Tip</h3>
+                <p>Write 5 W-Fragen with <em>haben</em>: <em>Wer hat das? Was hast du? Wo habt ihr es? Wann hat er Zeit? Wie habt ihr das gemacht?</em></p>
+            </div>
+        </section>
+
+        <!-- Aussagesätze -->
+        <section id="aussagesatze">
+            <h2>Aussagesätze: Statements</h2>
+            <p>
+                Aussagesätze are statements—they tell what’s happening. The verb is <strong>second</strong>, after the subject or an opener (like time, place, or manner).
+            </p>
+            <div class="subsection">
+                <h3>Structure</h3>
+                <p><strong>Subject + Verb + Object/Extra Info</strong> <br> OR <br> <strong>Opener + Verb + Subject + Rest</strong></p>
+            </div>
+            <div class="subsection">
+                <h3>Examples with Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich esse Brot. (I eat bread.)</li>
+                        <li>Du trinkst Wasser. (You drink water.)</li>
+                        <li>Er liest ein Buch. (He reads a book.)</li>
+                        <li>Sie wohnt in Berlin. (She lives in Berlin.)</li>
+                        <li>Wir gehen morgen zur Schule. (We go to school tomorrow.)</li>
+                        <li>Heute lernst du Deutsch. (Today you learn German.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Practice Tip</h3>
+                <p>Write 5 statements with <em>sein</em>: <em>Ich bin hier. Du bist mein Freund. Er ist groß. Wir sind müde. Sie sind nett.</em></p>
+            </div>
+        </section>
+
+        <!-- Ja/Nein-Fragen -->
+        <section id="ja-nein-fragen">
+            <h2>Ja/Nein-Fragen: Yes/No Questions</h2>
+            <p>
+                Ja/Nein-Fragen ask for a "yes" or "no" answer. The verb goes <strong>first</strong>, followed by the subject.
+            </p>
+            <div class="subsection">
+                <h3>Structure</h3>
+                <p><strong>Verb + Subject + Rest</strong></p>
+            </div>
+            <div class="subsection">
+                <h3>Examples with Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Bist</em> du müde? (Are you tired?) <br> - Ja, ich bin müde. / Nein, ich bin nicht müde.</li>
+                        <li><em>Hat</em> er ein Auto? (Does he have a car?) <br> - Ja, er hat ein Auto. / Nein, er hat kein Auto.</li>
+                        <li><em>Geht</em> sie zur Schule? (Does she go to school?) <br> - Ja, sie geht zur Schule. / Nein, sie geht nicht zur Schule.</li>
+                        <li><em>Seid</em> ihr hier? (Are you all here?) <br> - Ja, wir sind hier. / Nein, wir sind nicht hier.</li>
+                        <li><em>Lernst</em> du Deutsch? (Are you learning German?) <br> - Ja, ich lerne Deutsch. / Nein, ich lerne nicht Deutsch.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Practice Tip</h3>
+                <p>Make 5 Ja/Nein-Fragen with <em>gehen</em>: <em>Gehst du? Geht er? Gehen wir? Geht ihr? Gehen sie?</em> Answer each with <em>Ja</em> and <em>Nein</em>.</p>
+            </div>
+        </section>
+
+        <!-- Simple Exercise -->
+        <section id="practice">
+            <h2>Simple Practice Exercise</h2>
+            <div class="subsection">
+                <h3>Exercise: Choose the Correct Verb Form</h3>
+                <p>Select the correct verb conjugation or sentence type for each prompt.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich ___ zur Schule.</em> (go)  
+                            <select class="answer-select" data-correct="gehe">
+                                <option value="">Select</option>
+                                <option value="gehe">gehe</option>
+                                <option value="gehst">gehst</option>
+                                <option value="geht">geht</option>
+                                <option value="gehen">gehen</option>
+                            </select>
+                        </li>
+                        <li><em>___ du ein Buch?</em> (Do you have)  
+                            <select class="answer-select" data-correct="Hast">
+                                <option value="">Select</option>
+                                <option value="Bist">Bist</option>
+                                <option value="Hast">Hast</option>
+                                <option value="Hat">Hat</option>
+                                <option value="Haben">Haben</option>
+                            </select>
+                        </li>
+                        <li><em>Er ___ müde.</em> (is)  
+                            <select class="answer-select" data-correct="ist">
+                                <option value="">Select</option>
+                                <option value="bin">bin</option>
+                                <option value="bist">bist</option>
+                                <option value="ist">ist</option>
+                                <option value="sind">sind</option>
+                            </select>
+                        </li>
+                        <li><em>Was ___ wir?</em> (are we doing)  
+                            <select class="answer-select" data-correct="machen">
+                                <option value="">Select</option>
+                                <option value="mache">mache</option>
+                                <option value="machst">machst</option>
+                                <option value="macht">macht</option>
+                                <option value="machen">machen</option>
+                            </select>
+                        </li>
+                        <li><em>___ ihr morgen?</em> (Are you all going)  
+                            <select class="answer-select" data-correct="Geht">
+                                <option value="">Select</option>
+                                <option value="Geht">Geht</option>
+                                <option value="Gehe">Gehe</option>
+                                <option value="Gehst">Gehst</option>
+                                <option value="Gehen">Gehen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>gehe</em></li>
+                            <li><em>Hast</em></li>
+                            <li><em>ist</em></li>
+                            <li><em>machen</em></li>
+                            <li><em>Geht</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Master Verbs -->
+        <section id="tips">
+            <h2>Tips to Master Verbs</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Memorize Endings</strong>: Practice <em>lernen</em> daily—say <em>ich lerne, du lernst</em> aloud.</li>
+                    <li><strong>Listen</strong>: Watch German videos (e.g., Easy German), repeat verb forms you hear.</li>
+                    <li><strong>Switch It</strong>: Take a statement (<em>Ich esse</em>) and turn it into questions (<em>Was esse ich? Esse ich?</em>).</li>
+                    <li><strong>Use Daily</strong>: Say what you do—<em>Ich gehe, ich esse, ich bin</em>—to build habits.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>Goethe A1/A2 Wortliste</strong><br>Verbs in context.</p>
+                    <a href="https://www.goethe.de/pro/relaunch/prf/de/A1_Wortliste_2018.pdf" class="resource-btn" target="_blank">Visit Goethe Wortliste</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube – Easy German</strong><br>Hear verbs in real talk.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn" target="_blank">Visit Easy German</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Schubert Verlag</strong><br>Free verb exercises.</p>
+                    <a href="https://www.schubert-verlag.de/aufgaben/uebungen_a1/a1_uebungen_index.htm" class="resource-btn" target="_blank">Visit Schubert Verlag</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <p>
+                Keep this guide handy, practice the examples, and you’ll get verbs down fast. Next up, you can tackle past tense or more question types—your call!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-rect">German Nouns</a>
+                <a href="personal-pronouns.html" class="see-also-rect">Personal Pronouns</a>
+                <a href="articles.html" class="see-also-rect">German Articles</a>
+                <a href="adjectives.html" class="see-also-rect">German Adjectives</a>
+                <a href="conjugation.html" class="see-also-rect">German Conjugation</a>
+                <a href="cases.html" class="see-also-rect">German Cases</a>
+                <a href="prepositions.html" class="see-also-rect">German Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="personal-pronouns.html" class="next-btn">Next: Personal Pronouns →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

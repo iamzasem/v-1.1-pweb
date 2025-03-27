@@ -1,0 +1,483 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Sätze mit "je ... desto ..."{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/konj2.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Sätze mit "je ... desto ..." (Sentences with "the ... the ...")</h1>
+            <p>
+                A guide to using the 'je ... desto ...' structure in German to show proportional relationships, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding "je ... desto ..."</h2>
+            <div class="subsection">
+                <h3>Definition</h3>
+                <p>'Je ... desto ...' is a comparative structure meaning "the ... the ...", showing how one thing increases or changes with another.</p>
+            </div>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>'Je' + comparative + clause (verb at end), 'desto' + comparative + clause (verb second), e.g., 'Je mehr ich lerne, desto klüger werde ich.'</p>
+                <p><strong>Note:</strong> 'Je' and 'desto' don’t decline.</p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>- Use comparatives ('mehr, besser').<br>- Shows proportionality.<br>- Comma separates clauses.<br>- Flexible with adjectives, adverbs, quantities.</p>
+            </div>
+            <div class="subsection">
+                <h3>Uses</h3>
+                <p>1. Cause and effect: 'Je mehr ich esse, desto dicker werde ich.'<br>2. General truths: 'Je älter man wird, desto weiser wird man.'<br>3. Daily life: 'Je länger ich warte, desto ungeduldiger bin ich.'</p>
+            </div>
+        </section>
+
+        <!-- Examples -->
+        <section id="examples">
+            <h2>Examples: "je ... desto ..." (25 Total)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <!-- Quantities -->
+                    <tr><td><em>Je mehr ich lese, desto mehr verstehe ich.</em></td><td>The more I read, the more I understand.</td></tr>
+                    <tr><td><em>Je weniger ich schlafe, desto müder bin ich.</em></td><td>The less I sleep, the more tired I am.</td></tr>
+                    <tr><td><em>Je mehr wir sparen, desto reicher werden wir.</em></td><td>The more we save, the richer we become.</td></tr>
+                    <tr><td><em>Je weniger er spricht, desto besser ist es.</em></td><td>The less he talks, the better it is.</td></tr>
+                    <tr><td><em>Je mehr ich übe, desto schneller lerne ich.</em></td><td>The more I practice, the faster I learn.</td></tr>
+                    <!-- Adjectives -->
+                    <tr><td><em>Je größer das Haus ist, desto teurer wird es.</em></td><td>The bigger the house is, the more expensive it gets.</td></tr>
+                    <tr><td><em>Je kleiner die Klasse ist, desto ruhiger bleibt es.</em></td><td>The smaller the class is, the quieter it stays.</td></tr>
+                    <tr><td><em>Je älter ich werde, desto langsamer laufe ich.</em></td><td>The older I get, the slower I run.</td></tr>
+                    <tr><td><em>Je höher der Berg ist, desto schwieriger wird es.</em></td><td>The higher the mountain is, the harder it gets.</td></tr>
+                    <tr><td><em>Je kälter das Wetter wird, desto wärmer ziehe ich mich an.</em></td><td>The colder the weather gets, the warmer I dress.</td></tr>
+                    <!-- Adverbs -->
+                    <tr><td><em>Je öfter ich komme, desto netter sind sie.</em></td><td>The more often I come, the nicer they are.</td></tr>
+                    <tr><td><em>Je länger ich warte, desto nervöser werde ich.</em></td><td>The longer I wait, the more nervous I get.</td></tr>
+                    <tr><td><em>Je schneller ich gehe, desto früher bin ich da.</em></td><td>The faster I walk, the earlier I arrive.</td></tr>
+                    <tr><td><em>Je seltener er hilft, desto schlechter fühle ich mich.</em></td><td>The less often he helps, the worse I feel.</td></tr>
+                    <tr><td><em>Je lauter ich rufe, desto besser hört er mich.</em></td><td>The louder I call, the better he hears me.</td></tr>
+                    <!-- Mixed -->
+                    <tr><td><em>Je mehr Zeit ich habe, desto entspannter bin ich.</em></td><td>The more time I have, the more relaxed I am.</td></tr>
+                    <tr><td><em>Je kleiner das Kind ist, desto mehr schläft es.</em></td><td>The smaller the child is, the more it sleeps.</td></tr>
+                    <tr><td><em>Je öfter wir uns sehen, desto glücklicher bin ich.</em></td><td>The more often we meet, the happier I am.</td></tr>
+                    <tr><td><em>Je weniger Geld ich ausgebe, desto länger reicht es.</em></td><td>The less money I spend, the longer it lasts.</td></tr>
+                    <tr><td><em>Je wärmer die Sonne scheint, desto besser fühle ich mich.</em></td><td>The warmer the sun shines, the better I feel.</td></tr>
+                    <tr><td><em>Je mehr Fehler ich mache, desto vorsichtiger werde ich.</em></td><td>The more mistakes I make, the more careful I become.</td></tr>
+                    <tr><td><em>Je höher ich klettere, desto schöner ist die Aussicht.</em></td><td>The higher I climb, the more beautiful the view is.</td></tr>
+                    <tr><td><em>Je länger der Film läuft, desto langweiliger wird er.</em></td><td>The longer the movie runs, the more boring it gets.</td></tr>
+                    <tr><td><em>Je weniger ich esse, desto hungriger bin ich.</em></td><td>The less I eat, the hungrier I am.</td></tr>
+                    <tr><td><em>Je schneller wir arbeiten, desto eher sind wir fertig.</em></td><td>The faster we work, the sooner we’re done.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose 'Je' or 'Desto'</h3>
+                <p>Select the correct words.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>___ mehr ich lerne, ___ klüger werde ich.</em>  
+                            <select class="answer-select" data-correct="Je mehr ich lerne, desto klüger werde ich.">
+                                <option value="">Select</option>
+                                <option value="Je mehr ich lerne, desto klüger werde ich.">Je … desto</option>
+                                <option value="Desto mehr ich lerne, je klüger werde ich.">Desto … je</option>
+                                <option value="Je mehr ich lerne, je klüger werde ich.">Je … je</option>
+                            </select>
+                        </li>
+                        <li><em>___ länger ich warte, ___ ungeduldiger bin ich.</em>  
+                            <select class="answer-select" data-correct="Je länger ich warte, desto ungeduldiger bin ich.">
+                                <option value="">Select</option>
+                                <option value="Desto länger ich warte, je ungeduldiger bin ich.">Desto … je</option>
+                                <option value="Je länger ich warte, desto ungeduldiger bin ich.">Je … desto</option>
+                                <option value="Desto länger ich warte, desto ungeduldiger bin ich.">Desto … desto</option>
+                            </select>
+                        </li>
+                        <li><em>___ weniger er sagt, ___ besser ist es.</em>  
+                            <select class="answer-select" data-correct="Je weniger er sagt, desto besser ist es.">
+                                <option value="">Select</option>
+                                <option value="Je weniger er sagt, desto besser ist es.">Je … desto</option>
+                                <option value="Desto weniger er sagt, je besser ist es.">Desto … je</option>
+                                <option value="Je weniger er sagt, je besser ist es.">Je … je</option>
+                            </select>
+                        </li>
+                        <li><em>___ öfter ich übe, ___ schneller kann ich es.</em>  
+                            <select class="answer-select" data-correct="Je öfter ich übe, desto schneller kann ich es.">
+                                <option value="">Select</option>
+                                <option value="Desto öfter ich übe, je schneller kann ich es.">Desto … je</option>
+                                <option value="Je öfter ich übe, desto schneller kann ich es.">Je … desto</option>
+                                <option value="Desto öfter ich übe, desto schneller kann ich es.">Desto … desto</option>
+                            </select>
+                        </li>
+                        <li><em>___ höher ich steige, ___ müder werde ich.</em>  
+                            <select class="answer-select" data-correct="Je höher ich steige, desto müder werde ich.">
+                                <option value="">Select</option>
+                                <option value="Je höher ich steige, desto müder werde ich.">Je … desto</option>
+                                <option value="Desto höher ich steige, je müder werde ich.">Desto … je</option>
+                                <option value="Je höher ich steige, je müder werde ich.">Je … je</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Je mehr ich lerne, desto klüger werde ich.</em></li>
+                            <li><em>Je länger ich warte, desto ungeduldiger bin ich.</em></li>
+                            <li><em>Je weniger er sagt, desto besser ist es.</em></li>
+                            <li><em>Je öfter ich übe, desto schneller kann ich es.</em></li>
+                            <li><em>Je höher ich steige, desto müder werde ich.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Fill in the Comparative</h3>
+                <p>Choose the correct comparative.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Je ___ ich esse, desto dicker werde ich.</em>  
+                            <select class="answer-select" data-correct="Je mehr ich esse, desto dicker werde ich.">
+                                <option value="">Select</option>
+                                <option value="Je mehr ich esse, desto dicker werde ich.">mehr</option>
+                                <option value="Je weniger ich esse, desto dicker werde ich.">weniger</option>
+                                <option value="Je groß ich esse, desto dicker werde ich.">groß</option>
+                            </select>
+                        </li>
+                        <li><em>Je länger ich warte, desto ___ bin ich.</em>  
+                            <select class="answer-select" data-correct="Je länger ich warte, desto nervöser bin ich.">
+                                <option value="">Select</option>
+                                <option value="Je länger ich warte, desto schnell bin ich.">schnell</option>
+                                <option value="Je länger ich warte, desto nervöser bin ich.">nervöser</option>
+                                <option value="Je länger ich warte, desto wenig bin ich.">wenig</option>
+                            </select>
+                        </li>
+                        <li><em>Je ___ wir sparen, desto reicher werden wir.</em>  
+                            <select class="answer-select" data-correct="Je mehr wir sparen, desto reicher werden wir.">
+                                <option value="">Select</option>
+                                <option value="Je kleiner wir sparen, desto reicher werden wir.">kleiner</option>
+                                <option value="Je mehr wir sparen, desto reicher werden wir.">mehr</option>
+                                <option value="Je oft wir sparen, desto reicher werden wir.">oft</option>
+                            </select>
+                        </li>
+                        <li><em>Je kleiner das Haus ist, desto ___ ist es.</em>  
+                            <select class="answer-select" data-correct="Je kleiner das Haus ist, desto billiger ist es.">
+                                <option value="">Select</option>
+                                <option value="Je kleiner das Haus ist, desto teurer ist es.">teurer</option>
+                                <option value="Je kleiner das Haus ist, desto billiger ist es.">billiger</option>
+                                <option value="Je kleiner das Haus ist, desto hoch ist es.">hoch</option>
+                            </select>
+                        </li>
+                        <li><em>Je ___ ich laufe, desto schneller bin ich.</em>  
+                            <select class="answer-select" data-correct="Je öfter ich laufe, desto schneller bin ich.">
+                                <option value="">Select</option>
+                                <option value="Je öfter ich laufe, desto schneller bin ich.">öfter</option>
+                                <option value="Je länger ich laufe, desto schneller bin ich.">länger</option>
+                                <option value="Je mehr ich laufe, desto schneller bin ich.">mehr</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Je mehr ich esse, desto dicker werde ich.</em></li>
+                            <li><em>Je länger ich warte, desto nervöser bin ich.</em></li>
+                            <li><em>Je mehr wir sparen, desto reicher werden wir.</em></li>
+                            <li><em>Je kleiner das Haus ist, desto billiger ist es.</em></li>
+                            <li><em>Je öfter ich laufe, desto schneller bin ich.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct translation.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>The more I read, the smarter I get.  
+                            <select class="answer-select" data-correct="Je mehr ich lese, desto klüger werde ich.">
+                                <option value="">Select</option>
+                                <option value="Je mehr ich lese, desto klüger werde ich.">Je mehr ich lese, desto klüger werde ich.</option>
+                                <option value="Desto mehr ich lese, je klüger werde ich.">Desto mehr ich lese, je klüger werde ich.</option>
+                            </select>
+                        </li>
+                        <li>The longer he waits, the angrier he becomes.  
+                            <select class="answer-select" data-correct="Je länger er wartet, desto wütender wird er.">
+                                <option value="">Select</option>
+                                <option value="Je länger er wartet, desto wütender wird er.">Je länger er wartet, desto wütender wird er.</option>
+                                <option value="Desto länger er wartet, je wütender wird er.">Desto länger er wartet, je wütender wird er.</option>
+                            </select>
+                        </li>
+                        <li>The less I sleep, the more tired I am.  
+                            <select class="answer-select" data-correct="Je weniger ich schlafe, desto müder bin ich.">
+                                <option value="">Select</option>
+                                <option value="Je weniger ich schlafe, desto müder bin ich.">Je weniger ich schlafe, desto müder bin ich.</option>
+                                <option value="Desto weniger ich schlafe, je müder bin ich.">Desto weniger ich schlafe, je müder bin ich.</option>
+                            </select>
+                        </li>
+                        <li>The higher the tree is, the harder it falls.  
+                            <select class="answer-select" data-correct="Je höher der Baum ist, desto härter fällt er.">
+                                <option value="">Select</option>
+                                <option value="Je höher der Baum ist, desto härter fällt er.">Je höher der Baum ist, desto härter fällt er.</option>
+                                <option value="Desto höher der Baum ist, je härter fällt er.">Desto höher der Baum ist, je härter fällt er.</option>
+                            </select>
+                        </li>
+                        <li>The more often we meet, the better we know each other.  
+                            <select class="answer-select" data-correct="Je öfter wir uns treffen, desto besser kennen wir uns.">
+                                <option value="">Select</option>
+                                <option value="Je öfter wir uns treffen, desto besser kennen wir uns.">Je öfter wir uns treffen, desto besser kennen wir uns.</option>
+                                <option value="Desto öfter wir uns treffen, je besser kennen wir uns.">Desto öfter wir uns treffen, je besser kennen wir uns.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Je mehr ich lese, desto klüger werde ich.</em></li>
+                            <li><em>Je länger er wartet, desto wütender wird er.</em></li>
+                            <li><em>Je weniger ich schlafe, desto müder bin ich.</em></li>
+                            <li><em>Je höher der Baum ist, desto härter fällt er.</em></li>
+                            <li><em>Je öfter wir uns treffen, desto besser kennen wir uns.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Desto mehr ich lerne, je klüger bin ich.</em>  
+                            <select class="answer-select" data-correct="Je mehr ich lerne, desto klüger bin ich.">
+                                <option value="">Select</option>
+                                <option value="Je mehr ich lerne, desto klüger bin ich.">Je mehr ich lerne, desto klüger bin ich.</option>
+                                <option value="Je mehr ich lerne, je klüger bin ich.">Je mehr ich lerne, je klüger bin ich.</option>
+                            </select>
+                        </li>
+                        <li><em>Je kleiner das Kind ist, je ruhiger bleibt es.</em>  
+                            <select class="answer-select" data-correct="Je kleiner das Kind ist, desto ruhiger bleibt es.">
+                                <option value="">Select</option>
+                                <option value="Je kleiner das Kind ist, desto ruhiger bleibt es.">Je kleiner das Kind ist, desto ruhiger bleibt es.</option>
+                                <option value="Desto kleiner das Kind ist, je ruhiger bleibt es.">Desto kleiner das Kind ist, je ruhiger bleibt es.</option>
+                            </select>
+                        </li>
+                        <li><em>Je länger ich warte, desto nervös bin ich.</em>  
+                            <select class="answer-select" data-correct="Je länger ich warte, desto nervöser bin ich.">
+                                <option value="">Select</option>
+                                <option value="Je länger ich warte, desto nervöser bin ich.">Je länger ich warte, desto nervöser bin ich.</option>
+                                <option value="Je länger ich warte, desto nervös bin ich.">Correct as is</option>
+                            </select>
+                        </li>
+                        <li><em>Je mehr ich esse, je dicker werde ich.</em>  
+                            <select class="answer-select" data-correct="Je mehr ich esse, desto dicker werde ich.">
+                                <option value="">Select</option>
+                                <option value="Je mehr ich esse, desto dicker werde ich.">Je mehr ich esse, desto dicker werde ich.</option>
+                                <option value="Desto mehr ich esse, je dicker werde ich.">Desto mehr ich esse, je dicker werde ich.</option>
+                            </select>
+                        </li>
+                        <li><em>Je öfter ich komme, desto nett sind sie.</em>  
+                            <select class="answer-select" data-correct="Je öfter ich komme, desto netter sind sie.">
+                                <option value="">Select</option>
+                                <option value="Je öfter ich komme, desto netter sind sie.">Je öfter ich komme, desto netter sind sie.</option>
+                                <option value="Je öfter ich komme, desto nett sind sie.">Correct as is</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Je mehr ich lerne, desto klüger bin ich.</em></li>
+                            <li><em>Je kleiner das Kind ist, desto ruhiger bleibt es.</em></li>
+                            <li><em>Je länger ich warte, desto nervöser bin ich.</em></li>
+                            <li><em>Je mehr ich esse, desto dicker werde ich.</em></li>
+                            <li><em>Je öfter ich komme, desto netter sind sie.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct comparative.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Je ___ ich arbeite, desto müder bin ich.</em>  
+                            <select class="answer-select" data-correct="Je mehr ich arbeite, desto müder bin ich.">
+                                <option value="">Select</option>
+                                <option value="Je mehr ich arbeite, desto müder bin ich.">mehr</option>
+                                <option value="Je weniger ich arbeite, desto müder bin ich.">weniger</option>
+                                <option value="Je groß ich arbeite, desto müder bin ich.">groß</option>
+                            </select>
+                        </li>
+                        <li><em>Je länger sie bleibt, desto ___ wird es.</em>  
+                            <select class="answer-select" data-correct="Je länger sie bleibt, desto besser wird es.">
+                                <option value="">Select</option>
+                                <option value="Je länger sie bleibt, desto besser wird es.">besser</option>
+                                <option value="Je länger sie bleibt, desto klein wird es.">klein</option>
+                                <option value="Je länger sie bleibt, desto viel wird es.">viel</option>
+                            </select>
+                        </li>
+                        <li><em>Je ___ das Auto fährt, desto schneller ist es.</em>  
+                            <select class="answer-select" data-correct="Je öfter das Auto fährt, desto schneller ist es.">
+                                <option value="">Select</option>
+                                <option value="Je öfter das Auto fährt, desto schneller ist es.">öfter</option>
+                                <option value="Je kleiner das Auto fährt, desto schneller ist es.">kleiner</option>
+                                <option value="Je mehr das Auto fährt, desto schneller ist es.">mehr</option>
+                            </select>
+                        </li>
+                        <li><em>Je weniger ich weiß, desto ___ fühle ich mich.</em>  
+                            <select class="answer-select" data-correct="Je weniger ich weiß, desto dümmer fühle ich mich.">
+                                <option value="">Select</option>
+                                <option value="Je weniger ich weiß, desto klüger fühle ich mich.">klüger</option>
+                                <option value="Je weniger ich weiß, desto dümmer fühle ich mich.">dümmer</option>
+                                <option value="Je weniger ich weiß, desto hoch fühle ich mich.">hoch</option>
+                            </select>
+                        </li>
+                        <li><em>Je ___ der Tag ist, desto wärmer wird es.</em>  
+                            <select class="answer-select" data-correct="Je länger der Tag ist, desto wärmer wird es.">
+                                <option value="">Select</option>
+                                <option value="Je länger der Tag ist, desto wärmer wird es.">länger</option>
+                                <option value="Je kleiner der Tag ist, desto wärmer wird es.">kleiner</option>
+                                <option value="Je wenig der Tag ist, desto wärmer wird es.">wenig</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Je mehr ich arbeite, desto müder bin ich.</em></li>
+                            <li><em>Je länger sie bleibt, desto besser wird es.</em></li>
+                            <li><em>Je öfter das Auto fährt, desto schneller ist es.</em></li>
+                            <li><em>Je weniger ich weiß, desto dümmer fühle ich mich.</em></li>
+                            <li><em>Je länger der Tag ist, desto wärmer wird es.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master "je ... desto ..."</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Comparatives</strong>: Always use 'mehr, weniger, -er' (e.g., 'schneller').</li>
+                    <li><strong>Order</strong>: 'Je' first (verb at end), 'desto' second (verb second).</li>
+                    <li><strong>Comma</strong>: Don’t forget it between clauses.</li>
+                    <li><strong>Practice</strong>: Start with 'mehr' examples, then try adjectives/adverbs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on 'je ... desto ...'.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on this structure.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/sentences/je-desto" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples with subtitles.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="relativp.html" class="see-also-rect">Relativpronomen "was" und "wo"</a>
+                <a href="artikelp.html" class="see-also-rect">Artikelwörter als Pronomen</a>
+                <a href="genetiv-prep.html" class="see-also-rect">Präpositionen mit Genitiv</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="relativp.html" class="next-btn">Next: Relativpronomen "was" und "wo" →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

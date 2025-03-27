@@ -1,0 +1,569 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Temporale Nebensätze in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/temp-neben.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Temporale Nebensätze in German</h1>
+            <p>
+                A guide to using temporal subordinate clauses to describe the timing of actions, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>What Are Temporale Nebensätze?</h2>
+            <p>These clauses describe when or how long something happens relative to the main clause, introduced by temporal conjunctions with the verb at the end.</p>
+            <div class="subsection">
+                <h3>Key Points</h3>
+                <ul class="example-list">
+                    <li><strong>Conjunctions</strong>: 'bevor', 'nachdem', 'seit', 'während', 'bis', etc.</li>
+                    <li><strong>Verb Position</strong>: Conjugated verb goes to the end.</li>
+                    <li><strong>Comma</strong>: Separates the temporal clause from the main clause.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Formation</h2>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Temporal conjunction + subject + rest of clause + verb, with tense varying by context.</p>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Temporale Nebensätze</h2>
+            <div class="subsection">
+                <h3>Basic: Sequence</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Bevor ich schlafe, lese ich.</em> (Before I sleep, I read.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Intermediate: Simultaneity</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Während sie singt, tanze ich.</em> (While she sings, I dance.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Advanced: Duration</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Seit er hier ist, regnet es.</em> (Since he’s been here, it’s been raining.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of 25 Common Examples</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <tr><td><em>Bevor ich zur Schule gehe, frühstücke ich.</em></td><td>Before I go to school, I eat breakfast.</td></tr>
+                    <tr><td><em>Nachdem sie das Buch gelesen hatte, schlief sie ein.</em></td><td>After she had read the book, she fell asleep.</td></tr>
+                    <tr><td><em>Seit ich hier wohne, bin ich glücklich.</em></td><td>Since I’ve lived here, I’ve been happy.</td></tr>
+                    <tr><td><em>Seitdem er weg ist, ist es ruhig.</em></td><td>Since he left, it’s been quiet.</td></tr>
+                    <tr><td><em>Während wir spielten, regnete es.</em></td><td>While we were playing, it rained.</td></tr>
+                    <tr><td><em>Ich warte, bis der Bus kommt.</em></td><td>I wait until the bus comes.</td></tr>
+                    <tr><td><em>Als ich klein war, spielte ich draußen.</em></td><td>When I was little, I played outside.</td></tr>
+                    <tr><td><em>Wenn ich Zeit habe, lese ich ein Buch.</em></td><td>Whenever I have time, I read a book.</td></tr>
+                    <tr><td><em>Bevor der Film begann, kaufte ich Popcorn.</em></td><td>Before the movie started, I bought popcorn.</td></tr>
+                    <tr><td><em>Nachdem er gearbeitet hatte, ruhte er sich aus.</em></td><td>After he had worked, he rested.</td></tr>
+                    <tr><td><em>Seit sie singt, klatschen alle.</em></td><td>Since she’s been singing, everyone’s been clapping.</td></tr>
+                    <tr><td><em>Seitdem ich ihn kenne, lache ich mehr.</em></td><td>Since I’ve known him, I’ve laughed more.</td></tr>
+                    <tr><td><em>Während der Lehrer sprach, schrieb ich.</em></td><td>While the teacher was speaking, I wrote.</td></tr>
+                    <tr><td><em>Ich bleibe hier, bis du zurückkommst.</em></td><td>I stay here until you come back.</td></tr>
+                    <tr><td><em>Als es donnerte, rannte ich hinein.</em></td><td>When it thundered, I ran inside.</td></tr>
+                    <tr><td><em>Wenn es regnet, bleibe ich drinnen.</em></td><td>Whenever it rains, I stay inside.</td></tr>
+                    <tr><td><em>Bevor ich aufstand, träumte ich.</em></td><td>Before I got up, I dreamed.</td></tr>
+                    <tr><td><em>Nachdem der Regen stoppte, ging ich raus.</em></td><td>After the rain stopped, I went out.</td></tr>
+                    <tr><td><em>Seit wir Freunde sind, teilen wir alles.</em></td><td>Since we’ve been friends, we share everything.</td></tr>
+                    <tr><td><em>Seitdem sie reiste, schrieb sie Briefe.</em></td><td>Since she traveled, she’s written letters.</td></tr>
+                    <tr><td><em>Während ich koche, höre ich Musik.</em></td><td>While I cook, I listen to music.</td></tr>
+                    <tr><td><em>Ich arbeite, bis die Sonne untergeht.</em></td><td>I work until the sun sets.</td></tr>
+                    <tr><td><em>Als ich ihn sah, lächelte ich.</em></td><td>When I saw him, I smiled.</td></tr>
+                    <tr><td><em>Wenn ich müde bin, schlafe ich früh.</em></td><td>Whenever I’m tired, I sleep early.</td></tr>
+                    <tr><td><em>Bevor wir aßen, wuschen wir die Hände.</em></td><td>Before we ate, we washed our hands.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice Temporale Nebensätze</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose the Correct Conjunction</h3>
+                <p>Select the appropriate temporal conjunction.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ich das Fenster öffnete, kam ein Vogel.  
+                            <select class="answer-select" data-correct="Nachdem ich das Fenster öffnete, kam ein Vogel.">
+                                <option value="">Select</option>
+                                <option value="Während ich das Fenster öffnete, kam ein Vogel.">Während</option>
+                                <option value="Bevor ich das Fenster öffnete, kam ein Vogel.">Bevor</option>
+                                <option value="Seit ich das Fenster öffnete, kam ein Vogel.">Seit</option>
+                                <option value="Nachdem ich das Fenster öffnete, kam ein Vogel.">Nachdem</option>
+                                <option value="Bis ich das Fenster öffnete, kam ein Vogel.">Bis</option>
+                            </select>
+                        </li>
+                        <li>___ er hier wohnt, ist es laut.  
+                            <select class="answer-select" data-correct="Seit er hier wohnt, ist es laut.">
+                                <option value="">Select</option>
+                                <option value="Bevor er hier wohnt, ist es laut.">Bevor</option>
+                                <option value="Nachdem er hier wohnt, ist es laut.">Nachdem</option>
+                                <option value="Seit er hier wohnt, ist es laut.">Seit</option>
+                                <option value="Während er hier wohnt, ist es laut.">Während</option>
+                                <option value="Als er hier wohnt, ist es laut.">Als</option>
+                            </select>
+                        </li>
+                        <li>Ich tanze, ___ sie singt.  
+                            <select class="answer-select" data-correct="Ich tanze, während sie singt.">
+                                <option value="">Select</option>
+                                <option value="Ich tanze, bis sie singt.">Bis</option>
+                                <option value="Ich tanze, während sie singt.">Während</option>
+                                <option value="Ich tanze, seitdem sie singt.">Seitdem</option>
+                                <option value="Ich tanze, bevor sie singt.">Bevor</option>
+                                <option value="Ich tanze, nachdem sie singt.">Nachdem</option>
+                            </select>
+                        </li>
+                        <li>___ ich ihn traf, war ich nervös.  
+                            <select class="answer-select" data-correct="Bevor ich ihn traf, war ich nervös.">
+                                <option value="">Select</option>
+                                <option value="Seit ich ihn traf, war ich nervös.">Seit</option>
+                                <option value="Nachdem ich ihn traf, war ich nervös.">Nachdem</option>
+                                <option value="Bevor ich ihn traf, war ich nervös.">Bevor</option>
+                                <option value="Während ich ihn traf, war ich nervös.">Während</option>
+                                <option value="Wenn ich ihn traf, war ich nervös.">Wenn</option>
+                            </select>
+                        </li>
+                        <li>Wir spielten, ___ es dunkel wurde.  
+                            <select class="answer-select" data-correct="Wir spielten, bis es dunkel wurde.">
+                                <option value="">Select</option>
+                                <option value="Wir spielten, seitdem es dunkel wurde.">Seitdem</option>
+                                <option value="Wir spielten, bis es dunkel wurde.">Bis</option>
+                                <option value="Wir spielten, als es dunkel wurde.">Als</option>
+                                <option value="Wir spielten, nachdem es dunkel wurde.">Nachdem</option>
+                                <option value="Wir spielten, während es dunkel wurde.">Während</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Nachdem ich das Fenster öffnete, kam ein Vogel.</em></li>
+                            <li><em>Seit er hier wohnt, ist es laut.</em></li>
+                            <li><em>Ich tanze, während sie singt.</em></li>
+                            <li><em>Bevor ich ihn traf, war ich nervös.</em></li>
+                            <li><em>Wir spielten, bis es dunkel wurde.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Fill in the Blank</h3>
+                <p>Choose the correct conjunction based on the hint.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ich das Lied hörte, tanzte ich. (während)  
+                            <select class="answer-select" data-correct="Während ich das Lied hörte, tanzte ich.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich das Lied hörte, tanzte ich.">Bevor</option>
+                                <option value="Nachdem ich das Lied hörte, tanzte ich.">Nachdem</option>
+                                <option value="Seit ich das Lied hörte, tanzte ich.">Seit</option>
+                                <option value="Während ich das Lied hörte, tanzte ich.">Während</option>
+                                <option value="Bis ich das Lied hörte, tanzte ich.">Bis</option>
+                            </select>
+                        </li>
+                        <li>___ sie ankam, hatte ich gewartet. (nachdem)  
+                            <select class="answer-select" data-correct="Nachdem sie ankam, hatte ich gewartet.">
+                                <option value="">Select</option>
+                                <option value="Seitdem sie ankam, hatte ich gewartet.">Seitdem</option>
+                                <option value="Bevor sie ankam, hatte ich gewartet.">Bevor</option>
+                                <option value="Nachdem sie ankam, hatte ich gewartet.">Nachdem</option>
+                                <option value="Wenn sie ankam, hatte ich gewartet.">Wenn</option>
+                                <option value="Als sie ankam, hatte ich gewartet.">Als</option>
+                            </select>
+                        </li>
+                        <li>___ ich dich kenne, bin ich froh. (seit)  
+                            <select class="answer-select" data-correct="Seit ich dich kenne, bin ich froh.">
+                                <option value="">Select</option>
+                                <option value="Bis ich dich kenne, bin ich froh.">Bis</option>
+                                <option value="Während ich dich kenne, bin ich froh.">Während</option>
+                                <option value="Seit ich dich kenne, bin ich froh.">Seit</option>
+                                <option value="Bevor ich dich kenne, bin ich froh.">Bevor</option>
+                                <option value="Nachdem ich dich kenne, bin ich froh.">Nachdem</option>
+                            </select>
+                        </li>
+                        <li>Ich bleibe, ___ der Regen aufhört. (bis)  
+                            <select class="answer-select" data-correct="Ich bleibe, bis der Regen aufhört.">
+                                <option value="">Select</option>
+                                <option value="Ich bleibe, nachdem der Regen aufhört.">Nachdem</option>
+                                <option value="Ich bleibe, seitdem der Regen aufhört.">Seitdem</option>
+                                <option value="Ich bleibe, während der Regen aufhört.">Während</option>
+                                <option value="Ich bleibe, bis der Regen aufhört.">Bis</option>
+                                <option value="Ich bleibe, als der Regen aufhört.">Als</option>
+                            </select>
+                        </li>
+                        <li>___ es schneite, baute ich einen Schneemann. (als)  
+                            <select class="answer-select" data-correct="Als es schneite, baute ich einen Schneemann.">
+                                <option value="">Select</option>
+                                <option value="Bevor es schneite, baute ich einen Schneemann.">Bevor</option>
+                                <option value="Nachdem es schneite, baute ich einen Schneemann.">Nachdem</option>
+                                <option value="Seit es schneite, baute ich einen Schneemann.">Seit</option>
+                                <option value="Während es schneite, baute ich einen Schneemann.">Während</option>
+                                <option value="Als es schneite, baute ich einen Schneemann.">Als</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Während ich das Lied hörte, tanzte ich.</em></li>
+                            <li><em>Nachdem sie ankam, hatte ich gewartet.</em></li>
+                            <li><em>Seit ich dich kenne, bin ich froh.</em></li>
+                            <li><em>Ich bleibe, bis der Regen aufhört.</em></li>
+                            <li><em>Als es schneite, baute ich einen Schneemann.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct translation with the appropriate conjunction.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Before I went to bed, I brushed my teeth.  
+                            <select class="answer-select" data-correct="Bevor ich ins Bett ging, putzte ich die Zähne.">
+                                <option value="">Select</option>
+                                <option value="Nachdem ich ins Bett ging, putzte ich die Zähne.">Nachdem ich ins Bett ging, putzte ich die Zähne.</option>
+                                <option value="Bevor ich ins Bett ging, putzte ich die Zähne.">Bevor ich ins Bett ging, putzte ich die Zähne.</option>
+                                <option value="Während ich ins Bett ging, putzte ich die Zähne.">Während ich ins Bett ging, putzte ich die Zähne.</option>
+                                <option value="Seit ich ins Bett ging, putzte ich die Zähne.">Seit ich ins Bett ging, putzte ich die Zähne.</option>
+                                <option value="Bis ich ins Bett ging, putzte ich die Zähne.">Bis ich ins Bett ging, putzte ich die Zähne.</option>
+                            </select>
+                        </li>
+                        <li>After he had finished, he smiled.  
+                            <select class="answer-select" data-correct="Nachdem er fertig war, lächelte er.">
+                                <option value="">Select</option>
+                                <option value="Bevor er fertig war, lächelte er.">Bevor er fertig war, lächelte er.</option>
+                                <option value="Während er fertig war, lächelte er.">Während er fertig war, lächelte er.</option>
+                                <option value="Nachdem er fertig war, lächelte er.">Nachdem er fertig war, lächelte er.</option>
+                                <option value="Seit er fertig war, lächelte er.">Seit er fertig war, lächelte er.</option>
+                                <option value="Bis er fertig war, lächelte er.">Bis er fertig war, lächelte er.</option>
+                            </select>
+                        </li>
+                        <li>Since she’s been here, we’ve talked a lot.  
+                            <select class="answer-select" data-correct="Seit sie hier ist, sprechen wir viel.">
+                                <option value="">Select</option>
+                                <option value="Bevor sie hier war, sprachen wir viel.">Bevor sie hier war, sprachen wir viel.</option>
+                                <option value="Nachdem sie hier war, sprachen wir viel.">Nachdem sie hier war, sprachen wir viel.</option>
+                                <option value="Während sie hier war, sprachen wir viel.">Während sie hier war, sprachen wir viel.</option>
+                                <option value="Seit sie hier ist, sprechen wir viel.">Seit sie hier ist, sprechen wir viel.</option>
+                                <option value="Bis sie hier war, sprachen wir viel.">Bis sie hier war, sprachen wir viel.</option>
+                            </select>
+                        </li>
+                        <li>While I was reading, the phone rang.  
+                            <select class="answer-select" data-correct="Während ich las, klingelte das Telefon.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich las, klingelte das Telefon.">Bevor ich las, klingelte das Telefon.</option>
+                                <option value="Nachdem ich las, klingelte das Telefon.">Nachdem ich las, klingelte das Telefon.</option>
+                                <option value="Während ich las, klingelte das Telefon.">Während ich las, klingelte das Telefon.</option>
+                                <option value="Seit ich las, klingelte das Telefon.">Seit ich las, klingelte das Telefon.</option>
+                                <option value="Bis ich las, klingelte das Telefon.">Bis ich las, klingelte das Telefon.</option>
+                            </select>
+                        </li>
+                        <li>I waited until the sun rose.  
+                            <select class="answer-select" data-correct="Ich wartete, bis die Sonne aufging.">
+                                <option value="">Select</option>
+                                <option value="Ich wartete, bevor die Sonne aufging.">Ich wartete, bevor die Sonne aufging.</option>
+                                <option value="Ich wartete, nachdem die Sonne aufging.">Ich wartete, nachdem die Sonne aufging.</option>
+                                <option value="Ich wartete, während die Sonne aufging.">Ich wartete, während die Sonne aufging.</option>
+                                <option value="Ich wartete, seit die Sonne aufging.">Ich wartete, seit die Sonne aufging.</option>
+                                <option value="Ich wartete, bis die Sonne aufging.">Ich wartete, bis die Sonne aufging.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Bevor ich ins Bett ging, putzte ich die Zähne.</em></li>
+                            <li><em>Nachdem er fertig war, lächelte er.</em></li>
+                            <li><em>Seit sie hier ist, sprechen wir viel.</em></li>
+                            <li><em>Während ich las, klingelte das Telefon.</em></li>
+                            <li><em>Ich wartete, bis die Sonne aufging.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Während ich komme, rief er.</em>  
+                            <select class="answer-select" data-correct="Während ich kam, rief er.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich kam, rief er.">Bevor ich kam, rief er.</option>
+                                <option value="Nachdem ich kam, rief er.">Nachdem ich kam, rief er.</option>
+                                <option value="Während ich kam, rief er.">Während ich kam, rief er.</option>
+                                <option value="Seit ich kam, rief er.">Seit ich kam, rief er.</option>
+                                <option value="Bis ich kam, rief er.">Bis ich kam, rief er.</option>
+                            </select>
+                        </li>
+                        <li><em>Seit ich ging, regnete es.</em>  
+                            <select class="answer-select" data-correct="Seitdem ich ging, regnete es.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich ging, regnete es.">Bevor ich ging, regnete es.</option>
+                                <option value="Nachdem ich ging, regnete es.">Nachdem ich ging, regnete es.</option>
+                                <option value="Während ich ging, regnete es.">Während ich ging, regnete es.</option>
+                                <option value="Seitdem ich ging, regnete es.">Seitdem ich ging, regnete es.</option>
+                                <option value="Bis ich ging, regnete es.">Bis ich ging, regnete es.</option>
+                            </select>
+                        </li>
+                        <li><em>Bis ich schlief, las ich.</em>  
+                            <select class="answer-select" data-correct="Bevor ich schlief, las ich.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich schlief, las ich.">Bevor ich schlief, las ich.</option>
+                                <option value="Nachdem ich schlief, las ich.">Nachdem ich schlief, las ich.</option>
+                                <option value="Während ich schlief, las ich.">Während ich schlief, las ich.</option>
+                                <option value="Seit ich schlief, las ich.">Seit ich schlief, las ich.</option>
+                                <option value="Bis ich schlief, las ich.">Bis ich schlief, las ich.</option>
+                            </select>
+                        </li>
+                        <li><em>Nachdem ich hier bin, lernte ich.</em>  
+                            <select class="answer-select" data-correct="Seit ich hier bin, lerne ich.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich hier bin, lernte ich.">Bevor ich hier bin, lernte ich.</option>
+                                <option value="Seit ich hier bin, lernte ich.">Seit ich hier bin, lernte ich.</option>
+                                <option value="Während ich hier bin, lernte ich.">Während ich hier bin, lernte ich.</option>
+                                <option value="Seit ich hier bin, lerne ich.">Seit ich hier bin, lerne ich.</option>
+                                <option value="Bis ich hier bin, lernte ich.">Bis ich hier bin, lernte ich.</option>
+                            </select>
+                        </li>
+                        <li><em>Wenn ich aß, trank ich.</em>  
+                            <select class="answer-select" data-correct="Während ich aß, trank ich.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich aß, trank ich.">Bevor ich aß, trank ich.</option>
+                                <option value="Nachdem ich aß, trank ich.">Nachdem ich aß, trank ich.</option>
+                                <option value="Während ich aß, trank ich.">Während ich aß, trank ich.</option>
+                                <option value="Seit ich aß, trank ich.">Seit ich aß, trank ich.</option>
+                                <option value="Bis ich aß, trank ich.">Bis ich aß, trank ich.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Während ich kam, rief er.</em></li>
+                            <li><em>Seitdem ich ging, regnete es.</em></li>
+                            <li><em>Bevor ich schlief, las ich.</em></li>
+                            <li><em>Seit ich hier bin, lerne ich.</em></li>
+                            <li><em>Während ich aß, trank ich.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct conjunction based on the hint.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ich das Bild malte, sang sie. (während)  
+                            <select class="answer-select" data-correct="Während ich das Bild malte, sang sie.">
+                                <option value="">Select</option>
+                                <option value="Bevor ich das Bild malte, sang sie.">Bevor</option>
+                                <option value="Nachdem ich das Bild malte, sang sie.">Nachdem</option>
+                                <option value="Seit ich das Bild malte, sang sie.">Seit</option>
+                                <option value="Während ich das Bild malte, sang sie.">Während</option>
+                                <option value="Bis ich das Bild malte, sang sie.">Bis</option>
+                            </select>
+                        </li>
+                        <li>___ er das Spiel gewann, jubelten wir. (nachdem)  
+                            <select class="answer-select" data-correct="Nachdem er das Spiel gewann, jubelten wir.">
+                                <option value="">Select</option>
+                                <option value="Seitdem er das Spiel gewann, jubelten wir.">Seitdem</option>
+                                <option value="Bevor er das Spiel gewann, jubelten wir.">Bevor</option>
+                                <option value="Nachdem er das Spiel gewann, jubelten wir.">Nachdem</option>
+                                <option value="Wenn er das Spiel gewann, jubelten wir.">Wenn</option>
+                                <option value="Als er das Spiel gewann, jubelten wir.">Als</option>
+                            </select>
+                        </li>
+                        <li>___ ich ihn sehe, lächle ich. (wenn)  
+                            <select class="answer-select" data-correct="Wenn ich ihn sehe, lächle ich.">
+                                <option value="">Select</option>
+                                <option value="Bis ich ihn sehe, lächle ich.">Bis</option>
+                                <option value="Während ich ihn sehe, lächle ich.">Während</option>
+                                <option value="Seit ich ihn sehe, lächle ich.">Seit</option>
+                                <option value="Bevor ich ihn sehe, lächle ich.">Bevor</option>
+                                <option value="Wenn ich ihn sehe, lächle ich.">Wenn</option>
+                            </select>
+                        </li>
+                        <li>___ wir fertig waren, gingen wir heim. (nachdem)  
+                            <select class="answer-select" data-correct="Nachdem wir fertig waren, gingen wir heim.">
+                                <option value="">Select</option>
+                                <option value="Nachdem wir fertig waren, gingen wir heim.">Nachdem</option>
+                                <option value="Seitdem wir fertig waren, gingen wir heim.">Seitdem</option>
+                                <option value="Während wir fertig waren, gingen wir heim.">Während</option>
+                                <option value="Bis wir fertig waren, gingen wir heim.">Bis</option>
+                                <option value="Als wir fertig waren, gingen wir heim.">Als</option>
+                            </select>
+                        </li>
+                        <li>___ der Zug kommt, warte ich. (bis)  
+                            <select class="answer-select" data-correct="Bis der Zug kommt, warte ich.">
+                                <option value="">Select</option>
+                                <option value="Bevor der Zug kommt, warte ich.">Bevor</option>
+                                <option value="Nachdem der Zug kommt, warte ich.">Nachdem</option>
+                                <option value="Seit der Zug kommt, warte ich.">Seit</option>
+                                <option value="Während der Zug kommt, warte ich.">Während</option>
+                                <option value="Bis der Zug kommt, warte ich.">Bis</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Während ich das Bild malte, sang sie.</em></li>
+                            <li><em>Nachdem er das Spiel gewann, jubelten wir.</em></li>
+                            <li><em>Wenn ich ihn sehe, lächle ich.</em></li>
+                            <li><em>Nachdem wir fertig waren, gingen wir heim.</em></li>
+                            <li><em>Bis der Zug kommt, warte ich.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Temporale Nebensätze</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Learn Conjunctions</strong>: Memorize meanings ('bevor' = before, 'nachdem' = after).</li>
+                    <li><strong>Verb Last</strong>: Always place the verb at the end of the clause.</li>
+                    <li><strong>Tense Logic</strong>: Match tenses to show sequence (e.g., 'Plusquamperfekt' with 'nachdem').</li>
+                    <li><strong>Practice Variety</strong>: Use different conjunctions to express timing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on temporal clauses.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on temporal clauses.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/sentences/subordinate-clauses" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="plusquam.html" class="see-also-rect">Plusquamperfekt</a>
+                <a href="konj2.html" class="see-also-rect">Konjunktiv II</a>
+                <a href="relativ-praep.html" class="see-also-rect">Relative Clauses with Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="plusquam.html" class="next-btn">Next: Plusquamperfekt →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

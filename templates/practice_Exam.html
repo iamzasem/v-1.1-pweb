@@ -1,0 +1,270 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Practice Test{% endblock title %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/practice_exam.css' %}">
+<div class="exam-container">
+    <header class="exam-header">
+        <button class="back-btn" aria-label="Go back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <h1>Goethe-Zertifikat Praxis</h1>
+    </header>
+
+    <nav class="exam-tabs">
+        <button class="exam-tab active" data-target="reading">Lesen</button>
+        <button class="exam-tab" data-target="writing">Schreiben</button>
+        <button class="exam-tab" data-target="listening">Hören</button>
+        <button class="exam-tab" data-target="speaking">Sprechen</button>
+    </nav>
+
+    <main class="exam-content">
+        <!-- Reading Section (10 cards) -->
+        <section class="exam-section active" id="reading">
+            <div class="exam-grid">
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 1</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam1.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 2</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam2.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 3</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam3.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 4</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam4.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 5</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam5.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 6</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam6.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 7</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam7.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 8</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam8.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 9</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam9.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 10</h2>
+                        <p>Lesen B1</p>
+                        <button class="start-btn" data-url="/exam10.html">Practice Exam</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing Section (10 cards) -->
+        <section class="exam-section" id="writing">
+            <div class="exam-grid">
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 1</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 2</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m2.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 3</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m3.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 4</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m4.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 5</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m5.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 6</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m6.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 7</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m7.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 8</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m8.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 9</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m9.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 10</h2>
+                        <p>Schreiben B1</p>
+                        <button class="start-btn" data-url="/schreibenb1m10.html">Practice Exam</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Listening Section (1 card) -->
+        <section class="exam-section" id="listening">
+            <div class="exam-grid">
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 1</h2>
+                        <p>Hören B1</p>
+                        <button class="start-btn" data-url="/listening.html">Practice Exam</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speaking Section (10 cards) -->
+        <section class="exam-section" id="speaking">
+            <div class="exam-grid">
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 1</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m1.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 2</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m2.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 3</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m3.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 4</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m4.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 5</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m5.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 6</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m6.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 7</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m7.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 8</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m8.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 9</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m9.html">Practice Exam</button>
+                    </div>
+                </div>
+                <div class="exam-card" data-level="B1">
+                    <div class="exam-card-content">
+                        <h2>Model 10</h2>
+                        <p>Sprechen B1</p>
+                        <button class="start-btn" data-url="/sprechenb1m10.html">Practice Exam</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="{% static 'css/practice_exam.js' %}"></script>
+{% endblock body %}

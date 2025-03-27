@@ -1,0 +1,495 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Relativpronomen "was" und "wo"{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/sodass.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Relativpronomen "was" und "wo" (Relative Pronouns "was" and "wo")</h1>
+            <p>
+                A guide to using was (what) and wo (where) as relative pronouns in German to connect main and relative clauses, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding: Relativpronomen "was" -->
+        <section id="understanding-was">
+            <h2>1. Relativpronomen "was" (Relative Pronoun "what")</h2>
+            <div class="subsection">
+                <h3>Definition</h3>
+                <p>Was means "what" or "that" and refers to vague, general, or abstract things, not specific gendered nouns.</p>
+            </div>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Main clause + was + relative clause (verb at end), e.g., Alles, was ich weiß, ist hier.</p>
+                <p><strong>Note:</strong> Was doesn’t decline—it’s always was.</p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>- Refers to indefinite pronouns (alles, nichts), superlatives (das Beste), or whole ideas.<br>- Not for specific nouns (der Mann).<br>- Verb at end of clause.</p>
+            </div>
+            <div class="subsection">
+                <h3>Uses</h3>
+                <p>1. Indefinite things: Alles, was du sagst, ist wahr.<br>2. Abstract ideas: Das, was er tut, ist nett.<br>3. Whole sentences: Sie kommt nicht, was mich überrascht.</p>
+            </div>
+        </section>
+
+        <!-- Examples: Relativpronomen "was" -->
+        <section id="examples-was">
+            <h2>Examples: Relativpronomen "was" (10 Total)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <tr><td><em>Alles, was ich habe, gehört dir.</em></td><td>Everything that I have belongs to you.</td></tr>
+                    <tr><td><em>Nichts, was er sagt, stimmt.</em></td><td>Nothing that he says is true.</td></tr>
+                    <tr><td><em>Etwas, was ich mag, ist Musik.</em></td><td>Something that I like is music.</td></tr>
+                    <tr><td><em>Das Beste, was ich kenne, ist dieser Kuchen.</em></td><td>The best thing that I know is this cake.</td></tr>
+                    <tr><td><em>Er läuft schnell, was mich beeindruckt.</em></td><td>He runs fast, which impresses me.</td></tr>
+                    <tr><td><em>Viel, was hier steht, ist alt.</em></td><td>Much of what is here is old.</td></tr>
+                    <tr><td><em>Wenig, was ich weiß, hilft mir.</em></td><td>Little of what I know helps me.</td></tr>
+                    <tr><td><em>Das Schönste, was ich sehe, ist die Sonne.</em></td><td>The most beautiful thing that I see is the sun.</td></tr>
+                    <tr><td><em>Sie tanzt, was ich liebe.</em></td><td>She dances, which I love.</td></tr>
+                    <tr><td><em>Alles, was bleibt, ist Hoffnung.</em></td><td>All that remains is hope.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Understanding: Relativpronomen "wo" -->
+        <section id="understanding-wo">
+            <h2>2. Relativpronomen "wo" (Relative Pronoun "where")</h2>
+            <div class="subsection">
+                <h3>Definition</h3>
+                <p>Wo means "where" and describes a place or location in a relative clause.</p>
+            </div>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Main clause + wo + relative clause (verb at end), e.g., Das Haus, wo ich wohne, ist groß.</p>
+                <p><strong>Note:</strong> Wo doesn’t decline—it’s always wo.</p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>- Refers to places (Haus, Stadt).<br>- Replaces prepositions like in dem.<br>- Not for people/things.<br>- Verb at end of clause.</p>
+            </div>
+            <div class="subsection">
+                <h3>Uses</h3>
+                <p>1. Specific places: Die Stadt, wo ich geboren bin, ist klein.<br>2. General locations: Der Ort, wo wir uns treffen, ist schön.<br>3. Simplified prepositions: Replaces auf dem.</p>
+            </div>
+        </section>
+
+        <!-- Examples: Relativpronomen "wo" -->
+        <section id="examples-wo">
+            <h2>Examples: Relativpronomen "wo" (10 Total)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <tr><td><em>Das Haus, wo ich wohne, ist alt.</em></td><td>The house where I live is old.</td></tr>
+                    <tr><td><em>Die Schule, wo er lernt, ist groß.</em></td><td>The school where he learns is big.</td></tr>
+                    <tr><td><em>Der Park, wo wir spielen, hat Bäume.</em></td><td>The park where we play has trees.</td></tr>
+                    <tr><td><em>Die Stadt, wo sie arbeitet, ist laut.</em></td><td>The city where she works is loud.</td></tr>
+                    <tr><td><em>Das Café, wo ich sitze, ist gemütlich.</em></td><td>The café where I sit is cozy.</td></tr>
+                    <tr><td><em>Der Wald, wo die Tiere leben, ist grün.</em></td><td>The forest where the animals live is green.</td></tr>
+                    <tr><td><em>Das Zimmer, wo ich schlafe, ist klein.</em></td><td>The room where I sleep is small.</td></tr>
+                    <tr><td><em>Die Straße, wo das Auto steht, ist breit.</em></td><td>The street where the car is parked is wide.</td></tr>
+                    <tr><td><em>Der Berg, wo wir klettern, ist hoch.</em></td><td>The mountain where we climb is high.</td></tr>
+                    <tr><td><em>Das Land, wo ich reise, ist warm.</em></td><td>The country where I travel is warm.</td></tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>Key Differences</h3>
+                <p>- Was: Things/ideas (Alles, was ich sehe, ist rot.).<br>- Wo: Places (Das Haus, wo ich wohne, ist rot.).</p>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose Was or Wo</h3>
+                <p>Select the correct relative pronoun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Alles, ___ ich weiß, ist hier.</em>  
+                            <select class="answer-select" data-correct="Alles, was ich weiß, ist hier.">
+                                <option value="">Select</option>
+                                <option value="Alles, was ich weiß, ist hier.">was</option>
+                                <option value="Alles, wo ich weiß, ist hier.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Das Haus, ___ ich wohne, ist groß.</em>  
+                            <select class="answer-select" data-correct="Das Haus, wo ich wohne, ist groß.">
+                                <option value="">Select</option>
+                                <option value="Das Haus, was ich wohne, ist groß.">was</option>
+                                <option value="Das Haus, wo ich wohne, ist groß.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Das Beste, ___ ich habe, ist mein Hund.</em>  
+                            <select class="answer-select" data-correct="Das Beste, was ich habe, ist mein Hund.">
+                                <option value="">Select</option>
+                                <option value="Das Beste, was ich habe, ist mein Hund.">was</option>
+                                <option value="Das Beste, wo ich habe, ist mein Hund.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Die Stadt, ___ sie lebt, ist schön.</em>  
+                            <select class="answer-select" data-correct="Die Stadt, wo sie lebt, ist schön.">
+                                <option value="">Select</option>
+                                <option value="Die Stadt, was sie lebt, ist schön.">was</option>
+                                <option value="Die Stadt, wo sie lebt, ist schön.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Er läuft, ___ mich freut.</em>  
+                            <select class="answer-select" data-correct="Er läuft, was mich freut.">
+                                <option value="">Select</option>
+                                <option value="Er läuft, was mich freut.">was</option>
+                                <option value="Er läuft, wo mich freut.">wo</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Alles, was ich weiß, ist hier.</em></li>
+                            <li><em>Das Haus, wo ich wohne, ist groß.</em></li>
+                            <li><em>Das Beste, was ich habe, ist mein Hund.</em></li>
+                            <li><em>Die Stadt, wo sie lebt, ist schön.</em></li>
+                            <li><em>Er läuft, was mich freut.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Fill in Was or Wo</h3>
+                <p>Choose the correct pronoun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Nichts, ___ du sagst, hilft mir.</em>  
+                            <select class="answer-select" data-correct="Nichts, was du sagst, hilft mir.">
+                                <option value="">Select</option>
+                                <option value="Nichts, was du sagst, hilft mir.">was</option>
+                                <option value="Nichts, wo du sagst, hilft mir.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Der Park, ___ wir gehen, ist grün.</em>  
+                            <select class="answer-select" data-correct="Der Park, wo wir gehen, ist grün.">
+                                <option value="">Select</option>
+                                <option value="Der Park, was wir gehen, ist grün.">was</option>
+                                <option value="Der Park, wo wir gehen, ist grün.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Etwas, ___ ich mag, ist Kaffee.</em>  
+                            <select class="answer-select" data-correct="Etwas, was ich mag, ist Kaffee.">
+                                <option value="">Select</option>
+                                <option value="Etwas, was ich mag, ist Kaffee.">was</option>
+                                <option value="Etwas, wo ich mag, ist Kaffee.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Das Zimmer, ___ ich lerne, ist ruhig.</em>  
+                            <select class="answer-select" data-correct="Das Zimmer, wo ich lerne, ist ruhig.">
+                                <option value="">Select</option>
+                                <option value="Das Zimmer, was ich lerne, ist ruhig.">was</option>
+                                <option value="Das Zimmer, wo ich lerne, ist ruhig.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Sie singt, ___ mich glücklich macht.</em>  
+                            <select class="answer-select" data-correct="Sie singt, was mich glücklich macht.">
+                                <option value="">Select</option>
+                                <option value="Sie singt, was mich glücklich macht.">was</option>
+                                <option value="Sie singt, wo mich glücklich macht.">wo</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Nichts, was du sagst, hilft mir.</em></li>
+                            <li><em>Der Park, wo wir gehen, ist grün.</em></li>
+                            <li><em>Etwas, was ich mag, ist Kaffee.</em></li>
+                            <li><em>Das Zimmer, wo ich lerne, ist ruhig.</em></li>
+                            <li><em>Sie singt, was mich glücklich macht.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct translation.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Everything that I see is blue.  
+                            <select class="answer-select" data-correct="Alles, was ich sehe, ist blau.">
+                                <option value="">Select</option>
+                                <option value="Alles, wo ich sehe, ist blau.">Alles, wo ich sehe, ist blau.</option>
+                                <option value="Alles, was ich sehe, ist blau.">Alles, was ich sehe, ist blau.</option>
+                            </select>
+                        </li>
+                        <li>The school where he studies is old.  
+                            <select class="answer-select" data-correct="Die Schule, wo er studiert, ist alt.">
+                                <option value="">Select</option>
+                                <option value="Die Schule, was er studiert, ist alt.">Die Schule, was er studiert, ist alt.</option>
+                                <option value="Die Schule, wo er studiert, ist alt.">Die Schule, wo er studiert, ist alt.</option>
+                            </select>
+                        </li>
+                        <li>Nothing that she does is wrong.  
+                            <select class="answer-select" data-correct="Nichts, was sie tut, ist falsch.">
+                                <option value="">Select</option>
+                                <option value="Nichts, wo sie tut, ist falsch.">Nichts, wo sie tut, ist falsch.</option>
+                                <option value="Nichts, was sie tut, ist falsch.">Nichts, was sie tut, ist falsch.</option>
+                            </select>
+                        </li>
+                        <li>The place where we eat is nice.  
+                            <select class="answer-select" data-correct="Der Ort, wo wir essen, ist nett.">
+                                <option value="">Select</option>
+                                <option value="Der Ort, was wir essen, ist nett.">Der Ort, was wir essen, ist nett.</option>
+                                <option value="Der Ort, wo wir essen, ist nett.">Der Ort, wo wir essen, ist nett.</option>
+                            </select>
+                        </li>
+                        <li>He’s tired, which worries me.  
+                            <select class="answer-select" data-correct="Er ist müde, was mich sorgt.">
+                                <option value="">Select</option>
+                                <option value="Er ist müde, was mich sorgt.">Er ist müde, was mich sorgt.</option>
+                                <option value="Er ist müde, wo mich sorgt.">Er ist müde, wo mich sorgt.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Alles, was ich sehe, ist blau.</em></li>
+                            <li><em>Die Schule, wo er studiert, ist alt.</em></li>
+                            <li><em>Nichts, was sie tut, ist falsch.</em></li>
+                            <li><em>Der Ort, wo wir essen, ist nett.</em></li>
+                            <li><em>Er ist müde, was mich sorgt.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Alles, wo ich habe, ist dein.</em>  
+                            <select class="answer-select" data-correct="Alles, was ich habe, ist dein.">
+                                <option value="">Select</option>
+                                <option value="Alles, was ich habe, ist dein.">Alles, was ich habe, ist dein.</option>
+                                <option value="Alles, wo ich habe, ist dein.">Alles, wo ich habe, ist dein.</option>
+                            </select>
+                        </li>
+                        <li><em>Das Haus, was ich wohne, ist klein.</em>  
+                            <select class="answer-select" data-correct="Das Haus, wo ich wohne, ist klein.">
+                                <option value="">Select</option>
+                                <option value="Das Haus, wo ich wohne, ist klein.">Das Haus, wo ich wohne, ist klein.</option>
+                                <option value="Das Haus, was ich wohne, ist klein.">Das Haus, was ich wohne, ist klein.</option>
+                            </select>
+                        </li>
+                        <li><em>Das Schönste, wo ich kenne, ist das Meer.</em>  
+                            <select class="answer-select" data-correct="Das Schönste, was ich kenne, ist das Meer.">
+                                <option value="">Select</option>
+                                <option value="Das Schönste, was ich kenne, ist das Meer.">Das Schönste, was ich kenne, ist das Meer.</option>
+                                <option value="Das Schönste, wo ich kenne, ist das Meer.">Das Schönste, wo ich kenne, ist das Meer.</option>
+                            </select>
+                        </li>
+                        <li><em>Die Stadt, was ich arbeite, ist laut.</em>  
+                            <select class="answer-select" data-correct="Die Stadt, wo ich arbeite, ist laut.">
+                                <option value="">Select</option>
+                                <option value="Die Stadt, wo ich arbeite, ist laut.">Die Stadt, wo ich arbeite, ist laut.</option>
+                                <option value="Die Stadt, was ich arbeite, ist laut.">Die Stadt, was ich arbeite, ist laut.</option>
+                            </select>
+                        </li>
+                        <li><em>Sie lacht, wo mich freut.</em>  
+                            <select class="answer-select" data-correct="Sie lacht, was mich freut.">
+                                <option value="">Select</option>
+                                <option value="Sie lacht, was mich freut.">Sie lacht, was mich freut.</option>
+                                <option value="Sie lacht, wo mich freut.">Sie lacht, wo mich freut.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Alles, was ich habe, ist dein.</em></li>
+                            <li><em>Das Haus, wo ich wohne, ist klein.</em></li>
+                            <li><em>Das Schönste, was ich kenne, ist das Meer.</em></li>
+                            <li><em>Die Stadt, wo ich arbeite, ist laut.</em></li>
+                            <li><em>Sie lacht, was mich freut.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct pronoun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Viel, ___ hier liegt, ist alt.</em>  
+                            <select class="answer-select" data-correct="Viel, was hier liegt, ist alt.">
+                                <option value="">Select</option>
+                                <option value="Viel, was hier liegt, ist alt.">was</option>
+                                <option value="Viel, wo hier liegt, ist alt.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Das Café, ___ ich sitze, ist voll.</em>  
+                            <select class="answer-select" data-correct="Das Café, wo ich sitze, ist voll.">
+                                <option value="">Select</option>
+                                <option value="Das Café, was ich sitze, ist voll.">was</option>
+                                <option value="Das Café, wo ich sitze, ist voll.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Das, ___ er sagt, ist lustig.</em>  
+                            <select class="answer-select" data-correct="Das, was er sagt, ist lustig.">
+                                <option value="">Select</option>
+                                <option value="Das, was er sagt, ist lustig.">was</option>
+                                <option value="Das, wo er sagt, ist lustig.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Der Wald, ___ die Tiere sind, ist groß.</em>  
+                            <select class="answer-select" data-correct="Der Wald, wo die Tiere sind, ist groß.">
+                                <option value="">Select</option>
+                                <option value="Der Wald, was die Tiere sind, ist groß.">was</option>
+                                <option value="Der Wald, wo die Tiere sind, ist groß.">wo</option>
+                            </select>
+                        </li>
+                        <li><em>Er hilft, ___ mich überrascht.</em>  
+                            <select class="answer-select" data-correct="Er hilft, was mich überrascht.">
+                                <option value="">Select</option>
+                                <option value="Er hilft, was mich überrascht.">was</option>
+                                <option value="Er hilft, wo mich überrascht.">wo</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Viel, was hier liegt, ist alt.</em></li>
+                            <li><em>Das Café, wo ich sitze, ist voll.</em></li>
+                            <li><em>Das, was er sagt, ist lustig.</em></li>
+                            <li><em>Der Wald, wo die Tiere sind, ist groß.</em></li>
+                            <li><em>Er hilft, was mich überrascht.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master "was" and "wo"</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Was</strong>: Use with alles, nichts, etwas, superlatives, or whole ideas.</li>
+                    <li><strong>Wo</strong>: Use for places (Haus, Stadt); think "where."</li>
+                    <li><strong>Verb Position</strong>: Always put the verb at the end of the relative clause.</li>
+                    <li><strong>Practice</strong>: Test with sentences—does it describe "what" (was) or "where" (wo)?</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on relative pronouns.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on was and wo.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/pronouns/relative-pronouns" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples with subtitles.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="artikelp.html" class="see-also-rect">Artikelwörter als Pronomen</a>
+                <a href="genetiv-prep.html" class="see-also-rect">Präpositionen mit Genitiv</a>
+                <a href="relativ-dativ.html" class="see-also-rect">Relativpronomen im Dativ</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="artikelp.html" class="next-btn">Next: Artikelwörter als Pronomen →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

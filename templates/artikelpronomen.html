@@ -1,0 +1,553 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Artikelwörter als Pronomen & Adjektive als Substantive{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/sodass.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Artikelwörter als Pronomen & Adjektive als Substantive</h1>
+            <p>
+               
+            </p>
+        </section>
+
+        <!-- Understanding: Artikelwörter als Pronomen -->
+        <section id="understanding-pronouns">
+            <h2>1. Artikelwörter als Pronomen (Article Words as Pronouns)</h2>
+            <div class="subsection">
+                <h3>Definition</h3>
+                <p>Article words like 'der' (the) or 'dieser' (this) replace nouns as pronouns, matching gender, number, and case, e.g., 'Der Mann ist alt. Der ist alt.' (The man is old. He is old.)</p>
+            </div>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Definite articles ('der, die, das') or demonstratives ('dieser, jener') stand alone, replacing the noun.</p>
+                <table>
+                    <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th><th>Plural</th></tr>
+                    <tr><td>Nominative</td><td>der/dieser</td><td>die/diese</td><td>das/dieses</td><td>die/diese</td></tr>
+                    <tr><td>Accusative</td><td>den/diesen</td><td>die/diese</td><td>das/dieses</td><td>die/diese</td></tr>
+                    <tr><td>Dative</td><td>dem/diesem</td><td>der/dieser</td><td>dem/diesem</td><td>den/diesen (+n)</td></tr>
+                    <tr><td>Genitive</td><td>dessen/dieses</td><td>deren/dieser</td><td>dessen/dieses</td><td>deren/dieser</td></tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>- Match gender, number, case.<br>- Replace noun entirely.<br>- Used when noun is clear from context.</p>
+            </div>
+            <div class="subsection">
+                <h3>Uses</h3>
+                <p>1. Avoid repetition: 'Der ist süß.'<br>2. Pointing out: 'Dieser gefällt mir.'<br>3. General reference: 'Die sind laut.'</p>
+            </div>
+        </section>
+
+        <!-- Examples: Artikelwörter als Pronomen -->
+        <section id="examples-pronouns">
+            <h2>Examples: Artikelwörter als Pronomen (15 Total)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <tr><td><em>Der Mann ist groß. Der wohnt hier.</em></td><td>The man is tall. He lives here.</td></tr>
+                    <tr><td><em>Die Frau liest. Die ist klug.</em></td><td>The woman reads. She is smart.</td></tr>
+                    <tr><td><em>Das Kind spielt. Das ist mein Sohn.</em></td><td>The child plays. That one is my son.</td></tr>
+                    <tr><td><em>Die Hunde bellen. Die sind draußen.</em></td><td>The dogs bark. Those ones are outside.</td></tr>
+                    <tr><td><em>Ich sehe den Tisch. Den mag ich.</em></td><td>I see the table. I like that one.</td></tr>
+                    <tr><td><em>Sie kauft die Tasche. Die ist teuer.</em></td><td>She buys the bag. That one is expensive.</td></tr>
+                    <tr><td><em>Er trinkt das Wasser. Das ist kalt.</em></td><td>He drinks the water. That one is cold.</td></tr>
+                    <tr><td><em>Wir hören die Lieder. Die sind schön.</em></td><td>We hear the songs. Those ones are nice.</td></tr>
+                    <tr><td><em>Ich helfe dem Freund. Dem gebe ich Geld.</em></td><td>I help the friend. I give that one money.</td></tr>
+                    <tr><td><em>Sie tanzt mit der Schwester. Der gefällt das.</em></td><td>She dances with the sister. That one likes it.</td></tr>
+                    <tr><td><em>Er schreibt dem Kind. Dem schicke ich ein Buch.</em></td><td>He writes to the child. I send that one a book.</td></tr>
+                    <tr><td><em>Wir sprechen den Leuten. Den helfe ich später.</em></td><td>We talk to the people. I’ll help those ones later.</td></tr>
+                    <tr><td><em>Ich denke an dessen Hund.</em></td><td>I think of that one’s dog.</td></tr>
+                    <tr><td><em>Sie träumt von deren Haus.</em></td><td>She dreams of those ones’ house.</td></tr>
+                    <tr><td><em>Dieser Stift ist rot. Dieser schreibt gut.</em></td><td>This pen is red. This one writes well.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Understanding: Adjektive als Substantive -->
+        <section id="understanding-adjectives">
+            <h2>2. Adjektive als Substantive (Adjectives as Nouns)</h2>
+            <div class="subsection">
+                <h3>Definition</h3>
+                <p>Adjectives become nouns, capitalized and declined, describing a person, thing, or idea, e.g., 'Der Kleine' (The small one).</p>
+            </div>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Adjective + article + ending, capitalized, e.g., 'klein' → 'Der Kleine'.</p>
+                <table>
+                    <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th><th>Plural</th></tr>
+                    <tr><td>Nominative</td><td>der Kleine</td><td>die Kleine</td><td>das Kleine</td><td>die Kleinen</td></tr>
+                    <tr><td>Accusative</td><td>den Kleinen</td><td>die Kleine</td><td>das Kleine</td><td>die Kleinen</td></tr>
+                    <tr><td>Dative</td><td>dem Kleinen</td><td>der Kleinen</td><td>dem Kleinen</td><td>den Kleinen</td></tr>
+                    <tr><td>Genitive</td><td>des Kleinen</td><td>der Kleinen</td><td>des Kleinen</td><td>der Kleinen</td></tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>- Capitalize adjective.<br>- Use article to show gender/number.<br>- Match replaced noun’s gender.</p>
+            </div>
+            <div class="subsection">
+                <h3>Uses</h3>
+                <p>1. People: 'Der Alte hilft mir.'<br>2. Things: 'Das Neue ist besser.'<br>3. Abstract: 'Gutes bleibt.'</p>
+            </div>
+        </section>
+
+        <!-- Examples: Adjektive als Substantive -->
+        <section id="examples-adjectives">
+            <h2>Examples: Adjektive als Substantive (15 Total)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <tr><td><em>Der Große spielt Fußball.</em></td><td>The big one plays soccer.</td></tr>
+                    <tr><td><em>Die Kleine tanzt im Zimmer.</em></td><td>The small one dances in the room.</td></tr>
+                    <tr><td><em>Das Alte steht im Keller.</em></td><td>The old one is in the basement.</td></tr>
+                    <tr><td><em>Die Neuen kommen morgen.</em></td><td>The new ones come tomorrow.</td></tr>
+                    <tr><td><em>Ich mag den Schönen.</em></td><td>I like the beautiful one.</td></tr>
+                    <tr><td><em>Sie sieht die Gute.</em></td><td>She sees the good one.</td></tr>
+                    <tr><td><em>Er nimmt das Kalte.</em></td><td>He takes the cold one.</td></tr>
+                    <tr><td><em>Wir hören die Lauten.</em></td><td>We hear the loud ones.</td></tr>
+                    <tr><td><em>Ich helfe dem Alten.</em></td><td>I help the old one.</td></tr>
+                    <tr><td><em>Sie spricht der Klugen.</em></td><td>She speaks to the smart one.</td></tr>
+                    <tr><td><em>Er gibt dem Neuen ein Buch.</em></td><td>He gives the new one a book.</td></tr>
+                    <tr><td><em>Wir tanzen mit den Jungen.</em></td><td>We dance with the young ones.</td></tr>
+                    <tr><td><em>Ich denke an des Kleinen.</em></td><td>I think of the small one’s [something].</td></tr>
+                    <tr><td><em>Sie träumt von der Schönen.</em></td><td>She dreams of the beautiful one’s [something].</td></tr>
+                    <tr><td><em>Ein Gutes hilft immer.</em></td><td>A good one always helps.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Artikelwörter als Pronomen</h3>
+                <p>Choose the correct pronoun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Der Hund ist süß. ___ ist mein Freund.</em>  
+                            <select class="answer-select" data-correct="Der ist mein Freund.">
+                                <option value="">Select</option>
+                                <option value="Der ist mein Freund.">Der</option>
+                                <option value="Den ist mein Freund.">Den</option>
+                                <option value="Dem ist mein Freund.">Dem</option>
+                                <option value="Dessen ist mein Freund.">Dessen</option>
+                            </select>
+                        </li>
+                        <li><em>Die Tasche ist neu. ___ kaufe ich.</em>  
+                            <select class="answer-select" data-correct="Die kaufe ich.">
+                                <option value="">Select</option>
+                                <option value="Die kaufe ich.">Die</option>
+                                <option value="Der kaufe ich.">Der</option>
+                                <option value="Das kaufe ich.">Das</option>
+                                <option value="Den kaufe ich.">Den</option>
+                            </select>
+                        </li>
+                        <li><em>Das Kind läuft. ___ helfe ich.</em>  
+                            <select class="answer-select" data-correct="Dem helfe ich.">
+                                <option value="">Select</option>
+                                <option value="Der helfe ich.">Der</option>
+                                <option value="Dem helfe ich.">Dem</option>
+                                <option value="Das helfe ich.">Das</option>
+                                <option value="Dessen helfe ich.">Dessen</option>
+                            </select>
+                        </li>
+                        <li><em>Die Bücher sind alt. ___ lese ich nicht.</em>  
+                            <select class="answer-select" data-correct="Die lese ich nicht.">
+                                <option value="">Select</option>
+                                <option value="Die lese ich nicht.">Die</option>
+                                <option value="Den lese ich nicht.">Den</option>
+                                <option value="Der lese ich nicht.">Der</option>
+                                <option value="Deren lese ich nicht.">Deren</option>
+                            </select>
+                        </li>
+                        <li><em>Dieser Stift ist rot. ___ mag ich.</em>  
+                            <select class="answer-select" data-correct="Diesen mag ich.">
+                                <option value="">Select</option>
+                                <option value="Dieser mag ich.">Dieser</option>
+                                <option value="Diesen mag ich.">Diesen</option>
+                                <option value="Diesem mag ich.">Diesem</option>
+                                <option value="Dieses mag ich.">Dieses</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der ist mein Freund.</em></li>
+                            <li><em>Die kaufe ich.</em></li>
+                            <li><em>Dem helfe ich.</em></li>
+                            <li><em>Die lese ich nicht.</em></li>
+                            <li><em>Diesen mag ich.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Adjektive als Substantive</h3>
+                <p>Fill in the blank with the correct form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>___ spielt im Garten.</em> (klein, masculine)  
+                            <select class="answer-select" data-correct="Der Kleine spielt im Garten.">
+                                <option value="">Select</option>
+                                <option value="Der Kleine spielt im Garten.">Der Kleine</option>
+                                <option value="Die Kleine spielt im Garten.">Die Kleine</option>
+                                <option value="Das Kleine spielt im Garten.">Das Kleine</option>
+                                <option value="Den Kleinen spielt im Garten.">Den Kleinen</option>
+                            </select>
+                        </li>
+                        <li><em>Ich sehe ___.</em> (schön, feminine)  
+                            <select class="answer-select" data-correct="Ich sehe die Schöne.">
+                                <option value="">Select</option>
+                                <option value="Ich sehe der Schöne.">Der Schöne</option>
+                                <option value="Ich sehe die Schöne.">Die Schöne</option>
+                                <option value="Ich sehe das Schöne.">Das Schöne</option>
+                                <option value="Ich sehe den Schönen.">Den Schönen</option>
+                            </select>
+                        </li>
+                        <li><em>___ steht im Zimmer.</em> (alt, neuter)  
+                            <select class="answer-select" data-correct="Das Alte steht im Zimmer.">
+                                <option value="">Select</option>
+                                <option value="Der Alte steht im Zimmer.">Der Alte</option>
+                                <option value="Die Alte steht im Zimmer.">Die Alte</option>
+                                <option value="Das Alte steht im Zimmer.">Das Alte</option>
+                                <option value="Den Alten steht im Zimmer.">Den Alten</option>
+                            </select>
+                        </li>
+                        <li><em>___ kommen später.</em> (neu, plural)  
+                            <select class="answer-select" data-correct="Die Neuen kommen später.">
+                                <option value="">Select</option>
+                                <option value="Die Neuen kommen später.">Die Neuen</option>
+                                <option value="Der Neue kommt später.">Der Neue</option>
+                                <option value="Das Neue kommt später.">Das Neue</option>
+                                <option value="Den Neuen kommen später.">Den Neuen</option>
+                            </select>
+                        </li>
+                        <li><em>Ich helfe ___.</em> (jung, masculine)  
+                            <select class="answer-select" data-correct="Ich helfe dem Jungen.">
+                                <option value="">Select</option>
+                                <option value="Ich helfe der Junge.">Der Junge</option>
+                                <option value="Ich helfe die Junge.">Die Junge</option>
+                                <option value="Ich helfe dem Jungen.">Dem Jungen</option>
+                                <option value="Ich helfe das Junge.">Das Junge</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der Kleine spielt im Garten.</em></li>
+                            <li><em>Ich sehe die Schöne.</em></li>
+                            <li><em>Das Alte steht im Zimmer.</em></li>
+                            <li><em>Die Neuen kommen später.</em></li>
+                            <li><em>Ich helfe dem Jungen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct translation.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>That one is tall. ('der' for masculine)  
+                            <select class="answer-select" data-correct="Der ist groß.">
+                                <option value="">Select</option>
+                                <option value="Der ist groß.">Der ist groß.</option>
+                                <option value="Die ist groß.">Die ist groß.</option>
+                                <option value="Das ist groß.">Das ist groß.</option>
+                            </select>
+                        </li>
+                        <li>I like this one. ('dieser' for neuter)  
+                            <select class="answer-select" data-correct="Dieses mag ich.">
+                                <option value="">Select</option>
+                                <option value="Diesen mag ich.">Diesen mag ich.</option>
+                                <option value="Dieses mag ich.">Dieses mag ich.</option>
+                                <option value="Diesem mag ich.">Diesem mag ich.</option>
+                            </select>
+                        </li>
+                        <li>The old one helps me. (masculine)  
+                            <select class="answer-select" data-correct="Der Alte hilft mir.">
+                                <option value="">Select</option>
+                                <option value="Der Alte hilft mir.">Der Alte hilft mir.</option>
+                                <option value="Die Alte hilft mir.">Die Alte hilft mir.</option>
+                                <option value="Das Alte hilft mir.">Das Alte hilft mir.</option>
+                            </select>
+                        </li>
+                        <li>The new ones are here. (plural)  
+                            <select class="answer-select" data-correct="Die Neuen sind hier.">
+                                <option value="">Select</option>
+                                <option value="Der Neue ist hier.">Der Neue ist hier.</option>
+                                <option value="Die Neuen sind hier.">Die Neuen sind hier.</option>
+                                <option value="Das Neue ist hier.">Das Neue ist hier.</option>
+                            </select>
+                        </li>
+                        <li>I give the good one a gift. (feminine)  
+                            <select class="answer-select" data-correct="Der Guten gebe ich ein Geschenk.">
+                                <option value="">Select</option>
+                                <option value="Der Guten gebe ich ein Geschenk.">Der Guten gebe ich ein Geschenk.</option>
+                                <option value="Die Gute gebe ich ein Geschenk.">Die Gute gebe ich ein Geschenk.</option>
+                                <option value="Dem Guten gebe ich ein Geschenk.">Dem Guten gebe ich ein Geschenk.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der ist groß.</em></li>
+                            <li><em>Dieses mag ich.</em></li>
+                            <li><em>Der Alte hilft mir.</em></li>
+                            <li><em>Die Neuen sind hier.</em></li>
+                            <li><em>Der Guten gebe ich ein Geschenk.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Die Frau ist nett. Das ist auch nett.</em>  
+                            <select class="answer-select" data-correct="Die ist auch nett.">
+                                <option value="">Select</option>
+                                <option value="Die ist auch nett.">Die ist auch nett.</option>
+                                <option value="Der ist auch nett.">Der ist auch nett.</option>
+                                <option value="Dem ist auch nett.">Dem ist auch nett.</option>
+                            </select>
+                        </li>
+                        <li><em>Der Kleine läuft. Den mag ich.</em>  
+                            <select class="answer-select" data-correct="Den mag ich.">
+                                <option value="">Select</option>
+                                <option value="Der mag ich.">Der mag ich.</option>
+                                <option value="Dem mag ich.">Dem mag ich.</option>
+                                <option value="Den mag ich.">Correct as is</option>
+                            </select>
+                        </li>
+                        <li><em>Die neue kommt morgen.</em>  
+                            <select class="answer-select" data-correct="Die Neue kommt morgen.">
+                                <option value="">Select</option>
+                                <option value="Der Neue kommt morgen.">Der Neue kommt morgen.</option>
+                                <option value="Die Neue kommt morgen.">Die Neue kommt morgen.</option>
+                                <option value="Das Neue kommt morgen.">Das Neue kommt morgen.</option>
+                            </select>
+                        </li>
+                        <li><em>Ich helfe dem alten.</em>  
+                            <select class="answer-select" data-correct="Ich helfe dem Alten.">
+                                <option value="">Select</option>
+                                <option value="Ich helfe der Alten.">Ich helfe der Alten.</option>
+                                <option value="Ich helfe den Alten.">Ich helfe den Alten.</option>
+                                <option value="Ich helfe dem Alten.">Correct as is</option>
+                            </select>
+                        </li>
+                        <li><em>Dieser Tisch ist gut. Der gefällt mir.</em>  
+                            <select class="answer-select" data-correct="Dieser gefällt mir.">
+                                <option value="">Select</option>
+                                <option value="Diesen gefällt mir.">Diesen gefällt mir.</option>
+                                <option value="Diesem gefällt mir.">Diesem gefällt mir.</option>
+                                <option value="Dieser gefällt mir.">Dieser gefällt mir.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Die ist auch nett.</em></li>
+                            <li><em>Den mag ich.</em></li>
+                            <li><em>Die Neue kommt morgen.</em></li>
+                            <li><em>Ich helfe dem Alten.</em></li>
+                            <li><em>Dieser gefällt mir.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Der Hund ist laut. ___ bellt viel.</em>  
+                            <select class="answer-select" data-correct="Der bellt viel.">
+                                <option value="">Select</option>
+                                <option value="Der bellt viel.">Der</option>
+                                <option value="Den bellt viel.">Den</option>
+                                <option value="Dem bellt viel.">Dem</option>
+                                <option value="Dessen bellt viel.">Dessen</option>
+                            </select>
+                        </li>
+                        <li><em>___ tanzt im Park.</em> (schön, feminine)  
+                            <select class="answer-select" data-correct="Die Schöne tanzt im Park.">
+                                <option value="">Select</option>
+                                <option value="Der Schöne tanzt im Park.">Der Schöne</option>
+                                <option value="Die Schöne tanzt im Park.">Die Schöne</option>
+                                <option value="Das Schöne tanzt im Park.">Das Schöne</option>
+                                <option value="Den Schönen tanzt im Park.">Den Schönen</option>
+                            </select>
+                        </li>
+                        <li><em>Dieses Buch ist alt. ___ lese ich nicht.</em>  
+                            <select class="answer-select" data-correct="Dieses lese ich nicht.">
+                                <option value="">Select</option>
+                                <option value="Dieser lese ich nicht.">Dieser</option>
+                                <option value="Dieses lese ich nicht.">Dieses</option>
+                                <option value="Diesem lese ich nicht.">Diesem</option>
+                                <option value="Dessen lese ich nicht.">Dessen</option>
+                            </select>
+                        </li>
+                        <li><em>___ helfen mir.</em> (jung, plural)  
+                            <select class="answer-select" data-correct="Die Jungen helfen mir.">
+                                <option value="">Select</option>
+                                <option value="Der Junge helfen mir.">Der Junge</option>
+                                <option value="Die Jungen helfen mir.">Die Jungen</option>
+                                <option value="Das Junge helfen mir.">Das Junge</option>
+                                <option value="Den Jungen helfen mir.">Den Jungen</option>
+                            </select>
+                        </li>
+                        <li><em>Die Tasche ist teuer. ___ kaufe ich nicht.</em>  
+                            <select class="answer-select" data-correct="Die kaufe ich nicht.">
+                                <option value="">Select</option>
+                                <option value="Der kaufe ich nicht.">Der</option>
+                                <option value="Die kaufe ich nicht.">Die</option>
+                                <option value="Das kaufe ich nicht.">Das</option>
+                                <option value="Den kaufe ich nicht.">Den</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der bellt viel.</em></li>
+                            <li><em>Die Schöne tanzt im Park.</em></li>
+                            <li><em>Dieses lese ich nicht.</em></li>
+                            <li><em>Die Jungen helfen mir.</em></li>
+                            <li><em>Die kaufe ich nicht.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Both Concepts</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Pronouns</strong>: Match case/gender ('den' for accusative masculine, 'die' for nominative feminine).</li>
+                    <li><strong>Adjectives</strong>: Capitalize and add article ('Der Kleine', not 'kleine').</li>
+                    <li><strong>Context</strong>: Use pronouns when noun is clear; adjectives for general reference.</li>
+                    <li><strong>Declension</strong>: Practice tables for 'der' and 'dieser', and weak endings ('-e, -en').</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on pronouns and adjective nouns.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on demonstrative pronouns and adjectives.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/pronouns/demonstrative-pronouns" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples with subtitles.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="genetiv-prep.html" class="see-also-rect">Präpositionen mit Genitiv</a>
+                <a href="passiv-modal.html" class="see-also-rect">Passiv mit Modalverb</a>
+                <a href="ohneartikel.html" class="see-also-rect">Adjektivdeklination ohne Artikel</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="genetiv-prep.html" class="next-btn">Next: Präpositionen mit Genitiv →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

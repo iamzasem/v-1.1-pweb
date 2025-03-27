@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German B1 Sprechen Prüfung Model 3{% endblock title %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/sprechenb1m1.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+<body>
+    <main>
+   
+            <div class="container">
+                <div class="header-section">
+                    <header>
+                        <h1>Sprechen Prüfung</h1>
+                    </header>
+                    <div class="exam-title">Deutsch B1 Sprechen Model 3</div>
+                    <div class="nav-buttons">
+                        <a href="german.html" class="btn home-btn">Home</a>
+                        <a href="practice_Exam.html" class="btn back-btn">Back</a>
+                    </div>
+                </div>
+                </div>
+                
+                
+                <!-- Teil 1: Gemeinsam etwas planen -->
+                <div class="section" id="teil1">
+                    <h2><strong>Teil 1: Gemeinsam etwas planen</strong></h2>
+                    <p>Ihre Freundin aus dem Deutschkurs hat bald Geburtstag. Sie haben mit anderen zusammen vor, an ihrem Geburtstag eine Überraschungsparty zu machen. Dafür müssen Sie einiges organisieren und auch zusammen überlegen, was Sie Ihrer Freundin zum Geburtstag schenken.</p>
+                    <p>Sprechen Sie über die Punkte unten, machen Sie Vorschläge und reagieren Sie auf die Vorschläge Ihres Gesprächspartners / Ihrer Gesprächspartnerin. Planen und entscheiden Sie gemeinsam, was Sie tun möchten.</p>
+                    <div class="clipboard">
+                        <div class="clipboard-header">
+                            <div class="clip"></div>
+                            <h3>Party organisieren und Geschenk aussuchen</h3>
+                        </div>
+                        <div class="clipboard-content">
+                            <ul>
+                                <li>Wann feiern?</li>
+                                <li>Wo feiern?</li>
+                                <li>Was mitbringen? (z.B. Essen)</li>
+                                <li>Was schenken?</li>
+                                <li>…</li>
+                            </ul>
+                        </div>
+                        <div class="pen"></div>
+                    </div>
+                    <div class="conversation-section">
+                        <h4>Gespräch zwischen Anna und Ben:</h4>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Hallo Ben, wie geht’s dir? Wir sollen eine Überraschungsparty für unsere Freundin zum Geburtstag planen. Wann könnten wir die Party machen?</p>
+                        </div>
+                        <div class="chat-bubble right">
+                            <p><strong>Ben:</strong> Hallo Anna, mir geht’s gut, danke! Ich denke, wir könnten die Party am Samstag machen, weil sie da bestimmt Zeit hat. Was meinst du?</p>
+                        </div>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Samstag klingt gut, weil viele Leute am Wochenende frei haben, obwohl wir sie fragen sollten, ob sie Zeit hat. Ich schlage vor, dass wir die Party am Samstag um 17 Uhr machen. Bist du einverstanden?</p>
+                        </div>
+                        <div class="chat-bubble right">
+                            <p><strong>Ben:</strong> Ja, das passt! Samstag um 17 Uhr ist super. Also, Samstag um 17 Uhr, einverstanden.</p>
+                        </div>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Perfekt! Jetzt der Ort: Wie wäre es, wenn wir die Party bei mir machen? Ich habe genug Platz, deshalb ist es bei mir praktisch.</p>
+                        </div>
+                        <div class="chat-bubble right">
+                            <p><strong>Ben:</strong> Bei dir klingt gut, aber ich finde, ein Café wäre auch schön, weil es gemütlich ist. Ich schlage vor, dass wir die Party im Café „Sonnenschein“ machen. Passt dir das?</p>
+                        </div>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Das Café „Sonnenschein“ ist eine tolle Idee, weil es eine schöne Atmosphäre hat, obwohl es teurer sein könnte. Aber das passt schon, denn ein Café ist etwas Besonderes. Wir machen die Party also im Café.</p>
+                        </div>
+                        <div class="chat-bubble right">
+                            <p><strong>Ben:</strong> Super, dann haben wir den Ort. Jetzt, was mitbringen: Ich denke, wir sollten Kuchen mitbringen, weil es eine Geburtstagsparty ist. Was meinst du?</p>
+                        </div>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Kuchen ist eine gute Idee, weil alle Kuchen mögen, aber ich finde, wir brauchen auch etwas Salziges. Ich schlage vor, dass ich einen Kuchen mitbringe, und du bringst Chips und Snacks. Einverstanden?</p>
+                        </div>
+                        <div class="chat-bubble right">
+                            <p><strong>Ben:</strong> Ja, das klingt gut! Ich bringe Chips und Snacks, und du bringst den Kuchen. Das passt perfekt.</p>
+                        </div>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Okay, jetzt der letzte Punkt: Was schenken wir ihr? Ich schlage vor, dass wir ihr ein Buch schenken, weil sie gern liest. Was denkst du?</p>
+                        </div>
+                        <div class="chat-bubble right">
+                            <p><strong>Ben:</strong> Ein Buch ist eine gute Idee, aber ich denke, ein Gutschein für einen Buchladen wäre besser, weil sie sich dann selbst etwas aussuchen kann. Ich schlage vor, dass wir ihr einen Gutschein schenken. Einverstanden?</p>
+                        </div>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Ja, ein Gutschein ist eine super Idee, weil sie sich dann ihr Lieblingsbuch kaufen kann. Also, unser Plan: Die Party ist am Samstag um 17 Uhr im Café „Sonnenschein“, ich bringe Kuchen, du bringst Chips und Snacks, und wir schenken ihr einen Gutschein. Stimmt das? Ich freue mich schon!</p>
+                        </div>
+                        <div class="chat-bubble right">
+                            <p><strong>Ben:</strong> Ja, das stimmt genau! Wir haben einen tollen Plan. Tschüss, bis bald, Anna!</p>
+                        </div>
+                        <div class="chat-bubble left">
+                            <p><strong>Anna:</strong> Tschüss, bis bald, Ben! Ich freue mich auch!</p>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Teil 2: Ein Thema präsentieren -->
+<div class="section" id="teil2">
+    <h2><strong>Teil 2: Ein Thema präsentieren</strong></h2>
+    <p>Sie sollen Ihren Zuhörern ein aktuelles Thema präsentieren. Danach finden Sie hier fünf Folien. Folgen Sie den Anweisungen links und sehen Sie die Schlüsselwörter rechts, um Ihre Präsentation vorzubereiten.</p>
+    <div class="presentation-box">
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 1</h4>
+                <p>„Keine Lust zum Lernen!“</p>
+                <p>Ist Lernen mit einem Partner motivierender?</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>Keine Lust zum Lernen</li>
+                    <li>Partner</li>
+                    <li>motivierend</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 2</h4>
+                <p>Ist Lernen mit einem Partner motivierender?</p>
+                <p>Die Rolle von Lernen und Prüfungen in meinem Heimatland</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>Lernen</li>
+                    <li>Prüfungen</li>
+                    <li>Heimatland</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 3</h4>
+                <p>Ist Lernen mit einem Partner motivierender?</p>
+                <p>Meine persönlichen Erfahrungen</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>Erfahrungen</li>
+                    <li>Lernen</li>
+                    <li>Partner</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 4</h4>
+                <p>Ist Lernen mit einem Partner motivierender?</p>
+                <p>Vor- und Nachteile & Meine Meinung</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>Vorteile</li>
+                    <li>Nachteile</li>
+                    <li>Meinung</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-left">
+                <h4>Folie 5</h4>
+                <p>Ist Lernen mit einem Partner motivierender?</p>
+                <p>Abschluss & Dank</p>
+            </div>
+            <div class="slide-right">
+                <h5>Schlüsselwörter:</h5>
+                <ul>
+                    <li>zusammenfassen</li>
+                    <li>motivierend</li>
+                    <li>Danke</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="presentation-answer">
+        <h4>Präsentation:</h4>
+        <p><strong>Vor der Präsentation:</strong> Guten Tag, meine Damen und Herren! Ich heiße Tika und freue mich, dass ich heute hier bin. Ich möchte über ein wichtiges Thema sprechen, nämlich: „Ist Lernen mit einem Partner motivierender?“ In meiner Präsentation erkläre ich zuerst, warum ein Partner beim Lernen helfen kann. Danach erzähle ich von der Rolle des Lernens in meinem Heimatland, meinen Erfahrungen, den Vor- und Nachteilen und meiner Meinung, weil ich das Thema interessant finde.</p>
+        
+        <p><strong>Folie 1:</strong> Ich finde, Lernen mit einem Partner ist motivierender, wenn man keine Lust zum Lernen hat. Ein Partner kann helfen, weil man zusammen Ideen teilen kann. Deshalb denke ich, dass ein Partner beim Lernen nützlich ist, obwohl es manchmal schwierig sein kann.</p>
+        <p><strong>Übergang:</strong> Jetzt möchte ich über die Rolle von Lernen und Prüfungen in meinem Heimatland Nepal sprechen.</p>
+        
+        <p><strong>Folie 2:</strong> In Nepal sind Lernen und Prüfungen sehr wichtig, weil sie die Zukunft beeinflussen. Als ich in der Schule war, haben wir oft in Gruppen gelernt, damit wir uns gegenseitig helfen konnten. Viele Schüler lernen mit einem Partner, weil das motivierend ist.</p>
+        <p><strong>Übergang:</strong> Jetzt erzähle ich Ihnen von meinen persönlichen Erfahrungen mit dem Lernen.</p>
+        
+        <p><strong>Folie 3:</strong> Ich habe letztes Jahr mit einem Partner für eine Prüfung gelernt, als ich in Berlin gelebt habe. Es war eine gute Erfahrung, weil wir uns gegenseitig motiviert haben, obwohl wir manchmal unterschiedliche Meinungen hatten. Am Ende haben wir beide die Prüfung bestanden, deshalb war es hilfreich.</p>
+        <p><strong>Übergang:</strong> Jetzt erzähle ich Ihnen von den Vor- und Nachteilen des Lernens mit einem Partner und meiner Meinung dazu.</p>
+        
+        <p><strong>Folie 4:</strong> Lernen mit einem Partner hat Vorteile und Nachteile. <br>
+        <strong>Vorteile:</strong> Erstens ist es motivierender, wenn man zusammen lernt. Zweitens kann man sich gegenseitig helfen, wenn man etwas nicht versteht. Drittens macht es mehr Spaß, weil man nicht allein ist. <br>
+        <strong>Nachteile:</strong> Erstens kann es ablenkend sein, wenn der Partner nicht ernsthaft lernt. Zweitens braucht man mehr Zeit, weil man viel redet. Drittens kann es Streit geben, wenn man unterschiedliche Ideen hat. <br>
+        <strong>Meine Meinung:</strong> Ich finde Lernen mit einem Partner gut, wenn man sich gut versteht. Aber ich denke, man sollte auch allein lernen können, weil das manchmal schneller ist. Trotzdem ist ein Partner nützlich, wenn man Motivation braucht.</p>
+        <p><strong>Übergang:</strong> Zum Schluss möchte ich meine Präsentation zusammenfassen und mich bedanken.</p>
+        
+        <p><strong>Folie 5:</strong> Zusammenfassend finde ich, dass Lernen mit einem Partner motivierender ist, obwohl es Nachteile hat. Man sollte mit einem Partner lernen, wenn man keine Lust hat, weil es hilft. Vielen Dank, dass Sie mir zugehört haben, und wenn Sie Fragen haben, beantworte ich sie gern!</p>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+<!-- Teil 3: Über ein Thema sprechen -->
+<div class="section" id="teil3">
+    <h2><strong>Teil 3: Über ein Thema sprechen</strong></h2>
+    <p>Nach Ihrer Präsentation: Reagieren Sie auf die Rückmeldung und Fragen der Prüfer/-innen und des Gesprächspartners / der Gesprächspartnerin.</p>
+    <div class="qa-section">
+        <div class="qa-card">
+            <h4>Rückmeldung und Frage vom Lehrer:</h4>
+            <p><strong>Lehrer:</strong> Vielen Dank für deine Präsentation, Tika, sie war wirklich sehr interessant! Besonders gut fand ich, dass du über die Rolle von Lernen und Prüfungen in Nepal gesprochen hast, weil das sehr informativ war. Was denkst du, ist es besser, mit einem Partner zu lernen oder mit einem Lehrer, wenn man eine Sprache lernen will?</p>
+            <div class="qa-answer">
+                <h5>Antwort:</h5>
+                <p>Vielen Dank für Ihre Rückmeldung und die Frage! Ich finde, mit einem Partner zu lernen ist gut, weil man zusammen üben kann, aber ein Lehrer ist auch wichtig, wenn man Grammatik lernen will. Deshalb denke ich, dass beide Möglichkeiten nützlich sind.</p>
+            </div>
+        </div>
+        <div class="qa-card">
+            <h4>Rückmeldung und Frage vom Freund:</h4>
+            <p><strong>Freund (Mark):</strong> Wow, Tika, deine Präsentation war echt super, ich habe viel gelernt! Besonders spannend fand ich, dass du über deine Erfahrungen mit einem Lernpartner gesprochen hast, weil das sehr ehrlich war. Was würdest du machen, wenn du und dein Lernpartner unterschiedliche Lernmethoden habt?</p>
+            <div class="qa-answer">
+                <h5>Antwort:</h5>
+                <p>Danke für deine Rückmeldung und die Frage, Mark! Wenn mein Lernpartner andere Methoden hat, würde ich vorschlagen, dass wir beide Methoden ausprobieren, weil das fair ist. Außerdem könnten wir zusammen reden, damit wir eine Lösung finden.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+</main>
+   
+    <script src="{% static 'css/sprechenb1m1.js' %}"></script>
+</body>
+
+{% endblock body %}

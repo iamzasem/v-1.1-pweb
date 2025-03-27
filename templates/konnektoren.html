@@ -1,0 +1,587 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Zweiteilige Konnektoren in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/temp-neben.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Zweiteilige Konnektoren (Two-Part Conjunctions) in German</h1>
+            <p>
+                A guide to using two-part conjunctions to connect ideas in simple sentences, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding Two-Part Conjunctions</h2>
+            <div class="subsection">
+                <h3>What Are Zweiteilige Konnektoren?</h3>
+                <p>Two-part conjunctions link two parts of a sentence, showing choices, opposites, or added ideas with a first part and a second part.</p>
+                <ul class="example-list">
+                    <li><strong>Structure</strong>: Entweder ich esse Pizza, oder ich esse Pasta. (Either I eat pizza, or I eat pasta.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Formation</h2>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <p>First part + sentence 1, second part + sentence 2. Verb follows each part, usually with a comma.</p>
+                <table>
+                    <tr><th>Conjunction</th><th>Meaning</th></tr>
+                    <tr><td>Entweder … oder</td><td>Either … or</td></tr>
+                    <tr><td>Weder … noch</td><td>Neither … nor</td></tr>
+                    <tr><td>Sowohl … als auch</td><td>Both … and</td></tr>
+                    <tr><td>Nicht nur … sondern auch</td><td>Not only … but also</td></tr>
+                    <tr><td>Je … desto</td><td>The … the</td></tr>
+                    <tr><td>Zwar … aber</td><td>Indeed … but</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Two-Part Conjunctions</h2>
+            <div class="subsection">
+                <h3>Choices (Entweder … oder)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Entweder ich gehe in den Park, oder ich bleibe zu Hause.</em> (Either I go to the park, or I stay home.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Negation (Weder … noch)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Weder ich habe Zeit, noch sie will helfen.</em> (Neither I have time, nor she wants to help.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Addition (Sowohl … als auch)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Sowohl wir spielen, als auch die Kinder lachen.</em> (Both we play, and the kids laugh.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of Common Examples (5 per Conjunction)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Conjunction</th><th>Sentence</th><th>Translation</th></tr>
+                    <!-- Entweder … oder -->
+                    <tr><td rowspan="5">Entweder … oder</td><td><em>Entweder ich gehe in den Park mit meinem Hund, oder ich bleibe zu Hause und lese ein Buch.</em></td><td>Either I go to the park with my dog, or I stay home and read a book.</td></tr>
+                    <tr><td><em>Entweder wir sehen einen Film im Kino, oder wir spielen ein Spiel mit unseren Freunden.</em></td><td>Either we watch a movie at the cinema, or we play a game with our friends.</td></tr>
+                    <tr><td><em>Entweder sie kauft Äpfel im Laden, oder sie nimmt Birnen aus dem Garten mit.</em></td><td>Either she buys apples at the store, or she takes pears from the garden.</td></tr>
+                    <tr><td><em>Entweder er läuft jeden Morgen im Park, oder er macht Sport in seinem Zimmer.</em></td><td>Either he runs every morning in the park, or he does sports in his room.</td></tr>
+                    <tr><td><em>Entweder ich trinke Wasser nach dem Essen, oder ich mache mir einen Tee für später.</em></td><td>Either I drink water after eating, or I make myself tea for later.</td></tr>
+                    <!-- Weder … noch -->
+                    <tr><td rowspan="5">Weder … noch</td><td><em>Weder ich habe Zeit zum Spielen, noch meine Schwester will heute mit mir reden.</em></td><td>Neither I have time to play, nor my sister wants to talk to me today.</td></tr>
+                    <tr><td><em>Weder das Auto ist sauber, noch der Bus kommt pünktlich zu unserer Haltestelle.</em></td><td>Neither the car is clean, nor the bus comes on time to our stop.</td></tr>
+                    <tr><td><em>Weder er mag den Kuchen im Café, noch sie trinkt den Kaffee dort gern.</em></td><td>Neither he likes the cake in the café, nor she drinks the coffee there happily.</td></tr>
+                    <tr><td><em>Weder wir gehen heute ins Schwimmbad, noch unsere Freunde kommen zu uns nach Hause.</em></td><td>Neither we go to the pool today, nor our friends come to our house.</td></tr>
+                    <tr><td><em>Weder die Katze schläft auf dem Sofa, noch der Hund liegt heute auf seinem Kissen.</em></td><td>Neither the cat sleeps on the sofa, nor the dog lies on his pillow today.</td></tr>
+                    <!-- Sowohl … als auch -->
+                    <tr><td rowspan="5">Sowohl … als auch</td><td><em>Sowohl ich esse gerne Pizza am Abend, als auch mein Bruder nimmt sich ein großes Stück.</em></td><td>Both I like eating pizza in the evening, and my brother takes a big piece.</td></tr>
+                    <tr><td><em>Sowohl sie liest ein Buch im Garten, als auch er spielt Fußball mit seinen Freunden.</em></td><td>Both she reads a book in the garden, and he plays soccer with his friends.</td></tr>
+                    <tr><td><em>Sowohl wir gehen jeden Tag zur Schule, als auch unsere Lehrer helfen uns beim Lernen.</em></td><td>Both we go to school every day, and our teachers help us learn.</td></tr>
+                    <tr><td><em>Sowohl das Mädchen malt ein Bild, als auch der Junge baut ein Haus aus Holz.</em></td><td>Both the girl paints a picture, and the boy builds a house out of wood.</td></tr>
+                    <tr><td><em>Sowohl ich trinke Milch zum Frühstück, als auch meine Mutter macht mir Brot mit Käse.</em></td><td>Both I drink milk for breakfast, and my mother makes me bread with cheese.</td></tr>
+                    <!-- Nicht nur … sondern auch -->
+                    <tr><td rowspan="5">Nicht nur … sondern auch</td><td><em>Nicht nur ich habe einen Apfel im Park gegessen, sondern auch meine Freundin hat eine Banane mitgebracht.</em></td><td>Not only I ate an apple in the park, but also my friend brought a banana.</td></tr>
+                    <tr><td><em>Nicht nur das Haus ist groß und schön, sondern auch der Garten hat viele bunte Blumen.</em></td><td>Not only the house is big and nice, but also the garden has lots of colorful flowers.</td></tr>
+                    <tr><td><em>Nicht nur er läuft schnell im Rennen, sondern auch er gewinnt jedes Mal einen Preis.</em></td><td>Not only he runs fast in the race, but also he wins a prize every time.</td></tr>
+                    <tr><td><em>Nicht nur wir spielen gerne draußen, sondern auch unsere Nachbarn kommen oft zu uns herüber.</em></td><td>Not only we like playing outside, but also our neighbors often come over to us.</td></tr>
+                    <tr><td><em>Nicht nur sie singt ein Lied in der Schule, sondern auch ihr Bruder tanzt dazu mit Freude.</em></td><td>Not only she sings a song at school, but also her brother dances to it with joy.</td></tr>
+                    <!-- Je … desto -->
+                    <tr><td rowspan="5">Je … desto</td><td><em>Je mehr ich esse am Morgen, desto besser fühle ich mich den ganzen Tag lang.</em></td><td>The more I eat in the morning, the better I feel all day long.</td></tr>
+                    <tr><td><em>Je länger er im Park bleibt, desto müder wird er, wenn er nach Hause kommt.</em></td><td>The longer he stays in the park, the more tired he gets when he comes home.</td></tr>
+                    <tr><td><em>Je öfter wir das Spiel spielen, desto lustiger finden wir es mit der Zeit.</em></td><td>The more often we play the game, the more fun we find it over time.</td></tr>
+                    <tr><td><em>Je schneller sie ihre Hausaufgaben macht, desto früher kann sie mit uns spielen gehen.</em></td><td>The faster she does her homework, the sooner she can go play with us.</td></tr>
+                    <tr><td><em>Je mehr Bücher ich lese, desto klüger werde ich in der Schule bei den Tests.</em></td><td>The more books I read, the smarter I get at school during tests.</td></tr>
+                    <!-- Zwar … aber -->
+                    <tr><td rowspan="5">Zwar … aber</td><td><em>Zwar ich habe ein neues Fahrrad im Keller, aber ich fahre es nicht, weil es regnet.</em></td><td>Indeed I have a new bike in the basement, but I don’t ride it because it’s raining.</td></tr>
+                    <tr><td><em>Zwar sie mag die Sonne am Strand, aber sie bleibt im Haus, weil es zu heiß ist.</em></td><td>Indeed she likes the sun at the beach, but she stays in the house because it’s too hot.</td></tr>
+                    <tr><td><em>Zwar er will mit uns ins Kino gehen, aber er muss zuerst seine Arbeit zu Ende machen.</em></td><td>Indeed he wants to go to the cinema with us, but he has to finish his work first.</td></tr>
+                    <tr><td><em>Zwar das Essen schmeckt gut im Restaurant, aber es kostet mehr, als ich dachte.</em></td><td>Indeed the food tastes good in the restaurant, but it costs more than I thought.</td></tr>
+                    <tr><td><em>Zwar wir haben viele Spiele zu Hause, aber die Kinder wollen heute lieber draußen laufen.</em></td><td>Indeed we have lots of games at home, but the kids want to run outside today instead.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice Two-Part Conjunctions</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose the Correct Two-Part Conjunction</h3>
+                <p>Select the right conjunction pair.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ich trinke Wasser, ___ ich esse einen Kuchen heute.  
+                            <select class="answer-select" data-correct="Sowohl ich trinke Wasser, als auch ich esse einen Kuchen heute.">
+                                <option value="">Select</option>
+                                <option value="Weder ich trinke Wasser, noch ich esse einen Kuchen heute.">Weder … noch</option>
+                                <option value="Entweder ich trinke Wasser, oder ich esse einen Kuchen heute.">Entweder … oder</option>
+                                <option value="Sowohl ich trinke Wasser, als auch ich esse einen Kuchen heute.">Sowohl … als auch</option>
+                                <option value="Zwar ich trinke Wasser, aber ich esse einen Kuchen heute.">Zwar … aber</option>
+                                <option value="Je ich trinke Wasser, desto ich esse einen Kuchen heute.">Je … desto</option>
+                            </select>
+                        </li>
+                        <li>___ das Haus ist klein, ___ es hat keinen Garten.  
+                            <select class="answer-select" data-correct="Weder das Haus ist klein, noch es hat keinen Garten.">
+                                <option value="">Select</option>
+                                <option value="Nicht nur das Haus ist klein, sondern auch es hat keinen Garten.">Nicht nur … sondern auch</option>
+                                <option value="Sowohl das Haus ist klein, als auch es hat keinen Garten.">Sowohl … als auch</option>
+                                <option value="Weder das Haus ist klein, noch es hat keinen Garten.">Weder … noch</option>
+                                <option value="Entweder das Haus ist klein, oder es hat keinen Garten.">Entweder … oder</option>
+                                <option value="Zwar das Haus ist klein, aber es hat keinen Garten.">Zwar … aber</option>
+                            </select>
+                        </li>
+                        <li>___ mehr ich laufe, ___ schneller bin ich.  
+                            <select class="answer-select" data-correct="Je mehr ich laufe, desto schneller bin ich.">
+                                <option value="">Select</option>
+                                <option value="Entweder mehr ich laufe, oder schneller bin ich.">Entweder … oder</option>
+                                <option value="Je mehr ich laufe, desto schneller bin ich.">Je … desto</option>
+                                <option value="Nicht nur mehr ich laufe, sondern auch schneller bin ich.">Nicht nur … sondern auch</option>
+                                <option value="Zwar mehr ich laufe, aber schneller bin ich.">Zwar … aber</option>
+                                <option value="Sowohl mehr ich laufe, als auch schneller bin ich.">Sowohl … als auch</option>
+                            </select>
+                        </li>
+                        <li>___ sie geht zur Schule, ___ sie bleibt zu Hause.  
+                            <select class="answer-select" data-correct="Entweder sie geht zur Schule, oder sie bleibt zu Hause.">
+                                <option value="">Select</option>
+                                <option value="Je sie geht zur Schule, desto sie bleibt zu Hause.">Je … desto</option>
+                                <option value="Zwar sie geht zur Schule, aber sie bleibt zu Hause.">Zwar … aber</option>
+                                <option value="Entweder sie geht zur Schule, oder sie bleibt zu Hause.">Entweder … oder</option>
+                                <option value="Weder sie geht zur Schule, noch sie bleibt zu Hause.">Weder … noch</option>
+                                <option value="Nicht nur sie geht zur Schule, sondern auch sie bleibt zu Hause.">Nicht nur … sondern auch</option>
+                            </select>
+                        </li>
+                        <li>___ ich mag den Hund, ___ meine Schwester spielt mit ihm.  
+                            <select class="answer-select" data-correct="Sowohl ich mag den Hund, als auch meine Schwester spielt mit ihm.">
+                                <option value="">Select</option>
+                                <option value="Sowohl ich mag den Hund, als auch meine Schwester spielt mit ihm.">Sowohl … als auch</option>
+                                <option value="Weder ich mag den Hund, noch meine Schwester spielt mit ihm.">Weder … noch</option>
+                                <option value="Entweder ich mag den Hund, oder meine Schwester spielt mit ihm.">Entweder … oder</option>
+                                <option value="Zwar ich mag den Hund, aber meine Schwester spielt mit ihm.">Zwar … aber</option>
+                                <option value="Je ich mag den Hund, desto meine Schwester spielt mit ihm.">Je … desto</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Sowohl ich trinke Wasser, als auch ich esse einen Kuchen heute.</em></li>
+                            <li><em>Weder das Haus ist klein, noch es hat keinen Garten.</em></li>
+                            <li><em>Je mehr ich laufe, desto schneller bin ich.</em></li>
+                            <li><em>Entweder sie geht zur Schule, oder sie bleibt zu Hause.</em></li>
+                            <li><em>Sowohl ich mag den Hund, als auch meine Schwester spielt mit ihm.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Fill in the Blanks</h3>
+                <p>Choose the correct conjunction pair to complete the sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ich esse Brot, ___ ich trinke Milch am Morgen.  
+                            <select class="answer-select" data-correct="Sowohl ich esse Brot, als auch ich trinke Milch am Morgen.">
+                                <option value="">Select</option>
+                                <option value="Nicht nur ich esse Brot, sondern auch ich trinke Milch am Morgen.">Nicht nur … sondern auch</option>
+                                <option value="Weder ich esse Brot, noch ich trinke Milch am Morgen.">Weder … noch</option>
+                                <option value="Entweder ich esse Brot, oder ich trinke Milch am Morgen.">Entweder … oder</option>
+                                <option value="Zwar ich esse Brot, aber ich trinke Milch am Morgen.">Zwar … aber</option>
+                                <option value="Sowohl ich esse Brot, als auch ich trinke Milch am Morgen.">Sowohl … als auch</option>
+                            </select>
+                        </li>
+                        <li>___ er hat ein Buch, ___ er liest es nicht heute.  
+                            <select class="answer-select" data-correct="Zwar er hat ein Buch, aber er liest es nicht heute.">
+                                <option value="">Select</option>
+                                <option value="Je er hat ein Buch, desto er liest es nicht heute.">Je … desto</option>
+                                <option value="Zwar er hat ein Buch, aber er liest es nicht heute.">Zwar … aber</option>
+                                <option value="Nicht nur er hat ein Buch, sondern auch er liest es nicht heute.">Nicht nur … sondern auch</option>
+                                <option value="Entweder er hat ein Buch, oder er liest es nicht heute.">Entweder … oder</option>
+                                <option value="Weder er hat ein Buch, noch er liest es nicht heute.">Weder … noch</option>
+                            </select>
+                        </li>
+                        <li>___ ich gehe in den Laden, ___ ich warte auf den Bus.  
+                            <select class="answer-select" data-correct="Entweder ich gehe in den Laden, oder ich warte auf den Bus.">
+                                <option value="">Select</option>
+                                <option value="Sowohl ich gehe in den Laden, als auch ich warte auf den Bus.">Sowohl … als auch</option>
+                                <option value="Entweder ich gehe in den Laden, oder ich warte auf den Bus.">Entweder … oder</option>
+                                <option value="Weder ich gehe in den Laden, noch ich warte auf den Bus.">Weder … noch</option>
+                                <option value="Je ich gehe in den Laden, desto ich warte auf den Bus.">Je … desto</option>
+                                <option value="Nicht nur ich gehe in den Laden, sondern auch ich warte auf den Bus.">Nicht nur … sondern auch</option>
+                            </select>
+                        </li>
+                        <li>___ mehr sie singt, ___ besser klingt es.  
+                            <select class="answer-select" data-correct="Je mehr sie singt, desto besser klingt es.">
+                                <option value="">Select</option>
+                                <option value="Nicht nur mehr sie singt, sondern auch besser klingt es.">Nicht nur … sondern auch</option>
+                                <option value="Zwar mehr sie singt, aber besser klingt es.">Zwar … aber</option>
+                                <option value="Je mehr sie singt, desto besser klingt es.">Je … desto</option>
+                                <option value="Sowohl mehr sie singt, als auch besser klingt es.">Sowohl … als auch</option>
+                                <option value="Weder mehr sie singt, noch besser klingt es.">Weder … noch</option>
+                            </select>
+                        </li>
+                        <li>___ wir haben kein Geld, ___ Zeit für einen Urlaub.  
+                            <select class="answer-select" data-correct="Weder wir haben kein Geld, noch Zeit für einen Urlaub.">
+                                <option value="">Select</option>
+                                <option value="Entweder wir haben kein Geld, oder Zeit für einen Urlaub.">Entweder … oder</option>
+                                <option value="Weder wir haben kein Geld, noch Zeit für einen Urlaub.">Weder … noch</option>
+                                <option value="Sowohl wir haben kein Geld, als auch Zeit für einen Urlaub.">Sowohl … als auch</option>
+                                <option value="Zwar wir haben kein Geld, aber Zeit für einen Urlaub.">Zwar … aber</option>
+                                <option value="Nicht nur wir haben kein Geld, sondern auch Zeit für einen Urlaub.">Nicht nur … sondern auch</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Sowohl ich esse Brot, als auch ich trinke Milch am Morgen.</em></li>
+                            <li><em>Zwar er hat ein Buch, aber er liest es nicht heute.</em></li>
+                            <li><em>Entweder ich gehe in den Laden, oder ich warte auf den Bus.</em></li>
+                            <li><em>Je mehr sie singt, desto besser klingt es.</em></li>
+                            <li><em>Weder wir haben kein Geld, noch Zeit für einen Urlaub.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct German translation with two-part conjunctions.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Either I play with my dog, or I read my book.  
+                            <select class="answer-select" data-correct="Entweder ich spiele mit meinem Hund, oder ich lese mein Buch.">
+                                <option value="">Select</option>
+                                <option value="Entweder ich spiele mit meinem Hund, oder ich lese mein Buch.">Entweder ich spiele mit meinem Hund, oder ich lese mein Buch.</option>
+                                <option value="Sowohl ich spiele mit meinem Hund, als auch ich lese mein Buch.">Sowohl ich spiele mit meinem Hund, als auch ich lese mein Buch.</option>
+                                <option value="Weder ich spiele mit meinem Hund, noch ich lese mein Buch.">Weder ich spiele mit meinem Hund, noch ich lese mein Buch.</option>
+                                <option value="Zwar ich spiele mit meinem Hund, aber ich lese mein Buch.">Zwar ich spiele mit meinem Hund, aber ich lese mein Buch.</option>
+                                <option value="Je ich spiele mit meinem Hund, desto ich lese mein Buch.">Je ich spiele mit meinem Hund, desto ich lese mein Buch.</option>
+                            </select>
+                        </li>
+                        <li>Neither she eats cake, nor he drinks tea.  
+                            <select class="answer-select" data-correct="Weder sie isst Kuchen, noch er trinkt Tee.">
+                                <option value="">Select</option>
+                                <option value="Sowohl sie isst Kuchen, als auch er trinkt Tee.">Sowohl sie isst Kuchen, als auch er trinkt Tee.</option>
+                                <option value="Entweder sie isst Kuchen, oder er trinkt Tee.">Entweder sie isst Kuchen, oder er trinkt Tee.</option>
+                                <option value="Weder sie isst Kuchen, noch er trinkt Tee.">Weder sie isst Kuchen, noch er trinkt Tee.</option>
+                                <option value="Nicht nur sie isst Kuchen, sondern auch er trinkt Tee.">Nicht nur sie isst Kuchen, sondern auch er trinkt Tee.</option>
+                                <option value="Zwar sie isst Kuchen, aber er trinkt Tee.">Zwar sie isst Kuchen, aber er trinkt Tee.</option>
+                            </select>
+                        </li>
+                        <li>Both we go to the park, and the kids play there.  
+                            <select class="answer-select" data-correct="Sowohl wir gehen in den Park, als auch die Kinder spielen dort.">
+                                <option value="">Select</option>
+                                <option value="Entweder wir gehen in den Park, oder die Kinder spielen dort.">Entweder wir gehen in den Park, oder die Kinder spielen dort.</option>
+                                <option value="Weder wir gehen in den Park, noch die Kinder spielen dort.">Weder wir gehen in den Park, noch die Kinder spielen dort.</option>
+                                <option value="Sowohl wir gehen in den Park, als auch die Kinder spielen dort.">Sowohl wir gehen in den Park, als auch die Kinder spielen dort.</option>
+                                <option value="Nicht nur wir gehen in den Park, sondern auch die Kinder spielen dort.">Nicht nur wir gehen in den Park, sondern auch die Kinder spielen dort.</option>
+                                <option value="Zwar wir gehen in den Park, aber die Kinder spielen dort.">Zwar wir gehen in den Park, aber die Kinder spielen dort.</option>
+                            </select>
+                        </li>
+                        <li>Not only I like the song, but also my friend sings it.  
+                            <select class="answer-select" data-correct="Nicht nur ich mag das Lied, sondern auch mein Freund singt es.">
+                                <option value="">Select</option>
+                                <option value="Entweder ich mag das Lied, oder mein Freund singt es.">Entweder ich mag das Lied, oder mein Freund singt es.</option>
+                                <option value="Weder ich mag das Lied, noch mein Freund singt es.">Weder ich mag das Lied, noch mein Freund singt es.</option>
+                                <option value="Sowohl ich mag das Lied, als auch mein Freund singt es.">Sowohl ich mag das Lied, als auch mein Freund singt es.</option>
+                                <option value="Nicht nur ich mag das Lied, sondern auch mein Freund singt es.">Nicht nur ich mag das Lied, sondern auch mein Freund singt es.</option>
+                                <option value="Zwar ich mag das Lied, aber mein Freund singt es.">Zwar ich mag das Lied, aber mein Freund singt es.</option>
+                            </select>
+                        </li>
+                        <li>The more he eats, the bigger he gets.  
+                            <select class="answer-select" data-correct="Je mehr er isst, desto größer wird er.">
+                                <option value="">Select</option>
+                                <option value="Entweder er isst mehr, oder er wird größer.">Entweder er isst mehr, oder er wird größer.</option>
+                                <option value="Weder er isst mehr, noch er wird größer.">Weder er isst mehr, noch er wird größer.</option>
+                                <option value="Sowohl er isst mehr, als auch er wird größer.">Sowohl er isst mehr, als auch er wird größer.</option>
+                                <option value="Nicht nur er isst mehr, sondern auch er wird größer.">Nicht nur er isst mehr, sondern auch er wird größer.</option>
+                                <option value="Je mehr er isst, desto größer wird er.">Je mehr er isst, desto größer wird er.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Entweder ich spiele mit meinem Hund, oder ich lese mein Buch.</em></li>
+                            <li><em>Weder sie isst Kuchen, noch er trinkt Tee.</em></li>
+                            <li><em>Sowohl wir gehen in den Park, als auch die Kinder spielen dort.</em></li>
+                            <li><em>Nicht nur ich mag das Lied, sondern auch mein Freund singt es.</em></li>
+                            <li><em>Je mehr er isst, desto größer wird er.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence with the right conjunction pair.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Sowohl ich esse, oder ich trinke.</em>  
+                            <select class="answer-select" data-correct="Sowohl ich esse, als auch ich trinke.">
+                                <option value="">Select</option>
+                                <option value="Entweder ich esse, oder ich trinke.">Entweder ich esse, oder ich trinke.</option>
+                                <option value="Sowohl ich esse, als auch ich trinke.">Sowohl ich esse, als auch ich trinke.</option>
+                                <option value="Weder ich esse, noch ich trinke.">Weder ich esse, noch ich trinke.</option>
+                                <option value="Nicht nur ich esse, sondern auch ich trinke.">Nicht nur ich esse, sondern auch ich trinke.</option>
+                                <option value="Je ich esse, desto ich trinke.">Je ich esse, desto ich trinke.</option>
+                            </select>
+                        </li>
+                        <li><em>Entweder sie läuft, noch sie schwimmt.</em>  
+                            <select class="answer-select" data-correct="Entweder sie läuft, oder sie schwimmt.">
+                                <option value="">Select</option>
+                                <option value="Entweder sie läuft, oder sie schwimmt.">Entweder sie läuft, oder sie schwimmt.</option>
+                                <option value="Weder sie läuft, noch sie schwimmt.">Weder sie läuft, noch sie schwimmt.</option>
+                                <option value="Sowohl sie läuft, als auch sie schwimmt.">Sowohl sie läuft, als auch sie schwimmt.</option>
+                                <option value="Nicht nur sie läuft, sondern auch sie schwimmt.">Nicht nur sie läuft, sondern auch sie schwimmt.</option>
+                                <option value="Zwar sie läuft, aber sie schwimmt.">Zwar sie läuft, aber sie schwimmt.</option>
+                            </select>
+                        </li>
+                        <li><em>Je ich spiele, aber ich gewinne.</em>  
+                            <select class="answer-select" data-correct="Je mehr ich spiele, desto mehr gewinne ich.">
+                                <option value="">Select</option>
+                                <option value="Entweder ich spiele, oder ich gewinne.">Entweder ich spiele, oder ich gewinne.</option>
+                                <option value="Weder ich spiele, noch ich gewinne.">Weder ich spiele, noch ich gewinne.</option>
+                                <option value="Sowohl ich spiele, als auch ich gewinne.">Sowohl ich spiele, als auch ich gewinne.</option>
+                                <option value="Nicht nur ich spiele, sondern auch ich gewinne.">Nicht nur ich spiele, sondern auch ich gewinne.</option>
+                                <option value="Je mehr ich spiele, desto mehr gewinne ich.">Je mehr ich spiele, desto mehr gewinne ich.</option>
+                            </select>
+                        </li>
+                        <li><em>Weder er liest, als auch er schreibt.</em>  
+                            <select class="answer-select" data-correct="Weder er liest, noch er schreibt.">
+                                <option value="">Select</option>
+                                <option value="Entweder er liest, oder er schreibt.">Entweder er liest, oder er schreibt.</option>
+                                <option value="Weder er liest, noch er schreibt.">Weder er liest, noch er schreibt.</option>
+                                <option value="Sowohl er liest, als auch er schreibt.">Sowohl er liest, als auch er schreibt.</option>
+                                <option value="Nicht nur er liest, sondern auch er schreibt.">Nicht nur er liest, sondern auch er schreibt.</option>
+                                <option value="Zwar er liest, aber er schreibt.">Zwar er liest, aber er schreibt.</option>
+                            </select>
+                        </li>
+                        <li><em>Nicht nur wir tanzen, oder wir singen.</em>  
+                            <select class="answer-select" data-correct="Nicht nur wir tanzen, sondern auch wir singen.">
+                                <option value="">Select</option>
+                                <option value="Entweder wir tanzen, oder wir singen.">Entweder wir tanzen, oder wir singen.</option>
+                                <option value="Weder wir tanzen, noch wir singen.">Weder wir tanzen, noch wir singen.</option>
+                                <option value="Sowohl wir tanzen, als auch wir singen.">Sowohl wir tanzen, als auch wir singen.</option>
+                                <option value="Nicht nur wir tanzen, sondern auch wir singen.">Nicht nur wir tanzen, sondern auch wir singen.</option>
+                                <option value="Zwar wir tanzen, aber wir singen.">Zwar wir tanzen, aber wir singen.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Sowohl ich esse, als auch ich trinke.</em></li>
+                            <li><em>Entweder sie läuft, oder sie schwimmt.</em></li>
+                            <li><em>Je mehr ich spiele, desto mehr gewinne ich.</em></li>
+                            <li><em>Weder er liest, noch er schreibt.</em></li>
+                            <li><em>Nicht nur wir tanzen, sondern auch wir singen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct conjunction pair to fit the context.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ich mag Äpfel, ___ ich esse Birnen.  
+                            <select class="answer-select" data-correct="Sowohl ich mag Äpfel, als auch ich esse Birnen.">
+                                <option value="">Select</option>
+                                <option value="Je ich mag Äpfel, desto ich esse Birnen.">Je … desto</option>
+                                <option value="Sowohl ich mag Äpfel, als auch ich esse Birnen.">Sowohl … als auch</option>
+                                <option value="Entweder ich mag Äpfel, oder ich esse Birnen.">Entweder … oder</option>
+                                <option value="Weder ich mag Äpfel, noch ich esse Birnen.">Weder … noch</option>
+                                <option value="Zwar ich mag Äpfel, aber ich esse Birnen.">Zwar … aber</option>
+                            </select>
+                        </li>
+                        <li>___ mehr er liest, ___ klüger wird er.  
+                            <select class="answer-select" data-correct="Je mehr er liest, desto klüger wird er.">
+                                <option value="">Select</option>
+                                <option value="Entweder mehr er liest, oder klüger wird er.">Entweder … oder</option>
+                                <option value="Weder mehr er liest, noch klüger wird er.">Weder … noch</option>
+                                <option value="Je mehr er liest, desto klüger wird er.">Je … desto</option>
+                                <option value="Nicht nur mehr er liest, sondern auch klüger wird er.">Nicht nur … sondern auch</option>
+                                <option value="Zwar mehr er liest, aber klüger wird er.">Zwar … aber</option>
+                            </select>
+                        </li>
+                        <li>___ sie hat ein Fahrrad, ___ sie fährt es nicht.  
+                            <select class="answer-select" data-correct="Zwar sie hat ein Fahrrad, aber sie fährt es nicht.">
+                                <option value="">Select</option>
+                                <option value="Sowohl sie hat ein Fahrrad, als auch sie fährt es nicht.">Sowohl … als auch</option>
+                                <option value="Entweder sie hat ein Fahrrad, oder sie fährt es nicht.">Entweder … oder</option>
+                                <option value="Weder sie hat ein Fahrrad, noch sie fährt es nicht.">Weder … noch</option>
+                                <option value="Zwar sie hat ein Fahrrad, aber sie fährt es nicht.">Zwar … aber</option>
+                                <option value="Nicht nur sie hat ein Fahrrad, sondern auch sie fährt es nicht.">Nicht nur … sondern auch</option>
+                            </select>
+                        </li>
+                        <li>___ ich habe kein Buch, ___ eine Tasche.  
+                            <select class="answer-select" data-correct="Weder ich habe kein Buch, noch eine Tasche.">
+                                <option value="">Select</option>
+                                <option value="Entweder ich habe kein Buch, oder eine Tasche.">Entweder … oder</option>
+                                <option value="Weder ich habe kein Buch, noch eine Tasche.">Weder … noch</option>
+                                <option value="Sowohl ich habe kein Buch, als auch eine Tasche.">Sowohl … als auch</option>
+                                <option value="Je ich habe kein Buch, desto eine Tasche.">Je … desto</option>
+                                <option value="Nicht nur ich habe kein Buch, sondern auch eine Tasche.">Nicht nur … sondern auch</option>
+                            </select>
+                        </li>
+                        <li>___ er malt ein Bild, ___ er zeigt es mir.  
+                            <select class="answer-select" data-correct="Nicht nur er malt ein Bild, sondern auch er zeigt es mir.">
+                                <option value="">Select</option>
+                                <option value="Nicht nur er malt ein Bild, sondern auch er zeigt es mir.">Nicht nur … sondern auch</option>
+                                <option value="Zwar er malt ein Bild, aber er zeigt es mir.">Zwar … aber</option>
+                                <option value="Je er malt ein Bild, desto er zeigt es mir.">Je … desto</option>
+                                <option value="Weder er malt ein Bild, noch er zeigt es mir.">Weder … noch</option>
+                                <option value="Entweder er malt ein Bild, oder er zeigt es mir.">Entweder … oder</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Sowohl ich mag Äpfel, als auch ich esse Birnen.</em></li>
+                            <li><em>Je mehr er liest, desto klüger wird er.</em></li>
+                            <li><em>Zwar sie hat ein Fahrrad, aber sie fährt es nicht.</em></li>
+                            <li><em>Weder ich habe kein Buch, noch eine Tasche.</em></li>
+                            <li><em>Nicht nur er malt ein Bild, sondern auch er zeigt es mir.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Two-Part Conjunctions</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Meaning First</strong>: Pick the pair that matches the idea (choice, negation, addition).</li>
+                    <li><strong>Verb Position</strong>: Keep the verb right after each part (Entweder ich gehe, oder ich bleibe).</li>
+                    <li><strong>Comma Use</strong>: Add a comma before the second part in most cases.</li>
+                    <li><strong>Practice Pairs</strong>: Learn entweder … oder for choices, je … desto for comparisons.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on conjunctions.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on two-part conjunctions.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/sentences/conjunctions" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="reflexive.html" class="see-also-rect">Reflexive Pronouns</a>
+                <a href="brauchen-zu.html" class="see-also-rect">Nicht/Kein & Nur Brauchen Zu</a>
+                <a href="temp-neben.html" class="see-also-rect">Temporale Nebensätze</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="reflexive.html" class="next-btn">Next: Reflexive Pronouns →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

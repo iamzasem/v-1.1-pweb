@@ -1,0 +1,450 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Passiv mit Modalverb in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/temp-praep.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Passiv mit Modalverb (Passive Voice with Modal Verbs)</h1>
+            <p>
+                A guide to using passive voice with modal verbs in German, combining werden + Partizip II with modals like können, müssen, and sollen, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding Passive with Modal Verbs</h2>
+            <div class="subsection">
+                <h3>What Is Passiv mit Modalverb?</h3>
+                <p>It combines passive voice (focus on action/object) with a modal verb (ability, necessity, etc.), e.g., Das Buch kann gelesen werden (The book can be read).</p>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Structure and Formation</h2>
+            <div class="subsection">
+                <h3>Formation</h3>
+                <p>Subject + modal verb (conjugated) + werden (infinitive) + Partizip II, optionally von + dative.</p>
+                <table>
+                    <tr><th>Active</th><th>Passive</th></tr>
+                    <tr><td>Ich kann das Buch lesen.</td><td>Das Buch kann gelesen werden.</td></tr>
+                    <tr><td>Sie müssen die Arbeit machen.</td><td>Die Arbeit muss gemacht werden.</td></tr>
+                </table>
+            </div>
+            <div class="subsection">
+                <h3>Tenses</h3>
+                <p>Present: kann … werden; Past: konnte … werden; Perfect (rare): ist … worden können.</p>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Passive with Modal Verbs</h2>
+            <div class="subsection">
+                <h3>Possibility (können)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Das Lied kann gesungen werden.</em> (The song can be sung.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Necessity (müssen)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Die Arbeit muss erledigt werden.</em> (The work must be done.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Obligation (sollen)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Die Regeln sollen befolgt werden.</em> (The rules should be followed.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of 25 Common Examples</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Modal Verb</th><th>Sentence</th><th>Translation</th></tr>
+                    <!-- können -->
+                    <tr><td rowspan="5">können</td><td><em>Das Auto kann jeden Tag gewaschen werden.</em></td><td>The car can be washed every day.</td></tr>
+                    <tr><td><em>Die Tür kann jetzt geöffnet werden.</em></td><td>The door can be opened now.</td></tr>
+                    <tr><td><em>Das Spiel kann im Park gespielt werden.</em></td><td>The game can be played in the park.</td></tr>
+                    <tr><td><em>Die Suppe kann warm serviert werden.</em></td><td>The soup can be served warm.</td></tr>
+                    <tr><td><em>Der Brief kann von mir geschrieben werden.</em></td><td>The letter can be written by me.</td></tr>
+                    <!-- müssen -->
+                    <tr><td rowspan="5">müssen</td><td><em>Die Hausaufgaben müssen heute gemacht werden.</em></td><td>The homework must be done today.</td></tr>
+                    <tr><td><em>Das Fenster muss bald geschlossen werden.</em></td><td>The window must be closed soon.</td></tr>
+                    <tr><td><em>Die Rechnung muss bezahlt werden.</em></td><td>The bill must be paid.</td></tr>
+                    <tr><td><em>Der Müll muss rausgebracht werden.</em></td><td>The trash must be taken out.</td></tr>
+                    <tr><td><em>Das Essen muss von uns gekocht werden.</em></td><td>The food must be cooked by us.</td></tr>
+                    <!-- sollen -->
+                    <tr><td rowspan="5">sollen</td><td><em>Die Regeln sollen immer befolgt werden.</em></td><td>The rules should always be followed.</td></tr>
+                    <tr><td><em>Das Buch soll in der Schule gelesen werden.</em></td><td>The book should be read in school.</td></tr>
+                    <tr><td><em>Die Straße soll morgen gereinigt werden.</em></td><td>The street should be cleaned tomorrow.</td></tr>
+                    <tr><td><em>Die Tür soll leise geschlossen werden.</em></td><td>The door should be closed quietly.</td></tr>
+                    <tr><td><em>Der Plan soll von allen akzeptiert werden.</em></td><td>The plan should be accepted by everyone.</td></tr>
+                    <!-- wollen -->
+                    <tr><td rowspan="5">wollen</td><td><em>Das Haus will bald gebaut werden.</em></td><td>The house wants to be built soon.</td></tr>
+                    <tr><td><em>Das Lied will laut gesungen werden.</em></td><td>The song wants to be sung loudly.</td></tr>
+                    <tr><td><em>Die Arbeit will schnell erledigt werden.</em></td><td>The work wants to be done quickly.</td></tr>
+                    <tr><td><em>Das Bild will gemalt werden.</em></td><td>The picture wants to be painted.</td></tr>
+                    <tr><td><em>Der Garten will von ihm gepflegt werden.</em></td><td>The garden wants to be tended by him.</td></tr>
+                    <!-- dürfen -->
+                    <tr><td rowspan="5">dürfen</td><td><em>Die Kinder dürfen im Garten spielen gelassen werden.</em></td><td>The children may be allowed to play in the garden.</td></tr>
+                    <tr><td><em>Das Essen darf hier gegessen werden.</em></td><td>The food may be eaten here.</td></tr>
+                    <tr><td><em>Die Tasche darf geöffnet werden.</em></td><td>The bag may be opened.</td></tr>
+                    <tr><td><em>Das Licht darf angeschaltet werden.</em></td><td>The light may be turned on.</td></tr>
+                    <tr><td><em>Der Hund darf von uns gestreichelt werden.</em></td><td>The dog may be petted by us.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice Passive with Modal Verbs</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose the Correct Modal Passive Form</h3>
+                <p>Select the correct modal verb for the sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Die Aufgabe ___ heute erledigt werden.  
+                            <select class="answer-select" data-correct="Die Aufgabe muss heute erledigt werden.">
+                                <option value="">Select</option>
+                                <option value="Die Aufgabe kann heute erledigt werden.">kann</option>
+                                <option value="Die Aufgabe wird heute erledigt werden.">wird</option>
+                                <option value="Die Aufgabe muss heute erledigt werden.">muss</option>
+                                <option value="Die Aufgabe soll heute erledigt werden.">soll</option>
+                                <option value="Die Aufgabe darf heute erledigt werden.">darf</option>
+                            </select>
+                        </li>
+                        <li>Das Fenster ___ geöffnet werden.  
+                            <select class="answer-select" data-correct="Das Fenster kann geöffnet werden.">
+                                <option value="">Select</option>
+                                <option value="Das Fenster kann geöffnet werden.">kann</option>
+                                <option value="Das Fenster wird geöffnet werden.">werden</option>
+                                <option value="Das Fenster muss geöffnet werden.">muss</option>
+                                <option value="Das Fenster wollte geöffnet werden.">wollte</option>
+                                <option value="Das Fenster dürfen geöffnet werden.">dürfen</option>
+                            </select>
+                        </li>
+                        <li>Die Regeln ___ befolgt werden.  
+                            <select class="answer-select" data-correct="Die Regeln sollen befolgt werden.">
+                                <option value="">Select</option>
+                                <option value="Die Regeln sollen befolgt werden.">sollen</option>
+                                <option value="Die Regeln können befolgt werden.">können</option>
+                                <option value="Die Regeln müssen befolgt werden.">müssen</option>
+                                <option value="Die Regeln wollen befolgt werden.">wollen</option>
+                                <option value="Die Regeln dürfen befolgt werden.">dürfen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Die Aufgabe muss heute erledigt werden.</em></li>
+                            <li><em>Das Fenster kann geöffnet werden.</em></li>
+                            <li><em>Die Regeln sollen befolgt werden.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Rewrite Active to Passive with Modal Verb</h3>
+                <p>Choose the correct passive form of the active sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich kann das Buch lesen.  
+                            <select class="answer-select" data-correct="Das Buch kann gelesen werden.">
+                                <option value="">Select</option>
+                                <option value="Das Buch kann gelesen werden.">Das Buch kann gelesen werden.</option>
+                                <option value="Das Buch wird lesen können.">Das Buch wird lesen können.</option>
+                                <option value="Das Buch kann werden gelesen.">Das Buch kann werden gelesen.</option>
+                            </select>
+                        </li>
+                        <li>Sie müssen die Arbeit machen.  
+                            <select class="answer-select" data-correct="Die Arbeit muss gemacht werden.">
+                                <option value="">Select</option>
+                                <option value="Die Arbeit muss gemacht werden.">Die Arbeit muss gemacht werden.</option>
+                                <option value="Die Arbeit wird machen müssen.">Die Arbeit wird machen müssen.</option>
+                                <option value="Die Arbeit muss werden gemacht.">Die Arbeit muss werden gemacht.</option>
+                            </select>
+                        </li>
+                        <li>Er soll die Tür schließen.  
+                            <select class="answer-select" data-correct="Die Tür soll geschlossen werden.">
+                                <option value="">Select</option>
+                                <option value="Die Tür soll geschlossen werden.">Die Tür soll geschlossen werden.</option>
+                                <option value="Die Tür wird schließen sollen.">Die Tür wird schließen sollen.</option>
+                                <option value="Die Tür soll werden geschlossen.">Die Tür soll werden geschlossen.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Das Buch kann gelesen werden.</em></li>
+                            <li><em>Die Arbeit muss gemacht werden.</em></li>
+                            <li><em>Die Tür soll geschlossen werden.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate</h3>
+                <p>Choose the correct translation with passive and modal verb.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>The car can be washed today.  
+                            <select class="answer-select" data-correct="Das Auto kann heute gewaschen werden.">
+                                <option value="">Select</option>
+                                <option value="Das Auto kann heute gewaschen werden.">Das Auto kann heute gewaschen werden.</option>
+                                <option value="Das Auto wird heute waschen können.">Das Auto wird heute waschen können.</option>
+                                <option value="Das Auto kann heute werden gewaschen.">Das Auto kann heute werden gewaschen.</option>
+                            </select>
+                        </li>
+                        <li>The homework must be done now.  
+                            <select class="answer-select" data-correct="Die Hausaufgaben müssen jetzt gemacht werden.">
+                                <option value="">Select</option>
+                                <option value="Die Hausaufgaben müssen jetzt gemacht werden.">Die Hausaufgaben müssen jetzt gemacht werden.</option>
+                                <option value="Die Hausaufgaben werden jetzt machen müssen.">Die Hausaufgaben werden jetzt machen müssen.</option>
+                                <option value="Die Hausaufgaben müssen jetzt werden gemacht.">Die Hausaufgaben müssen jetzt werden gemacht.</option>
+                            </select>
+                        </li>
+                        <li>The rules should be followed by us.  
+                            <select class="answer-select" data-correct="Die Regeln sollen von uns befolgt werden.">
+                                <option value="">Select</option>
+                                <option value="Die Regeln sollen von uns befolgt werden.">Die Regeln sollen von uns befolgt werden.</option>
+                                <option value="Die Regeln werden von uns sollen befolgt.">Die Regeln werden von uns sollen befolgt.</option>
+                                <option value="Die Regeln sollen von uns werden befolgt.">Die Regeln sollen von uns werden befolgt.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Das Auto kann heute gewaschen werden.</em></li>
+                            <li><em>Die Hausaufgaben müssen jetzt gemacht werden.</em></li>
+                            <li><em>Die Regeln sollen von uns befolgt werden.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected sentence with the right passive form.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Das Buch kann werden gelesen.  
+                            <select class="answer-select" data-correct="Das Buch kann gelesen werden.">
+                                <option value="">Select</option>
+                                <option value="Das Buch wird gelesen können.">Das Buch wird gelesen können.</option>
+                                <option value="Das Buch kann gelesen werden.">Das Buch kann gelesen werden.</option>
+                                <option value="Das Buch kann gelesen wird.">Das Buch kann gelesen wird.</option>
+                            </select>
+                        </li>
+                        <li>Die Arbeit muss werden gemacht.  
+                            <select class="answer-select" data-correct="Die Arbeit muss gemacht werden.">
+                                <option value="">Select</option>
+                                <option value="Die Arbeit muss gemacht werden.">Die Arbeit muss gemacht werden.</option>
+                                <option value="Die Arbeit wird gemacht müssen.">Die Arbeit wird gemacht müssen.</option>
+                                <option value="Die Arbeit muss gemacht wird.">Die Arbeit muss gemacht wird.</option>
+                            </select>
+                        </li>
+                        <li>Die Tür soll geschlossen wird.  
+                            <select class="answer-select" data-correct="Die Tür soll geschlossen werden.">
+                                <option value="">Select</option>
+                                <option value="Die Tür wird geschlossen sollen.">Die Tür wird geschlossen sollen.</option>
+                                <option value="Die Tür soll geschlossen werden.">Die Tür soll geschlossen werden.</option>
+                                <option value="Die Tür soll werden geschlossen.">Die Tür soll werden geschlossen.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Das Buch kann gelesen werden.</em></li>
+                            <li><em>Die Arbeit muss gemacht werden.</em></li>
+                            <li><em>Die Tür soll geschlossen werden.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Examples</h3>
+                <p>Choose the correct modal verb for the sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Das Fenster ___ heute geschlossen werden.  
+                            <select class="answer-select" data-correct="Das Fenster muss heute geschlossen werden.">
+                                <option value="">Select</option>
+                                <option value="Das Fenster muss heute geschlossen werden.">muss</option>
+                                <option value="Das Fenster kann heute geschlossen werden.">kann</option>
+                                <option value="Das Fenster soll heute geschlossen werden.">soll</option>
+                                <option value="Das Fenster will heute geschlossen werden.">will</option>
+                                <option value="Das Fenster darf heute geschlossen werden.">darf</option>
+                            </select>
+                        </li>
+                        <li>Die Suppe ___ warm serviert werden.  
+                            <select class="answer-select" data-correct="Die Suppe kann warm serviert werden.">
+                                <option value="">Select</option>
+                                <option value="Die Suppe kann warm serviert werden.">kann</option>
+                                <option value="Die Suppe muss warm serviert werden.">muss</option>
+                                <option value="Die Suppe soll warm serviert werden.">soll</option>
+                                <option value="Die Suppe will warm serviert werden.">will</option>
+                                <option value="Die Suppe darf warm serviert werden.">darf</option>
+                            </select>
+                        </li>
+                        <li>Die Regeln ___ von uns befolgt werden.  
+                            <select class="answer-select" data-correct="Die Regeln sollen von uns befolgt werden.">
+                                <option value="">Select</option>
+                                <option value="Die Regeln sollen von uns befolgt werden.">sollen</option>
+                                <option value="Die Regeln können von uns befolgt werden.">können</option>
+                                <option value="Die Regeln müssen von uns befolgt werden.">müssen</option>
+                                <option value="Die Regeln wollen von uns befolgt werden.">wollen</option>
+                                <option value="Die Regeln dürfen von uns befolgt werden.">dürfen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Das Fenster muss heute geschlossen werden.</em></li>
+                            <li><em>Die Suppe kann warm serviert werden.</em></li>
+                            <li><em>Die Regeln sollen von uns befolgt werden.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Passive with Modal Verbs</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Order Matters</strong>: Modal verb second, werden + Partizip II last (e.g., muss gemacht werden).</li>
+                    <li><strong>Modal Meaning</strong>: Kann = possible, muss = necessary, soll = expected.</li>
+                    <li><strong>Practice Tenses</strong>: Start with present (kann … werden), then try past (konnte … werden).</li>
+                    <li><strong>Check Verbs</strong>: Only use transitive verbs like bauen, not schlafen.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on passive and modal verbs.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on passive with modals.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/verbs/passive/modal-verbs" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Contextual examples.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="passiv.html" class="see-also-rect">Passiv, Präteritum, Perfekt</a>
+                <a href="ohneartikel.html" class="see-also-rect">Adjektivdeklination ohne Artikel</a>
+                <a href="konnektoren.html" class="see-also-rect">Zweiteilige Konnektoren</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="passiv.html" class="next-btn">Next: Passiv, Präteritum, Perfekt →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

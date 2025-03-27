@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German B1 Schreiben Prüfung Model 3{% endblock title %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/schreibenb1.css' %}">
+
+<body>
+    <div class="timer-container">
+        <div class="timer-toggle">
+            <div class="toggle-wrapper">
+                <span class="toggle-icon" data-state="open">👁️</span>
+                <span class="green-dot"></span>
+            </div>
+            <div class="separator"></div>
+            <span id="timer" class="timer">60:00</span>
+        </div>
+        <div class="timer-controls">
+            <button id="pauseBtn" class="timer-control">⏸️</button>
+            <button id="restartBtn" class="timer-control">🔄</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="header-section">
+                <div class="nav-buttons">
+                    <a href="german.html" class="nav-button">🏠</a>
+                    <a href="practice_Exam.html" class="nav-button">⬅️</a>
+                </div>
+                <header>
+                    <h1>Schreiben Prüfung</h1>
+                </header>
+                <div class="exam-title">Deutsch B1 Schreiben Model 3</div>
+                <button id="startBtn" class="start-button">Begin Exam</button>
+                <div id="timeTaken" class="time-taken" style="display: none;"></div>
+            </div>
+
+            <!-- Name, Email, Country Input Popup -->
+            <div id="namePopup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <span id="closePopupBtn" class="close-btn">×</span>
+                    <h2>Please Fill your Your Details</h2>
+                    <input type="text" id="userName" placeholder="Your Name" required>
+                    <input type="email" id="userEmail" placeholder="Your E-Mail-Adresse" required>
+                    <input type="text" id="userCountry" placeholder="Your Country" required>
+                    <button id="submitNameBtn" class="popup-button">Continue</button>
+                    <h6><br> Your information will be Securely Protected.</h6>
+                </div>
+            </div>
+
+            <!-- Time-Up Popup -->
+            <div id="timeUpPopup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <h2>Zeit ist abgelaufen</h2>
+                    <p>Möchten Sie Ihre Antworten absenden?</p>
+                    <div class="popup-buttons">
+                        <button id="submitYesBtn" class="popup-button yes-btn">Ja</button>
+                        <button id="submitNoBtn" class="popup-button no-btn">Nein</button>
+                        <button id="tryAgainPopupBtn" class="popup-button try-again-btn">Try Again</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="examContent">
+                <!-- Aufgabe 1: Informal Letter -->
+                <div class="section">
+                    <h2><strong>Aufgabe 1</strong></h2>
+                    <p><strong>Arbeitszeit: 20 Minuten</strong></p>
+                    <p>Sie haben eine entzückende Katze gefunden und mit nach Hause genommen. Schreiben Sie einem Freund / einer Freundin darüber, der/die auch ein Katzenfan ist.</p>
+                    <ul>
+                        <li>Erzählen Sie, wo Sie die Katze gefunden haben, und beschreiben Sie sie.</li>
+                        <li>Warum wollten Sie die Katze zuerst nicht mit nach Hause nehmen?</li>
+                        <li>Schlagen Sie Ihrem Freund / Ihrer Freundin vor, die Katze zu besuchen.</li>
+                    </ul>
+                    <p>Schreiben Sie eine E-Mail (circa 80 Wörter).</p>
+                    <p>Achten Sie auf den Textaufbau (Anrede, Einleitung, Reihenfolge der Inhaltspunkte, Schluss).</p>
+                    <div class="question">
+                        <textarea id="answer1" class="answer-textarea" placeholder="Schreiben Sie Ihre Antwort hier..." rows="8" disabled></textarea>
+                        <div class="word-count">Wörter: <span id="wordCount1">0</span>/80</div>
+                    </div>
+                </div>
+
+                <!-- Aufgabe 2: Meinung -->
+                <div class="section">
+                    <h2><strong>Aufgabe 2</strong></h2>
+                    <p><strong>Arbeitszeit: 25 Minuten</strong></p>
+                    <p>Sie haben in einer Zeitschrift einen Artikel zum Thema „Umweltschutz“ gelesen. Im Online-Forum der Zeitschrift finden Sie folgende Meinung:</p>
+                    <div class="reading-text">
+                      
+                        <h3>Leser-Forum</h3>
+                        <p><strong>(25.10., 14:30)</strong></p>
+                        <p><strong>Anna</strong></p>
+                        <p>Ich habe letzte Woche eine interessante Sendung über Umweltschutz gesehen. Ich finde, dass Umweltschutz für alle wichtig ist. Jeder sollte etwas tun, auch wenn es nur kleine Dinge sind, wie Müll trennen oder weniger Plastik benutzen. Was tut ihr für den Umweltschutz? Und wie kann man andere dazu motivieren?</p>
+                    </div>
+                    <p>Schreiben Sie nun Ihre Meinung (circa 80 Wörter).</p>
+                    <div class="question">
+                        <textarea id="answer2" class="answer-textarea" placeholder="Schreiben Sie Ihre Meinung hier..." rows="8" disabled></textarea>
+                        <div class="word-count">Wörter: <span id="wordCount2">0</span>/80</div>
+                    </div>
+                </div>
+
+                <!-- Aufgabe 3: Formal Letter -->
+                <div class="section">
+                    <h2><strong>Aufgabe 3</strong></h2>
+                    <p><strong>Arbeitszeit: 15 Minuten</strong></p>
+                    <p>Sie suchen einen Nachhilfelehrer in Mathe für Ihren Sohn. In der Schule haben Sie ein Angebot von Frau Berger, einer Mathelehrerin, gesehen.</p>
+                    <ul>
+                        <li>Schreiben Sie an Frau Berger. Stellen Sie sich vor und erklären Sie Ihre Situation. Fragen Sie höflich nach dem Preis.</li>
+                    </ul>
+                    <p>Schreiben Sie eine E-Mail (circa 40 Wörter).</p>
+                    <p>Vergessen Sie nicht die Anrede und den Gruß am Schluss.</p>
+                    <div class="question">
+                        <textarea id="answer3" class="answer-textarea" placeholder="Schreiben Sie Ihre E-Mail hier..." rows="6" disabled></textarea>
+                        <div class="word-count">Wörter: <span id="wordCount3">0</span>/40</div>
+                    </div>
+                </div>
+
+                <button id="submitBtn" class="submit-button" style="display: none;">Submit Your Answers</button>
+            </div>
+
+            <div id="results" class="results" style="display: none;">
+                <div id="loadingAnimation" class="loading-animation" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Submitting...</p>
+                </div>
+                <h2 id="reviewHeading" class="review-heading">Submission Confirmation</h2>
+                <div id="statusSymbol" class="status-symbol"></div>
+                <p id="submissionMessage"></p>
+                <div class="results-buttons">
+                    <button id="tryAgainBtn" class="try-again-button" style="display: none;">Try Again</button>
+                    <button id="shareBtn" class="share-button" style="display: none;">Share with Your Friends</button>
+                </div>
+                <div id="copyNotification" class="copy-notification" style="display: none;">URL is copied</div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="{% static 'css/schreibenb1.js' %}"></script>
+</body>
+
+{% endblock body %}

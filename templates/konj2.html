@@ -1,0 +1,571 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Konjunktiv II of Modal Verbs and Irrealis Conditional Sentences{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/konj2.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+               <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="b1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>Konjunktiv II of Modal Verbs and Irrealis Conditional Sentences</h1>
+            <p>
+                A guide to the German Konjunktiv II with modal verbs (e.g., 'können', 'müssen') and irrealis conditional sentences, explaining how to express hypothetical or unreal situations, with examples, exercises, and resources.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>What Is Konjunktiv II?</h2>
+            <p>Konjunktiv II is a mood for hypotheticals, politeness, and unreal "if-then" scenarios, often using modal verbs like 'könnte' or 'müsste' plus an infinitive.</p>
+            <div class="subsection">
+                <h3>Key Points</h3>
+                <ul class="example-list">
+                    <li><strong>Hypotheticals</strong>: Unreal possibilities (e.g., 'Ich könnte fliegen.').</li>
+                    <li><strong>Politeness</strong>: Softened requests (e.g., 'Könntest du helfen?').</li>
+                    <li><strong>Conditions</strong>: Unreal scenarios with 'wenn' (e.g., 'Wenn ich reich wäre...').</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Differences -->
+        <section id="differences">
+            <h2>Formation of Konjunktiv II</h2>
+            <div class="subsection">
+                <h3>Modal Verbs</h3>
+                <p>Built from Präteritum stems (e.g., 'könnte', 'wollte') + infinitive.</p>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Konjunktiv II</h2>
+            <div class="subsection">
+                <h3>Basic: Hypotheticals</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich könnte dir helfen.</em> (I could help you.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Intermediate: Polite Requests</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Könntest du mir helfen?</em> (Could you help me?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Advanced: Complex Conditions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Wenn ich mehr Geld hätte, könnte ich ein Auto kaufen.</em> (If I had more money, I could buy a car.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Examples -->
+        <section id="examples">
+            <h2>List of 25 Common Examples</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Sentence</th><th>Translation</th></tr>
+                    <!-- Konjunktiv II Modal Verbs (13) -->
+                    <tr><td><em>Ich könnte dir helfen.</em></td><td>I could help you.</td></tr>
+                    <tr><td><em>Du könntest schneller laufen.</em></td><td>You could run faster.</td></tr>
+                    <tr><td><em>Er müsste mehr arbeiten.</em></td><td>He would have to work more.</td></tr>
+                    <tr><td><em>Sie wollte nach Hause gehen.</em></td><td>She would want to go home.</td></tr>
+                    <tr><td><em>Wir dürften das machen.</em></td><td>We would be allowed to do that.</td></tr>
+                    <tr><td><em>Ihr solltet das wissen.</em></td><td>You all should know that.</td></tr>
+                    <tr><td><em>Sie könnten morgen kommen.</em></td><td>They could come tomorrow.</td></tr>
+                    <tr><td><em>Ich möchte das sehen.</em></td><td>I would like to see that.</td></tr>
+                    <tr><td><em>Du müsstest es versuchen.</em></td><td>You would have to try it.</td></tr>
+                    <tr><td><em>Er dürfte hier bleiben.</em></td><td>He would be allowed to stay here.</td></tr>
+                    <tr><td><em>Sie sollte mehr essen.</em></td><td>She should eat more.</td></tr>
+                    <tr><td><em>Wir könnten fliegen.</em></td><td>We could fly.</td></tr>
+                    <tr><td><em>Ihr möchtet jetzt spielen.</em></td><td>You all would like to play now.</td></tr>
+                    <!-- Irrealis Conditional Sentences (12) -->
+                    <tr><td><em>Wenn ich könnte, würde ich helfen.</em></td><td>If I could, I would help.</td></tr>
+                    <tr><td><em>Wenn du wolltest, könntest du kommen.</em></td><td>If you wanted to, you could come.</td></tr>
+                    <tr><td><em>Wenn er müsste, würde er arbeiten.</em></td><td>If he had to, he would work.</td></tr>
+                    <tr><td><em>Wenn sie dürfte, würde sie tanzen.</em></td><td>If she were allowed to, she would dance.</td></tr>
+                    <tr><td><em>Wenn wir sollten, würden wir lernen.</em></td><td>If we were supposed to, we would study.</td></tr>
+                    <tr><td><em>Wenn ich reich wäre, könnte ich reisen.</em></td><td>If I were rich, I could travel.</td></tr>
+                    <tr><td><em>Wenn du Zeit hättest, würdest du bleiben.</em></td><td>If you had time, you would stay.</td></tr>
+                    <tr><td><em>Wenn er schneller liefe, könnte er gewinnen.</em></td><td>If he ran faster, he could win.</td></tr>
+                    <tr><td><em>Wenn sie krank wäre, müsste sie bleiben.</em></td><td>If she were sick, she would have to stay.</td></tr>
+                    <tr><td><em>Wenn wir mehr wüssten, könnten wir helfen.</em></td><td>If we knew more, we could help.</td></tr>
+                    <tr><td><em>Wenn ich es gekonnt hätte, hätte ich geholfen.</em></td><td>If I had been able to, I would have helped.</td></tr>
+                    <tr><td><em>Wenn du höflich wärst, dürftest du fragen.</em></td><td>If you were polite, you would be allowed to ask.</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Practice Konjunktiv II</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose the Correct Konjunktiv II Form</h3>
+                <p>Select the right Konjunktiv II form for the modal verb.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ (können) dir helfen.  
+                            <select class="answer-select" data-correct="Ich könnte dir helfen.">
+                                <option value="">Select</option>
+                                <option value="Ich kann dir helfen.">kann</option>
+                                <option value="Ich gekonnt dir helfen.">gekonnt</option>
+                                <option value="Ich könnte dir helfen.">könnte</option>
+                                <option value="Ich könntest dir helfen.">könntest</option>
+                                <option value="Ich können dir helfen.">können</option>
+                            </select>
+                        </li>
+                        <li>Du ___ (müssen) mehr lernen.  
+                            <select class="answer-select" data-correct="Du müsstest mehr lernen.">
+                                <option value="">Select</option>
+                                <option value="Du musst mehr lernen.">musst</option>
+                                <option value="Du gemusst mehr lernen.">gemusst</option>
+                                <option value="Du müsste mehr lernen.">müsste</option>
+                                <option value="Du müsstest mehr lernen.">müsstest</option>
+                                <option value="Du müssen mehr lernen.">müssen</option>
+                            </select>
+                        </li>
+                        <li>Er ___ (wollen) bleiben.  
+                            <select class="answer-select" data-correct="Er wollte bleiben.">
+                                <option value="">Select</option>
+                                <option value="Er will bleiben.">will</option>
+                                <option value="Er wollte bleiben.">wollte</option>
+                                <option value="Er gewollt bleiben.">gewollt</option>
+                                <option value="Er wolltest bleiben.">wolltest</option>
+                                <option value="Er wollen bleiben.">wollen</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ (dürfen) spielen.  
+                            <select class="answer-select" data-correct="Wir dürften spielen.">
+                                <option value="">Select</option>
+                                <option value="Wir darf spielen.">darf</option>
+                                <option value="Wir gedurft spielen.">gedurft</option>
+                                <option value="Wir dürften spielen.">dürften</option>
+                                <option value="Wir dürfte spielen.">dürfte</option>
+                                <option value="Wir dürfen spielen.">dürfen</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ (sollen) kommen.  
+                            <select class="answer-select" data-correct="Sie sollten kommen.">
+                                <option value="">Select</option>
+                                <option value="Sie soll kommen.">soll</option>
+                                <option value="Sie gesollt kommen.">gesollt</option>
+                                <option value="Sie sollte kommen.">sollte</option>
+                                <option value="Sie sollten kommen.">sollten</option>
+                                <option value="Sie sollen kommen.">sollen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich könnte dir helfen.</em></li>
+                            <li><em>Du müsstest mehr lernen.</em></li>
+                            <li><em>Er wollte bleiben.</em></li>
+                            <li><em>Wir dürften spielen.</em></li>
+                            <li><em>Sie sollten kommen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Form the Conditional Sentence</h3>
+                <p>Choose the correct Konjunktiv II conditional sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>If I could, I would help.  
+                            <select class="answer-select" data-correct="Wenn ich könnte, würde ich helfen.">
+                                <option value="">Select</option>
+                                <option value="Wenn ich kann, helfe ich.">Wenn ich kann, helfe ich.</option>
+                                <option value="Wenn ich könnte, helfe ich.">Wenn ich könnte, helfe ich.</option>
+                                <option value="Wenn ich könnte, würde ich helfen.">Wenn ich könnte, würde ich helfen.</option>
+                                <option value="Wenn ich gekonnt, würde ich helfen.">Wenn ich gekonnt, würde ich helfen.</option>
+                                <option value="Wenn ich könnte, hätte ich geholfen.">Wenn ich könnte, hätte ich geholfen.</option>
+                            </select>
+                        </li>
+                        <li>If you wanted to, you could come.  
+                            <select class="answer-select" data-correct="Wenn du wolltest, könntest du kommen.">
+                                <option value="">Select</option>
+                                <option value="Wenn du wolltest, könntest du kommen.">Wenn du wolltest, könntest du kommen.</option>
+                                <option value="Wenn du willst, kannst du kommen.">Wenn du willst, kannst du kommen.</option>
+                                <option value="Wenn du wolltest, kommst du.">Wenn du wolltest, kommst du.</option>
+                                <option value="Wenn du wollte, könntest du kommen.">Wenn du wollte, könntest du kommen.</option>
+                                <option value="Wenn du gewollt, hättest du kommen.">Wenn du gewollt, hättest du kommen.</option>
+                            </select>
+                        </li>
+                        <li>If he had to, he would work.  
+                            <select class="answer-select" data-correct="Wenn er müsste, würde er arbeiten.">
+                                <option value="">Select</option>
+                                <option value="Wenn er muss, arbeitet er.">Wenn er muss, arbeitet er.</option>
+                                <option value="Wenn er müsste, arbeitet er.">Wenn er müsste, arbeitet er.</option>
+                                <option value="Wenn er müsste, würde er arbeiten.">Wenn er müsste, würde er arbeiten.</option>
+                                <option value="Wenn er gemusst, würde er arbeiten.">Wenn er gemusst, würde er arbeiten.</option>
+                                <option value="Wenn er müsste, hätte er gearbeitet.">Wenn er müsste, hätte er gearbeitet.</option>
+                            </select>
+                        </li>
+                        <li>If we were allowed to, we would play.  
+                            <select class="answer-select" data-correct="Wenn wir dürften, würden wir spielen.">
+                                <option value="">Select</option>
+                                <option value="Wenn wir dürfen, spielen wir.">Wenn wir dürfen, spielen wir.</option>
+                                <option value="Wenn wir dürften, würden wir spielen.">Wenn wir dürften, würden wir spielen.</option>
+                                <option value="Wenn wir dürften, spielen wir.">Wenn wir dürften, spielen wir.</option>
+                                <option value="Wenn wir gedurft, würden wir spielen.">Wenn wir gedurft, würden wir spielen.</option>
+                                <option value="Wenn wir dürften, hätten wir gespielt.">Wenn wir dürften, hätten wir gespielt.</option>
+                            </select>
+                        </li>
+                        <li>If she should, she would study.  
+                            <select class="answer-select" data-correct="Wenn sie sollte, würde sie lernen.">
+                                <option value="">Select</option>
+                                <option value="Wenn sie soll, lernt sie.">Wenn sie soll, lernt sie.</option>
+                                <option value="Wenn sie sollte, lernt sie.">Wenn sie sollte, lernt sie.</option>
+                                <option value="Wenn sie sollte, würde sie lernen.">Wenn sie sollte, würde sie lernen.</option>
+                                <option value="Wenn sie gesollt, würde sie lernen.">Wenn sie gesollt, würde sie lernen.</option>
+                                <option value="Wenn sie sollte, hätte sie gelernt.">Wenn sie sollte, hätte sie gelernt.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Wenn ich könnte, würde ich helfen.</em></li>
+                            <li><em>Wenn du wolltest, könntest du kommen.</em></li>
+                            <li><em>Wenn er müsste, würde er arbeiten.</em></li>
+                            <li><em>Wenn wir dürften, würden wir spielen.</em></li>
+                            <li><em>Wenn sie sollte, würde sie lernen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate into German</h3>
+                <p>Choose the correct Konjunktiv II translation.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>I could fly.  
+                            <select class="answer-select" data-correct="Ich könnte fliegen.">
+                                <option value="">Select</option>
+                                <option value="Ich kann fliegen.">Ich kann fliegen.</option>
+                                <option value="Ich könnte fliegen.">Ich könnte fliegen.</option>
+                                <option value="Ich gekonnt fliegen.">Ich gekonnt fliegen.</option>
+                                <option value="Ich könnte geflogen.">Ich könnte geflogen.</option>
+                                <option value="Ich fliege könnte.">Ich fliege könnte.</option>
+                            </select>
+                        </li>
+                        <li>If I were rich, I could travel.  
+                            <select class="answer-select" data-correct="Wenn ich reich wäre, könnte ich reisen.">
+                                <option value="">Select</option>
+                                <option value="Wenn ich reich bin, kann ich reisen.">Wenn ich reich bin, kann ich reisen.</option>
+                                <option value="Wenn ich reich wäre, könnte ich reisen.">Wenn ich reich wäre, könnte ich reisen.</option>
+                                <option value="Wenn ich reich wäre, reise ich.">Wenn ich reich wäre, reise ich.</option>
+                                <option value="Wenn ich reich gewesen, könnte ich reisen.">Wenn ich reich gewesen, könnte ich reisen.</option>
+                                <option value="Wenn ich reich wäre, gereist ich.">Wenn ich reich wäre, gereist ich.</option>
+                            </select>
+                        </li>
+                        <li>You should study more.  
+                            <select class="answer-select" data-correct="Du solltest mehr lernen.">
+                                <option value="">Select</option>
+                                <option value="Du soll mehr lernen.">Du soll mehr lernen.</option>
+                                <option value="Du solltest mehr lernen.">Du solltest mehr lernen.</option>
+                                <option value="Du gesollt mehr lernen.">Du gesollt mehr lernen.</option>
+                                <option value="Du solltest gelernt mehr.">Du solltest gelernt mehr.</option>
+                                <option value="Du mehr solltest lernen.">Du mehr solltest lernen.</option>
+                            </select>
+                        </li>
+                        <li>If he ran faster, he could win.  
+                            <select class="answer-select" data-correct="Wenn er schneller liefe, könnte er gewinnen.">
+                                <option value="">Select</option>
+                                <option value="Wenn er schneller läuft, kann er gewinnen.">Wenn er schneller läuft, kann er gewinnen.</option>
+                                <option value="Wenn er schneller liefe, könnte er gewinnen.">Wenn er schneller liefe, könnte er gewinnen.</option>
+                                <option value="Wenn er schneller liefe, gewinnt er.">Wenn er schneller liefe, gewinnt er.</option>
+                                <option value="Wenn er schneller gelaufen, könnte er gewinnen.">Wenn er schneller gelaufen, könnte er gewinnen.</option>
+                                <option value="Wenn er schneller liefe, gewonnen er.">Wenn er schneller liefe, gewonnen er.</option>
+                            </select>
+                        </li>
+                        <li>We would like to help.  
+                            <select class="answer-select" data-correct="Wir möchten helfen.">
+                                <option value="">Select</option>
+                                <option value="Wir mögen helfen.">Wir mögen helfen.</option>
+                                <option value="Wir möchten helfen.">Wir möchten helfen.</option>
+                                <option value="Wir gemocht helfen.">Wir gemocht helfen.</option>
+                                <option value="Wir möchten geholfen.">Wir möchten geholfen.</option>
+                                <option value="Wir helfen möchten.">Wir helfen möchten.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich könnte fliegen.</em></li>
+                            <li><em>Wenn ich reich wäre, könnte ich reisen.</em></li>
+                            <li><em>Du solltest mehr lernen.</em></li>
+                            <li><em>Wenn er schneller liefe, könnte er gewinnen.</em></li>
+                            <li><em>Wir möchten helfen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Correct the Mistake</h3>
+                <p>Choose the corrected Konjunktiv II sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich kann fliegen.</em>  
+                            <select class="answer-select" data-correct="Ich könnte fliegen.">
+                                <option value="">Select</option>
+                                <option value="Ich könnte fliegen.">Ich könnte fliegen.</option>
+                                <option value="Ich gekonnt fliegen.">Ich gekonnt fliegen.</option>
+                                <option value="Ich kann könnte fliegen.">Ich kann könnte fliegen.</option>
+                                <option value="Ich fliege könnte.">Ich fliege könnte.</option>
+                                <option value="Ich könnte geflogen.">Ich könnte geflogen.</option>
+                            </select>
+                        </li>
+                        <li><em>Wenn ich reich bin, kann ich reisen.</em>  
+                            <select class="answer-select" data-correct="Wenn ich reich wäre, könnte ich reisen.">
+                                <option value="">Select</option>
+                                <option value="Wenn ich reich wäre, könnte ich reisen.">Wenn ich reich wäre, könnte ich reisen.</option>
+                                <option value="Wenn ich reich wäre, kann ich reisen.">Wenn ich reich wäre, kann ich reisen.</option>
+                                <option value="Wenn ich reich bin, könnte ich reisen.">Wenn ich reich bin, könnte ich reisen.</option>
+                                <option value="Wenn ich reich wäre, gereist ich.">Wenn ich reich wäre, gereist ich.</option>
+                                <option value="Wenn ich reich gewesen, kann ich reisen.">Wenn ich reich gewesen, kann ich reisen.</option>
+                            </select>
+                        </li>
+                        <li><em>Du soll mehr lernen.</em>  
+                            <select class="answer-select" data-correct="Du solltest mehr lernen.">
+                                <option value="">Select</option>
+                                <option value="Du solltest mehr lernen.">Du solltest mehr lernen.</option>
+                                <option value="Du gesollt mehr lernen.">Du gesollt mehr lernen.</option>
+                                <option value="Du soll mehr gelernen.">Du soll mehr gelernen.</option>
+                                <option value="Du mehr solltest lernen.">Du mehr solltest lernen.</option>
+                                <option value="Du solltest lernen mehr.">Du solltest lernen mehr.</option>
+                            </select>
+                        </li>
+                        <li><em>Wenn er schneller läuft, kann er gewinnen.</em>  
+                            <select class="answer-select" data-correct="Wenn er schneller liefe, könnte er gewinnen.">
+                                <option value="">Select</option>
+                                <option value="Wenn er schneller liefe, könnte er gewinnen.">Wenn er schneller liefe, könnte er gewinnen.</option>
+                                <option value="Wenn er schneller liefe, kann er gewinnen.">Wenn er schneller liefe, kann er gewinnen.</option>
+                                <option value="Wenn er schneller läuft, könnte er gewinnen.">Wenn er schneller läuft, könnte er gewinnen.</option>
+                                <option value="Wenn er schneller gelaufen, kann er gewinnen.">Wenn er schneller gelaufen, kann er gewinnen.</option>
+                                <option value="Wenn er schneller liefe, gewinnt er.">Wenn er schneller liefe, gewinnt er.</option>
+                            </select>
+                        </li>
+                        <li><em>Wir mögen helfen.</em>  
+                            <select class="answer-select" data-correct="Wir möchten helfen.">
+                                <option value="">Select</option>
+                                <option value="Wir möchten helfen.">Wir möchten helfen.</option>
+                                <option value="Wir gemocht helfen.">Wir gemocht helfen.</option>
+                                <option value="Wir mögen könnte helfen.">Wir mögen könnte helfen.</option>
+                                <option value="Wir helfen möchten.">Wir helfen möchten.</option>
+                                <option value="Wir möchten geholfen.">Wir möchten geholfen.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich könnte fliegen.</em></li>
+                            <li><em>Wenn ich reich wäre, könnte ich reisen.</em></li>
+                            <li><em>Du solltest mehr lernen.</em></li>
+                            <li><em>Wenn er schneller liefe, könnte er gewinnen.</em></li>
+                            <li><em>Wir möchten helfen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Create Your Own</h3>
+                <p>Choose the correct sentence based on the prompt.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Prompt: I could help you.  
+                            <select class="answer-select" data-correct="Ich könnte dir helfen.">
+                                <option value="">Select</option>
+                                <option value="Ich könnte dir helfen.">Ich könnte dir helfen.</option>
+                                <option value="Ich kann dir helfen.">Ich kann dir helfen.</option>
+                                <option value="Ich gekonnt dir helfen.">Ich gekonnt dir helfen.</option>
+                                <option value="Ich könnte geholfen dir.">Ich könnte geholfen dir.</option>
+                                <option value="Ich dir könnte helfen.">Ich dir könnte helfen.</option>
+                            </select>
+                        </li>
+                        <li>Prompt: If you had time, you would come.  
+                            <select class="answer-select" data-correct="Wenn du Zeit hättest, würdest du kommen.">
+                                <option value="">Select</option>
+                                <option value="Wenn du Zeit hättest, würdest du kommen.">Wenn du Zeit hättest, würdest du kommen.</option>
+                                <option value="Wenn du Zeit hast, kannst du kommen.">Wenn du Zeit hast, kannst du kommen.</option>
+                                <option value="Wenn du Zeit hättest, kommst du.">Wenn du Zeit hättest, kommst du.</option>
+                                <option value="Wenn du Zeit gehabt, würdest du kommen.">Wenn du Zeit gehabt, würdest du kommen.</option>
+                                <option value="Wenn du Zeit hättest, gekommen du.">Wenn du Zeit hättest, gekommen du.</option>
+                            </select>
+                        </li>
+                        <li>Prompt: He should work more.  
+                            <select class="answer-select" data-correct="Er sollte mehr arbeiten.">
+                                <option value="">Select</option>
+                                <option value="Er soll mehr arbeiten.">Er soll mehr arbeiten.</option>
+                                <option value="Er sollte mehr arbeiten.">Er sollte mehr arbeiten.</option>
+                                <option value="Er gesollt mehr arbeiten.">Er gesollt mehr arbeiten.</option>
+                                <option value="Er sollte gearbeitet mehr.">Er sollte gearbeitet mehr.</option>
+                                <option value="Er mehr sollte arbeiten.">Er mehr sollte arbeiten.</option>
+                            </select>
+                        </li>
+                        <li>Prompt: If I could, I would fly.  
+                            <select class="answer-select" data-correct="Wenn ich könnte, würde ich fliegen.">
+                                <option value="">Select</option>
+                                <option value="Wenn ich kann, fliege ich.">Wenn ich kann, fliege ich.</option>
+                                <option value="Wenn ich könnte, fliege ich.">Wenn ich könnte, fliege ich.</option>
+                                <option value="Wenn ich könnte, würde ich fliegen.">Wenn ich könnte, würde ich fliegen.</option>
+                                <option value="Wenn ich gekonnt, würde ich fliegen.">Wenn ich gekonnt, würde ich fliegen.</option>
+                                <option value="Wenn ich könnte, geflogen ich.">Wenn ich könnte, geflogen ich.</option>
+                            </select>
+                        </li>
+                        <li>Prompt: We would be allowed to stay.  
+                            <select class="answer-select" data-correct="Wir dürften bleiben.">
+                                <option value="">Select</option>
+                                <option value="Wir dürften bleiben.">Wir dürften bleiben.</option>
+                                <option value="Wir dürfen bleiben.">Wir dürfen bleiben.</option>
+                                <option value="Wir gedurft bleiben.">Wir gedurft bleiben.</option>
+                                <option value="Wir dürften geblieben.">Wir dürften geblieben.</option>
+                                <option value="Wir bleiben dürften.">Wir bleiben dürften.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich könnte dir helfen.</em></li>
+                            <li><em>Wenn du Zeit hättest, würdest du kommen.</em></li>
+                            <li><em>Er sollte mehr arbeiten.</em></li>
+                            <li><em>Wenn ich könnte, würde ich fliegen.</em></li>
+                            <li><em>Wir dürften bleiben.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Konjunktiv II</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Memorize Forms</strong>: Learn 'könnte', 'müsste', 'wollte', etc.</li>
+                    <li><strong>Practice Wenn</strong>: Use 'wenn' with Konjunktiv II for conditions.</li>
+                    <li><strong>Add Würde</strong>: Pair 'würde' with infinitives for non-modal verbs.</li>
+                    <li><strong>Polite Tone</strong>: Use 'möchte' or 'könnten' for requests.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Videos on Konjunktiv II and modal verbs.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Lessons on Konjunktiv II.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/verbs/subjunctive-ii" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Real-life Konjunktiv II examples.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="sodass.html" class="see-also-rect">So...dass and Sodass</a>
+                <a href="weil.html" class="see-also-rect">Weil</a>
+                <a href="temp-praep.html" class="see-also-rect">Temporal Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="sodass.html" class="next-btn">Next: So...dass and Sodass →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById('mode-toggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle Answers
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const answersDiv = button.nextElementSibling;
+                if (button.classList.contains('show-answers')) {
+                    answersDiv.classList.toggle('hidden');
+                } else if (button.classList.contains('check-answers')) {
+                    const selects = button.parentElement.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const selectedValue = select.value;
+                        const correctValue = select.getAttribute('data-correct');
+                        if (selectedValue === correctValue) {
+                            select.style.backgroundColor = '#d4edda'; // Green for correct
+                        } else {
+                            select.style.backgroundColor = '#f8d7da'; // Red for incorrect
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+{% endblock body %}
